@@ -1,7 +1,10 @@
 using System;
 using UnityEngine;
 
-public interface IHp
+namespace Skul.Character
 {
-    
+    public interface IHp
+    {
+
+    }
 }
