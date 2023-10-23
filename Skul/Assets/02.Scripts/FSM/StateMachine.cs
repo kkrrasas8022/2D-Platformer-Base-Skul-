@@ -45,8 +45,7 @@ namespace Skul.FSM
             ChangeState(current.MoveNext());
         }
 
-        public void InitStates(
-            Dictionary<StateType, IStateEnumerator<StateType>> states)
+        public void InitStates(Dictionary<StateType, IStateEnumerator<StateType>> states)
         {
             this.states= states;
             current = states[currentType];

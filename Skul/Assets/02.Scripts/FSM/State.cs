@@ -38,6 +38,7 @@ namespace Skul.FSM
         protected CapsuleCollider2D trigger;
         protected CapsuleCollider2D collider;
         protected Transform transform;
+        protected Skul.Movement.Movement movement; 
         protected Skul.Character.Character character;
 
         //»ý¼ºÀÚ
@@ -51,6 +52,7 @@ namespace Skul.FSM
             this.collider = machine.GetComponentsInChildren<CapsuleCollider2D>().
                 Where(c => c.isTrigger == false).First();
             this.transform=machine.GetComponent<Transform>();
+            this.movement = machine.GetComponent<Skul.Movement.Movement>();
             this.character = machine.GetComponent<Skul.Character.Character>();
         }
 

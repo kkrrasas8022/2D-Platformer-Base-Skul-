@@ -6,8 +6,8 @@ using Skul.Tools;
 
 namespace Skul.InputSystem
 {
-    public class InputManager : SingletonMonoBase<InputManager>
+    public class InputManager : SingletonBase<InputManager>
     {
-        
+           
     }
 }
