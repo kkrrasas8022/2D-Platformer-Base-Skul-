@@ -1,5 +1,6 @@
 using System;
 using Unity.PlasticSCM.Editor.WebApi;
+using UnityEngine;
 
 namespace Skul.FSM.States
 {
@@ -9,20 +10,20 @@ namespace Skul.FSM.States
         {
         }
 
-        //Idle상태는 어느 상태에서도 진입가능하기 때문에 true로 한다.
+        //Die상태는 어느 상태에서도 진입가능하기 때문에 true로 한다.
         public override bool canExecute => true;
 
-        //None에서 idle상태를 실행하기 위해 필요한 것들을 지정해둔다
-        //idle는 다른 상태로 이전되기 전까지 끝나지 않는 행동이기 때문에 WaitUntilActionFinished에서 지속되게 한다.
+        //None에서 Die상태를 실행하기 위해 필요한 것들을 지정해둔다
+        //Die는 상태가 끝나면 객체를 사라지게 한다.
         public override StateType MoveNext()
         {
-            StateType next = StateType.Idle;
+            StateType next = StateType.Die;
             switch (currentStep)
             {
                 case IStateEnumerator<StateType>.Step.None:
                     {
-                        movement.isMovable=true;
-                        movement.isDirectionChangeable = true;
+                        movement.isMovable=false;
+                        movement.isDirectionChangeable = false;
                         //animation
                         currentStep++;
                     }
@@ -44,10 +45,16 @@ namespace Skul.FSM.States
                     break;
                 case IStateEnumerator<StateType>.Step.WaitUntilActionFinished:
                     {
-                        
+                        if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
+                        {
+                            currentStep++;
+                        }
                     }
                     break;
                 case IStateEnumerator<StateType>.Step.Finish:
+                    {
+                        GameObject.Destroy(machine.gameObject);
+                    }
                     break;
                 default:
                     break;

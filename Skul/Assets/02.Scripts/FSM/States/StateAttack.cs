@@ -10,13 +10,14 @@ namespace Skul.FSM.States
         }
 
         //Idle상태는 어느 상태에서도 진입가능하기 때문에 true로 한다.
-        public override bool canExecute => machine.currentType==StateType.Idle || machine.currentType == StateType.Move;
+        public override bool canExecute => machine.currentType == StateType.Idle || 
+                                           machine.currentType == StateType.Move;
 
         //None에서 idle상태를 실행하기 위해 필요한 것들을 지정해둔다
         //idle는 다른 상태로 이전되기 전까지 끝나지 않는 행동이기 때문에 WaitUntilActionFinished에서 지속되게 한다.
         public override StateType MoveNext()
         {
-            StateType next = StateType.Idle;
+            StateType next = StateType.Attack;
             switch (currentStep)
             {
                 case IStateEnumerator<StateType>.Step.None:

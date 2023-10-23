@@ -18,7 +18,8 @@ namespace Skul.FSM
         Attack,
         Skill_1,
         Skill_2,
-        Die
+        Die,
+        Hurt
     }
 
     //각 상태들이 상속받을 부모 클래스

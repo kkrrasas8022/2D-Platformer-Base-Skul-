@@ -6,7 +6,7 @@ namespace Skul.Character
 {
     public class Character : MonoBehaviour
     {
-
+        public float dashForce;
        
 
         // Start is called before the first frame update
