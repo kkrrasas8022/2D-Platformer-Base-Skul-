@@ -1,11 +1,14 @@
+using Skul.Character;
 using UnityEngine;
 
 namespace Skul.FSM.States
 {
     public class StateIdle : State
     {
+        GroundDetecter groundDetecter;
         public StateIdle(StateMachine machine) : base(machine)
         {
+            groundDetecter=machine.GetComponent<GroundDetecter>();
         }
 
         //Idle상태는 어느 상태에서도 진입가능하기 때문에 true로 한다.
@@ -44,7 +47,8 @@ namespace Skul.FSM.States
                     break;
                 case IStateEnumerator<StateType>.Step.WaitUntilActionFinished:
                     {
-                        
+                        if(groundDetecter.isDetected==false)
+                            next=StateType.Fall;
                     }
                     break;
                 case IStateEnumerator<StateType>.Step.Finish:

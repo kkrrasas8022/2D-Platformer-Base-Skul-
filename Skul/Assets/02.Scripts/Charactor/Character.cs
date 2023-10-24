@@ -8,8 +8,9 @@ namespace Skul.Character
     public abstract class Character : MonoBehaviour
     {
         [Header("State")]
-        public float dashForce=3.0f;
-        public float jumpForce=3.0f;
+        public float moveSpeed = 3.0f;
+        public float dashForce = 3.0f;
+        public float jumpForce = 3.0f;
 
         protected Skul.Movement.Movement movement;
         protected Skul.FSM.StateMachine stateMachine;

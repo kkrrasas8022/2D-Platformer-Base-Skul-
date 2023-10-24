@@ -40,7 +40,7 @@ namespace Skul.Movement
                 onDirectionChanged?.Invoke(_direction);
             }
         }
-        private int _direction;
+        [SerializeField]private int _direction;
         //방향이 바뀌었을 때 호출되는 이벤트 대리자
         public event Action<int> onDirectionChanged;
 

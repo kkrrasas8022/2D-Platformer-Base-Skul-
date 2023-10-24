@@ -13,8 +13,10 @@ namespace Skul.FSM
         public StateType currentType; // 현재 상태를 저장해두는 변수
         public IStateEnumerator<StateType> current; // 현재 상태의 현재 기능
         //객체가 가지는 상태를 상태 타입을 기준으로 저장하는 Dictionary자료구조
-        public Dictionary<StateType, IStateEnumerator<StateType>> states; 
+        public Dictionary<StateType, IStateEnumerator<StateType>> states;
 
+        public int times;
+        public int StopTime;
         /// <summary>
         /// 상태를 변환할때 호출하는 함수
         /// </summary>

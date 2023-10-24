@@ -1,13 +1,16 @@
 using System;
 using UnityEngine;
 using Unity.PlasticSCM.Editor.WebApi;
+using Skul.Character;
 
 namespace Skul.FSM.States
 {
     public class StateJump : State
     {
+        GroundDetecter groundDetecter;
         public StateJump(StateMachine machine) : base(machine)
         {
+            groundDetecter = machine.GetComponent<GroundDetecter>();
         }
 
         //Idle상태는 어느 상태에서도 진입가능하기 때문에 true로 한다.
@@ -24,14 +27,21 @@ namespace Skul.FSM.States
             {
                 case IStateEnumerator<StateType>.Step.None:
                     {
-                        movement.isMovable=true;
-                        movement.isDirectionChangeable = true;
-                        //animation
+                        //movement.isMovable=true;
+                        //movement.isDirectionChangeable = true;
+                        //rigid.velocity = new Vector2(rigid.velocity.x, 0.0f);
+                        //rigid.AddForce(Vector2.up * character.jumpForce, ForceMode2D.Impulse);
+                        ////animation
                         currentStep++;
                     }
                     break;
                 case IStateEnumerator<StateType>.Step.Start:
                     {
+                        movement.isMovable = true;
+                        movement.isDirectionChangeable = true;
+                        rigid.velocity = new Vector2(rigid.velocity.x, 0.0f);
+                        rigid.AddForce(Vector2.up * character.jumpForce, ForceMode2D.Impulse);
+                        //animation
                         currentStep++;
                     }
                     break;
@@ -47,10 +57,25 @@ namespace Skul.FSM.States
                     break;
                 case IStateEnumerator<StateType>.Step.WaitUntilActionFinished:
                     {
-                        
+                        Debug.Log("Waitun");
+                        if(rigid.velocity.y <= 0)
+                            currentStep++;
                     }
                     break;
                 case IStateEnumerator<StateType>.Step.Finish:
+                    {
+                        Debug.Log("Finish");
+                        if (groundDetecter.isDetected)
+                        {
+                            Debug.Log("Movech");
+                            next = movement.horizontal == 0.0f ? StateType.Idle : StateType.Move;
+                        }
+                        else
+                        {
+                            Debug.Log("MoveFall");
+                            next = StateType.Fall;
+                        }
+                    }
                     break;
                 default:
                     break;

@@ -1,5 +1,6 @@
 using Skul.Character;
 using System;
+using System.Collections;
 using Unity.PlasticSCM.Editor.WebApi;
 using UnityEngine;
 
@@ -7,10 +8,11 @@ namespace Skul.FSM.States
 {
     public class StateDash : State
     {
+        
         public StateDash(StateMachine machine) : base(machine)
         {
         }
-
+        
         //어느상태에서든 진입가능하기 때문에 true로 한다.
         public override bool canExecute => true;
 
@@ -45,12 +47,21 @@ namespace Skul.FSM.States
                     break;
                 case IStateEnumerator<StateType>.Step.DoAction:
                     {
+                        //다음 단계로 가기까지 FSM을 잠시 멈춘다
+                        if (machine.times < machine.StopTime)
+                        { 
+                            machine.times++;
+                            break;
+                        }
+                        machine.times = 0;
                         currentStep++;
                     }
                     break;
                 case IStateEnumerator<StateType>.Step.WaitUntilActionFinished:
                     {
-                            currentStep++;
+                        rigid.velocity= Vector2.zero;
+                        rigid.gravityScale = 1;
+                        currentStep++;
                     }
                     break;
                 case IStateEnumerator<StateType>.Step.Finish:

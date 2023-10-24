@@ -8,11 +8,12 @@ namespace Skul.Character
     public class player:Character
     {
         private PlayerInput playerInput;
-
+        public bool canDownJump;
+        
         protected override void Awake()
         {
             base.Awake();
-
+            movement.direction = 1;
             InputManager.Map map = new InputManager.Map();
             map.AddRawAxisAction("Horizontal", (value) =>
             {
@@ -23,14 +24,14 @@ namespace Skul.Character
                     movement.direction = Movement.Movement.DIRECTION_LEFT;
             });
             //map.AddKeyDownAction(KeyCode.Space, () => stateMachine.ChangeState(stateMachine.currentType == FSM.StateType.Crouch ? FSM.StateType.DownJump : FSM.StateType.Jump));
-            map.AddKeyDownAction(KeyCode.Space, () => stateMachine.ChangeState(FSM.StateType.Jump));
-            map.AddKeyDownAction(KeyCode.DownArrow, () =>
-            {
-                //if (stateMachine.ChangeState(StateType.LadderDown)) { }
-                //else if (stateMachine.ChangeState(StateType.Crouch)) { }
-            });
+            map.AddKeyDownAction(KeyCode.C, () => stateMachine.ChangeState(canDownJump==true?FSM.StateType.DownJump:FSM.StateType.Jump));
+            map.AddKeyDownAction(KeyCode.DownArrow, () =>canDownJump = true);
+            map.AddKeyUpAction(KeyCode.DownArrow, () =>canDownJump = false);
             //map.AddKeyUpAction(KeyCode.DownArrow, () => stateMachine.ChangeState(StateType.StandUp));
-            map.AddKeyPressAction(KeyCode.A, () => stateMachine.ChangeState(FSM.StateType.Attack));
+            map.AddKeyPressAction(KeyCode.X, () => stateMachine.ChangeState(FSM.StateType.Attack));
+            map.AddKeyPressAction(KeyCode.Z, () => stateMachine.ChangeState(FSM.StateType.Dash));
+            map.AddKeyPressAction(KeyCode.A, () => stateMachine.ChangeState(FSM.StateType.Skill_1));
+            map.AddKeyPressAction(KeyCode.S, () => stateMachine.ChangeState(FSM.StateType.Skill_2));
             InputManager.instance.AddMap("PlayerAction", map);
 
 
