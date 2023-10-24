@@ -42,11 +42,13 @@ namespace Skul.FSM
 
         private void Update()
         {
+            Debug.Log("machine Update");
             ChangeState(current.MoveNext());
         }
 
         public void InitStates(Dictionary<StateType, IStateEnumerator<StateType>> states)
         {
+            Debug.Log("machine initstate");
             this.states= states;
             current = states[currentType];
         }

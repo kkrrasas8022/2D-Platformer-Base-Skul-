@@ -1,5 +1,4 @@
-using System;
-using Unity.PlasticSCM.Editor.WebApi;
+using UnityEngine;
 
 namespace Skul.FSM.States
 {
@@ -16,6 +15,7 @@ namespace Skul.FSM.States
         //idle는 다른 상태로 변환되기 전까지 끝나지 않는 행동이기 때문에 WaitUntilActionFinished에서 지속되게 한다.
         public override StateType MoveNext()
         {
+            Debug.Log("StateIdle");
             StateType next = StateType.Idle;
             switch (currentStep)
             {

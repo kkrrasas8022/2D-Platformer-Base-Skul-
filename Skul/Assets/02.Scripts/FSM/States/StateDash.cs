@@ -1,3 +1,4 @@
+using Skul.Character;
 using System;
 using Unity.PlasticSCM.Editor.WebApi;
 using UnityEngine;
@@ -28,7 +29,7 @@ namespace Skul.FSM.States
                         rigid.velocity = Vector2.zero;
                         rigid.gravityScale = 0;
                         rigid.AddForce((movement.direction == 1 ? Vector2.right : Vector2.left)
-                            * character.dashForce, ForceMode2D.Impulse);
+                            * ((player)character).dashForce, ForceMode2D.Impulse);
                         currentStep++;
                     }
                     break;
@@ -49,10 +50,6 @@ namespace Skul.FSM.States
                     break;
                 case IStateEnumerator<StateType>.Step.WaitUntilActionFinished:
                     {
-                        //현재 진행중인 애니메이션이 종료가 되었다면 다음으로 진행함
-                        //animator.GetCurrentAnimatorStateInfo(0).normalizedTime가 1.0f면
-                        //애니메이션 진행이 종료되었다는 뜻이다.
-                        if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
                             currentStep++;
                     }
                     break;

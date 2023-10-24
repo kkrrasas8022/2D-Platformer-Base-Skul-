@@ -1,24 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Skul.Movement;
 
 namespace Skul.Character
 {
-    public class Character : MonoBehaviour
+    public abstract class Character : MonoBehaviour
     {
-        public float dashForce;
-       
+        [Header("State")]
+        public float dashForce=3.0f;
+        public float jumpForce=3.0f;
 
-        // Start is called before the first frame update
-        void Start()
+        protected Skul.Movement.Movement movement;
+        protected Skul.FSM.StateMachine stateMachine;
+
+        protected virtual void Awake()
         {
+            movement=GetComponent<Skul.Movement.Movement>();
+            stateMachine=GetComponent<Skul.FSM.StateMachine>();
+
+            movement.onHorizontalChanged += (value) =>
+            {
+                stateMachine.ChangeState(value == 0.0f ? FSM.StateType.Idle : FSM.StateType.Move);
+            };
 
         }
 
-        // Update is called once per frame
-        void Update()
-        {
-            
-        }
     }
 }
