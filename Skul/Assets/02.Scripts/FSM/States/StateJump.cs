@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using Unity.PlasticSCM.Editor.WebApi;
 using Skul.Character;
+using Skul.InputSystem;
 
 namespace Skul.FSM.States
 {
@@ -13,9 +14,11 @@ namespace Skul.FSM.States
             groundDetecter = machine.GetComponent<GroundDetecter>();
         }
 
-        //Idle상태는 어느 상태에서도 진입가능하기 때문에 true로 한다.
-        public override bool canExecute => machine.currentType==StateType.Idle||
-                                            machine.currentType==StateType.Move;
+        
+        public override bool canExecute =>machine.currentType==StateType.Idle||
+                                            machine.currentType==StateType.Move||
+                                            (character.JumpCount<character.MaxJumpCount && machine.currentType==StateType.Jump)||
+                                            (character.JumpCount<character.MaxJumpCount && machine.currentType==StateType.Fall);
 
         //None에서 idle상태를 실행하기 위해 필요한 것들을 지정해둔다
         //idle는 다른 상태로 이전되기 전까지 끝나지 않는 행동이기 때문에 WaitUntilActionFinished에서 지속되게 한다.
@@ -37,11 +40,12 @@ namespace Skul.FSM.States
                     break;
                 case IStateEnumerator<StateType>.Step.Start:
                     {
+                        character.JumpCount++;
                         movement.isMovable = true;
                         movement.isDirectionChangeable = true;
                         rigid.velocity = new Vector2(rigid.velocity.x, 0.0f);
                         rigid.AddForce(Vector2.up * character.jumpForce, ForceMode2D.Impulse);
-                        //animation
+                        animator.Play("Jump");
                         currentStep++;
                     }
                     break;
@@ -58,8 +62,18 @@ namespace Skul.FSM.States
                 case IStateEnumerator<StateType>.Step.WaitUntilActionFinished:
                     {
                         Debug.Log("Waitun");
-                        if(rigid.velocity.y <= 0)
-                            currentStep++;
+                        if (rigid.velocity.y <= 0)
+                        {
+                                currentStep++;
+                        }
+                        else if(rigid.velocity.y>0)
+                        {
+                            if (Input.GetKeyDown(KeyCode.C))
+                            {
+                                
+                                currentStep = IStateEnumerator<StateType>.Step.None;
+                            }
+                        }
                     }
                     break;
                 case IStateEnumerator<StateType>.Step.Finish:

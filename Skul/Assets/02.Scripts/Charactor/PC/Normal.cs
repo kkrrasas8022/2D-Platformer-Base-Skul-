@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Skul.Character
+namespace Skul.Character.PC
 {
     public class Normal:player
     {

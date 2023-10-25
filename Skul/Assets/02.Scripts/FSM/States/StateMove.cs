@@ -1,3 +1,4 @@
+using Skul.Character;
 using System;
 using Unity.PlasticSCM.Editor.WebApi;
 using UnityEngine;
@@ -6,8 +7,10 @@ namespace Skul.FSM.States
 {
     public class StateMove : State
     {
+        GroundDetecter groundDetecter;
         public StateMove(StateMachine machine) : base(machine)
         {
+            groundDetecter=machine.GetComponent<GroundDetecter>();
         }
 
         //Move상태는 어느 상태에서도 진입가능하기 때문에 true로 한다.
@@ -23,9 +26,11 @@ namespace Skul.FSM.States
             {
                 case IStateEnumerator<StateType>.Step.None:
                     {
+                        character.JumpCount = 0 ;
+                        character.DashCount = 0 ;
                         movement.isMovable=true;
                         movement.isDirectionChangeable = true;
-                        //animation
+                        animator.Play("Move");
                         currentStep++;
                     }
                     break;
@@ -46,7 +51,8 @@ namespace Skul.FSM.States
                     break;
                 case IStateEnumerator<StateType>.Step.WaitUntilActionFinished:
                     {
-                        
+                        if (groundDetecter.isDetected == false)
+                            next = StateType.Fall;
                     }
                     break;
                 case IStateEnumerator<StateType>.Step.Finish:

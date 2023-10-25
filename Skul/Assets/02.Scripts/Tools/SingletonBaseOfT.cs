@@ -3,6 +3,7 @@ using System.Reflection;//런타임중에 어셈블리 등의 코드에 접근하는 용도(메타데이
 
 namespace Skul.Tools
 {
+    //객체로 생성하지 않는 것에 사용하는 싱글톤
     public class SingletonBase<T>
         where T : SingletonBase<T>
     {

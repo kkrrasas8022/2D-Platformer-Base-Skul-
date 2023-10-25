@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Skul.Character.PC;
 
 namespace Skul.Character
 {

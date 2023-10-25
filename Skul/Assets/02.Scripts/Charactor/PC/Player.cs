@@ -3,12 +3,13 @@ using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace Skul.Character
+namespace Skul.Character.PC
 {
     public class player:Character
     {
         private PlayerInput playerInput;
         public bool canDownJump;
+       
         
         protected override void Awake()
         {
