@@ -24,7 +24,7 @@ namespace Skul.FSM.States
                     {
                         movement.isMovable=false;
                         movement.isDirectionChangeable = false;
-                        //animation
+                        animator.Play("Die");
                         currentStep++;
                     }
                     break;

@@ -49,7 +49,6 @@ namespace Skul.Movement
             get => _horizontal;
             set
             {
-                Debug.Log("horizontal set");
                 //이동불가일경우 변수 변경 x
                 if (isMovable == false) return;
                 if (_horizontal == value) return;

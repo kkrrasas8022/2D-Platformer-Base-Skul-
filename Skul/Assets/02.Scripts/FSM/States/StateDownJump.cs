@@ -1,13 +1,19 @@
 using System;
 using UnityEngine;
 using Unity.PlasticSCM.Editor.WebApi;
+using Skul.Character;
 
 namespace Skul.FSM.States
 {
     public class StateDownJump : State
     {
+        GroundDetecter groundDetecter;
+        Collider2D save;
+        int ignortime = 0;
+        int ignorMaxTime = 90;
         public StateDownJump(StateMachine machine) : base(machine)
         {
+            groundDetecter=machine.GetComponent<GroundDetecter>();
         }
 
         //Idle상태는 어느 상태에서도 진입가능하기 때문에 true로 한다.
@@ -20,14 +26,18 @@ namespace Skul.FSM.States
         {
             Debug.Log("StateDownJump");
             StateType next = StateType.DownJump;
+            ignortime++;
             switch (currentStep)
             {
                 case IStateEnumerator<StateType>.Step.None:
                     {
                         movement.isMovable=true;
                         movement.isDirectionChangeable = true;
+                        save = groundDetecter.detected;
+                        save.enabled=false;
                         //animation
                         currentStep++;
+                        ignortime = 0;
                     }
                     break;
                 case IStateEnumerator<StateType>.Step.Start:
@@ -47,7 +57,11 @@ namespace Skul.FSM.States
                     break;
                 case IStateEnumerator<StateType>.Step.WaitUntilActionFinished:
                     {
-                        
+                        if (ignortime >= ignorMaxTime)
+                        { 
+                            save.enabled = true; 
+                            next= StateType.Fall;
+                        }
                     }
                     break;
                 case IStateEnumerator<StateType>.Step.Finish:

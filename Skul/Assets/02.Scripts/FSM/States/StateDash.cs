@@ -13,6 +13,7 @@ namespace Skul.FSM.States
         public StateDash(StateMachine machine) : base(machine)
         {
             groundDetecter=machine.GetComponent<GroundDetecter>();
+            
         }
         
         //어느상태에서든 진입가능하기 때문에 true로 한다.
@@ -31,7 +32,7 @@ namespace Skul.FSM.States
                         character.DashCount++;
                         movement.isMovable=false;
                         movement.isDirectionChangeable = false;
-                        //animation
+                        animator.Play("Dash");
                         rigid.velocity = Vector2.zero;
                         rigid.gravityScale = 0;
                         rigid.AddForce((movement.direction == 1 ? Vector2.right : Vector2.left)
