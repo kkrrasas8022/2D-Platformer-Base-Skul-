@@ -19,7 +19,9 @@ namespace Skul.FSM
         Skill_1,
         Skill_2,
         Die,
-        Hurt
+        Hurt,
+        JumpAttack,
+        Switch
     }
 
     //각 상태들이 상속받을 부모 클래스
@@ -36,10 +38,10 @@ namespace Skul.FSM
         protected StateMachine machine;
         protected Animator animator;
         protected Rigidbody2D rigid;
-        protected CapsuleCollider2D trigger;
-        protected CapsuleCollider2D collider;
+        protected BoxCollider2D trigger;
+        protected BoxCollider2D collider;
         protected Transform transform;
-        protected Skul.Movement.Movement movement; 
+        protected Skul.Movement.Movement movement;
         protected Skul.Character.Character character;
 
         //생성자
@@ -48,9 +50,9 @@ namespace Skul.FSM
             this.machine = machine;
             this.animator=machine.GetComponentInChildren<Animator>();
             this.rigid=machine.GetComponentInChildren<Rigidbody2D>();
-            this.trigger=machine.GetComponentsInChildren<CapsuleCollider2D>().
+            this.trigger=machine.GetComponentsInChildren<BoxCollider2D>().
                 Where(c=>c.isTrigger==true).First();
-            this.collider = machine.GetComponentsInChildren<CapsuleCollider2D>().
+            this.collider = machine.GetComponentsInChildren<BoxCollider2D>().
                 Where(c => c.isTrigger == false).First();
             this.transform=machine.GetComponent<Transform>();
             this.movement = machine.GetComponent<Skul.Movement.Movement>();

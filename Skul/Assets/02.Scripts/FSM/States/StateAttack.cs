@@ -24,9 +24,9 @@ namespace Skul.FSM.States
             {
                 case IStateEnumerator<StateType>.Step.None:
                     {
-                        movement.isMovable=true;
-                        movement.isDirectionChangeable = true;
-                        //animation
+                        movement.isMovable=false;
+                        movement.isDirectionChangeable = false;
+                        animator.Play("Attack1");
                         currentStep++;
                     }
                     break;
@@ -47,10 +47,16 @@ namespace Skul.FSM.States
                     break;
                 case IStateEnumerator<StateType>.Step.WaitUntilActionFinished:
                     {
-                        
+                        if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
+                        {
+                            currentStep++;
+                        }
                     }
                     break;
                 case IStateEnumerator<StateType>.Step.Finish:
+                    {
+                        next = movement.horizontal == 0.0f ? StateType.Idle : StateType.Move;
+                    }
                     break;
                 default:
                     break;

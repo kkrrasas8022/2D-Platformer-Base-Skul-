@@ -9,7 +9,7 @@ namespace Skul.Character
     public class GroundDetecter:MonoBehaviour
     {
         [SerializeField] private Vector3 size;
-        [SerializeField] private Vector3 pos;
+        [SerializeField] public Vector3 pos;
         public bool isDetected =>detected;
         public Collider2D detected
         {

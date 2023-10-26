@@ -1,42 +1,32 @@
 using System;
-using UnityEngine;
 using Unity.PlasticSCM.Editor.WebApi;
-using Skul.Character;
+using UnityEngine;
 
 namespace Skul.FSM.States
 {
-    public class StateDownJump : State
+    public class StateSwitch : State
     {
-        GroundDetecter groundDetecter;
-        Collider2D save;
-        int ignortime = 0;
-        int ignorMaxTime = 120;
-        public StateDownJump(StateMachine machine) : base(machine)
+        public StateSwitch(StateMachine machine) : base(machine)
         {
-            groundDetecter=machine.GetComponent<GroundDetecter>();
         }
 
         //Idle상태는 어느 상태에서도 진입가능하기 때문에 true로 한다.
-        public override bool canExecute => machine.currentType == StateType.Idle ||
-                                            machine.currentType == StateType.Move;
+        public override bool canExecute => true;
 
         //None에서 idle상태를 실행하기 위해 필요한 것들을 지정해둔다
         //idle는 다른 상태로 이전되기 전까지 끝나지 않는 행동이기 때문에 WaitUntilActionFinished에서 지속되게 한다.
         public override StateType MoveNext()
         {
-            Debug.Log("StateDownJump");
-            StateType next = StateType.DownJump;
-            ignortime++;
+            Debug.Log("StateAttack");
+            StateType next = StateType.Attack;
             switch (currentStep)
             {
                 case IStateEnumerator<StateType>.Step.None:
                     {
                         movement.isMovable=true;
                         movement.isDirectionChangeable = true;
-                        save = groundDetecter.detected;
-                        save.enabled=false;
+                        animator.Play("Switch");
                         currentStep++;
-                        ignortime = 0;
                     }
                     break;
                 case IStateEnumerator<StateType>.Step.Start:
@@ -56,14 +46,16 @@ namespace Skul.FSM.States
                     break;
                 case IStateEnumerator<StateType>.Step.WaitUntilActionFinished:
                     {
-                        if (ignortime >= ignorMaxTime)
-                        { 
-                            save.enabled = true; 
-                            next= StateType.Fall;
+                        if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 2.0f)
+                        {
+                            currentStep++;
                         }
                     }
                     break;
                 case IStateEnumerator<StateType>.Step.Finish:
+                    {
+                        next = movement.horizontal == 0 ? StateType.Idle : StateType.Move;
+                    }
                     break;
                 default:
                     break;
