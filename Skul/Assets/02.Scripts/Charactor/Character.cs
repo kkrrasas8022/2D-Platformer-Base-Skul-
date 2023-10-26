@@ -108,6 +108,11 @@ namespace Skul.Character
             throw new NotImplementedException();
         }
 
+        protected virtual void Start()
+        {
+            hp = hpMax;
+        }
+
         protected virtual void Awake()
         {
             movement=GetComponent<Skul.Movement.Movement>();
