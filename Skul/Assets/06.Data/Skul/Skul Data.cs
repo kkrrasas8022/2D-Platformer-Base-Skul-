@@ -15,5 +15,4 @@ public class SkulData : ScriptableObject
     }
     public AnimatorController animator;
     public SkulType type;
-    public GameObject Skuls;
 }

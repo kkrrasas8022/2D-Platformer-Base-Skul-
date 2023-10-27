@@ -7,27 +7,27 @@ using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Unity.VisualScripting;
+using static UnityEngine.RuleTile.TilingRuleOutput;
+using UnityEngine.InputSystem.XR;
 
 namespace Skul.Character.PC
 {
     public class player:Character
     {
-        private PlayerInput playerInput;
         public bool canDownJump;
         private GroundDetecter _detecter;
-        private AnimatorController _animator;
+        private Animator anim;
         //저장되어있는 스컬
         [SerializeField]private SkulData _saveData;
         //현재 사용되는 스컬
         [SerializeField]private SkulData _currentData;
-        [SerializeField] private GameObject _currentSkulObject;
         
         protected override void Awake()
         {
-            base.Awake();
+            base.Awake(); 
             movement.direction = 1;
             _detecter = GetComponent<GroundDetecter>();
-            _animator= GetComponent<AnimatorController>();
+            anim = GetComponent<Animator>();
             movement.onDirectionChanged += (value) =>
             {
                 if(value<0)
@@ -83,18 +83,16 @@ namespace Skul.Character.PC
             });
         }
 
+
         private void Switch()
         {
-
+            anim.runtimeAnimatorController = _saveData.animator;
             SkulData newData;
             newData = _currentData;
             _currentData = _saveData;
             _saveData = newData;
-
-            Destroy(_currentSkulObject);
-            _currentSkulObject=Instantiate(_currentData.Skuls, transform);
-            _animator=_currentSkulObject.GetComponent<AnimatorController>();
-            Start();
+            
+            stateMachine.ChangeState(StateType.Switch);
         }
     }
 }

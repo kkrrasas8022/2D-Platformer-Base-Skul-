@@ -14,6 +14,7 @@ namespace Skul.FSM
         public IStateEnumerator<StateType> current; // 현재 상태의 현재 기능
         //객체가 가지는 상태를 상태 타입을 기준으로 저장하는 Dictionary자료구조
         public Dictionary<StateType, IStateEnumerator<StateType>> states;
+        public int DicCount=0;
 
         public int times;
         public int StopTime;
@@ -44,11 +45,13 @@ namespace Skul.FSM
 
         private void Update()
         {
+            DicCount = states.Count;
             ChangeState(current.MoveNext());
         }
 
         public void InitStates(Dictionary<StateType, IStateEnumerator<StateType>> states)
         {
+            Debug.Log("엄");
             this.states= states;
             current = states[currentType];
         }

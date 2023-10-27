@@ -48,7 +48,7 @@ namespace Skul.FSM
         public State(StateMachine machine)
         {
             this.machine = machine;
-            this.animator=machine.GetComponentInChildren<Animator>();
+            this.animator=machine.GetComponent<Animator>();
             this.rigid=machine.GetComponentInChildren<Rigidbody2D>();
             this.trigger=machine.GetComponentsInChildren<BoxCollider2D>().
                 Where(c=>c.isTrigger==true).First();

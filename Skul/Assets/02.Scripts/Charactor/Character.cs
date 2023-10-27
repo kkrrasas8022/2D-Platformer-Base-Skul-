@@ -79,13 +79,16 @@ namespace Skul.Character
         [SerializeField] private float _mpMax;
 
         public event Action<float> onHpChanged;
+
         public event Action<float> onHpIncreased;
         public event Action<float> onHpDecreased;
         public event Action<float> onHpMaxIncreased;
         public event Action<float> onMaxHpDecreased;
+
         public event Action onHpMin;
         public event Action onHpMax;
         public event Action<float> onMpChanged;
+
         public event Action<float> onMpIncreased;
         public event Action<float> onMpDecreased;
         public event Action<float> onMpMaxIncreased;
