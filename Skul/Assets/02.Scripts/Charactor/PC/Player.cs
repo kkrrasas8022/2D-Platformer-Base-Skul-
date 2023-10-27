@@ -1,7 +1,12 @@
+using Skul.FSM.States;
+using Skul.FSM;
 using Skul.InputSystem;
 using System;
+using System.Collections.Generic;
+using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Unity.VisualScripting;
 
 namespace Skul.Character.PC
 {
@@ -10,13 +15,19 @@ namespace Skul.Character.PC
         private PlayerInput playerInput;
         public bool canDownJump;
         private GroundDetecter _detecter;
-       
+        private AnimatorController _animator;
+        //저장되어있는 스컬
+        [SerializeField]private SkulData _saveData;
+        //현재 사용되는 스컬
+        [SerializeField]private SkulData _currentData;
+        [SerializeField] private GameObject _currentSkulObject;
         
         protected override void Awake()
         {
             base.Awake();
             movement.direction = 1;
             _detecter = GetComponent<GroundDetecter>();
+            _animator= GetComponent<AnimatorController>();
             movement.onDirectionChanged += (value) =>
             {
                 if(value<0)
@@ -47,10 +58,43 @@ namespace Skul.Character.PC
             map.AddKeyDownAction(KeyCode.Z, () => stateMachine.ChangeState(FSM.StateType.Dash));
             map.AddKeyDownAction(KeyCode.A, () => stateMachine.ChangeState(FSM.StateType.Skill_1));
             map.AddKeyDownAction(KeyCode.S, () => stateMachine.ChangeState(FSM.StateType.Skill_2));
-            map.AddKeyDownAction(KeyCode.Space, () => stateMachine.ChangeState(FSM.StateType.Switch));
+            map.AddKeyDownAction(KeyCode.Space, ()=>Switch());
             InputManager.instance.AddMap("PlayerAction", map);
+        }
 
+        protected override void Start()
+        {
+            base.Start();
+            stateMachine.InitStates(new Dictionary<StateType, IStateEnumerator<StateType>>()
+            {
+                { StateType.Idle,       new StateIdle(stateMachine) },
+                { StateType.Move,       new StateMove(stateMachine) },
+                { StateType.Attack,     new StateAttack(stateMachine) },
+                { StateType.Dash,       new StateDash(stateMachine) },
+                { StateType.Jump,       new StateJump(stateMachine) },
+                { StateType.DownJump,   new StateDownJump(stateMachine) },
+                { StateType.Fall,       new StateFall(stateMachine) },
+                { StateType.Hurt,       new StateHurt(stateMachine) },
+                { StateType.Skill_1,    new StateSkill_1(stateMachine) },
+                { StateType.Skill_2,    new StateSkill_2(stateMachine) },
+                { StateType.Die,        new StateDie(stateMachine) },
+                { StateType.JumpAttack, new StateJumpAttack(stateMachine) },
+                { StateType.Switch,     new StateSwitch(stateMachine) },
+            });
+        }
 
+        private void Switch()
+        {
+
+            SkulData newData;
+            newData = _currentData;
+            _currentData = _saveData;
+            _saveData = newData;
+
+            Destroy(_currentSkulObject);
+            _currentSkulObject=Instantiate(_currentData.Skuls, transform);
+            _animator=_currentSkulObject.GetComponent<AnimatorController>();
+            Start();
         }
     }
 }

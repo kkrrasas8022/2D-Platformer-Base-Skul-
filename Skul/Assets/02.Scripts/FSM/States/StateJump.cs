@@ -68,9 +68,8 @@ namespace Skul.FSM.States
                         }
                         else if(rigid.velocity.y>0)
                         {
-                            if (Input.GetKeyDown(KeyCode.C))
+                            if (character.JumpCount < character.MaxJumpCount && Input.GetKeyDown(KeyCode.C))
                             {
-                                
                                 currentStep = IStateEnumerator<StateType>.Step.None;
                             }
                         }

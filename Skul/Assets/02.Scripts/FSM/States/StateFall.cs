@@ -28,7 +28,7 @@ namespace Skul.FSM.States
                     {
                         movement.isMovable=true;
                         movement.isDirectionChangeable = true;
-                        animator.Play("Fall");
+                        animator?.Play("Fall");
                         currentStep++;
                     }
                     break;

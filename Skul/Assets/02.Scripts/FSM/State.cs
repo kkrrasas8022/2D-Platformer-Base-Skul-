@@ -59,7 +59,6 @@ namespace Skul.FSM
             this.character = machine.GetComponent<Skul.Character.Character>();
         }
 
-
         public abstract StateType MoveNext();
 
         public virtual void Reset()

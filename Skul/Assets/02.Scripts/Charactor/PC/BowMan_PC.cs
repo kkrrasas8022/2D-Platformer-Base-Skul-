@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace Skul.Character.PC
 {
-    public class Normal:MonoBehaviour
+    public class BowMan_PC:MonoBehaviour
     {
         private void Skill_1()
         {

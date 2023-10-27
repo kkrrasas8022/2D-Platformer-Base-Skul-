@@ -17,6 +17,7 @@ namespace Skul.Character
         event Action onMpMin;
         event Action onMpMax;
 
-        public void useMp(float amout);
+        public void useMp(float amount);
+        public void RestoreMp(float amount);
     }
 }

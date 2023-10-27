@@ -93,30 +93,36 @@ namespace Skul.Character
         public event Action onMpMin;
         public event Action onMpMax;
 
-        public void Damage(GameObject damager, float amout)
+        public void Damage(GameObject damager, float amount)
         {
-            throw new NotImplementedException();
+            hp -= amount;
         }
 
         public void Heal(GameObject healer, float amount)
         {
-            throw new NotImplementedException();
+            hp += amount;
         }
 
-        public void useMp(float amout)
+        public void useMp(float amount)
         {
-            throw new NotImplementedException();
+           mp -= amount;
+        }
+
+        public void RestoreMp(float amount)
+        {
+            mp += amount;
         }
 
         protected virtual void Start()
         {
-            hp = hpMax;
+            
         }
 
         protected virtual void Awake()
         {
-            movement=GetComponent<Skul.Movement.Movement>();
-            stateMachine=GetComponent<Skul.FSM.StateMachine>();
+            hp = hpMax;
+            movement =GetComponentInParent<Skul.Movement.Movement>();
+            stateMachine=GetComponentInParent<Skul.FSM.StateMachine>();
 
             movement.onHorizontalChanged += (value) =>
             {
@@ -124,6 +130,7 @@ namespace Skul.Character
             };
             
         }
-        
+
+      
     }
 }
