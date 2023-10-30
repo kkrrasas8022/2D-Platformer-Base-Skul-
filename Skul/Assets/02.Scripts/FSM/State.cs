@@ -3,6 +3,8 @@ using UnityEngine;
 using Skul.Character;
 using System.Collections.Generic;
 using System.Collections;
+using Unity.VisualScripting;
+using System;
 
 namespace Skul.FSM
 {
@@ -36,6 +38,7 @@ namespace Skul.FSM
         protected IStateEnumerator<StateType>.Step currentStep;
         //statemachine을 가지는 객체의 컴포넌트들을 저장하는 변수들
         protected StateMachine machine;
+        //protected Animator animator;
         protected Animator animator;
         protected Rigidbody2D rigid;
         protected BoxCollider2D trigger;
@@ -48,8 +51,8 @@ namespace Skul.FSM
         public State(StateMachine machine)
         {
             this.machine = machine;
-            this.animator=machine.GetComponent<Animator>();
-            this.rigid=machine.GetComponentInChildren<Rigidbody2D>();
+            this.animator = machine.GetComponentInChildren<Animator>();
+            this.rigid=machine.GetComponent<Rigidbody2D>();
             this.trigger=machine.GetComponentsInChildren<BoxCollider2D>().
                 Where(c=>c.isTrigger==true).First();
             this.collider = machine.GetComponentsInChildren<BoxCollider2D>().
@@ -57,7 +60,13 @@ namespace Skul.FSM
             this.transform=machine.GetComponent<Transform>();
             this.movement = machine.GetComponent<Skul.Movement.Movement>();
             this.character = machine.GetComponent<Skul.Character.Character>();
+            machine.OnAnimatorChanged += () =>
+            {
+                animator = machine.GetComponentInChildren<Animator>();
+            };
         }
+
+        
 
         public abstract StateType MoveNext();
 

@@ -36,7 +36,7 @@ namespace Skul.FSM.States
                         rigid.velocity = Vector2.zero;
                         rigid.gravityScale = 0;
                         rigid.AddForce((movement.direction == 1 ? Vector2.right : Vector2.left)
-                            * ((player)character).dashForce, ForceMode2D.Impulse);
+                            * ((Player)character).dashForce, ForceMode2D.Impulse);
                         currentStep++;
                     }
                     break;

@@ -15,6 +15,7 @@ namespace Skul.FSM
         //객체가 가지는 상태를 상태 타입을 기준으로 저장하는 Dictionary자료구조
         public Dictionary<StateType, IStateEnumerator<StateType>> states;
         public int DicCount=0;
+        public Action OnAnimatorChanged;
 
         public int times;
         public int StopTime;
@@ -42,6 +43,8 @@ namespace Skul.FSM
             current.MoveNext();
             return true;
         }
+
+
 
         private void Update()
         {

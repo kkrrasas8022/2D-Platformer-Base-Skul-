@@ -12,6 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d589d9b0bfdf4a49a6cd4b3fc08580c, type: 3}
   m_Name: Normal
   m_EditorClassIdentifier: 
-  animator: {fileID: 9100000, guid: d6485120396380148af9baddf1556b07, type: 2}
+  Renderer: {fileID: 0}
   type: 0
-  Skuls: {fileID: 2248417928272657293, guid: 364417d95220bb14aae083f8e62f86a8, type: 3}

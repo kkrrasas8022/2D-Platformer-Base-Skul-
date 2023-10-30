@@ -30,11 +30,11 @@ namespace Skul.Character
         [SerializeField] private Collider2D _detected;
 
         [SerializeField] private LayerMask groundDe;
-        private player player;
+        private Player player;
 
         private void Awake()
         {
-            player = GetComponent<player>();
+            player = GetComponent<Player>();
         }
 
         private void FixedUpdate()

@@ -71,7 +71,7 @@ namespace Skul.Character
         public float mpMin => _mpMin;
 
         [Header("Now")]
-        private float _hp;
+        [SerializeField]private float _hp;
         private float _hpMin;
         [SerializeField] private float _hpMax;
         private float _mp;
@@ -118,12 +118,11 @@ namespace Skul.Character
 
         protected virtual void Start()
         {
-            
+            hp = hpMax;
         }
 
         protected virtual void Awake()
         {
-            hp = hpMax;
             movement =GetComponentInParent<Skul.Movement.Movement>();
             stateMachine=GetComponentInParent<Skul.FSM.StateMachine>();
 

@@ -6,21 +6,27 @@ using UnityEngine;
 
 namespace Skul.Character.PC
 {
-    public class BowMan_PC:MonoBehaviour
+    public class BowMan_PC:PlayerAttacks
     {
-        private void Skill_1()
+        protected override void SwitchAttack()
         {
-            Debug.Log("Skill_1");
+            base.SwitchAttack();
         }
-
-        private void Skill_2()
+        protected override void JumpAttack()
         {
-            Debug.Log("Skill_2");
+            base.JumpAttack();
         }
-
-        private void Attack_Hit()
+        protected override void Attack_Hit()
         {
-            Debug.Log("Hit");
+            base.Attack_Hit();
+        }
+        protected override void Skill_1()
+        {
+            base.Skill_1();
+        }
+        protected override void Skill_2()
+        {
+            base.Skill_2();
         }
     }
 }

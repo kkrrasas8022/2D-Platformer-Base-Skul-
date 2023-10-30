@@ -4,15 +4,15 @@ using System.Collections.Generic;
 using UnityEditor.Animations;
 using UnityEngine;
 
+public enum SkulType
+{
+    Balance,
+    Power,
+    Speed,
+}
 [CreateAssetMenu(fileName ="Skul Data",menuName ="Scriptable Object Asset/Skuls")]
 public class SkulData : ScriptableObject
 {
-    public enum SkulType
-    {
-        Balance,
-        Power,
-        Speed,
-    }
-    public AnimatorController animator;
+    public GameObject Renderer;
     public SkulType type;
 }

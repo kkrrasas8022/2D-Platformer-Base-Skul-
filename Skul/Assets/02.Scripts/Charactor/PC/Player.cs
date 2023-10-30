@@ -9,14 +9,19 @@ using UnityEngine.InputSystem;
 using Unity.VisualScripting;
 using static UnityEngine.RuleTile.TilingRuleOutput;
 using UnityEngine.InputSystem.XR;
+using Unity.VisualScripting.Antlr3.Runtime.Misc;
 
 namespace Skul.Character.PC
 {
-    public class player:Character
+    public class Player:Character
     {
         public bool canDownJump;
         private GroundDetecter _detecter;
-        private Animator anim;
+        public float attackForce;
+        [SerializeField] private GameObject _currentRen;
+        [SerializeField] private List<GameObject> _renderers;
+        [SerializeField] private List<SkulData> _skulDatas;
+        Action OnSwitch;
         //저장되어있는 스컬
         [SerializeField]private SkulData _saveData;
         //현재 사용되는 스컬
@@ -24,10 +29,10 @@ namespace Skul.Character.PC
         
         protected override void Awake()
         {
+            //_skulDatas=new List<SkulData>();
             base.Awake(); 
             movement.direction = 1;
             _detecter = GetComponent<GroundDetecter>();
-            anim = GetComponent<Animator>();
             movement.onDirectionChanged += (value) =>
             {
                 if(value<0)
@@ -59,9 +64,12 @@ namespace Skul.Character.PC
             map.AddKeyDownAction(KeyCode.A, () => stateMachine.ChangeState(FSM.StateType.Skill_1));
             map.AddKeyDownAction(KeyCode.S, () => stateMachine.ChangeState(FSM.StateType.Skill_2));
             map.AddKeyDownAction(KeyCode.Space, ()=>Switch());
+            map.AddKeyDownAction(KeyCode.F, () => 
+            { 
+                Debug.Log("Press F");
+            }) ;
             InputManager.instance.AddMap("PlayerAction", map);
         }
-
         protected override void Start()
         {
             base.Start();
@@ -83,16 +91,14 @@ namespace Skul.Character.PC
             });
         }
 
-
-        private void Switch()
+        public void Switch()
         {
-            anim.runtimeAnimatorController = _saveData.animator;
-            SkulData newData;
-            newData = _currentData;
-            _currentData = _saveData;
-            _saveData = newData;
-            
+            _currentRen.SetActive(false);
+            _currentRen = (_currentRen == _renderers[0] ? _renderers[1] : _renderers[0]);
+            _currentRen.SetActive(true);
+            stateMachine.OnAnimatorChanged?.Invoke();
             stateMachine.ChangeState(StateType.Switch);
+            
         }
     }
 }
