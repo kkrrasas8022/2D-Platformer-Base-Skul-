@@ -7,7 +7,6 @@ using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Unity.VisualScripting;
-using static UnityEngine.RuleTile.TilingRuleOutput;
 using UnityEngine.InputSystem.XR;
 using Unity.VisualScripting.Antlr3.Runtime.Misc;
 
@@ -66,8 +65,20 @@ namespace Skul.Character.PC
             map.AddKeyDownAction(KeyCode.Space, ()=>Switch());
             map.AddKeyDownAction(KeyCode.F, () => 
             { 
-                Debug.Log("Press F");
-            }) ;
+                Debug.Log("KeyDown F");
+            });
+            map.AddKeyDownAction(KeyCode.Tab, () => 
+            {
+                Debug.Log("KeyDown Tab");
+            });
+            map.AddKeyDownAction(KeyCode.Escape, () =>
+            {
+                Debug.Log("KeyDown ESC");
+            });
+            map.AddKeyDownAction(KeyCode.D, () =>
+            {
+                Debug.Log("KeyDown D");
+            });
             InputManager.instance.AddMap("PlayerAction", map);
         }
         protected override void Start()

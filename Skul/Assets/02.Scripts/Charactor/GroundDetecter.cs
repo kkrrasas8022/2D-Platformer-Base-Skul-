@@ -8,8 +8,9 @@ namespace Skul.Character
     //객체의 바닥과의 접촉여부를 판정하는 클래스
     public class GroundDetecter:MonoBehaviour
     {
-        [SerializeField] private Vector3 size;
-        [SerializeField] public Vector3 pos;
+        [SerializeField] private Vector2 size;
+        [SerializeField] public Vector2 pos;
+        [SerializeField]private Movement.Movement _movement;
         public bool isDetected =>detected;
         public Collider2D detected
         {
@@ -28,6 +29,7 @@ namespace Skul.Character
         }
         [SerializeField] private bool _isDetected;
         [SerializeField] private Collider2D _detected;
+        
 
         [SerializeField] private LayerMask groundDe;
         private Player player;
@@ -35,12 +37,13 @@ namespace Skul.Character
         private void Awake()
         {
             player = GetComponent<Player>();
+            _movement = GetComponent<Movement.Movement>();
         }
 
         private void FixedUpdate()
         {
-            detected = Physics2D.OverlapBox((Vector2)(transform.position - pos),
-                                                         (Vector2)size,
+            detected = Physics2D.OverlapBox((Vector2)transform.position - new Vector2(pos.x*_movement.direction,pos.y),
+                                                         size,
                                                          0.0f,
                                                          groundDe);
         }
@@ -48,7 +51,7 @@ namespace Skul.Character
         private void OnDrawGizmos()
         {
             Gizmos.color = Color.green;
-            Gizmos.DrawWireCube(transform.position-pos, size);
+            Gizmos.DrawWireCube(transform.position- (Vector3)new Vector2(pos.x * _movement.direction, pos.y), size);
         }
     }
 }
