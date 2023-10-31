@@ -22,7 +22,7 @@ TagManager:
   - EnemyTrigger
   - EnemyCollider
   - EnemyProjectile
-  - 
+  - PlayerProjectile
   - 
   - 
   - 

@@ -4,16 +4,25 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using Skul.Movement;
+using UnityEditor.Animations;
 
 namespace Skul.Character.PC
 {
     public class Normal:PlayerAttacks
     {
         [SerializeField]Collider2D col;
-       [SerializeField] private Vector3 _hitSize;
+        [SerializeField] private Vector3 _hitSize;
         [SerializeField] private Vector3 _hitOffset;
         [SerializeField] private Vector3 _switchHitSize;
         [SerializeField] private Vector3 _switchHitOffset;
+        [SerializeField] private List<AnimatorController> _saveAnimators;
+        private Animator _animator;
+
+        private void Awake()
+        {
+            _animator = GetComponent<Animator>();
+        }
+
         protected override void SwitchAttack()
         {
             base.SwitchAttack();
@@ -25,11 +34,18 @@ namespace Skul.Character.PC
         protected override void Skill_1()
         {
             base.Skill_1();
+            if (_animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1)
+            { 
+                _animator.runtimeAnimatorController = _saveAnimators[1];
+                return;
+            }
+
         }
 
         protected override void Skill_2()
         {
             base.Skill_2();
+            _animator.runtimeAnimatorController = _saveAnimators[0];
         }
 
         protected override void Attack_Hit()
