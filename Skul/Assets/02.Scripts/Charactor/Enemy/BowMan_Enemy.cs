@@ -8,6 +8,13 @@ namespace Skul.Character.Enemy
 {
     public class BowMan_Enemy:Enemy
     {
+        [SerializeField] private EnemyProjectile _arrow;
+        [SerializeField] private GameObject _arrowLine;
+        [SerializeField] private LayerMask _targetMask;
+        [SerializeField] private float _arrowVelocity;
+        [SerializeField] private float _attackForce;
+
+
         protected override void Awake()
         {
             base.Awake();
@@ -30,6 +37,11 @@ namespace Skul.Character.Enemy
         private void Hit()
         {
             Debug.Log("BowManHit");
+            Instantiate(_arrow,
+                   transform.position + new Vector3(movement.direction * 0.1f, 0.5f, 0.0f),
+                   Quaternion.Euler(new Vector3(0,movement.direction==1?180:0,90)))
+            .SetUp(gameObject, _attackForce, _targetMask, new Vector2(movement.direction*_arrowVelocity, 0));
         }
+
     }
 }

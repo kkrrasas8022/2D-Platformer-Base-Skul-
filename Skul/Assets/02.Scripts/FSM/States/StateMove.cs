@@ -20,7 +20,7 @@ namespace Skul.FSM.States
         //Move는 다른 상태로 변환되기 전까지 끝나지 않는 행동이기 때문에 WaitUntilActionFinished에서 지속되게 한다.
         public override StateType MoveNext()
         {
-            Debug.Log("StateMove");
+            //Debug.Log("StateMove");
             StateType next = StateType.Move;
             switch (currentStep)
             {
@@ -53,6 +53,8 @@ namespace Skul.FSM.States
                     {
                         if (groundDetecter.isDetected == false)
                             next = StateType.Fall;
+                        if (movement.horizontal ==0)
+                            next= StateType.Idle;
                     }
                     break;
                 case IStateEnumerator<StateType>.Step.Finish:

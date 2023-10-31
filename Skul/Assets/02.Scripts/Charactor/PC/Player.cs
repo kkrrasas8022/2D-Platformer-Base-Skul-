@@ -20,11 +20,11 @@ namespace Skul.Character.PC
         [SerializeField] private GameObject _currentRen;
         [SerializeField] private List<GameObject> _renderers;
         [SerializeField] private List<SkulData> _skulDatas;
-        Action OnSwitch;
         //저장되어있는 스컬
-        [SerializeField]private SkulData _saveData;
+        [SerializeField]public SkulData saveData;
         //현재 사용되는 스컬
-        [SerializeField]private SkulData _currentData;
+        [SerializeField]public SkulData currentData;
+        public Action OnSwitch;
         
         protected override void Awake()
         {
@@ -107,6 +107,12 @@ namespace Skul.Character.PC
             _currentRen.SetActive(false);
             _currentRen = (_currentRen == _renderers[0] ? _renderers[1] : _renderers[0]);
             _currentRen.SetActive(true);
+
+            SkulData tmpData;
+            tmpData = currentData;
+            currentData = saveData;
+            saveData = tmpData;
+
             stateMachine.OnAnimatorChanged?.Invoke();
             stateMachine.ChangeState(StateType.Switch);
             

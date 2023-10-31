@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d589d9b0bfdf4a49a6cd4b3fc08580c, type: 3}
   m_Name: BowMan
   m_EditorClassIdentifier: 
-  Renderer: {fileID: 0}
+  Renderer: {fileID: 4322687516461609355, guid: 2b053c0abce8ae541a2fdfc83b3e16f5, type: 3}
   type: 0
+  SkulFace: {fileID: -30850774, guid: 3e8401111de03404daa180be46f33c3d, type: 3}

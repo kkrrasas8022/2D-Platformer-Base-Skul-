@@ -24,7 +24,7 @@ namespace Skul.FSM.States
         //idle는 다른 상태로 이전되기 전까지 끝나지 않는 행동이기 때문에 WaitUntilActionFinished에서 지속되게 한다.
         public override StateType MoveNext()
         {
-            Debug.Log("StateJump");
+            //Debug.Log("StateJump");
             StateType next = StateType.Jump;
             switch (currentStep)
             {

@@ -15,4 +15,5 @@ public class SkulData : ScriptableObject
 {
     public GameObject Renderer;
     public SkulType type;
+    public Sprite SkulFace;
 }

@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d589d9b0bfdf4a49a6cd4b3fc08580c, type: 3}
   m_Name: Normal
   m_EditorClassIdentifier: 
-  Renderer: {fileID: 0}
+  Renderer: {fileID: 715874798412208999, guid: 7650aa4f51f5a664eb29139de02ad1cf, type: 3}
   type: 0
+  SkulFace: {fileID: 1442591991, guid: 97e1de8a9b8e8a04c865e5740c3122a9, type: 3}
