@@ -17,6 +17,9 @@ namespace Skul.Character.PC
         [SerializeField] private Vector3 _switchHitOffset;
         [SerializeField] private List<AnimatorController> _saveAnimators;
         private Animator _animator;
+        [SerializeField]private NoramlHead _head;
+        [SerializeField] private NoramlHead _currentHead;
+        [SerializeField]public Vector3 _headsPos;
 
         private void Awake()
         {
@@ -39,6 +42,10 @@ namespace Skul.Character.PC
                 _animator.runtimeAnimatorController = _saveAnimators[1];
                 return;
             }
+            _currentHead=Instantiate(_head,
+                    transform.position + new Vector3(_movement.direction * 0.1f, 0.5f, 0.0f),
+                    Quaternion.Euler(new Vector3(0, _movement.direction == 1 ? 180 : 0, 90)));
+            _currentHead.SetUp(gameObject, new Vector2(_movement.direction*2,0), 10,_enemyMask);
 
         }
 
@@ -46,6 +53,9 @@ namespace Skul.Character.PC
         {
             base.Skill_2();
             _animator.runtimeAnimatorController = _saveAnimators[0];
+            _player.transform.position = _headsPos;
+            Destroy(_currentHead.gameObject);
+            _currentHead = null;
         }
 
         protected override void Attack_Hit()

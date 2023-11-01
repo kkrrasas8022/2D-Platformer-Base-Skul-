@@ -9,9 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6d47b8d70e14284aa6d2408b2845053, type: 3}
-  m_Name: BowMan
+  m_Script: {fileID: 11500000, guid: f1244fac1a35fda4daadbaa0eef4def6, type: 3}
+  m_Name: Normal Skill1
   m_EditorClassIdentifier: 
-  id: 1
-  Renderer: {fileID: 4322687516461609355, guid: 2b053c0abce8ae541a2fdfc83b3e16f5, type: 3}
-  SkulFace: {fileID: -30850774, guid: 3e8401111de03404daa180be46f33c3d, type: 3}
+  id: 0
+  Icon: {fileID: 0}

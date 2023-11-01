@@ -55,6 +55,7 @@ namespace Skul.FSM.States
                     break;
                 case IStateEnumerator<StateType>.Step.Finish:
                     {
+                        Debug.Log("³¡");
                         next = movement.horizontal == 0.0f ? StateType.Idle : StateType.Move;
                     }
                     break;

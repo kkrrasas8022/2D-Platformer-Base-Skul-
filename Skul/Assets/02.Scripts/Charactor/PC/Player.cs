@@ -9,6 +9,7 @@ using UnityEngine.InputSystem;
 using Unity.VisualScripting;
 using UnityEngine.InputSystem.XR;
 using Unity.VisualScripting.Antlr3.Runtime.Misc;
+using Skul.Data;
 
 namespace Skul.Character.PC
 {
@@ -25,6 +26,7 @@ namespace Skul.Character.PC
         //현재 사용되는 스컬
         [SerializeField]public SkulData currentData;
         public Action OnSwitch;
+        public Movement.Movement playerMovement { get=>movement; }
         
         protected override void Awake()
         {

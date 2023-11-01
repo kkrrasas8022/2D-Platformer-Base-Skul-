@@ -14,7 +14,7 @@ namespace Skul.FSM.States
         }
 
         //Move상태는 어느 상태에서도 진입가능하기 때문에 true로 한다.
-        public override bool canExecute => true;
+        public override bool canExecute => machine.currentType != StateType.Skill_1 && machine.currentType != StateType.Skill_2;
 
         //None에서 Move상태를 실행하기 위해 필요한 것들을 지정해준다
         //Move는 다른 상태로 변환되기 전까지 끝나지 않는 행동이기 때문에 WaitUntilActionFinished에서 지속되게 한다.
