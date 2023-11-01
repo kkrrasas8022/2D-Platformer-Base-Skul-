@@ -15,11 +15,14 @@ namespace Skul.UI
         [SerializeField] private TMP_Text _hpMaxText;
         [SerializeField] private Image _mainFace;
         [SerializeField] private Image _subFace;
+        [SerializeField] private Image _skill1;
+        [SerializeField] private Image _skill2;
         [SerializeField] private Player _player;
         private void Start()
         {
-            //_mainFace=_mainFace.GetComponent<Image>();
-            //_subFace=_subFace.GetComponent<Image>();
+            _mainFace.sprite = _player.currentData.skulData.SkulFace;
+            _subFace.sprite = _player.saveData.skulData.SkulFace;
+            _subFace=_subFace.GetComponent<Image>();
             _hpBar.minValue = 0.0f;
             _hpBar.maxValue = _player.hpMax;
             _hpBar.value = _player.hp;
@@ -30,12 +33,17 @@ namespace Skul.UI
                 _hpBar.value = value;
                 _hpText.text = ((int)value).ToString();
             };
+            _player.OnSwitch += () =>
+            {
+                _subFace.sprite = _player.currentData.skulData.SkulFace;
+                _mainFace.sprite = _player.saveData.skulData.SkulFace;
+            };
         }
-        private void Update()
-        {
-            _subFace.sprite = _player.saveData.SkulFace;
-            _mainFace.sprite = _player.currentData.SkulFace;
-        }
+        //private void Update()
+        //{
+        //    _subFace.sprite = _player.saveData.SkulFace; 
+        //    _mainFace.sprite = _player.currentData.SkulFace;
+        //}
 
     }
 }

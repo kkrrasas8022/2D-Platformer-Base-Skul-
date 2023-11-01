@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName ="ItemData",menuName ="Skul/Item")]
-
-public class ItemData : ScriptableObject
+namespace Skul.Data
 {
-    public int id;
-    public Sprite Icon;
+    public abstract class ItemData : ScriptableObject
+    {
+        public int id;
+        public Sprite Icon;
+    }
 }

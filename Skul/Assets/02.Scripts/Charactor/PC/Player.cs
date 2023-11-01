@@ -22,9 +22,9 @@ namespace Skul.Character.PC
         [SerializeField] private List<GameObject> _renderers;
         [SerializeField] private List<SkulData> _skulDatas;
         //저장되어있는 스컬
-        [SerializeField]public SkulData saveData;
+        [SerializeField]public HeadItemData saveData;
         //현재 사용되는 스컬
-        [SerializeField]public SkulData currentData;
+        [SerializeField]public HeadItemData currentData;
         public Action OnSwitch;
         public Movement.Movement playerMovement { get=>movement; }
         
@@ -106,11 +106,12 @@ namespace Skul.Character.PC
 
         public void Switch()
         {
+            OnSwitch?.Invoke();
             _currentRen.SetActive(false);
             _currentRen = (_currentRen == _renderers[0] ? _renderers[1] : _renderers[0]);
             _currentRen.SetActive(true);
 
-            SkulData tmpData;
+            HeadItemData tmpData;
             tmpData = currentData;
             currentData = saveData;
             saveData = tmpData;

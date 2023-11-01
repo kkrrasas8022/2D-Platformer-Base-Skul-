@@ -2,8 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class SkillData : ScriptableObject
+namespace Skul.Data
 {
-    public int id;
-    public Sprite Icon;
+    public abstract class SkillData : ScriptableObject
+    {
+        public int id;
+        public Sprite Icon;
+    }
 }

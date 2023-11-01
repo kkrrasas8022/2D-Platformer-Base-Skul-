@@ -15,3 +15,11 @@ MonoBehaviour:
   id: 1
   Renderer: {fileID: 4322687516461609355, guid: 2b053c0abce8ae541a2fdfc83b3e16f5, type: 3}
   SkulFace: {fileID: -30850774, guid: 3e8401111de03404daa180be46f33c3d, type: 3}
+  activeSkills:
+  - {fileID: 11400000, guid: f8c363dd34730e54e990153b6747348e, type: 2}
+  - {fileID: 11400000, guid: 2cdcba6e2ab2e4448b00ed17acb303ad, type: 2}
+  - {fileID: 11400000, guid: 281c593a28f81ac48afa241f6fba8e5b, type: 2}
+  - {fileID: 11400000, guid: c45fb0bbab39a824e9702802faad70e4, type: 2}
+  switchSkill: {fileID: 11400000, guid: 2d35634f9e863614bac4c120451d6f45, type: 2}
+  passiveSkill: {fileID: 11400000, guid: 62493f42bf4054044bb140274f054875, type: 2}
+  specialSkill: {fileID: 0}

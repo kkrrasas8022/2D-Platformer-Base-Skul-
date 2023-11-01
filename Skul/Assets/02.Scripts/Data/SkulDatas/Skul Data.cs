@@ -11,5 +11,9 @@ namespace Skul.Data
         public int id;
         public GameObject Renderer;
         public Sprite SkulFace;
+        public List<SkillData> activeSkills;
+        public SkillData switchSkill;
+        public SkillData passiveSkill;
+        public SkillData specialSkill;
     }
 }
