@@ -14,15 +14,20 @@ namespace Skul.Item
             Weapon,
             Essence,
         }
-        public ItemType Type;
-        public ItemData Data;
-
+        [SerializeField]private ItemType _type;
+        public ItemData data;
         private SpriteRenderer _renderer;
+        [SerializeField]private ItemRate _rate;
 
         private void OnEnable()
         {
             _renderer = GetComponentInChildren<SpriteRenderer>();
-            _renderer.sprite = Data.Icon;
+            _renderer.sprite = data.Icon;
+        }
+        public void InitItem(ItemRate rate,ItemType type)
+        {
+            _type = type;
+            _rate = rate;
         }
     } 
 }
