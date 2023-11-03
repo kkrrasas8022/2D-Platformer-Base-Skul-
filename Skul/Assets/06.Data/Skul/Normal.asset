@@ -21,3 +21,11 @@ MonoBehaviour:
   switchSkill: {fileID: 11400000, guid: 1c4b3303ed29159488b77349c4262c2f, type: 2}
   passiveSkill: {fileID: 0}
   specialSkill: {fileID: 0}
+  attackType: 0
+  takenDamage: 1
+  physicPower: 1
+  magicPower: 1
+  attackSpeed: 1
+  moveSpeed: 1
+  consentSpeed: 1
+  skillCoolDown: 1.6

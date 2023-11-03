@@ -8,7 +8,7 @@ using Skul.Character;
 
 namespace Skul.UI
 {
-    public class PlayerStatus : MonoBehaviour
+    public class MainUI : MonoBehaviour
     {
         [SerializeField] private Slider _hpBar;
         [SerializeField] private TMP_Text _hpText;

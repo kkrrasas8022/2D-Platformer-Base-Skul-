@@ -5,6 +5,12 @@ using Skul.Movement;
 using System;
 using Skul.FSM;
 
+public enum AttackType
+{
+    Physical,
+    Magical
+}
+
 namespace Skul.Character
 {
     //유닛들의 베이스가 되는 character 클래스
@@ -15,15 +21,16 @@ namespace Skul.Character
         public float moveSpeed = 3.0f;
         public float dashForce = 3.0f;
         public float jumpForce = 3.0f;
-        public int JumpCount=0;
-        public int MaxJumpCount = 0;
-        public int DashCount = 0;
-        public int MaxDashCount = 0;
+        public int jumpCount = 0;
+        public int maxJumpCount = 0;
+        public int dashCount = 0;
+        public int maxDashCount = 0;
+
+        public float attackForce;
 
         protected Skul.Movement.Movement movement;
         protected Skul.FSM.StateMachine stateMachine;
 
-        
 
         public float hp
         {
@@ -60,6 +67,9 @@ namespace Skul.Character
             }
         }
 
+        [Header("Status/Health")]
+        [SerializeField] private float _hp;
+        [SerializeField] private float _takenDamage;
         public float hpMax => _hpMax;
 
         public float hpMin => _hpMin;
@@ -70,8 +80,19 @@ namespace Skul.Character
 
         public float mpMin => _mpMin;
 
-        [Header("Now")]
-        [SerializeField]private float _hp;
+        public float TakenDamage
+        {
+            get => _takenDamage;
+            set
+            {
+                if (_takenDamage == value)
+                    return;
+                _takenDamage = value;
+                OnTakenDamageChanged?.Invoke(value);
+            }
+        }
+        public event Action<float> OnTakenDamageChanged;
+
         private float _hpMin;
         [SerializeField] private float _hpMax;
         private float _mp;
@@ -98,7 +119,7 @@ namespace Skul.Character
 
         public void Damage(GameObject damager, float amount)
         {
-            hp -= amount;
+            hp -= amount*_takenDamage;
         }
 
         public void Heal(GameObject healer, float amount)

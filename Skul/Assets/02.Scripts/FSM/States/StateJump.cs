@@ -17,8 +17,8 @@ namespace Skul.FSM.States
         
         public override bool canExecute =>machine.currentType==StateType.Idle||
                                             machine.currentType==StateType.Move||
-                                            (character.JumpCount<character.MaxJumpCount && machine.currentType==StateType.Jump)||
-                                            (character.JumpCount<character.MaxJumpCount && machine.currentType==StateType.Fall);
+                                            (character.jumpCount<character.maxJumpCount && machine.currentType==StateType.Jump)||
+                                            (character.jumpCount<character.maxJumpCount && machine.currentType==StateType.Fall);
 
         //None에서 idle상태를 실행하기 위해 필요한 것들을 지정해둔다
         //idle는 다른 상태로 이전되기 전까지 끝나지 않는 행동이기 때문에 WaitUntilActionFinished에서 지속되게 한다.
@@ -40,7 +40,7 @@ namespace Skul.FSM.States
                     break;
                 case IStateEnumerator<StateType>.Step.Start:
                     {
-                        character.JumpCount++;
+                        character.jumpCount++;
                         movement.isMovable = true;
                         movement.isDirectionChangeable = true;
                         rigid.velocity = new Vector2(rigid.velocity.x, 0.0f);
@@ -68,7 +68,7 @@ namespace Skul.FSM.States
                         }
                         else if(rigid.velocity.y>0)
                         {
-                            if (character.JumpCount < character.MaxJumpCount && Input.GetKeyDown(KeyCode.C))
+                            if (character.jumpCount < character.maxJumpCount && Input.GetKeyDown(KeyCode.C))
                             {
                                 currentStep = IStateEnumerator<StateType>.Step.None;
                             }

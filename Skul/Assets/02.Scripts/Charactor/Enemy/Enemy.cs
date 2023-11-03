@@ -7,7 +7,6 @@ namespace Skul.Character.Enemy {
     public class Enemy :Character
     {
         [SerializeField]private EnemyHp _hpBar;
-        
         private void Update()
         {
             if(hp<hpMax)

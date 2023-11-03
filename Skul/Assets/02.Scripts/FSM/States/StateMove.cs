@@ -26,8 +26,8 @@ namespace Skul.FSM.States
             {
                 case IStateEnumerator<StateType>.Step.None:
                     {
-                        character.JumpCount = 0 ;
-                        character.DashCount = 0 ;
+                        character.jumpCount = 0 ;
+                        character.dashCount = 0 ;
                         movement.isMovable=true;
                         movement.isDirectionChangeable = true;
                         animator.Play("Move");

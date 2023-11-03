@@ -12,7 +12,6 @@ namespace Skul.Character.Enemy
         [SerializeField] private GameObject _arrowLine;
         [SerializeField] private LayerMask _targetMask;
         [SerializeField] private float _arrowVelocity;
-        [SerializeField] private float _attackForce;
 
 
         protected override void Awake()
@@ -40,7 +39,7 @@ namespace Skul.Character.Enemy
             Instantiate(_arrow,
                    transform.position + new Vector3(movement.direction * 0.1f, 0.5f, 0.0f),
                    Quaternion.Euler(new Vector3(0,movement.direction==1?180:0,90)))
-            .SetUp(gameObject, _attackForce, _targetMask, new Vector2(movement.direction*_arrowVelocity, 0));
+            .SetUp(gameObject, attackForce, _targetMask, new Vector2(movement.direction*_arrowVelocity, 0));
         }
 
     }

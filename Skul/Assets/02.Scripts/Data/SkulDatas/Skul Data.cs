@@ -15,5 +15,15 @@ namespace Skul.Data
         public SkillData switchSkill;
         public SkillData passiveSkill;
         public SkillData specialSkill;
+        public AttackType attackType;
+
+        [Header("Status")]
+        public float takenDamage;
+        public float physicPower;
+        public float magicPower;
+        public float attackSpeed;
+        public float moveSpeed;
+        public float consentSpeed;
+        public float skillCoolDown;
     }
 }

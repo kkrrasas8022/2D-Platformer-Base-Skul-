@@ -1,6 +1,7 @@
 using Skul.Data;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Skul.Item
@@ -18,7 +19,7 @@ namespace Skul.Item
 
         private SpriteRenderer _renderer;
 
-        private void Awake()
+        private void OnEnable()
         {
             _renderer = GetComponentInChildren<SpriteRenderer>();
             _renderer.sprite = Data.Icon;

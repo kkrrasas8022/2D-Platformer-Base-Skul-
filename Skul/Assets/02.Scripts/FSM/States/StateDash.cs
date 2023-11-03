@@ -17,7 +17,7 @@ namespace Skul.FSM.States
         }
         
         //어느상태에서든 진입가능하기 때문에 true로 한다.
-        public override bool canExecute => character.DashCount<character.MaxDashCount;
+        public override bool canExecute => character.dashCount<character.maxDashCount;
 
         //None에서 Dash상태를 실행하기 위해 필요한 것들을 지정해준다
         //Dash는 끝날때 이동 입력이 있다면 move,입력이 없다면 idle로 전환 해준다
@@ -29,7 +29,7 @@ namespace Skul.FSM.States
             {
                 case IStateEnumerator<StateType>.Step.None:
                     {
-                        character.DashCount++;
+                        character.dashCount++;
                         movement.isMovable=false;
                         movement.isDirectionChangeable = false;
                         animator.Play("Dash");

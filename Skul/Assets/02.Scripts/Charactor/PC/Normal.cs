@@ -25,6 +25,9 @@ namespace Skul.Character.PC
         {
             _animator = GetComponent<Animator>();
         }
+        private void OnEnable()
+        {
+        }
 
         protected override void SwitchAttack()
         {
