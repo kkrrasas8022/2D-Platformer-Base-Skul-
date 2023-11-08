@@ -51,7 +51,8 @@ namespace Skul.Item
         public override void Interaction(Player player)
         {
             base.Interaction(player);
-            
+            player.items.Add((WeaponItemData)_data);
+            Destroy(gameObject);
         }
 
     }

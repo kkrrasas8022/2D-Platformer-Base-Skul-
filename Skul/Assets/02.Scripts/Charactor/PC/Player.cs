@@ -20,7 +20,9 @@ namespace Skul.Character.PC
         public Dictionary<Engrave, int> haveEngrave;
         //각인에 변동이 생겼을 때 나타나는 효과
         event Action<string,int> OnEngraveChange;
-        public List<ItemData> items;
+        public List<WeaponItemData> items;
+        event Action<WeaponItemData> OnChangeItem;
+
 
         public bool canInteraction;
         public InteractionObject canInteractionObject;
@@ -220,6 +222,15 @@ namespace Skul.Character.PC
                 Debug.Log("KeyDown D");
             });
             InputManager.instance.AddMap("PlayerAction", map);
+
+            OnChangeItem += (value) =>
+            {
+                haveEngrave.Add(value.engraves[0], 1);
+                haveEngrave.Add(value.engraves[1], 1);
+
+
+            };
+
         }
         protected override void Start()
         {
