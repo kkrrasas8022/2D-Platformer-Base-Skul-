@@ -10,11 +10,21 @@ using Unity.VisualScripting;
 using UnityEngine.InputSystem.XR;
 using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using Skul.Data;
+using Skul.Item;
 
 namespace Skul.Character.PC
 {
     public class Player:Character
     {
+        //가지고 있는 각인의 이름을 Key 그 각인의 중첩수를 Value로 가지는 Dictionary 
+        public Dictionary<Engrave, int> haveEngrave;
+        //각인에 변동이 생겼을 때 나타나는 효과
+        event Action<string,int> OnEngraveChange;
+        public List<ItemData> items;
+
+        public bool canInteraction;
+        public InteractionObject canInteractionObject;
+
         public bool canDownJump;
         private GroundDetecter _detecter;
         [SerializeField] private GameObject _currentRen;
@@ -194,6 +204,8 @@ namespace Skul.Character.PC
             map.AddKeyDownAction(KeyCode.F, () => 
             { 
                 Debug.Log("KeyDown F");
+                if (canInteraction)
+                    canInteractionObject.Interaction(this);
             });
             map.AddKeyDownAction(KeyCode.Tab, () => 
             {
@@ -253,6 +265,23 @@ namespace Skul.Character.PC
             else
                 //Instantiate 가지고 있던 머리는 아이템으로 빠져나간다
             currentData = data;
+        }
+
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+            if(collision.CompareTag("InteractionObject"))
+            {
+                canInteraction = true;
+                canInteractionObject = collision.gameObject.GetComponent<InteractionObject>();
+            }
+        }
+        private void OnTriggerExit2D(Collider2D collision)
+        {
+            if (collision.CompareTag("InteractionObject"))
+            {
+                canInteraction = false;
+                canInteractionObject = null;
+            }
         }
     }
 }
