@@ -20,5 +20,9 @@ namespace Skul.Item
             Instantiate(_item,transform.position, Quaternion.identity).InitItem(_rate, _type, _table.itemDatas[Random.Range(0,_table.itemDatas.Count)]);
             Destroy(this.gameObject);
         }
+        public override void SeeDetails(Player player)
+        {
+            base.SeeDetails(player);
+        }
     }
 }

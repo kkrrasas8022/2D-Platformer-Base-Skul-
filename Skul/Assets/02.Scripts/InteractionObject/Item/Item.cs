@@ -20,6 +20,7 @@ namespace Skul.Item
         [SerializeField]public ItemData data;
         private SpriteRenderer _renderer;
         [SerializeField]public ItemRate rate;
+        [SerializeField]private GameObject _details;
 
         private void Awake()
         {
@@ -42,7 +43,15 @@ namespace Skul.Item
             Destroy(gameObject);
         }
 
-        
+        public override void SeeDetails(Player player)
+        {
+            base.SeeDetails(player);
+            if(_details.activeSelf==true)
+            { _details.SetActive(false);}
+            else if (_details.activeSelf == false)
+            { _details.SetActive(true); }
+        }
+
 
     }
 }

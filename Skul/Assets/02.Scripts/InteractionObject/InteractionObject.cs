@@ -23,4 +23,8 @@ public class InteractionObject : MonoBehaviour
     {
 
     }
+    public virtual void SeeDetails(Player player)
+    {
+
+    }
 }

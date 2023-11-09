@@ -40,6 +40,17 @@ namespace Skul.Character.PC
         public List<WeaponItemData> items;
         public Action<WeaponItemData> OnChangeItem;
         
+        public float AttackForce
+        {
+            get 
+            {
+                if (attackTypes == AttackType.Physical)
+                    return attackForce * _physical;
+                return attackForce * _magical;
+            }
+            
+        }
+
 
         public bool canInteraction;
         public InteractionObject canInteractionObject;
@@ -54,9 +65,11 @@ namespace Skul.Character.PC
         [SerializeField]public HeadItemData currentData;
         public Action OnSwitch;
         public Movement.Movement playerMovement { get=>movement; }
-        public AttackType AttackTypes;
+        public AttackType attackTypes;
 
         [Header("Status/Power")]
+        [SerializeField]private float _physical;
+        [SerializeField]private float _magical;
         [SerializeField] private float _physicPower;
         [SerializeField] private float _magicPower;
         [Header("Status/Speed")]
@@ -222,6 +235,13 @@ namespace Skul.Character.PC
             map.AddKeyDownAction(KeyCode.A, () => stateMachine.ChangeState(FSM.StateType.Skill_1));
             map.AddKeyDownAction(KeyCode.S, () => stateMachine.ChangeState(FSM.StateType.Skill_2));
             map.AddKeyDownAction(KeyCode.Space, ()=>Switch());
+            map.AddKeyDownAction(KeyCode.D, () => 
+            {
+                if(canInteraction)
+                {
+                    canInteractionObject.SeeDetails(this);
+                }
+            });
             map.AddKeyDownAction(KeyCode.F, () => 
             { 
                 Debug.Log("KeyDown F");

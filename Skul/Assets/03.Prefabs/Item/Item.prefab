@@ -3078,7 +3078,8 @@ MonoBehaviour:
   _notice: {fileID: 4067523508617909652}
   type: 1
   data: {fileID: 0}
-  _rate: 0
+  rate: 0
+  _details: {fileID: 8454129740082828148}
 --- !u!61 &7677877484354383577
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -26,7 +26,7 @@ namespace Skul.Character
         public int dashCount = 0;
         public int maxDashCount = 0;
 
-        public float attackForce;
+        [SerializeField]protected float attackForce;
 
         protected Skul.Movement.Movement movement;
         protected Skul.FSM.StateMachine stateMachine;

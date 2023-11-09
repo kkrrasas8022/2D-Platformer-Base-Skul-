@@ -74,7 +74,7 @@ namespace Skul.Character.PC
 
             if (col && col.TryGetComponent(out IHp ihp))
             {
-                ihp.Damage(_player.gameObject, _player.attackForce);
+                ihp.Damage(_player.gameObject, _player.AttackForce);
                 //DamagePopUp.Create(_attackTargetMask, col.transform.position + Vector3.up * .2f, (int)player.attackForce);
             }
         }

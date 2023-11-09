@@ -2,6 +2,7 @@ using Skul.Data;
 using Skul.Item;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -55,9 +56,21 @@ public class DropItemUI : MonoBehaviour
 
                     _skill1Name.text = data.engraves[0].Name;
                     _skill2Name.text = data.engraves[1].Name;
+                    _detailSkill1Name.text = data.engraves[0].Name;
+                    _detailSkill2Name.text = data.engraves[1].Name;
+                    _detailSkill1CoolTime.gameObject.SetActive(false);
+                    _detailSkill2CoolTime.gameObject.SetActive(false);
+                    _detailSkill1Des.text = data.engraves[0].synergyAbility +
+                        $"\n{(data.engraves[0].synergyPower[0].power)*100}%/{(data.engraves[0].synergyPower[1].power)*100}%";
+                    _detailSkill2Des.text = data.engraves[1].synergyAbility +
+                        $"\n{(data.engraves[1].synergyPower[0].power) * 100}%/{(data.engraves[1].synergyPower[1].power) * 100}%"; ;
+
 
                     _icon1.sprite = data.engraves[0].Icon;
                     _icon2.sprite = data.engraves[1].Icon;
+                    _detailIcon1.sprite = data.engraves[0].Icon;
+                    _detailIcon2.sprite = data.engraves[1].Icon;
+
                 }
                 break;
             case ItemType.Essence:

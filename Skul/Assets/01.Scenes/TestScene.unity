@@ -54827,7 +54827,7 @@ MonoBehaviour:
   maxJumpCount: 2
   dashCount: 0
   maxDashCount: 2
-  attackForce: 0
+  attackForce: 1
   _hp: 0
   _takenDamage: 1
   _hpMax: 100
@@ -54843,7 +54843,9 @@ MonoBehaviour:
   - {fileID: 4322687516601623821}
   saveData: {fileID: 11400000, guid: aa64acf22fd587540a00d96265adba12, type: 2}
   currentData: {fileID: 11400000, guid: cd32987cb6dc5884a88a93ab586db344, type: 2}
-  AttackTypes: 0
+  attackTypes: 1
+  _physical: 30
+  _magical: 35
   _physicPower: 1
   _magicPower: 1
   _attackSpeed: 1
@@ -54986,6 +54988,14 @@ PrefabInstance:
     - target: {fileID: 5612698951401550700, guid: cd90f09ff97178d439ba56568a8cebb3, type: 3}
       propertyPath: m_Constraints
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086088335757081127, guid: cd90f09ff97178d439ba56568a8cebb3, type: 3}
+      propertyPath: attackForce
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086088335757081127, guid: cd90f09ff97178d439ba56568a8cebb3, type: 3}
+      propertyPath: _takenDamage
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7463295373431493648, guid: cd90f09ff97178d439ba56568a8cebb3, type: 3}
       propertyPath: m_Name
