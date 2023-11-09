@@ -8,5 +8,8 @@ namespace Skul.Data
     {
         public int id;
         public Sprite Icon;
+
+        public string Name;
+        public string Description;
     }
 }

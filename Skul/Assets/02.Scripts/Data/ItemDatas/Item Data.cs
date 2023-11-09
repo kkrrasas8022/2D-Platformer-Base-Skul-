@@ -13,9 +13,11 @@ namespace Skul.Data
     }
     public abstract class ItemData : ScriptableObject
     {
-        
         public int id;
+        public string Name;
         public Sprite Icon;
         public ItemRate rate;
+        public string description;
+        public string abilityDescription;
     }
 }

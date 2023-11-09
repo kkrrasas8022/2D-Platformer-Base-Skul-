@@ -12,17 +12,34 @@ using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using Skul.Data;
 using Skul.Item;
 
+public enum StatusType
+{
+    MaxHp,
+    TakenDamage,
+    Physical,
+    Magical,
+    AttackSpeed,
+    MoveSpeed,
+    ConsentSpeed,
+    SkillCoolDown,
+    SwitchCoolDown,
+    EssenceCoolDown,
+    CriticalPersent,
+    CriticalDamage,
+}
+
 namespace Skul.Character.PC
 {
     public class Player:Character
     {
         //가지고 있는 각인의 이름을 Key 그 각인의 중첩수를 Value로 가지는 Dictionary 
         public Dictionary<Engrave, int> haveEngrave;
+        public int enghcount;
         //각인에 변동이 생겼을 때 나타나는 효과
-        event Action<string,int> OnEngraveChange;
+        public event Action<Engrave,int> OnEngraveChange;
         public List<WeaponItemData> items;
-        event Action<WeaponItemData> OnChangeItem;
-
+        public Action<WeaponItemData> OnChangeItem;
+        
 
         public bool canInteraction;
         public InteractionObject canInteractionObject;
@@ -38,7 +55,7 @@ namespace Skul.Character.PC
         public Action OnSwitch;
         public Movement.Movement playerMovement { get=>movement; }
         public AttackType AttackTypes;
-        
+
         [Header("Status/Power")]
         [SerializeField] private float _physicPower;
         [SerializeField] private float _magicPower;
@@ -169,7 +186,9 @@ namespace Skul.Character.PC
         protected override void Awake()
         {
             //_skulDatas=new List<SkulData>();
-            base.Awake(); 
+            base.Awake();
+            haveEngrave = new Dictionary<Engrave, int>();
+
             movement.direction = 1;
             _detecter = GetComponent<GroundDetecter>();
             movement.onDirectionChanged += (value) =>
@@ -225,10 +244,10 @@ namespace Skul.Character.PC
 
             OnChangeItem += (value) =>
             {
-                haveEngrave.Add(value.engraves[0], 1);
-                haveEngrave.Add(value.engraves[1], 1);
-
-
+                if(!haveEngrave.TryAdd(value.engraves[0],1))
+                    haveEngrave[value.engraves[0]]++;
+                if(!haveEngrave.TryAdd(value.engraves[1], 1))
+                    haveEngrave[value.engraves[1]]++;
             };
 
         }
@@ -293,6 +312,11 @@ namespace Skul.Character.PC
                 canInteraction = false;
                 canInteractionObject = null;
             }
+        }
+
+        private void Update()
+        {
+            enghcount=haveEngrave.Count;
         }
     }
 }

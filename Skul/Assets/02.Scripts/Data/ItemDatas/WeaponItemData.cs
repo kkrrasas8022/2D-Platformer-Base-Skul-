@@ -9,26 +9,12 @@ namespace Skul.Data
     public class WeaponItemData : ItemData
     {
         public Engrave[] engraves = new Engrave[2];
-
-        public enum PowerType
-        {
-            Physical,
-            Magical,
-            AttackSpeed,
-            MoveSpeed,
-            ConsentSpeed,
-            SkillCoolDown,
-            SwitchCoolDown,
-            EssenceCoolDown,
-            CriticalPersent,
-            CriticalDamage,
-        }
-        [Serializable]
-        public class Power
-        {
-            public PowerType powerType;
-            public float power;
-        }
-        [SerializeField]public Power power;
+        [SerializeField] public Power power;
+    }
+    [Serializable]
+    public class Power
+    {
+        public StatusType type;
+        public float power;
     }
 }

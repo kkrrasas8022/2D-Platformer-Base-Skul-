@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: BowMan
   m_EditorClassIdentifier: 
   id: 1
+  Name: 
+  Description: 
   Renderer: {fileID: 4322687516461609355, guid: 2b053c0abce8ae541a2fdfc83b3e16f5, type: 3}
   SkulFace: {fileID: -30850774, guid: 3e8401111de03404daa180be46f33c3d, type: 3}
   activeSkills:
@@ -23,3 +25,11 @@ MonoBehaviour:
   switchSkill: {fileID: 11400000, guid: 2d35634f9e863614bac4c120451d6f45, type: 2}
   passiveSkill: {fileID: 11400000, guid: 62493f42bf4054044bb140274f054875, type: 2}
   specialSkill: {fileID: 0}
+  attackType: 0
+  takenDamage: 1
+  physicPower: 1
+  magicPower: 1
+  attackSpeed: 1
+  moveSpeed: 1
+  consentSpeed: 1
+  skillCoolDown: 1.6

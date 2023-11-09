@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0
   Icon: {fileID: 0}
+  Name: Baton touch
+  Description: Move forward and hit magical damage

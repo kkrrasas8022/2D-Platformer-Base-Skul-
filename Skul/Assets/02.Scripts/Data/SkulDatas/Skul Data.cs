@@ -9,6 +9,8 @@ namespace Skul.Data
     public abstract class SkulData : ScriptableObject
     {
         public int id;
+        public string Name;
+        public string Description;
         public GameObject Renderer;
         public Sprite SkulFace;
         public List<SkillData> activeSkills;

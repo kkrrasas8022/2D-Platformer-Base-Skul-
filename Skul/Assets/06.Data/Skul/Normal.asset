@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Normal
   m_EditorClassIdentifier: 
   id: 0
+  Name: Little Bone
+  Description: Little skeleton
   Renderer: {fileID: 715874798412208999, guid: 7650aa4f51f5a664eb29139de02ad1cf, type: 3}
   SkulFace: {fileID: 1442591991, guid: 97e1de8a9b8e8a04c865e5740c3122a9, type: 3}
   activeSkills:
@@ -21,7 +23,7 @@ MonoBehaviour:
   switchSkill: {fileID: 11400000, guid: 1c4b3303ed29159488b77349c4262c2f, type: 2}
   passiveSkill: {fileID: 0}
   specialSkill: {fileID: 0}
-  attackType: 0
+  attackType: 1
   takenDamage: 1
   physicPower: 1
   magicPower: 1

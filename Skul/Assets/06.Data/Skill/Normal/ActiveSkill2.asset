@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: ActiveSkill2
   m_EditorClassIdentifier: 
   id: 0
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: eeff49e051316944dad15296f8e68e1b, type: 3}
+  Name: Head is real body
+  Description: Teleport Skull's position

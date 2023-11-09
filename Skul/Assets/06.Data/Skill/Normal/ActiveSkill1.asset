@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: ActiveSkill1
   m_EditorClassIdentifier: 
   id: 0
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: e5f8e29c0eb39d74e9509b0469b5204c, type: 3}
+  Name: Throw Skull
+  Description: Throw skull hit enemy magic damage

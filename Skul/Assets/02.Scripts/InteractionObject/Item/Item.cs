@@ -16,10 +16,10 @@ namespace Skul.Item
     public class Item : InteractionObject
     {
         
-        [SerializeField]private ItemType _type;
-        [SerializeField]private ItemData _data;
+        [SerializeField]public ItemType type;
+        [SerializeField]public ItemData data;
         private SpriteRenderer _renderer;
-        [SerializeField]private ItemRate _rate;
+        [SerializeField]public ItemRate rate;
 
         private void Awake()
         {
@@ -27,33 +27,22 @@ namespace Skul.Item
         }
         public void InitItem(ItemRate rate,ItemType type,ItemData data)
         {
-            _type = type;
-            _rate = rate;
-            _data = data;
-            _renderer.sprite = _data.Icon;
+            this.type = type;
+            this.rate = rate;
+            this.data = data;
+            _renderer.sprite = data.Icon;
         }
-        public void GainItem(Player player)
-        {
-            switch (_type)
-            {
-                case ItemType.Head:
-                    break;
-                case ItemType.Weapon:
-                    {
-                        player.haveEngrave.Add(((WeaponItemData)_data).engraves[0], 1);
-                    }
-                    break;
-                case ItemType.Essence:
-                    break;
-            }
-        }
+   
 
         public override void Interaction(Player player)
         {
             base.Interaction(player);
-            player.items.Add((WeaponItemData)_data);
+            player.items.Add((WeaponItemData)data);
+            player.OnChangeItem?.Invoke((WeaponItemData)data);
             Destroy(gameObject);
         }
+
+        
 
     }
 }
