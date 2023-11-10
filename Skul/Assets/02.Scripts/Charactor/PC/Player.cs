@@ -324,6 +324,7 @@ namespace Skul.Character.PC
                 if (canInteraction)
                     canInteractionObject.Interaction(this);
             });
+            map.AddKeyPressAction(KeyCode.F, () => { });
             map.AddKeyDownAction(KeyCode.Tab, () => 
             {
                 Debug.Log("KeyDown Tab");

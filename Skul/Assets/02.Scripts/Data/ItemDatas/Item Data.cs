@@ -1,3 +1,4 @@
+using Skul.Item;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,6 +17,7 @@ namespace Skul.Data
         public int id;
         public string Name;
         public Sprite Icon;
+        public ItemType type;
         public ItemRate rate;
         public string description;
         public string abilityDescription;
