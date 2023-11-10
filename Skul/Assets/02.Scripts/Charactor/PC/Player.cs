@@ -32,6 +32,9 @@ namespace Skul.Character.PC
 {
     public class Player:Character
     {
+        [Header("UI")]
+        [SerializeField] private InventoryUI _inventoryUI;
+        [SerializeField] private GameObject _playerStatus;
         //가지고 있는 각인의 이름을 Key 그 각인의 중첩수를 Value로 가지는 Dictionary 
         public Dictionary<Engrave, int> haveEngrave;
         public int enghcount;
@@ -51,6 +54,31 @@ namespace Skul.Character.PC
             
         }
 
+        public int curCoin
+        {
+            get=>_curCoin;
+            set
+            {
+                _curCoin = value;
+                OnCoinChanged?.Invoke(value);
+
+            }
+        }
+        public event Action<int> OnCoinChanged;
+        public event Action<int> OnBoneChanged;
+        public int curBone
+        {
+            get => _curBone;
+            set
+            {
+                _curBone = value;
+                OnBoneChanged?.Invoke(value);
+
+            }
+        }
+
+        [SerializeField]private int _curCoin;
+        [SerializeField]private int _curBone;
 
         public bool canInteraction;
         public InteractionObject canInteractionObject;
@@ -200,7 +228,43 @@ namespace Skul.Character.PC
         {
             //_skulDatas=new List<SkulData>();
             base.Awake();
+
+            OnChangeItem += (value) =>
+            {
+                switch (value.power.type)
+                {
+                    case StatusType.Physical:
+                        PhysicPower += value.power.power;
+                        break;
+                    case StatusType.MaxHp:
+                        break;
+                    case StatusType.TakenDamage:
+                        break;
+                    case StatusType.Magical:
+                        break;
+                    case StatusType.AttackSpeed:
+                        break;
+                    case StatusType.MoveSpeed:
+                        break;
+                    case StatusType.ConsentSpeed:
+                        break;
+                    case StatusType.SkillCoolDown:
+                        break;
+                    case StatusType.SwitchCoolDown:
+                        break;
+                    case StatusType.EssenceCoolDown:
+                        break;
+                    case StatusType.CriticalPersent:
+                        break;
+                    case StatusType.CriticalDamage:
+                        break;
+                }
+            };
+
             haveEngrave = new Dictionary<Engrave, int>();
+
+            _curCoin = 0;
+            _curBone = 0;
 
             movement.direction = 1;
             _detecter = GetComponent<GroundDetecter>();
@@ -232,7 +296,19 @@ namespace Skul.Character.PC
             map.AddKeyDownAction(KeyCode.X, () => stateMachine.ChangeState(
                 _detecter.isDetected==false?FSM.StateType.JumpAttack:FSM.StateType.Attack));
             map.AddKeyDownAction(KeyCode.Z, () => stateMachine.ChangeState(FSM.StateType.Dash));
-            map.AddKeyDownAction(KeyCode.A, () => stateMachine.ChangeState(FSM.StateType.Skill_1));
+            map.AddKeyDownAction(KeyCode.A, () => 
+            {
+                if(_inventoryUI.gameObject.activeSelf == false)
+                    stateMachine.ChangeState(FSM.StateType.Skill_1);
+                else
+                {
+                    if (_playerStatus.activeSelf == false)
+                        _playerStatus.SetActive(true);
+                    else
+                        _playerStatus.SetActive(false);
+                }
+
+            });
             map.AddKeyDownAction(KeyCode.S, () => stateMachine.ChangeState(FSM.StateType.Skill_2));
             map.AddKeyDownAction(KeyCode.Space, ()=>Switch());
             map.AddKeyDownAction(KeyCode.D, () => 
@@ -251,6 +327,15 @@ namespace Skul.Character.PC
             map.AddKeyDownAction(KeyCode.Tab, () => 
             {
                 Debug.Log("KeyDown Tab");
+                if (_inventoryUI.gameObject.activeSelf==true)
+                {
+                    _inventoryUI.Hide();
+                }
+                else if(_inventoryUI.gameObject.activeSelf == false)
+                {
+                    _inventoryUI.Show();
+                }
+
             });
             map.AddKeyDownAction(KeyCode.Escape, () =>
             {

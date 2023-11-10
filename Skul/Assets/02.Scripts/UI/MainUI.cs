@@ -18,25 +18,46 @@ namespace Skul.UI
         [SerializeField] private Image _skill1;
         [SerializeField] private Image _skill2;
         [SerializeField] private Player _player;
+
+        [SerializeField] private TMP_Text _curCoin;
+        [SerializeField] private TMP_Text _curBone;
+
         private void Start()
         {
             _mainFace.sprite = _player.currentData.skulData.SkulFace;
             _subFace.sprite = _player.saveData.skulData.SkulFace;
+            _skill1.sprite = _player.currentData.skulData.activeSkills[0].Icon;
+            _skill2.sprite = _player.currentData.skulData.activeSkills[1].Icon;
             _subFace=_subFace.GetComponent<Image>();
             _hpBar.minValue = 0.0f;
             _hpBar.maxValue = _player.hpMax;
             _hpBar.value = _player.hp;
             _hpText.text = ((int)_player.hp).ToString();
             _hpMaxText.text = ((int)_player.hpMax).ToString();
-            _player.onHpChanged += (value) =>
+
+            _curCoin.text=_player.curCoin.ToString();
+            _curBone.text=_player.curBone.ToString();
+
+            _player.OnCoinChanged += (value) =>
             {
-                _hpBar.value = value;
-                _hpText.text = ((int)value).ToString();
+                _curCoin.text = value.ToString();
+            };
+            _player.OnBoneChanged += (value) =>
+            {
+                _curBone.text = value.ToString();
+            };
+
+            _player.onHpChanged += (hp) =>
+            {
+                _hpBar.value = hp;
+                _hpText.text = ((int)hp).ToString();
             };
             _player.OnSwitch += () =>
             {
                 _subFace.sprite = _player.currentData.skulData.SkulFace;
                 _mainFace.sprite = _player.saveData.skulData.SkulFace;
+                _skill1.sprite = _player.saveData.skulData.activeSkills[0].Icon;
+                _skill2.sprite = _player.saveData.skulData.activeSkills[1].Icon;
             };
         }
         //private void Update()
