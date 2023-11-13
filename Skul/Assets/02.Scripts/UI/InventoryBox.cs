@@ -1,3 +1,4 @@
+using Skul.Character.PC;
 using Skul.Data;
 using System;
 using UnityEngine;
@@ -9,17 +10,15 @@ namespace Skul.UI
     {
         public ItemData data;
         public Image image;
-        public bool cur;
-
+        private Image icon;
 
         private void Awake()
         {
-             image = GetComponent<Image>();
-            if(cur)
-               image.color = new Color(255, 172, 0);
-            else
-                image.color = new Color(255, 248, 158);
-
+           
+           image = GetComponent<Image>();
+            //icon.sprite = data.Icon;
         }
+
+        
     }
 }

@@ -9,7 +9,6 @@ namespace Skul.Data
     public class ItemTable : ScriptableObject
     {
        public ItemType type;
-       public ItemRate rate;
        public List<ItemData> itemDatas = new List<ItemData>();
     } 
 }

@@ -1888,7 +1888,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data: {fileID: 0}
   image: {fileID: 0}
-  cur: 0
 --- !u!1 &96878389
 GameObject:
   m_ObjectHideFlags: 0
@@ -4600,7 +4599,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data: {fileID: 0}
   image: {fileID: 0}
-  cur: 0
 --- !u!1 &253893685
 GameObject:
   m_ObjectHideFlags: 0
@@ -4725,19 +4723,7 @@ MonoBehaviour:
   _Skills: {fileID: 1480634272}
   _curItemBox: {fileID: 0}
   _boxIndex: 0
-  ItemBoxs:
-  - {fileID: 6833439714982667998}
-  - {fileID: 5632601188008498302}
-  - {fileID: 7221514974659110011}
-  - {fileID: 2032311257}
-  - {fileID: 1223019262}
-  - {fileID: 1985544181}
-  - {fileID: 93277319}
-  - {fileID: 1647367135}
-  - {fileID: 744584885}
-  - {fileID: 246646186}
-  - {fileID: 2103698470}
-  - {fileID: 2005310098}
+  ItemBoxes: []
   _itemIcon: {fileID: 949318565}
   _itemName: {fileID: 1573001031}
   _rateTex: {fileID: 1702939730}
@@ -14251,7 +14237,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data: {fileID: 0}
   image: {fileID: 0}
-  cur: 0
 --- !u!1 &751278317
 GameObject:
   m_ObjectHideFlags: 0
@@ -21077,7 +21062,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data: {fileID: 0}
   image: {fileID: 0}
-  cur: 0
 --- !u!1 &1229573846
 GameObject:
   m_ObjectHideFlags: 0
@@ -29021,7 +29005,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data: {fileID: 0}
   image: {fileID: 0}
-  cur: 0
 --- !u!1 &1649077226
 GameObject:
   m_ObjectHideFlags: 0
@@ -46328,7 +46311,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data: {fileID: 0}
   image: {fileID: 0}
-  cur: 0
 --- !u!1 &1995353277
 GameObject:
   m_ObjectHideFlags: 0
@@ -46677,7 +46659,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data: {fileID: 0}
   image: {fileID: 0}
-  cur: 0
 --- !u!1 &2008656582
 GameObject:
   m_ObjectHideFlags: 0
@@ -47520,7 +47501,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data: {fileID: 0}
   image: {fileID: 0}
-  cur: 0
 --- !u!1 &2038395732
 GameObject:
   m_ObjectHideFlags: 0
@@ -48563,7 +48543,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data: {fileID: 0}
   image: {fileID: 0}
-  cur: 0
 --- !u!1 &2107609708
 GameObject:
   m_ObjectHideFlags: 0
@@ -50098,7 +50077,7 @@ GameObject:
   - component: {fileID: 6980709184401726907}
   - component: {fileID: 8981986818511985544}
   m_Layer: 5
-  m_Name: CurrentHead
+  m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50328,7 +50307,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data: {fileID: 0}
   image: {fileID: 0}
-  cur: 0
 --- !u!222 &6167406176008123829
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -50490,7 +50468,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data: {fileID: 0}
   image: {fileID: 0}
-  cur: 0
 --- !u!222 &6980709184401726907
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -50565,7 +50542,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data: {fileID: 0}
   image: {fileID: 0}
-  cur: 0
 --- !u!114 &7350753797331062920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51096,14 +51072,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 544d3cf52cc19e14b8a91cdf67f2ae3f, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

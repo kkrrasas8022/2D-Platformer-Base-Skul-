@@ -19,7 +19,7 @@ namespace Skul.UI
         [SerializeField] private InventoryBox _curItemBox;
         public event Action OnCurChanged;
         [SerializeField] private int _boxIndex;
-        [SerializeField] private InventoryBox[] ItemBoxs;
+        [SerializeField] private InventoryBox[] ItemBoxes;
 
         [Header("Description")]
         [SerializeField] private Image _itemIcon;
@@ -46,26 +46,15 @@ namespace Skul.UI
 
         private void Awake()
         {
-            _curItemBox = ItemBoxs[0];
-            _curItemBox.cur = true;
-
-            ItemBoxs[0].data = _player.currentHeadData;
-            ItemBoxs[1].data = _player.saveHeadData;
-
-
-
-
             InputManager.Map map = new InputManager.Map();
             map.AddKeyDownAction(KeyCode.RightArrow, () =>
             {
-                if (_boxIndex < ItemBoxs.Length-1)
+                if (_boxIndex < ItemBoxes.Length-1)
                 {
                     _curItemBox.image.color = new Color(255, 248, 158);
-                    _curItemBox.cur = false;
-                    _curItemBox = ItemBoxs[++_boxIndex];
+                    _curItemBox = ItemBoxes[++_boxIndex];
                     OnCurChanged?.Invoke();
                     _curItemBox.image.color = new Color(255, 172, 0);
-                    _curItemBox.cur = true;
                 }
             });
             map.AddKeyDownAction(KeyCode.A, () => { });
