@@ -1,4 +1,5 @@
 using Skul.FSM.States;
+using Skul.UI;
 using Skul.FSM;
 using Skul.InputSystem;
 using System;
@@ -35,14 +36,22 @@ namespace Skul.Character.PC
         [Header("UI")]
         [SerializeField] private InventoryUI _inventoryUI;
         [SerializeField] private GameObject _playerStatus;
+
+
         //가지고 있는 각인의 이름을 Key 그 각인의 중첩수를 Value로 가지는 Dictionary 
         public Dictionary<Engrave, int> haveEngrave;
         public int enghcount;
         //각인에 변동이 생겼을 때 나타나는 효과
         public event Action<Engrave,int> OnEngraveChange;
-        public List<WeaponItemData> items;
+        public WeaponItemData[] items;
+        public int itemCount;
         public Action<WeaponItemData> OnChangeItem;
-        
+        //저장되어있는 스컬
+        [SerializeField] public HeadItemData saveHeadData;
+        //현재 사용되는 스컬
+        [SerializeField] public HeadItemData currentHeadData;
+        [SerializeField] public EssenceItemData essenceData;
+
         public float AttackForce
         {
             get 
@@ -87,10 +96,7 @@ namespace Skul.Character.PC
         private GroundDetecter _detecter;
         [SerializeField] private GameObject _currentRen;
         [SerializeField] private List<GameObject> _renderers;
-        //저장되어있는 스컬
-        [SerializeField]public HeadItemData saveData;
-        //현재 사용되는 스컬
-        [SerializeField]public HeadItemData currentData;
+       
         public Action OnSwitch;
         public Movement.Movement playerMovement { get=>movement; }
         public AttackType attackTypes;
@@ -226,9 +232,11 @@ namespace Skul.Character.PC
 
         protected override void Awake()
         {
+            
             //_skulDatas=new List<SkulData>();
             base.Awake();
 
+            items = new WeaponItemData[9];
             OnChangeItem += (value) =>
             {
                 switch (value.power.type)
@@ -296,19 +304,7 @@ namespace Skul.Character.PC
             map.AddKeyDownAction(KeyCode.X, () => stateMachine.ChangeState(
                 _detecter.isDetected==false?FSM.StateType.JumpAttack:FSM.StateType.Attack));
             map.AddKeyDownAction(KeyCode.Z, () => stateMachine.ChangeState(FSM.StateType.Dash));
-            map.AddKeyDownAction(KeyCode.A, () => 
-            {
-                if(_inventoryUI.gameObject.activeSelf == false)
-                    stateMachine.ChangeState(FSM.StateType.Skill_1);
-                else
-                {
-                    if (_playerStatus.activeSelf == false)
-                        _playerStatus.SetActive(true);
-                    else
-                        _playerStatus.SetActive(false);
-                }
-
-            });
+            map.AddKeyDownAction(KeyCode.A, () => stateMachine.ChangeState(FSM.StateType.Skill_1));
             map.AddKeyDownAction(KeyCode.S, () => stateMachine.ChangeState(FSM.StateType.Skill_2));
             map.AddKeyDownAction(KeyCode.Space, ()=>Switch());
             map.AddKeyDownAction(KeyCode.D, () => 
@@ -327,24 +323,11 @@ namespace Skul.Character.PC
             map.AddKeyPressAction(KeyCode.F, () => { });
             map.AddKeyDownAction(KeyCode.Tab, () => 
             {
-                Debug.Log("KeyDown Tab");
-                if (_inventoryUI.gameObject.activeSelf==true)
-                {
-                    _inventoryUI.Hide();
-                }
-                else if(_inventoryUI.gameObject.activeSelf == false)
-                {
-                    _inventoryUI.Show();
-                }
-
+                _inventoryUI.Show();
             });
             map.AddKeyDownAction(KeyCode.Escape, () =>
             {
                 Debug.Log("KeyDown ESC");
-            });
-            map.AddKeyDownAction(KeyCode.D, () =>
-            {
-                Debug.Log("KeyDown D");
             });
             InputManager.instance.AddMap("PlayerAction", map);
 
@@ -355,7 +338,6 @@ namespace Skul.Character.PC
                 if(!haveEngrave.TryAdd(value.engraves[1], 1))
                     haveEngrave[value.engraves[1]]++;
             };
-
         }
         protected override void Start()
         {
@@ -385,9 +367,9 @@ namespace Skul.Character.PC
             _currentRen.SetActive(true);
 
             HeadItemData tmpData;
-            tmpData = currentData;
-            currentData = saveData;
-            saveData = tmpData;
+            tmpData = currentHeadData;
+            currentHeadData = saveHeadData;
+            saveHeadData = tmpData;
 
             stateMachine.OnAnimatorChanged?.Invoke();
             stateMachine.ChangeState(StateType.Switch);
@@ -396,11 +378,11 @@ namespace Skul.Character.PC
 
         public void HeadChange(HeadItemData data)
         {
-            if (saveData == null)
-                saveData = currentData;
+            if (saveHeadData == null)
+                saveHeadData = currentHeadData;
             else
                 //Instantiate 가지고 있던 머리는 아이템으로 빠져나간다
-            currentData = data;
+            currentHeadData = data;
         }
 
         private void OnTriggerEnter2D(Collider2D collision)

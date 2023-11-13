@@ -24,10 +24,10 @@ namespace Skul.UI
 
         private void Start()
         {
-            _mainFace.sprite = _player.currentData.skulData.SkulFace;
-            _subFace.sprite = _player.saveData.skulData.SkulFace;
-            _skill1.sprite = _player.currentData.skulData.activeSkills[0].Icon;
-            _skill2.sprite = _player.currentData.skulData.activeSkills[1].Icon;
+            _mainFace.sprite = _player.currentHeadData.skulData.SkulFace;
+            _subFace.sprite = _player.saveHeadData.skulData.SkulFace;
+            _skill1.sprite = _player.currentHeadData.skulData.activeSkills[0].Icon;
+            _skill2.sprite = _player.currentHeadData.skulData.activeSkills[1].Icon;
             _subFace=_subFace.GetComponent<Image>();
             _hpBar.minValue = 0.0f;
             _hpBar.maxValue = _player.hpMax;
@@ -54,10 +54,10 @@ namespace Skul.UI
             };
             _player.OnSwitch += () =>
             {
-                _subFace.sprite = _player.currentData.skulData.SkulFace;
-                _mainFace.sprite = _player.saveData.skulData.SkulFace;
-                _skill1.sprite = _player.saveData.skulData.activeSkills[0].Icon;
-                _skill2.sprite = _player.saveData.skulData.activeSkills[1].Icon;
+                _subFace.sprite = _player.currentHeadData.skulData.SkulFace;
+                _mainFace.sprite = _player.saveHeadData.skulData.SkulFace;
+                _skill1.sprite = _player.saveHeadData.skulData.activeSkills[0].Icon;
+                _skill2.sprite = _player.saveHeadData.skulData.activeSkills[1].Icon;
             };
         }
         //private void Update()
