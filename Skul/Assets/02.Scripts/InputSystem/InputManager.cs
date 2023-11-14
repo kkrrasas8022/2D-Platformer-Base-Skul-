@@ -105,6 +105,8 @@ namespace Skul.InputSystem
         //현재 사용중인 Map객체
         public Map currentmap;
 
+        [SerializeField] private int count;
+
         
         public void AddMap(string mapName, Map map)
         {
@@ -128,6 +130,7 @@ namespace Skul.InputSystem
 
         private void Update()
         {
+            count = maps.Count;
             if (enabledCurrent)
                 currentmap.InvokeAll();
         }

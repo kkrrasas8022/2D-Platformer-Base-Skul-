@@ -8,17 +8,20 @@ namespace Skul.UI
 {
     public class InventoryBox:MonoBehaviour
     {
-        public ItemData data;
+
+        public int dataID;
         public Image image;
-        private Image icon;
 
         private void Awake()
         {
-           
-           image = GetComponent<Image>();
-            //icon.sprite = data.Icon;
+            image = GetComponent<Image>();
+            //inventory.OnChangeItem(dataID);
+        }
+        private void OnEnable()
+        {
+            Debug.Log("Box");
         }
 
-        
+
     }
 }

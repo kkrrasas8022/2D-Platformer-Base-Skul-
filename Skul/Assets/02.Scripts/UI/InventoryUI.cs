@@ -15,11 +15,14 @@ namespace Skul.UI
     {
         [SerializeField] private Player _player;
         [SerializeField] private GameObject _Skills;
+        [SerializeField] private GameObject _inventory;
+
 
         [SerializeField] private InventoryBox _curItemBox;
         public event Action OnCurChanged;
         [SerializeField] private int _boxIndex;
         [SerializeField] private InventoryBox[] ItemBoxes;
+        [SerializeField] private InventoryBox ItemBox;
 
         [Header("Description")]
         [SerializeField] private Image _itemIcon;
@@ -46,6 +49,7 @@ namespace Skul.UI
 
         private void Awake()
         {
+            ItemBoxes = new InventoryBox[12];
             InputManager.Map map = new InputManager.Map();
             map.AddKeyDownAction(KeyCode.RightArrow, () =>
             {
@@ -81,21 +85,43 @@ namespace Skul.UI
 
             //curItemBox = _player.currentHeadData;
 
+            for(int i=0;i<ItemBoxes.Length;i++)
+            {
+                if(i<2)
+                {
+                    Instantiate(ItemBox, _inventory.transform).transform.localPosition = new Vector3(-40.0f + 80.0f * i, 177.0f, 0.0f);
+                }
+                else if (i > 2)
+                {
+                    int j = i - 3;
+                    Instantiate(ItemBox, _inventory.transform).transform.localPosition = new Vector3(-60.0f + (60.0f * (j % 3)), -80.0f + (-53.0f * (j / 3)), 0.0f);
+                }
+                else
+                {
+                    Instantiate(ItemBox, _inventory.transform).transform.localPosition=new Vector3(0.0f, 45.0f, 0.0f);
+                }
+
+            }
+
+
 
             OnCurChanged += () =>
             {
-                switch (_curItemBox.data.type)
+                ItemData datas=DataManager.instance[_curItemBox.dataID];
+                switch (datas.type)
                 {
                     case Item.ItemType.Head:
                         {
-                            HeadItemData data = (HeadItemData)_curItemBox.data;
+                            HeadItemData data = datas as HeadItemData;
                             _itemIcon.sprite = data.Icon;
                             _itemName.text = data.Name;
                         }
                         break;
                     case Item.ItemType.Weapon:
                         {
-
+                            WeaponItemData data = datas as WeaponItemData;
+                            _itemIcon.sprite = data.Icon;
+                            _itemName.text = data.Name;
                         }
                         break;
                     case Item.ItemType.Essence:
@@ -114,6 +140,7 @@ namespace Skul.UI
 
         private void OnEnable()
         {
+            Debug.Log("UI");
             InputManager.instance.currentmap = InputManager.instance.maps["InventoryUI"];
         }
 

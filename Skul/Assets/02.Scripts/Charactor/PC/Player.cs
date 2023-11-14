@@ -33,24 +33,16 @@ namespace Skul.Character.PC
 {
     public class Player:Character
     {
+        public PlayerInventory inventory;
+
         [Header("UI")]
         [SerializeField] private InventoryUI _inventoryUI;
-        [SerializeField] private GameObject _playerStatus;
 
-
-        //가지고 있는 각인의 이름을 Key 그 각인의 중첩수를 Value로 가지는 Dictionary 
-        public Dictionary<Engrave, int> haveEngrave;
-        public int enghcount;
-        //각인에 변동이 생겼을 때 나타나는 효과
-        public event Action<Engrave,int> OnEngraveChange;
-        public WeaponItemData[] items;
-        public int itemCount;
-        public Action<WeaponItemData> OnChangeItem;
+        
         //저장되어있는 스컬
-        [SerializeField] public HeadItemData saveHeadData;
+  
         //현재 사용되는 스컬
-        [SerializeField] public HeadItemData currentHeadData;
-        [SerializeField] public EssenceItemData essenceData;
+
 
         public float AttackForce
         {
@@ -232,11 +224,10 @@ namespace Skul.Character.PC
 
         protected override void Awake()
         {
-            
-            //_skulDatas=new List<SkulData>();
             base.Awake();
+            inventory = GetComponent<PlayerInventory>();
 
-            items = new WeaponItemData[9];
+            /*
             OnChangeItem += (value) =>
             {
                 switch (value.power.type)
@@ -268,8 +259,7 @@ namespace Skul.Character.PC
                         break;
                 }
             };
-
-            haveEngrave = new Dictionary<Engrave, int>();
+            */
 
             _curCoin = 0;
             _curBone = 0;
@@ -331,6 +321,7 @@ namespace Skul.Character.PC
             });
             InputManager.instance.AddMap("PlayerAction", map);
 
+            /*
             OnChangeItem += (value) =>
             {
                 if(!haveEngrave.TryAdd(value.engraves[0],1))
@@ -338,6 +329,7 @@ namespace Skul.Character.PC
                 if(!haveEngrave.TryAdd(value.engraves[1], 1))
                     haveEngrave[value.engraves[1]]++;
             };
+            */
         }
         protected override void Start()
         {
@@ -366,24 +358,14 @@ namespace Skul.Character.PC
             _currentRen = (_currentRen == _renderers[0] ? _renderers[1] : _renderers[0]);
             _currentRen.SetActive(true);
 
-            HeadItemData tmpData;
-            tmpData = currentHeadData;
-            currentHeadData = saveHeadData;
-            saveHeadData = tmpData;
+            inventory.SwitchHead();
 
             stateMachine.OnAnimatorChanged?.Invoke();
             stateMachine.ChangeState(StateType.Switch);
             
         }
 
-        public void HeadChange(HeadItemData data)
-        {
-            if (saveHeadData == null)
-                saveHeadData = currentHeadData;
-            else
-                //Instantiate 가지고 있던 머리는 아이템으로 빠져나간다
-            currentHeadData = data;
-        }
+        
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
@@ -402,9 +384,6 @@ namespace Skul.Character.PC
             }
         }
 
-        private void Update()
-        {
-            enghcount=haveEngrave.Count;
-        }
+        
     }
 }

@@ -38,8 +38,8 @@ namespace Skul.Item
         public override void Interaction(Player player)
         {
             base.Interaction(player);
-            player.items[player.itemCount++]=(WeaponItemData)data;
-            player.OnChangeItem?.Invoke((WeaponItemData)data);
+            player.inventory.AddItem(data.id);
+            player.inventory.OnChangeItem?.Invoke(data.id);
             Destroy(gameObject);
         }
 
