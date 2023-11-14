@@ -47,6 +47,7 @@ MonoBehaviour:
   _headItemDatum:
   - {fileID: 11400000, guid: cd32987cb6dc5884a88a93ab586db344, type: 2}
   - {fileID: 11400000, guid: aa64acf22fd587540a00d96265adba12, type: 2}
+  - {fileID: 11400000, guid: 4b4e7721c1120ad4999e76c037429dbc, type: 2}
   _essenceItemDatum:
   - {fileID: 11400000, guid: 15f0073e2c781034ba5e6f9f51f45c74, type: 2}
   _weaponItemDatum:

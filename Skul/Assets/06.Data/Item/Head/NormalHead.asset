@@ -12,6 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8c095d1d2693584ab0c999c9393cd52, type: 3}
   m_Name: NormalHead
   m_EditorClassIdentifier: 
-  id: 0
+  id: 1001
+  Name: Little Bone
   Icon: {fileID: 21300000, guid: 544d3cf52cc19e14b8a91cdf67f2ae3f, type: 3}
+  type: 0
+  rate: 0
+  description: Little skeleton
+  abilityDescription: 
   skulData: {fileID: 11400000, guid: d7cdf3395ed04db48a2155c4a84f7c40, type: 2}

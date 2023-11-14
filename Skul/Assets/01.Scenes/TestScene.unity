@@ -4430,8 +4430,20 @@ MonoBehaviour:
   _inventory: {fileID: 1135029085}
   _curItemBox: {fileID: 0}
   _boxIndex: 0
-  ItemBoxes: []
-  ItemBox: {fileID: 7003533103247201525, guid: 190378630c05b2940b836e43d529212a, type: 3}
+  _curHeadItemBox: {fileID: 0}
+  _subHeadItemBox: {fileID: 0}
+  _essenceItemBox: {fileID: 0}
+  weaponItemBoxes:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  _itemBoxPrefab: {fileID: 7003533103247201525, guid: 190378630c05b2940b836e43d529212a, type: 3}
   _itemIcon: {fileID: 949318565}
   _itemName: {fileID: 1573001031}
   _rateTex: {fileID: 1702939730}

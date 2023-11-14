@@ -11,15 +11,17 @@ namespace Skul.UI
 
         public int dataID;
         public Image image;
+        public Image icon;
+
+
 
         private void Awake()
         {
             image = GetComponent<Image>();
-            //inventory.OnChangeItem(dataID);
         }
         private void OnEnable()
         {
-            Debug.Log("Box");
+            icon.sprite = DataManager.instance[dataID].Icon;
         }
 
 

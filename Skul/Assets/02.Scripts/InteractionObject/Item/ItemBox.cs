@@ -16,7 +16,6 @@ namespace Skul.Item
         public override void Interaction(Player player)
         {
             base.Interaction(player);
-            Debug.Log("box");
             Instantiate(_item,transform.position, Quaternion.identity).InitItem(_rate, _type, _table.itemDatas[Random.Range(0,_table.itemDatas.Count)]);
             Destroy(this.gameObject);
         }

@@ -9,10 +9,10 @@ namespace Skul.Character.PC
 {
     public class PlayerInventory:MonoBehaviour
     {
-        public HeadItemData curHeadData => _curHeadData;
-        public HeadItemData saveHeadData => _saveHeadData;
+        public HeadItemData CurHeadData => _curHeadData;
+        public HeadItemData SaveHeadData => _saveHeadData;
         public EssenceItemData EssenceData => _essenceData;
-        public List<WeaponItemData> weaponDatas => _weaponDatas;
+        public List<WeaponItemData> WeaponDatas => _weaponDatas;
 
         //가지고 있는 각인의 이름을 Key 그 각인의 중첩수를 Value로 가지는 Dictionary 
         public Dictionary<Engrave, int> haveEngrave;
