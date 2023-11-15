@@ -9,6 +9,7 @@ using Skul.InputSystem;
 using Skul.Data;
 using System;
 using Skul.Item;
+using System.Diagnostics.Tracing;
 
 namespace Skul.UI
 { 
@@ -17,6 +18,7 @@ namespace Skul.UI
         [SerializeField] private Player _player;
         [SerializeField] private GameObject _Skills;
         [SerializeField] private GameObject _inventory;
+        [SerializeField] private GameObject _playerStatus;
 
         [Header("Inventory")]
         [SerializeField] private InventoryBox _curItemBox;
@@ -41,8 +43,8 @@ namespace Skul.UI
         [SerializeField] private Image      _skill1Icon;
         [SerializeField] private Image      _skill2Icon;
 
-
         [Header("Details")]
+        [SerializeField] private GameObject _detailsObject;
         [SerializeField] private Image _detailSkill1Icon;
         [SerializeField] private Image _detailSkill2Icon;
         [SerializeField] private TMP_Text _detailSkill1Name;
@@ -51,6 +53,12 @@ namespace Skul.UI
         [SerializeField] private TMP_Text _detailSkill2CoolTime;
         [SerializeField] private TMP_Text _detailSkill1Description;
         [SerializeField] private TMP_Text _detailSkill2Description;
+
+        [Header("Engrave")]
+        [SerializeField] private EngraveNotice _engraveNotice;
+        [SerializeField] private GameObject _engraveParent;
+        //x=0 y 270-60*i
+
 
         private void Awake()
         {
@@ -87,6 +95,15 @@ namespace Skul.UI
                     _curItemBox.image.color = new Color(255, 172, 0);
                 }
             });
+            map.AddKeyDownAction(KeyCode.LeftArrow, () =>
+            {
+                if (_boxIndex > 0)
+                {
+                    _curItemBox.image.color = Color.white;
+                    OnCurChanged?.Invoke(--_boxIndex);
+                    _curItemBox.image.color = new Color(255, 172, 0);
+                }
+            });
             map.AddKeyDownAction(KeyCode.A, () => { });
             map.AddKeyDownAction(KeyCode.F, () =>
             {
@@ -103,9 +120,23 @@ namespace Skul.UI
             {
                 Debug.Log("UI KeyDown ESC");
             });
-            map.AddKeyDownAction(KeyCode.D, () =>
+            map.AddKeyPressAction(KeyCode.D, () =>
             {
                 Debug.Log("UI KeyDown D");
+                _detailsObject.SetActive(true);
+            });
+            map.AddKeyUpAction(KeyCode.D, () =>
+            {
+                _detailsObject.SetActive(false);
+            });
+            map.AddKeyPressAction(KeyCode.A, () =>
+            {
+                Debug.Log("UI KeyDown A");
+                _playerStatus.SetActive(true);
+            });
+            map.AddKeyUpAction(KeyCode.A, () =>
+            {
+                _playerStatus.SetActive(false);
             });
             InputManager.instance.AddMap("InventoryUI", map);
 
@@ -144,19 +175,76 @@ namespace Skul.UI
                 _itemIcon.sprite = data.Icon;
                 _itemName.text=data.Name;
                 _rateTex.text = data.rate.ToString();
+                _typeTex.text = null;
                 _descriptionTex.text = data.description;
                 _abilityTex.text = data.abilityDescription;
 
-                //if (data is HeadItemData)
-                //{
-                //    SkulData skulData = (data as HeadItemData).skulData;
-                //    _typeTex.text=data.type.ToString();
-                //    _switchSkillTex.text = skulData.switchSkill.Name;
-                //    _skill1Name.text = skulData.activeSkills[0].Name;
-                //    _skill2Name.text=skulData.activeSkills[1].Name;
-                //    _skill1Icon.sprite=skulData.activeSkills[0].Icon;
-                //    _skill2Icon.sprite=skulData.activeSkills[1].Icon;
-                //}
+                switch (data.type)
+                {
+                    case ItemType.None:
+                        {
+                            _itemIcon.color = Color.clear;
+                            _itemName.text = null;
+                            _rateTex.text = null;
+                            _typeTex.text= null;
+                            _descriptionTex.text = null;
+                            _abilityTex.text = null;
+                            _Skills.SetActive(false);
+                        }
+                        break;
+                    case ItemType.Head:
+                        {
+                            HeadItemData headData = data as HeadItemData;
+                            _itemIcon.color = Color.white;
+                            _Skills.SetActive(true);
+                            _typeTex.text = headData.skulData.skulType.ToString();
+                            _switchSkillTex.text = headData.skulData.switchSkill.Name;
+                            _skill1Name.text = headData.skulData.activeSkills[0].Name;
+                            _skill2Name.text = headData.skulData.activeSkills[1].Name;
+                            _skill1Icon.sprite = headData.skulData.activeSkills[0].Icon;
+                            _skill2Icon.sprite = headData.skulData.activeSkills[1].Icon;
+                        }
+                        break;
+                    case ItemType.Weapon:
+                        {
+                            WeaponItemData weaponData = data as WeaponItemData;
+                            _itemIcon.color = Color.white;
+                            _Skills.SetActive(true);
+                            _typeTex.text = null;
+                            _switchSkillTex.text = "Engrave";
+                            _skill1Name.text = weaponData.engraves[0].Name;
+                            _skill2Name.text = weaponData.engraves[1].Name;
+                            _skill1Icon.sprite = weaponData.engraves[0].Icon;
+                            _skill2Icon.sprite = weaponData.engraves[1].Icon;
+                        }
+                        break;
+                    case ItemType.Essence:
+                        {
+                            EssenceItemData essenceData = data as EssenceItemData;
+                            _itemIcon.color = Color.white;
+                            _Skills.SetActive(false);
+                            _typeTex.text = null;
+                            _switchSkillTex.text = null;
+                            _skill1Name.text = null;
+                            _skill2Name.text = null;
+                            _skill1Icon.sprite = null;
+                            _skill2Icon.sprite = null;
+                        }
+                        break;
+                }
+
+                if (data is HeadItemData)
+                {
+                    
+                }
+                else if(data is EssenceItemData)
+                {
+                    
+                }
+                else if(data is WeaponItemData)
+                {
+                   
+                }
 
 
             };
@@ -203,6 +291,25 @@ namespace Skul.UI
             _boxIndex = 0;
             OnCurChanged(_boxIndex);
             _curItemBox.image.color = new Color(255, 172, 0);
+
+            if(_player.inventory.HaveEngrave.Count>0)
+            {
+                int i = 0;
+                foreach(var item in _player.inventory.HaveEngrave)
+                {
+                    if (i >= 9)
+                        break;
+                    EngraveNotice notice = Instantiate(_engraveNotice, _engraveParent.transform);
+                    notice.gameObject.SetActive(false);
+                    notice.transform.localPosition=new Vector3(0,270-60*i,0);
+                    notice.data = item.Key;
+                    notice.engraveCount = item.Value;
+                    i++;
+                    notice.gameObject.SetActive(true);
+                }
+            }
+
+
 
             InputManager.instance.currentmap = InputManager.instance.maps["InventoryUI"];
             Debug.Log("OnEnable End");

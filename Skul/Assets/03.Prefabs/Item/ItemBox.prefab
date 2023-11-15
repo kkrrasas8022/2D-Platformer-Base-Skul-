@@ -330,7 +330,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _notice: {fileID: 3361325933279035180}
   _rate: 0
-  _type: 1
+  _type: 2
   _item: {fileID: 6157531509965787629, guid: 6e8fcb7231697df4ebb9075ac1a9fb7d, type: 3}
   _table: {fileID: 11400000, guid: 0f4dfcb777d324c47a9f04859c567e5b, type: 2}
 --- !u!1 &6120947917009526398

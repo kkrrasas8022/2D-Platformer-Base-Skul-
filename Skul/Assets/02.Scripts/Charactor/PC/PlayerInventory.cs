@@ -15,7 +15,8 @@ namespace Skul.Character.PC
         public List<WeaponItemData> WeaponDatas => _weaponDatas;
 
         //가지고 있는 각인의 이름을 Key 그 각인의 중첩수를 Value로 가지는 Dictionary 
-        public Dictionary<Engrave, int> haveEngrave;
+        private Dictionary<Engrave, int> _haveEngrave;
+        public Dictionary<Engrave, int> HaveEngrave=> _haveEngrave;
         public int enghcount;
         //각인에 변동이 생겼을 때 나타나는 효과
         public event Action<Engrave, int> OnEngraveChange;
@@ -26,9 +27,19 @@ namespace Skul.Character.PC
         [SerializeField]private EssenceItemData _essenceData;
         [SerializeField]private List<WeaponItemData> _weaponDatas;
 
+
+        public void AddEngrave(Engrave engrave)
+        {
+            if (!_haveEngrave.TryAdd(engrave, 1))
+                _haveEngrave[engrave]++;
+        }
+
+
+
         private void Awake()
         {
             _weaponDatas = new List<WeaponItemData>();  
+            _haveEngrave = new Dictionary<Engrave, int>();
         }
 
         public void SwitchHead()
@@ -61,8 +72,12 @@ namespace Skul.Character.PC
                     break;
                 case Item.ItemType.Weapon:
                     {
-                        if (_weaponDatas.Count<9)
-                             _weaponDatas.Add(data as WeaponItemData);
+                        if (_weaponDatas.Count < 9)
+                        { 
+                            _weaponDatas.Add(data as WeaponItemData);
+                            AddEngrave((data as WeaponItemData).engraves[0]);
+                            AddEngrave((data as WeaponItemData).engraves[1]);
+                        }
                         else
                         {
                             throw new Exception("weapon가 9개가 넘음");

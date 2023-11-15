@@ -38,6 +38,8 @@ public class DropItemUI : MonoBehaviour
         _items= GetComponentInParent<Item>();
         switch (_items.type)
         {
+            case ItemType.None:
+                break;
             case ItemType.Head:
                 {
                     HeadItemData data = (HeadItemData)_items.data;

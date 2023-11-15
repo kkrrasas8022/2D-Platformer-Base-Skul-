@@ -38,11 +38,6 @@ namespace Skul.Character.PC
         [Header("UI")]
         [SerializeField] private InventoryUI _inventoryUI;
 
-        
-        //저장되어있는 스컬
-  
-        //현재 사용되는 스컬
-
 
         public float AttackForce
         {
@@ -54,7 +49,6 @@ namespace Skul.Character.PC
             }
             
         }
-
         public int curCoin
         {
             get=>_curCoin;

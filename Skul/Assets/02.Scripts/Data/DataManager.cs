@@ -13,10 +13,13 @@ namespace Skul.Data
         [SerializeField] private List<HeadItemData> _headItemDatum;
         [SerializeField] private List<EssenceItemData> _essenceItemDatum;
         [SerializeField] private List<WeaponItemData> _weaponItemDatum;
+        [SerializeField] private ItemData _nullData;
 
         private void Awake()
         {
             itemDatum = new Dictionary<int, ItemData>();
+
+            itemDatum.Add(_nullData.id, _nullData);
 
             foreach (var item in _headItemDatum) 
             {

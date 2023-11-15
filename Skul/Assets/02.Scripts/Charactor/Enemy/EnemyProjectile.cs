@@ -12,7 +12,7 @@ namespace Skul.Character.Enemy {
         private float _damage;
         private LayerMask _targetMask;
         [SerializeField]private float _aliveTime;
-        private float _aliveTimeMax=10.0f;
+        [SerializeField]private float _aliveTimeMax=10.0f;
 
         public void SetUp(GameObject owner, float damage, LayerMask target, Vector2 velocity)
         {

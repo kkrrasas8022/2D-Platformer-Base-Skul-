@@ -9,6 +9,7 @@ namespace Skul.Item
 {
     public enum ItemType
     {
+        None,
         Head,
         Weapon,
         Essence,

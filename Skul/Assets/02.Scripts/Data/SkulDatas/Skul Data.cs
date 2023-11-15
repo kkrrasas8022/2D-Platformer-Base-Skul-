@@ -6,10 +6,17 @@ using UnityEngine;
 
 namespace Skul.Data
 {
+    public enum SkulType
+    {
+        Balance,
+        Power,
+        Speed,
+    }
     public abstract class SkulData : ScriptableObject
     {
         public int id;
         public string Name;
+        public SkulType skulType;
         public string Description;
         public GameObject Renderer;
         public Sprite SkulFace;

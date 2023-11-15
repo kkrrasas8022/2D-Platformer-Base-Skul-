@@ -13,8 +13,6 @@ namespace Skul.UI
         public Image image;
         public Image icon;
 
-
-
         private void Awake()
         {
             image = GetComponent<Image>();
