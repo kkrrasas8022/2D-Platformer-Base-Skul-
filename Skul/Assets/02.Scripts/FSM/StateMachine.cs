@@ -10,12 +10,13 @@ namespace Skul.FSM
     //객체에게 적용할 FSM
     public class StateMachine:MonoBehaviour
     {
+        [SerializeField] private Animator test;
         public StateType currentType; // 현재 상태를 저장해두는 변수
         public IStateEnumerator<StateType> current; // 현재 상태의 현재 기능
         //객체가 가지는 상태를 상태 타입을 기준으로 저장하는 Dictionary자료구조
         public Dictionary<StateType, IStateEnumerator<StateType>> states;
         public int DicCount=0;
-        public Action OnAnimatorChanged;
+        public Action<Animator> OnAnimatorChanged;
 
         public int times;
         public int StopTime;
@@ -50,6 +51,7 @@ namespace Skul.FSM
         {
             DicCount = states.Count;
             ChangeState(current.MoveNext());
+            test = ((State)current).animator;
         }
 
         public void InitStates(Dictionary<StateType, IStateEnumerator<StateType>> states)

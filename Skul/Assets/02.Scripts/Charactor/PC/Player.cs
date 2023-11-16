@@ -76,12 +76,13 @@ namespace Skul.Character.PC
         [SerializeField]private int _curBone;
 
         public bool canInteraction;
+        [SerializeField] private List<InteractionObject> interactionObjectsList;
         public InteractionObject canInteractionObject;
 
         public bool canDownJump;
         private GroundDetecter _detecter;
-        [SerializeField] private GameObject _currentRen;
-        [SerializeField] private List<GameObject> _renderers;
+        [SerializeField] public PlayerAttacks _currentRen;
+        [SerializeField] public List<PlayerAttacks> _renderers;
        
         public Action OnSwitch;
         public Movement.Movement playerMovement { get=>movement; }
@@ -220,7 +221,7 @@ namespace Skul.Character.PC
         {
             base.Awake();
             inventory = GetComponent<PlayerInventory>();
-
+            interactionObjectsList = new List<InteractionObject>();
             /*
             OnChangeItem += (value) =>
             {
@@ -302,7 +303,10 @@ namespace Skul.Character.PC
             { 
                 Debug.Log("KeyDown F");
                 if (canInteraction)
+                {
+                    interactionObjectsList.Remove(canInteractionObject);
                     canInteractionObject.Interaction(this);
+                }
             });
             map.AddKeyPressAction(KeyCode.F, () => { });
             map.AddKeyDownAction(KeyCode.Tab, () => 
@@ -348,18 +352,29 @@ namespace Skul.Character.PC
         public void Switch()
         {
             OnSwitch?.Invoke();
-            _currentRen.SetActive(false);
+            _currentRen.gameObject.SetActive(false);
             _currentRen = (_currentRen == _renderers[0] ? _renderers[1] : _renderers[0]);
-            _currentRen.SetActive(true);
+            _currentRen.gameObject.SetActive(true);
 
             inventory.SwitchHead();
 
-            stateMachine.OnAnimatorChanged?.Invoke();
+            AnimatorChange(_currentRen.GetComponent<Animator>());
             stateMachine.ChangeState(StateType.Switch);
-            
         }
 
-        
+        public void AnimatorChange(Animator ani)
+        {
+            Debug.Log("»£√‚");
+            stateMachine.OnAnimatorChanged?.Invoke(_currentRen.GetComponent<Animator>());
+        }
+
+        [SerializeField] private Animator ani;
+
+        private void Update()
+        {
+        }
+
+
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
@@ -367,14 +382,19 @@ namespace Skul.Character.PC
             {
                 canInteraction = true;
                 canInteractionObject = collision.gameObject.GetComponent<InteractionObject>();
+                interactionObjectsList.Add(canInteractionObject);
             }
         }
         private void OnTriggerExit2D(Collider2D collision)
         {
             if (collision.CompareTag("InteractionObject"))
             {
-                canInteraction = false;
-                canInteractionObject = null;
+                interactionObjectsList.Remove(collision.gameObject.GetComponent<InteractionObject>());
+                if(interactionObjectsList.Count<=0)
+                {
+                    canInteraction = false;
+                    canInteractionObject = null;
+                }
             }
         }
 

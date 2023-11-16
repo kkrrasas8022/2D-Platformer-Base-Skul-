@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Collections;
 using Unity.VisualScripting;
 using System;
+using Skul.Character.PC;
 
 namespace Skul.FSM
 {
@@ -39,7 +40,7 @@ namespace Skul.FSM
         //statemachine을 가지는 객체의 컴포넌트들을 저장하는 변수들
         protected StateMachine machine;
         //protected Animator animator;
-        protected Animator animator;
+        public Animator animator;
         protected Rigidbody2D rigid;
         protected BoxCollider2D trigger;
         protected BoxCollider2D collider;
@@ -60,9 +61,10 @@ namespace Skul.FSM
             this.transform=machine.GetComponent<Transform>();
             this.movement = machine.GetComponent<Skul.Movement.Movement>();
             this.character = machine.GetComponent<Skul.Character.Character>();
-            machine.OnAnimatorChanged += () =>
+            machine.OnAnimatorChanged += (value) =>
             {
-                animator = machine.GetComponentInChildren<Animator>();
+                Debug.Log("변경");
+                animator = value;
             };
         }
 

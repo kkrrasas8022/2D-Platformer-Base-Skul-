@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Animations;
 using UnityEngine;
+using Skul.Character;
 
 namespace Skul.Data
 {
@@ -18,7 +19,7 @@ namespace Skul.Data
         public string Name;
         public SkulType skulType;
         public string Description;
-        public GameObject Renderer;
+        public PlayerAttacks Renderer;
         public Sprite SkulFace;
         public List<SkillData> activeSkills;
         public SkillData switchSkill;

@@ -27,6 +27,7 @@ namespace Skul.Item
         {
             _renderer = GetComponentInChildren<SpriteRenderer>();
         }
+
         public void InitItem(ItemRate rate,ItemType type,ItemData data)
         {
             this.type = type;

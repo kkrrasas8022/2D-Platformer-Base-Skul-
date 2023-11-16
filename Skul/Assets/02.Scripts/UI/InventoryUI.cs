@@ -57,7 +57,6 @@ namespace Skul.UI
         [Header("Engrave")]
         [SerializeField] private EngraveNotice _engraveNotice;
         [SerializeField] private GameObject _engraveParent;
-        //x=0 y 270-60*i
 
 
         private void Awake()
@@ -232,27 +231,8 @@ namespace Skul.UI
                         }
                         break;
                 }
-
-                if (data is HeadItemData)
-                {
-                    
-                }
-                else if(data is EssenceItemData)
-                {
-                    
-                }
-                else if(data is WeaponItemData)
-                {
-                   
-                }
-
-
             };
-
-
             Debug.Log("Awake End");
-
-
         }
 
         private void OnEnable()

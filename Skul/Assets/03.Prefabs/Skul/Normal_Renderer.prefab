@@ -123,9 +123,15 @@ MonoBehaviour:
   _movement: {fileID: 0}
   _enemyMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 16384
   col: {fileID: 0}
-  _hitSize: {x: 0, y: 0, z: 0}
-  _hitOffset: {x: 0, y: 0, z: 0}
-  _switchHitSize: {x: 0, y: 0, z: 0}
-  _switchHitOffset: {x: 0, y: 0, z: 0}
+  _hitSize: {x: 1, y: 0.7, z: 0}
+  _hitOffset: {x: 0.6, y: 0.8, z: 0}
+  _switchHitSize: {x: 2.5, y: 2, z: 0}
+  _switchHitOffset: {x: 0, y: 0.5, z: 0}
+  _saveAnimators:
+  - {fileID: 9100000, guid: d6485120396380148af9baddf1556b07, type: 2}
+  - {fileID: 9100000, guid: 590a9ca3d9b8f454e9c438d2ef3ce218, type: 2}
+  _head: {fileID: 7245711959511798155, guid: 8b8496e7487709a4fa789e2d797e438a, type: 3}
+  _currentHead: {fileID: 0}
+  _headsPos: {x: 0, y: 0, z: 0}

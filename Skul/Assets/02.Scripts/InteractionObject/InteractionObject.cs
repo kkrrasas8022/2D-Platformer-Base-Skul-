@@ -9,8 +9,18 @@ public class InteractionObject : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (!collision.CompareTag("Player"))
-            return;
+            return; 
         _notice.SetActive(true);
+       
+    }
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (!collision.CompareTag("Player"))
+            return;
+        if (collision.GetComponent<Player>().canInteractionObject == this)
+            _notice.SetActive(true);
+        else
+            _notice.SetActive(false);
     }
     private void OnTriggerExit2D(Collider2D collision)
     {

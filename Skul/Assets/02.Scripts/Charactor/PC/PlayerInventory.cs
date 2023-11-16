@@ -1,4 +1,5 @@
 using Skul.Data;
+using Skul.Item;
 using Skul.UI;
 using System;
 using System.Collections.Generic;
@@ -9,6 +10,8 @@ namespace Skul.Character.PC
 {
     public class PlayerInventory:MonoBehaviour
     {
+        [SerializeField] private Player _player;
+        [SerializeField] private Item.Item _dropItem;
         public HeadItemData CurHeadData => _curHeadData;
         public HeadItemData SaveHeadData => _saveHeadData;
         public EssenceItemData EssenceData => _essenceData;
@@ -26,6 +29,12 @@ namespace Skul.Character.PC
         [SerializeField]private HeadItemData _saveHeadData;
         [SerializeField]private EssenceItemData _essenceData;
         [SerializeField]private List<WeaponItemData> _weaponDatas;
+
+
+        public void DropItem(ItemData data)
+        {
+            Instantiate(_dropItem, transform.position, Quaternion.identity).InitItem(data.rate, data.type, data);
+        }
 
 
         public void AddEngrave(Engrave engrave)
@@ -62,11 +71,23 @@ namespace Skul.Character.PC
                         {
                             _saveHeadData = _curHeadData;
                             _curHeadData=data as HeadItemData;
+                            Instantiate(_curHeadData.skulData.Renderer, transform);
+                            _player._renderers.Add(_curHeadData.skulData.Renderer);
                         }
                         else
                         {
-                            throw new Exception("head가 2개가 넘음");
-                            //itemChange
+                            DropItem(_curHeadData);
+                            Destroy(_player._currentRen.gameObject);
+                            _player._renderers.Remove(_curHeadData.skulData.Renderer);
+                            _curHeadData = data as HeadItemData;
+                            PlayerAttacks curren = Instantiate(_curHeadData.skulData.Renderer, transform);
+                            curren.InitAttackRenderer();
+                            PlayerAttacks temp = _player._renderers[1];
+                            _player._renderers.Clear();
+                            _player._renderers.Add(curren);
+                            _player._renderers.Add(temp);
+                            _player._currentRen = curren;
+                            _player.AnimatorChange(curren.GetComponent<Animator>());    
                         }
                     }
                     break;

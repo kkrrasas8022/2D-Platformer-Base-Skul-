@@ -10,6 +10,15 @@ namespace Skul.Character
         [SerializeField]protected Player _player;
         [SerializeField]protected PlayerMovement _movement;
         [SerializeField] protected LayerMask _enemyMask;
+
+        public void InitAttackRenderer()
+        {
+            _player = GetComponentInParent<Player>();
+            _movement=GetComponentInParent<PlayerMovement>();
+        }
+
+
+
         private void Awake()
         {
             _player = GetComponentInParent<Player>();
