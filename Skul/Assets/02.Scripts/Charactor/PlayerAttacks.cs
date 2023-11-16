@@ -21,9 +21,9 @@ namespace Skul.Character
 
         private void Awake()
         {
-            _player = GetComponentInParent<Player>();
-            _movement = GetComponentInParent<PlayerMovement>();
+            InitAttackRenderer();
         }
+
         protected virtual void SwitchAttack()
         {
             Debug.Log("SwitchAttack");

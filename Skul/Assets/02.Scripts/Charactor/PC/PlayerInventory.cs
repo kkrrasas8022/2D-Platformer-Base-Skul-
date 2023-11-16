@@ -33,7 +33,8 @@ namespace Skul.Character.PC
 
         public void DropItem(ItemData data)
         {
-            Instantiate(_dropItem, transform.position, Quaternion.identity).InitItem(data.rate, data.type, data);
+            Item.Item tem = Instantiate(_dropItem, new Vector3(transform.position.x,transform.position.y+0.5f), Quaternion.identity);
+            tem.InitItem(data.rate, data.type, data);
         }
 
 
@@ -41,6 +42,13 @@ namespace Skul.Character.PC
         {
             if (!_haveEngrave.TryAdd(engrave, 1))
                 _haveEngrave[engrave]++;
+        }
+        public void RemoveEngrave(Engrave engrave) 
+        {
+            if (_haveEngrave[engrave]>1)
+                _haveEngrave[engrave]--;
+            else
+                _haveEngrave.Remove(engrave);
         }
 
 
@@ -69,10 +77,12 @@ namespace Skul.Character.PC
                     {
                         if (_saveHeadData == null)
                         {
+                            _player._currentRen.gameObject.SetActive(false);
                             _saveHeadData = _curHeadData;
                             _curHeadData=data as HeadItemData;
-                            Instantiate(_curHeadData.skulData.Renderer, transform);
-                            _player._renderers.Add(_curHeadData.skulData.Renderer);
+                            _player._currentRen=Instantiate(_curHeadData.skulData.Renderer, transform);
+                            _player._renderers.Add(_player._currentRen);
+                            _player.AnimatorChange(_player._currentRen.GetComponent<Animator>());
                         }
                         else
                         {
@@ -82,7 +92,7 @@ namespace Skul.Character.PC
                             _curHeadData = data as HeadItemData;
                             PlayerAttacks curren = Instantiate(_curHeadData.skulData.Renderer, transform);
                             curren.InitAttackRenderer();
-                            PlayerAttacks temp = _player._renderers[1];
+                            PlayerAttacks temp = (_player._currentRen==_player._renderers[0]?_player._renderers[1]:_player._renderers[0]);
                             _player._renderers.Clear();
                             _player._renderers.Add(curren);
                             _player._renderers.Add(temp);
@@ -101,15 +111,16 @@ namespace Skul.Character.PC
                         }
                         else
                         {
-                            throw new Exception("weapon가 9개가 넘음");
-                            //ItemChange
+                            DropItem(_weaponDatas[0]);
+                            _weaponDatas[0]= data as WeaponItemData;
+                           
                         }
                     }
                     break;
                 case Item.ItemType.Essence:
-                    { 
+                    {
+                        DropItem(_essenceData);
                         _essenceData = data as EssenceItemData;
-                        //DropItem;
                     }
                     break;
             }

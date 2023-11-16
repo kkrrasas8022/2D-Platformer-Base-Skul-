@@ -10,7 +10,7 @@ namespace Skul.Character.PC
 {
     public class Normal:PlayerAttacks
     {
-        [SerializeField]Collider2D col;
+        [SerializeField] Collider2D col;
         [SerializeField] private Vector3 _hitSize;
         [SerializeField] private Vector3 _hitOffset;
         [SerializeField] private Vector3 _switchHitSize;

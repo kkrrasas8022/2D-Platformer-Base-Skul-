@@ -351,6 +351,8 @@ namespace Skul.Character.PC
         }
         public void Switch()
         {
+            if(_renderers.Count <2)
+                return;
             OnSwitch?.Invoke();
             _currentRen.gameObject.SetActive(false);
             _currentRen = (_currentRen == _renderers[0] ? _renderers[1] : _renderers[0]);

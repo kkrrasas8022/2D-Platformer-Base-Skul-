@@ -26,6 +26,12 @@ namespace Skul.Item
         private void Awake()
         {
             _renderer = GetComponentInChildren<SpriteRenderer>();
+            
+        }
+        private void OnEnable()
+        {
+            if(data != null)
+                _renderer.sprite = data.Icon;
         }
 
         public void InitItem(ItemRate rate,ItemType type,ItemData data)

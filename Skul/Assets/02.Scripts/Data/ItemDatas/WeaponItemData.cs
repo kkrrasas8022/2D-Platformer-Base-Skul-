@@ -9,7 +9,26 @@ namespace Skul.Data
     public class WeaponItemData : ItemData
     {
         public Engrave[] engraves = new Engrave[2];
-        [SerializeField] public Power power;
+        public Power power;
+        public int hitPer;
+        public float skillabilityPower;
+        public int skillPer;
+        public float hitabilityPower;
+
+        public void HitAbility()
+        {
+            if(hitPer<UnityEngine.Random.Range(0, 100))
+            {
+
+            }
+        }
+
+        public void UseSkillAbility()
+        {
+
+        }
+
+
     }
     [Serializable]
     public class Power
