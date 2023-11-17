@@ -66,6 +66,7 @@ namespace Skul.FSM
                 Debug.Log("º¯°æ");
                 animator = value;
             };
+            this.machine.GetComponent<Character.Character>().onHpMin += () => this.machine.isDie = true;
         }
 
         

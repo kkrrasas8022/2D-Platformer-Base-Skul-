@@ -19,4 +19,5 @@ MonoBehaviour:
   rate: 0
   description: Little skeleton
   abilityDescription: 
+  skillCount: 2
   skulData: {fileID: 11400000, guid: d7cdf3395ed04db48a2155c4a84f7c40, type: 2}

@@ -6,7 +6,7 @@ namespace Skul.Character
     public interface IHp
     {
         float hp { get; set; }
-        float hpMax { get; }
+        float hpMax { get; set; }
         float hpMin { get; }
 
         event Action<float> onHpChanged;

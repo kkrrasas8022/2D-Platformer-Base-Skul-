@@ -22,16 +22,18 @@ namespace Skul.Item
         private SpriteRenderer _renderer;
         [SerializeField]public ItemRate rate;
         [SerializeField]private GameObject _details;
+        [SerializeField] public int skillCount;
+        [SerializeField] public List<ActiveSkillData> skills;
 
         private void Awake()
         {
             _renderer = GetComponentInChildren<SpriteRenderer>();
-            
         }
         private void OnEnable()
         {
             if(data != null)
                 _renderer.sprite = data.Icon;
+            //InitItem(data.rate, data.type, data);
         }
 
         public void InitItem(ItemRate rate,ItemType type,ItemData data)
@@ -40,6 +42,25 @@ namespace Skul.Item
             this.rate = rate;
             this.data = data;
             _renderer.sprite = data.Icon;
+            if(type== ItemType.Head)
+            {
+                HeadItemData datas = data as HeadItemData;
+                skillCount = datas.skillCount;
+
+                for (int i = 0; i < skillCount; i++)
+                {
+                    ActiveSkillData skilldata = datas.skulData.activeSkills[Random.Range(0, datas.skulData.activeSkills.Count)];
+                    if(skills.Count>0)
+                    {
+                        if (skills[0] == skilldata)
+                        {
+                            i--;
+                            continue;
+                        }
+                    }
+                    skills.Add(skilldata);
+                }
+            }
         }
    
 
@@ -54,12 +75,18 @@ namespace Skul.Item
         public override void SeeDetails(Player player)
         {
             base.SeeDetails(player);
-            if(_details.activeSelf==true)
-            { _details.SetActive(false);}
-            else if (_details.activeSelf == false)
-            { _details.SetActive(true); }
+            if (_details.activeSelf == false)
+            { 
+                _details.SetActive(true);
+            }
         }
-
+        public override void ColseDetails(Player player)
+        {
+            base.ColseDetails(player);
+            if (_details.activeSelf == true)
+            { _details.SetActive(false); }
+           
+        }
 
     }
 }

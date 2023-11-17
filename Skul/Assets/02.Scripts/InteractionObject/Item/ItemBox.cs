@@ -16,7 +16,8 @@ namespace Skul.Item
         public override void Interaction(Player player)
         {
             base.Interaction(player);
-            Instantiate(_item,transform.position, Quaternion.identity).InitItem(_rate, _type, _table.itemDatas[Random.Range(0,_table.itemDatas.Count)]);
+            Item tem = Instantiate(_item, transform.position, Quaternion.identity);
+            tem.InitItem(_rate, _type, _table.itemDatas[Random.Range(0,_table.itemDatas.Count)]);
             Destroy(this.gameObject);
         }
         public override void SeeDetails(Player player)

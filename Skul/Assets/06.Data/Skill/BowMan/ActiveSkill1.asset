@@ -14,3 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0
   Icon: {fileID: 0}
+  Name: ChargeShot
+  Description: 
+  CoolTime: 0

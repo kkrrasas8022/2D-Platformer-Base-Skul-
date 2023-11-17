@@ -9,9 +9,9 @@ public class InteractionObject : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (!collision.CompareTag("Player"))
-            return; 
+            return;
         _notice.SetActive(true);
-       
+
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -34,6 +34,10 @@ public class InteractionObject : MonoBehaviour
 
     }
     public virtual void SeeDetails(Player player)
+    {
+
+    }
+    public virtual void ColseDetails(Player player)
     {
 
     }

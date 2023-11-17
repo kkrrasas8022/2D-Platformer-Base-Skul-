@@ -29,7 +29,7 @@ namespace Skul.Character.PC
         [SerializeField]private HeadItemData _saveHeadData;
         [SerializeField]private EssenceItemData _essenceData;
         [SerializeField]private List<WeaponItemData> _weaponDatas;
-
+        public event Action<HeadItemData> OnHeadAdd;
 
         public void DropItem(ItemData data)
         {
@@ -59,12 +59,19 @@ namespace Skul.Character.PC
             _haveEngrave = new Dictionary<Engrave, int>();
         }
 
+        private void Start()
+        {
+            _curHeadData.HadAbility(_player);
+        }
+
         public void SwitchHead()
         {
+            _curHeadData.DeleteAbility(_player);
             HeadItemData tmpData;
             tmpData = _curHeadData;
             _curHeadData = _saveHeadData;
             _saveHeadData = tmpData;
+            _curHeadData.HadAbility(_player);
         }
 
 
@@ -79,17 +86,22 @@ namespace Skul.Character.PC
                         {
                             _player._currentRen.gameObject.SetActive(false);
                             _saveHeadData = _curHeadData;
+                            _curHeadData.DeleteAbility(_player);
                             _curHeadData=data as HeadItemData;
+                            _curHeadData.HadAbility(_player);
                             _player._currentRen=Instantiate(_curHeadData.skulData.Renderer, transform);
                             _player._renderers.Add(_player._currentRen);
                             _player.AnimatorChange(_player._currentRen.GetComponent<Animator>());
+                            OnHeadAdd?.Invoke(data as HeadItemData);
                         }
                         else
                         {
+                            _curHeadData.DeleteAbility(_player);
                             DropItem(_curHeadData);
                             Destroy(_player._currentRen.gameObject);
                             _player._renderers.Remove(_curHeadData.skulData.Renderer);
                             _curHeadData = data as HeadItemData;
+                            _curHeadData.HadAbility(_player);
                             PlayerAttacks curren = Instantiate(_curHeadData.skulData.Renderer, transform);
                             curren.InitAttackRenderer();
                             PlayerAttacks temp = (_player._currentRen==_player._renderers[0]?_player._renderers[1]:_player._renderers[0]);
@@ -106,14 +118,16 @@ namespace Skul.Character.PC
                         if (_weaponDatas.Count < 9)
                         { 
                             _weaponDatas.Add(data as WeaponItemData);
+                            data.HadAbility(_player);
                             AddEngrave((data as WeaponItemData).engraves[0]);
                             AddEngrave((data as WeaponItemData).engraves[1]);
                         }
                         else
                         {
                             DropItem(_weaponDatas[0]);
+                            _weaponDatas[0].DeleteAbility(_player);
                             _weaponDatas[0]= data as WeaponItemData;
-                           
+                            data.HadAbility(_player);
                         }
                     }
                     break;

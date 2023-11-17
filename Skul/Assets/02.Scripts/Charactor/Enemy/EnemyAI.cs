@@ -18,6 +18,8 @@ public class EnemyAI:MonoBehaviour
         Attack,
     }
 
+    [SerializeField] private bool isGiant;
+
     [SerializeField] private AIStep _step;
     [SerializeField] private bool _autoFollow;
     [SerializeField] private LayerMask _detectMask;
@@ -82,6 +84,11 @@ public class EnemyAI:MonoBehaviour
             _step = AIStep.StartChase;
         }
 
+        if (_stateMachine.isDie == true)
+            _step = AIStep.Idle;
+        
+
+
         switch (_step)
         {
             case AIStep.Idle:
@@ -92,6 +99,7 @@ public class EnemyAI:MonoBehaviour
                     _thinkTimer = Random.Range(_thinkTimeMin, _thinkTimeMax);
 
                     _stateMachine.ChangeState(_step == AIStep.TakeARest ? StateType.Idle : StateType.Move);
+
                 }
                 break;
             case AIStep.TakeARest:

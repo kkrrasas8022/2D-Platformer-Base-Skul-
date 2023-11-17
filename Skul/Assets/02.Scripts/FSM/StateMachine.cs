@@ -17,7 +17,7 @@ namespace Skul.FSM
         public Dictionary<StateType, IStateEnumerator<StateType>> states;
         public int DicCount=0;
         public Action<Animator> OnAnimatorChanged;
-
+        public bool isDie;
         public int times;
         public int StopTime;
         /// <summary>
@@ -45,7 +45,10 @@ namespace Skul.FSM
             return true;
         }
 
-
+        private void Awake()
+        {
+            isDie= false;
+        }
 
         private void Update()
         {

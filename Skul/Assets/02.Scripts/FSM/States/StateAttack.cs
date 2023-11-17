@@ -11,7 +11,7 @@ namespace Skul.FSM.States
         }
 
         //Idle상태는 어느 상태에서도 진입가능하기 때문에 true로 한다.
-        public override bool canExecute => machine.currentType == StateType.Idle || 
+        public override bool canExecute =>machine.currentType == StateType.Idle || 
                                            machine.currentType == StateType.Move;
 
         //None에서 idle상태를 실행하기 위해 필요한 것들을 지정해둔다

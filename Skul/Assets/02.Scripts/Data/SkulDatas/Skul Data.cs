@@ -21,10 +21,10 @@ namespace Skul.Data
         public string Description;
         public PlayerAttacks Renderer;
         public Sprite SkulFace;
-        public List<SkillData> activeSkills;
-        public SkillData switchSkill;
-        public SkillData passiveSkill;
-        public SkillData specialSkill;
+        public List<ActiveSkillData> activeSkills;
+        public SwitchSkillData switchSkill;
+        public PassiveSkillData passiveSkill;
+        public SpecialSkillData specialSkill;
         public AttackType attackType;
 
         [Header("Status")]

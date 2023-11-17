@@ -1,3 +1,4 @@
+using Skul.Character.PC;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -9,23 +10,27 @@ namespace Skul.Data
     public class WeaponItemData : ItemData
     {
         public Engrave[] engraves = new Engrave[2];
-        public Power power;
         public int hitPer;
         public float skillabilityPower;
         public int skillPer;
         public float hitabilityPower;
 
-        public void HitAbility()
+        public override void HadAbility(Player player)
         {
-            if(hitPer<UnityEngine.Random.Range(0, 100))
-            {
-
-            }
+            base.HadAbility(player);
+        }
+        public override void DeleteAbility(Player player)
+        {
+            base.DeleteAbility(player);
+        }
+        public override void HitAbility()
+        {
+            base.HitAbility();
         }
 
-        public void UseSkillAbility()
+        public override void UseSkillAbility()
         {
-
+            base.UseSkillAbility();
         }
 
 

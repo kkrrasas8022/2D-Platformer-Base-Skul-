@@ -2022,7 +2022,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: F
+  m_text: Down
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3080,6 +3080,8 @@ MonoBehaviour:
   data: {fileID: 0}
   rate: 0
   _details: {fileID: 8454129740082828148}
+  skillCount: 0
+  skills: []
 --- !u!61 &7677877484354383577
 BoxCollider2D:
   m_ObjectHideFlags: 0

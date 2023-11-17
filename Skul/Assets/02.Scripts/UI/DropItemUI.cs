@@ -44,6 +44,29 @@ public class DropItemUI : MonoBehaviour
                 {
                     HeadItemData data = (HeadItemData)_items.data;
                     _name.text = data.skulData.Name;
+                    _itemForce.text = data.abilityDescription;
+                    _itemRate.text = data.rate.ToString();
+                    _essenceCoolTime.text = data.skulData.skulType.ToString();
+                    _detailsNotice.gameObject.SetActive(true);
+                    _details.gameObject.SetActive(false);
+
+                    _skill1Name.text = _items.skills[0].Name;
+                    _icon1.sprite = _items.skills[0].Icon;
+                    _detailIcon1.sprite= _items.skills[0].Icon;
+                    _detailSkill1CoolTime.text = _items.skills[0].CoolTime.ToString();
+                    _detailSkill1Des.text = _items.skills[0].Description;
+                    _detailSkill1Name.text= _items.skills[0].Name;
+
+                    if(_items.skillCount>1)
+                    {
+                        _skill2Name.text = _items.skills[1].Name;
+                        _icon2.sprite = _items.skills[1].Icon;
+                        _detailIcon2.sprite = _items.skills[1].Icon;
+                        _detailSkill2CoolTime.text = _items.skills[1].CoolTime.ToString();
+                        _detailSkill2Des.text = _items.skills[1].Description;
+                        _detailSkill2Name.text = _items.skills[1].Name;
+                    }
+                    
                 }
                 break;
             case ItemType.Weapon:

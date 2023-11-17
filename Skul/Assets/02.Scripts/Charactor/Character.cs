@@ -16,6 +16,7 @@ namespace Skul.Character
     //유닛들의 베이스가 되는 character 클래스
     public abstract class Character : MonoBehaviour,IHp,IMp
     {
+        
         //유닛의 스탯들
         [Header("State")]
         public float moveSpeed = 3.0f;
@@ -70,7 +71,7 @@ namespace Skul.Character
         [Header("Status/Health")]
         [SerializeField] private float _hp;
         [SerializeField] private float _takenDamage;
-        public float hpMax => _hpMax;
+        public float hpMax { get => _hpMax; set=> _hpMax = value; }
 
         public float hpMin => _hpMin;
 

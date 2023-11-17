@@ -25,7 +25,13 @@ namespace Skul.UI
         private void Start()
         {
             _mainFace.sprite = _player.inventory.CurHeadData.skulData.SkulFace;
-            _subFace.sprite = _player.inventory.SaveHeadData?.skulData.SkulFace;
+            if (_player.inventory.SaveHeadData == null)
+                _subFace.color = Color.clear;
+            else
+            {
+                _subFace.color = Color.white;
+                _subFace.sprite = _player.inventory.SaveHeadData.skulData.SkulFace; 
+            }
             _skill1.sprite = _player.inventory.CurHeadData.skulData.activeSkills[0].Icon;
             _skill2.sprite = _player.inventory.CurHeadData.skulData.activeSkills[1].Icon;
             _subFace=_subFace.GetComponent<Image>();
@@ -57,7 +63,17 @@ namespace Skul.UI
                 _subFace.sprite = _player.inventory.CurHeadData.skulData.SkulFace;
                 _mainFace.sprite = _player.inventory.SaveHeadData.skulData.SkulFace;
                 _skill1.sprite = _player.inventory.SaveHeadData.skulData.activeSkills[0].Icon;
-                _skill2.sprite = _player.inventory.SaveHeadData.skulData.activeSkills[1].Icon;
+                if (_player.inventory.CurHeadData.skillCount > 1)
+                    _skill2.sprite = _player.inventory.SaveHeadData.skulData.activeSkills[1].Icon;
+            };
+            _player.inventory.OnHeadAdd += (data) =>
+            {
+                _subFace.color = Color.white;
+                _subFace.sprite = _player.inventory.SaveHeadData.skulData.SkulFace;
+                _mainFace.sprite = _player.inventory.CurHeadData.skulData.SkulFace;
+                _skill1.sprite = _player.inventory.CurHeadData.skulData.activeSkills[0].Icon;
+                if (_player.inventory.CurHeadData.skillCount > 1)
+                    _skill2.sprite = _player.inventory.CurHeadData.skulData.activeSkills[1].Icon;
             };
         }
         //private void Update()

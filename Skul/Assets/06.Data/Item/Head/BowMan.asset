@@ -19,4 +19,5 @@ MonoBehaviour:
   rate: 0
   description: Bow Skeleton
   abilityDescription: 
+  skillCount: 2
   skulData: {fileID: 11400000, guid: 4ca230d0f20887d4f97027613615fe80, type: 2}

@@ -283,8 +283,22 @@ namespace Skul.Character.PC
             });
             //map.AddKeyDownAction(KeyCode.Space, () => stateMachine.ChangeState(stateMachine.currentType == FSM.StateType.Crouch ? FSM.StateType.DownJump : FSM.StateType.Jump));
             map.AddKeyDownAction(KeyCode.C, () => stateMachine.ChangeState(canDownJump==true?FSM.StateType.DownJump:FSM.StateType.Jump));
-            map.AddKeyPressAction(KeyCode.DownArrow, () =>canDownJump = true);
-            map.AddKeyUpAction(KeyCode.DownArrow, () =>canDownJump = false);
+            map.AddKeyPressAction(KeyCode.DownArrow, () => 
+            {
+                canDownJump = true;
+                if (canInteraction)
+                {
+                    canInteractionObject.SeeDetails(this);
+                }
+            });
+            map.AddKeyUpAction(KeyCode.DownArrow, () =>
+            {
+                canDownJump = false;
+                if (canInteraction)
+                {
+                    canInteractionObject.ColseDetails(this);
+                }
+            });
             //map.AddKeyUpAction(KeyCode.DownArrow, () => stateMachine.ChangeState(StateType.StandUp));
             map.AddKeyDownAction(KeyCode.X, () => stateMachine.ChangeState(
                 _detecter.isDetected==false?FSM.StateType.JumpAttack:FSM.StateType.Attack));
@@ -294,10 +308,8 @@ namespace Skul.Character.PC
             map.AddKeyDownAction(KeyCode.Space, ()=>Switch());
             map.AddKeyDownAction(KeyCode.D, () => 
             {
-                if(canInteraction)
-                {
-                    canInteractionObject.SeeDetails(this);
-                }
+                if (inventory.EssenceData)
+                    inventory.EssenceData.EssenceSkill();
             });
             map.AddKeyDownAction(KeyCode.F, () => 
             { 
@@ -348,6 +360,7 @@ namespace Skul.Character.PC
                 { StateType.JumpAttack, new StateJumpAttack(stateMachine) },
                 { StateType.Switch,     new StateSwitch(stateMachine) },
             });
+            
         }
         public void Switch()
         {
