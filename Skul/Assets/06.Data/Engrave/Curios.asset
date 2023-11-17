@@ -17,7 +17,7 @@ MonoBehaviour:
   synergyCount: 0200000004000000
   synergyPower:
   - type: 0
-    power: 0.35
-  - type: 0
-    power: 0.45
+    power: 35
+  - type: 1
+    power: 0.15
   Icon: {fileID: 21300000, guid: 7b34caca00a1514468b8d9cc005a43fc, type: 3}

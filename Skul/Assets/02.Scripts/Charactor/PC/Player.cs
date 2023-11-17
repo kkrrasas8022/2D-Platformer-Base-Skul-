@@ -38,14 +38,18 @@ namespace Skul.Character.PC
         [Header("UI")]
         [SerializeField] private InventoryUI _inventoryUI;
 
+        [SerializeField] private float _realAttackForce;
 
         public float AttackForce
         {
             get 
             {
                 if (attackTypes == AttackType.Physical)
-                    return attackForce * _physical;
-                return attackForce * _magical;
+                    return attackForce * _physicPower;
+                else if (attackTypes == AttackType.Magical)
+                    return attackForce * _magicPower;
+                else
+                    return attackForce;
             }
             
         }
@@ -89,8 +93,6 @@ namespace Skul.Character.PC
         public AttackType attackTypes;
 
         [Header("Status/Power")]
-        [SerializeField]private float _physical;
-        [SerializeField]private float _magical;
         [SerializeField] private float _physicPower;
         [SerializeField] private float _magicPower;
         [Header("Status/Speed")]
@@ -220,41 +222,10 @@ namespace Skul.Character.PC
         protected override void Awake()
         {
             base.Awake();
+            _realAttackForce = 0;
             inventory = GetComponent<PlayerInventory>();
             interactionObjectsList = new List<InteractionObject>();
-            /*
-            OnChangeItem += (value) =>
-            {
-                switch (value.power.type)
-                {
-                    case StatusType.Physical:
-                        PhysicPower += value.power.power;
-                        break;
-                    case StatusType.MaxHp:
-                        break;
-                    case StatusType.TakenDamage:
-                        break;
-                    case StatusType.Magical:
-                        break;
-                    case StatusType.AttackSpeed:
-                        break;
-                    case StatusType.MoveSpeed:
-                        break;
-                    case StatusType.ConsentSpeed:
-                        break;
-                    case StatusType.SkillCoolDown:
-                        break;
-                    case StatusType.SwitchCoolDown:
-                        break;
-                    case StatusType.EssenceCoolDown:
-                        break;
-                    case StatusType.CriticalPersent:
-                        break;
-                    case StatusType.CriticalDamage:
-                        break;
-                }
-            };
-            */
+            
 
             _curCoin = 0;
             _curBone = 0;
@@ -387,6 +358,7 @@ namespace Skul.Character.PC
 
         private void Update()
         {
+            _realAttackForce = AttackForce;
         }
 
 

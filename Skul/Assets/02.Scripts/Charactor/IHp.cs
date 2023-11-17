@@ -12,8 +12,7 @@ namespace Skul.Character
         event Action<float> onHpChanged;
         event Action<float> onHpIncreased;
         event Action<float> onHpDecreased;
-        event Action<float> onHpMaxIncreased;
-        event Action<float> onMaxHpDecreased;
+        event Action<float> onHpMaxChanged;
         event Action onHpMin;
         event Action onHpMax;
 

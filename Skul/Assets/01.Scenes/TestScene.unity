@@ -28732,13 +28732,14 @@ MonoBehaviour:
   maxJumpCount: 2
   dashCount: 0
   maxDashCount: 2
-  attackForce: 1
+  attackForce: 30
   _hp: 0
   _takenDamage: 1
   _hpMax: 100
   _mpMax: 0
   inventory: {fileID: 0}
   _inventoryUI: {fileID: 253893690}
+  _realAttackForce: 0
   _curCoin: 0
   _curBone: 0
   canInteraction: 0
@@ -28749,8 +28750,6 @@ MonoBehaviour:
   _renderers:
   - {fileID: 751323460}
   attackTypes: 1
-  _physical: 30
-  _magical: 35
   _physicPower: 1
   _magicPower: 1
   _attackSpeed: 1

@@ -115,12 +115,15 @@ namespace Skul.Character.PC
                     break;
                 case Item.ItemType.Weapon:
                     {
+                        WeaponItemData weapondata = data as WeaponItemData;
                         if (_weaponDatas.Count < 9)
                         { 
-                            _weaponDatas.Add(data as WeaponItemData);
+                            _weaponDatas.Add(weapondata);
                             data.HadAbility(_player);
-                            AddEngrave((data as WeaponItemData).engraves[0]);
-                            AddEngrave((data as WeaponItemData).engraves[1]);
+                            AddEngrave(weapondata.engraves[0]);
+                            weapondata.engraves[0].ActivationSynergy(_player, _haveEngrave[weapondata.engraves[0]]);
+                            AddEngrave(weapondata.engraves[1]);
+                            weapondata.engraves[1].ActivationSynergy(_player, _haveEngrave[weapondata.engraves[1]]);
                         }
                         else
                         {

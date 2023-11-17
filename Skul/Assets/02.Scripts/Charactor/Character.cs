@@ -71,7 +71,28 @@ namespace Skul.Character
         [Header("Status/Health")]
         [SerializeField] private float _hp;
         [SerializeField] private float _takenDamage;
-        public float hpMax { get => _hpMax; set=> _hpMax = value; }
+        public float hpMax 
+        { 
+            get => _hpMax;
+            set
+            {
+                float dev = value - _hpMax;
+                if (dev == 0)
+                    return;
+                else if (dev < 0)
+                {
+                    if (value > _hp)
+                        _hp = value;
+                }
+                else if (dev > 0)
+                {
+                    hp += dev;
+                    _hpMax = value;
+                }
+                onHpMaxChanged?.Invoke(value);
+                
+            }
+        }
 
         public float hpMin => _hpMin;
 
@@ -104,8 +125,7 @@ namespace Skul.Character
 
         public event Action<float> onHpIncreased;
         public event Action<float> onHpDecreased;
-        public event Action<float> onHpMaxIncreased;
-        public event Action<float> onMaxHpDecreased;
+        public event Action<float> onHpMaxChanged;
 
         public event Action onHpMin;
         public event Action onHpMax;

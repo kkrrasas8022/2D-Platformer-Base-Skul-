@@ -58,6 +58,13 @@ namespace Skul.UI
                 _hpBar.value = hp;
                 _hpText.text = ((int)hp).ToString();
             };
+            _player.onHpMaxChanged += (maxhp) =>
+            {
+                
+                _hpBar.maxValue = maxhp;
+                _hpBar.value = _player.hp;
+                _hpMaxText.text= maxhp.ToString();
+            };
             _player.OnSwitch += () =>
             {
                 _subFace.sprite = _player.inventory.CurHeadData.skulData.SkulFace;
