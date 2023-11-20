@@ -87,7 +87,7 @@ namespace Skul.Character.PC
         private GroundDetecter _detecter;
         [SerializeField] public PlayerAttacks _currentRen;
         [SerializeField] public List<PlayerAttacks> _renderers;
-       
+        [SerializeField] public bool canCharge;
         public Action OnSwitch;
         public Movement.Movement playerMovement { get=>movement; }
         public AttackType attackTypes;
@@ -270,12 +270,53 @@ namespace Skul.Character.PC
                     canInteractionObject.ColseDetails(this);
                 }
             });
-            //map.AddKeyUpAction(KeyCode.DownArrow, () => stateMachine.ChangeState(StateType.StandUp));
             map.AddKeyDownAction(KeyCode.X, () => stateMachine.ChangeState(
                 _detecter.isDetected==false?FSM.StateType.JumpAttack:FSM.StateType.Attack));
-            map.AddKeyDownAction(KeyCode.Z, () => stateMachine.ChangeState(FSM.StateType.Dash));
+            map.AddKeyPressAction(KeyCode.X, () =>
+            {
+                if (_detecter.isDetected == true&&canCharge)
+                {
+                    stateMachine.ChangeState(StateType.Charging);
+                }
+            });
+            map.AddKeyUpAction(KeyCode.X, () =>
+            {
+                if (_detecter.isDetected == true && canCharge)
+                {
+                    stateMachine.ChangeState(StateType.Attack);
+                }
+            });
             map.AddKeyDownAction(KeyCode.A, () => stateMachine.ChangeState(FSM.StateType.Skill_1));
+            map.AddKeyPressAction(KeyCode.A, () =>
+            {
+                if (_detecter.isDetected == true && canCharge)
+                {
+                    stateMachine.ChangeState(StateType.Charging);
+                }
+            });
+            map.AddKeyUpAction(KeyCode.A, () =>
+            {
+                if (_detecter.isDetected == true && canCharge)
+                {
+                    stateMachine.ChangeState(StateType.Skill_1);
+                }
+            });
             map.AddKeyDownAction(KeyCode.S, () => stateMachine.ChangeState(FSM.StateType.Skill_2));
+            map.AddKeyPressAction(KeyCode.S, () =>
+            {
+                if (_detecter.isDetected == true && canCharge)
+                {
+                    stateMachine.ChangeState(StateType.Charging);
+                }
+            });
+            map.AddKeyUpAction(KeyCode.S, () =>
+            {
+                if (_detecter.isDetected == true && canCharge)
+                {
+                    stateMachine.ChangeState(StateType.Skill_2);
+                }
+            });
+            map.AddKeyDownAction(KeyCode.Z, () => stateMachine.ChangeState(FSM.StateType.Dash));
             map.AddKeyDownAction(KeyCode.Space, ()=>Switch());
             map.AddKeyDownAction(KeyCode.D, () => 
             {
@@ -291,7 +332,14 @@ namespace Skul.Character.PC
                     canInteractionObject.Interaction(this);
                 }
             });
-            map.AddKeyPressAction(KeyCode.F, () => { });
+            map.AddKeyPressAction(KeyCode.F, () =>
+            { 
+                
+            });
+            map.AddKeyUpAction(KeyCode.F, () =>
+            {
+               
+            });
             map.AddKeyDownAction(KeyCode.Tab, () => 
             {
                 _inventoryUI.Show();
@@ -330,6 +378,7 @@ namespace Skul.Character.PC
                 { StateType.Die,        new StateDie(stateMachine) },
                 { StateType.JumpAttack, new StateJumpAttack(stateMachine) },
                 { StateType.Switch,     new StateSwitch(stateMachine) },
+                {StateType.Charging, new StateCharging(stateMachine) }
             });
             
         }
@@ -341,7 +390,7 @@ namespace Skul.Character.PC
             _currentRen.gameObject.SetActive(false);
             _currentRen = (_currentRen == _renderers[0] ? _renderers[1] : _renderers[0]);
             _currentRen.gameObject.SetActive(true);
-
+          
             inventory.SwitchHead();
 
             AnimatorChange(_currentRen.GetComponent<Animator>());

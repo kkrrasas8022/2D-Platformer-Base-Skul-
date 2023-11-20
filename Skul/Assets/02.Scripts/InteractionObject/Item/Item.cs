@@ -23,7 +23,7 @@ namespace Skul.Item
         [SerializeField]public ItemRate rate;
         [SerializeField]private GameObject _details;
         [SerializeField] public int skillCount;
-        [SerializeField] public List<ActiveSkillData> skills;
+        [SerializeField] public List<int> skillIDs;
 
         private void Awake()
         {
@@ -49,16 +49,16 @@ namespace Skul.Item
 
                 for (int i = 0; i < skillCount; i++)
                 {
-                    ActiveSkillData skilldata = datas.skulData.activeSkills[Random.Range(0, datas.skulData.activeSkills.Count)];
-                    if(skills.Count>0)
+                    int skillid = datas.skulData.activeSkills[Random.Range(0, datas.skulData.activeSkills.Count)].id;
+                    if(skillIDs.Count>0)
                     {
-                        if (skills[0] == skilldata)
+                        if (skillIDs[0] == skillid)
                         {
                             i--;
                             continue;
                         }
                     }
-                    skills.Add(skilldata);
+                    skillIDs.Add(skillid);
                 }
             }
         }
@@ -67,7 +67,7 @@ namespace Skul.Item
         public override void Interaction(Player player)
         {
             base.Interaction(player);
-            player.inventory.AddItem(data.id);
+            player.inventory.AddItem(this);
             player.inventory.OnChangeItem?.Invoke(data.id);
             Destroy(gameObject);
         }

@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1206181698552134016
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9103815698759120359}
+  - component: {fileID: 2365430767738308003}
+  m_Layer: 0
+  m_Name: SkillManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9103815698759120359
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1206181698552134016}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.2798777, y: 1.5113615, z: -0.09343969}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2365430767738308003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1206181698552134016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ecbb08897c256b479430c6e10da3bb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _activeSkillDatum:
+  - {fileID: 11400000, guid: f8c363dd34730e54e990153b6747348e, type: 2}
+  - {fileID: 11400000, guid: f6c78684406f92748b8b16903a4c75a1, type: 2}
+  - {fileID: 11400000, guid: 2cdcba6e2ab2e4448b00ed17acb303ad, type: 2}
+  - {fileID: 11400000, guid: 9863f59187391404587dd5d97409429c, type: 2}
+  - {fileID: 11400000, guid: 281c593a28f81ac48afa241f6fba8e5b, type: 2}
+  - {fileID: 11400000, guid: c45fb0bbab39a824e9702802faad70e4, type: 2}
+  _passiveSkillDatum:
+  - {fileID: 11400000, guid: 62493f42bf4054044bb140274f054875, type: 2}
+  _switchSkillDatum:
+  - {fileID: 11400000, guid: 2d35634f9e863614bac4c120451d6f45, type: 2}
+  - {fileID: 11400000, guid: 1c4b3303ed29159488b77349c4262c2f, type: 2}
+  _specialSkillSkillDatum: []

@@ -1,5 +1,7 @@
 using Skul.Character.PC;
+using Skul.Data;
 using Skul.Movement;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -10,14 +12,14 @@ namespace Skul.Character
         [SerializeField]protected Player _player;
         [SerializeField]protected PlayerMovement _movement;
         [SerializeField] protected LayerMask _enemyMask;
-
+        [SerializeField] public List<int> hadSkillsID;
         public void InitAttackRenderer()
         {
             _player = GetComponentInParent<Player>();
             _movement=GetComponentInParent<PlayerMovement>();
         }
 
-
+         
 
         private void Awake()
         {

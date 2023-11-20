@@ -248,7 +248,7 @@ GameObject:
   - component: {fileID: 3838918486874437572}
   - component: {fileID: 997006427897115043}
   m_Layer: 0
-  m_Name: ItemBox
+  m_Name: Graves
   m_TagString: InteractionObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -330,9 +330,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _notice: {fileID: 3361325933279035180}
   _rate: 0
-  _type: 2
+  _type: 1
   _item: {fileID: 6437159621894238322, guid: 6e8fcb7231697df4ebb9075ac1a9fb7d, type: 3}
-  _table: {fileID: 11400000, guid: 0f4dfcb777d324c47a9f04859c567e5b, type: 2}
+  _table: {fileID: 11400000, guid: 079f2541aacc5f44793e041d59ff11d7, type: 2}
 --- !u!1 &6120947917009526398
 GameObject:
   m_ObjectHideFlags: 0
@@ -406,7 +406,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: 666fee86d9e5fc54db503bba2196030d, type: 3}
+  m_Sprite: {fileID: 6998131782875741384, guid: 3765a367fb48f9040bca18add088d6d3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

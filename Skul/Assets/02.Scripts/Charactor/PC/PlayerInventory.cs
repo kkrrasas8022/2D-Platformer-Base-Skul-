@@ -35,6 +35,8 @@ namespace Skul.Character.PC
         {
             Item.Item tem = Instantiate(_dropItem, new Vector3(transform.position.x,transform.position.y+0.5f), Quaternion.identity);
             tem.InitItem(data.rate, data.type, data);
+            if (data.type == ItemType.Head)
+            { tem.skillIDs = _player._currentRen.hadSkillsID; }
         }
 
 
@@ -75,24 +77,26 @@ namespace Skul.Character.PC
         }
 
 
-        public void AddItem(int itemID)
+        public void AddItem(Item.Item item)
         {
-            ItemData data = DataManager.instance[itemID];
+            ItemData data = DataManager.instance[item.data.id];
             switch (data.type)
             {
                 case Item.ItemType.Head:
                     {
                         if (_saveHeadData == null)
                         {
+                            HeadItemData headdata = data as HeadItemData;
                             _player._currentRen.gameObject.SetActive(false);
                             _saveHeadData = _curHeadData;
                             _curHeadData.DeleteAbility(_player);
-                            _curHeadData=data as HeadItemData;
+                            _curHeadData=headdata;
                             _curHeadData.HadAbility(_player);
                             _player._currentRen=Instantiate(_curHeadData.skulData.Renderer, transform);
+                            _player._currentRen.hadSkillsID = item.skillIDs;
                             _player._renderers.Add(_player._currentRen);
                             _player.AnimatorChange(_player._currentRen.GetComponent<Animator>());
-                            OnHeadAdd?.Invoke(data as HeadItemData);
+                            OnHeadAdd?.Invoke(headdata);
                         }
                         else
                         {
@@ -104,6 +108,7 @@ namespace Skul.Character.PC
                             _curHeadData.HadAbility(_player);
                             PlayerAttacks curren = Instantiate(_curHeadData.skulData.Renderer, transform);
                             curren.InitAttackRenderer();
+                            curren.hadSkillsID = item.skillIDs;
                             PlayerAttacks temp = (_player._currentRen==_player._renderers[0]?_player._renderers[1]:_player._renderers[0]);
                             _player._renderers.Clear();
                             _player._renderers.Add(curren);
@@ -111,6 +116,7 @@ namespace Skul.Character.PC
                             _player._currentRen = curren;
                             _player.AnimatorChange(curren.GetComponent<Animator>());    
                         }
+                        
                     }
                     break;
                 case Item.ItemType.Weapon:

@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Skul.Movement;
 using UnityEditor.Animations;
+using Skul.Data;
 
 namespace Skul.Character.PC
 {
@@ -27,19 +28,23 @@ namespace Skul.Character.PC
         }
         private void OnEnable()
         {
+
         }
 
         protected override void SwitchAttack()
         {
             base.SwitchAttack();
+
         }
         protected override void JumpAttack()
         {
             base.JumpAttack();
+
         }
         protected override void Skill_1()
         {
             base.Skill_1();
+
             if (_animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1)
             { 
                 _animator.runtimeAnimatorController = _saveAnimators[1];

@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 using Skul.Character.PC;
 using Skul.Character;
+using Skul.Data;
 
 namespace Skul.UI
 {
@@ -32,8 +33,8 @@ namespace Skul.UI
                 _subFace.color = Color.white;
                 _subFace.sprite = _player.inventory.SaveHeadData.skulData.SkulFace; 
             }
-            _skill1.sprite = _player.inventory.CurHeadData.skulData.activeSkills[0].Icon;
-            _skill2.sprite = _player.inventory.CurHeadData.skulData.activeSkills[1].Icon;
+            _skill1.sprite = SkillManager.instance[_player._currentRen.hadSkillsID[0]].Icon;
+            _skill2.sprite = SkillManager.instance[_player._currentRen.hadSkillsID[1]].Icon;
             _subFace=_subFace.GetComponent<Image>();
             _hpBar.minValue = 0.0f;
             _hpBar.maxValue = _player.hpMax;
@@ -69,18 +70,18 @@ namespace Skul.UI
             {
                 _subFace.sprite = _player.inventory.CurHeadData.skulData.SkulFace;
                 _mainFace.sprite = _player.inventory.SaveHeadData.skulData.SkulFace;
-                _skill1.sprite = _player.inventory.SaveHeadData.skulData.activeSkills[0].Icon;
+                _skill1.sprite = SkillManager.instance[(_player._currentRen == _player._renderers[0] ? _player._renderers[1] : _player._renderers[0]).hadSkillsID[0]].Icon;
                 if (_player.inventory.CurHeadData.skillCount > 1)
-                    _skill2.sprite = _player.inventory.SaveHeadData.skulData.activeSkills[1].Icon;
+                    _skill2.sprite = SkillManager.instance[(_player._currentRen == _player._renderers[0] ? _player._renderers[1] : _player._renderers[0]).hadSkillsID[1]].Icon;
             };
             _player.inventory.OnHeadAdd += (data) =>
             {
                 _subFace.color = Color.white;
                 _subFace.sprite = _player.inventory.SaveHeadData.skulData.SkulFace;
                 _mainFace.sprite = _player.inventory.CurHeadData.skulData.SkulFace;
-                _skill1.sprite = _player.inventory.CurHeadData.skulData.activeSkills[0].Icon;
+                _skill1.sprite = SkillManager.instance[_player._currentRen.hadSkillsID[0]].Icon;
                 if (_player.inventory.CurHeadData.skillCount > 1)
-                    _skill2.sprite = _player.inventory.CurHeadData.skulData.activeSkills[1].Icon;
+                    _skill2.sprite = SkillManager.instance[_player._currentRen.hadSkillsID[1]].Icon;
             };
         }
         //private void Update()

@@ -24,7 +24,8 @@ namespace Skul.FSM
         Die,
         Hurt,
         JumpAttack,
-        Switch
+        Switch,
+        Charging
     }
 
     //각 상태들이 상속받을 부모 클래스

@@ -8,6 +8,10 @@ namespace Skul.Character.PC
 {
     public class BowMan_PC:PlayerAttacks
     {
+        private void OnEnable()
+        {
+            _player.canCharge = true;
+        }
         protected override void SwitchAttack()
         {
             base.SwitchAttack();

@@ -9,11 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1244fac1a35fda4daadbaa0eef4def6, type: 3}
-  m_Name: ActiveSkill3
+  m_Script: {fileID: 11500000, guid: 24f6e4ed9ed51ea4d990af252d50e9f7, type: 3}
+  m_Name: BowMan_PassiveSkill
   m_EditorClassIdentifier: 
-  id: 0
+  id: 1008
   Icon: {fileID: 0}
-  Name: Hyper Shot
+  Name: 
   Description: 
-  CoolTime: 0
