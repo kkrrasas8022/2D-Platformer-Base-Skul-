@@ -29,7 +29,7 @@ namespace Skul.Character
 
         [SerializeField]protected float attackForce;
 
-        protected Skul.Movement.Movement movement;
+        [SerializeField]protected Skul.Movement.Movement movement;
         protected Skul.FSM.StateMachine stateMachine;
 
 

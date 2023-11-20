@@ -10,7 +10,6 @@ namespace Skul.Character.Enemy
     {
         [SerializeField] private EnemyProjectile _arrow;
         [SerializeField] private GameObject _arrowLine;
-        [SerializeField] private LayerMask _targetMask;
         [SerializeField] private float _arrowVelocity;
 
 

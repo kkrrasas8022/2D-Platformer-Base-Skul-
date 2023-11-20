@@ -226,7 +226,6 @@ public class EnemyAI:MonoBehaviour
             Gizmos.DrawWireCube(transform.position+ new Vector3(_attRangeOffset.x * _movement.direction, _attRangeOffset.y), _attackCube);
         }
 
-        Gizmos.color= Color.green;
-        Gizmos.DrawLine(transform.position, new Vector3(transform.position.x, transform.position.y + _attackCube.y));
+        
     }
 }

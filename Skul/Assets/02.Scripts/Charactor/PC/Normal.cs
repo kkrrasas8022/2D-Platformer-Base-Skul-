@@ -69,7 +69,7 @@ namespace Skul.Character.PC
         protected override void Attack_Hit()
         {
             base.Attack_Hit();
-           col=
+            col=
             Physics2D.OverlapBox((Vector2)_player.transform.position + new Vector2(_hitOffset.x*_movement.direction,
             
                                                                             _hitOffset.y),
