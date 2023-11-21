@@ -6,6 +6,7 @@ using UnityEngine;
 public class InteractionObject : MonoBehaviour
 {
     [SerializeField] private GameObject _notice;
+    [SerializeField] public int sortingObject;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (!collision.CompareTag("Player"))

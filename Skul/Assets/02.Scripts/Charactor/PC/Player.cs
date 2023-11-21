@@ -35,6 +35,14 @@ namespace Skul.Character.PC
     {
         public PlayerInventory inventory;
 
+        [SerializeField] private float _switchMaxCooltime;
+        [SerializeField] private float _switchCoolTime;
+        [SerializeField] private float _skill1CoolTime;
+        [SerializeField] private float _skill2CoolTime;
+        [SerializeField] private bool _canUseSwitch;
+        [SerializeField] private bool _canUseSkill1;
+        [SerializeField] private bool _canUseSkill2;
+
         [Header("UI")]
         [SerializeField] private InventoryUI _inventoryUI;
 
@@ -286,7 +294,16 @@ namespace Skul.Character.PC
                     stateMachine.ChangeState(StateType.Attack);
                 }
             });
-            map.AddKeyDownAction(KeyCode.A, () => stateMachine.ChangeState(FSM.StateType.Skill_1));
+            map.AddKeyDownAction(KeyCode.A, () =>
+            {
+                if (_canUseSkill1)
+                {
+                    stateMachine.ChangeState(FSM.StateType.Skill_1); 
+                    _canUseSkill1= false;
+                }
+                else
+                    return;
+             });
             map.AddKeyPressAction(KeyCode.A, () =>
             {
                 if (_detecter.isDetected == true && canCharge)
@@ -301,7 +318,16 @@ namespace Skul.Character.PC
                     stateMachine.ChangeState(StateType.Skill_1);
                 }
             });
-            map.AddKeyDownAction(KeyCode.S, () => stateMachine.ChangeState(FSM.StateType.Skill_2));
+            map.AddKeyDownAction(KeyCode.S, () =>
+            {
+                if (_canUseSkill2)
+                { 
+                    stateMachine.ChangeState(FSM.StateType.Skill_2);
+                    _canUseSkill2= false;
+                }
+                else
+                    return;
+            });
             map.AddKeyPressAction(KeyCode.S, () =>
             {
                 if (_detecter.isDetected == true && canCharge)
@@ -317,7 +343,14 @@ namespace Skul.Character.PC
                 }
             });
             map.AddKeyDownAction(KeyCode.Z, () => stateMachine.ChangeState(FSM.StateType.Dash));
-            map.AddKeyDownAction(KeyCode.Space, ()=>Switch());
+            map.AddKeyDownAction(KeyCode.Space, ()=>
+            {
+                if (_canUseSwitch)
+                { 
+                    Switch(); 
+                    _canUseSwitch = false;
+                }
+            });
             map.AddKeyDownAction(KeyCode.D, () => 
             {
                 if (inventory.EssenceData)
@@ -372,7 +405,6 @@ namespace Skul.Character.PC
                 { StateType.Jump,       new StateJump(stateMachine) },
                 { StateType.DownJump,   new StateDownJump(stateMachine) },
                 { StateType.Fall,       new StateFall(stateMachine) },
-                { StateType.Hurt,       new StateHurt(stateMachine) },
                 { StateType.Skill_1,    new StateSkill_1(stateMachine) },
                 { StateType.Skill_2,    new StateSkill_2(stateMachine) },
                 { StateType.Die,        new StateDie(stateMachine) },
@@ -408,6 +440,40 @@ namespace Skul.Character.PC
         private void Update()
         {
             _realAttackForce = AttackForce;
+            if (_canUseSkill1 == false)
+                _skill1CoolTime += Time.deltaTime * _skillCoolDown;
+            if (_skill1CoolTime > ((ActiveSkillData)SkillManager.instance[_currentRen.hadSkillsID[0]]).CoolTime)
+            {
+                _canUseSkill1 = true;
+                _skill1CoolTime = 0.0f;
+            }
+            if (_currentRen.hadSkillsID.Count > 1)
+            {
+                if (_canUseSkill2 == false)
+                    _skill2CoolTime += Time.deltaTime * _skillCoolDown;
+                if (_skill2CoolTime > ((ActiveSkillData)SkillManager.instance[_currentRen.hadSkillsID[1]]).CoolTime)
+                {
+                    _canUseSkill2 = true;
+                    _skill2CoolTime = 0.0f;
+                }
+            }
+            else
+            {
+                _canUseSkill2 = false;
+            }
+            if (inventory.SaveHeadData == null)
+                _canUseSwitch = false;
+            else
+            {
+                if (_canUseSwitch == false)
+                    _switchCoolTime += Time.deltaTime * _switchCoolDown;
+                if(_switchCoolTime>_switchMaxCooltime)
+                {
+                    _canUseSwitch = true;
+                    _switchCoolTime = 0.0f;
+                }
+            }
+
         }
 
 
@@ -419,6 +485,16 @@ namespace Skul.Character.PC
                 canInteraction = true;
                 canInteractionObject = collision.gameObject.GetComponent<InteractionObject>();
                 interactionObjectsList.Add(canInteractionObject);
+                int max = 0;
+                foreach(InteractionObject item in interactionObjectsList)
+                {
+                    if (item.sortingObject > max)
+                        max = item.sortingObject;
+                }
+                foreach(InteractionObject item in interactionObjectsList)
+                {
+                    canInteractionObject = (item.sortingObject == max ? canInteractionObject : item);
+                }
             }
         }
         private void OnTriggerExit2D(Collider2D collision)
@@ -426,7 +502,17 @@ namespace Skul.Character.PC
             if (collision.CompareTag("InteractionObject"))
             {
                 interactionObjectsList.Remove(collision.gameObject.GetComponent<InteractionObject>());
-                if(interactionObjectsList.Count<=0)
+                int max = 0;
+                foreach (InteractionObject item in interactionObjectsList)
+                {
+                    if (item.sortingObject > max)
+                        max = item.sortingObject;
+                }
+                foreach (InteractionObject item in interactionObjectsList)
+                {
+                    canInteractionObject = (item.sortingObject == max ? canInteractionObject : item);
+                }
+                if (interactionObjectsList.Count<=0)
                 {
                     canInteraction = false;
                     canInteractionObject = null;

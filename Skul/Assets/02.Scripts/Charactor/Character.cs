@@ -54,7 +54,8 @@ namespace Skul.Character
                     }
                     else
                     {
-                        stateMachine.ChangeState(StateType.Hurt);
+                        if(stateMachine.states.ContainsKey(StateType.Hurt))
+                            stateMachine.ChangeState(StateType.Hurt);
                     }
                 }
                 else

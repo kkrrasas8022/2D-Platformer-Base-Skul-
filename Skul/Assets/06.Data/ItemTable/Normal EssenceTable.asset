@@ -10,9 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 19100d685f013c24d91d9720a4210dbc, type: 3}
-  m_Name: Head Table
+  m_Name: Normal EssenceTable
   m_EditorClassIdentifier: 
-  type: 1
+  type: 2
   itemDatas:
-  - {fileID: 11400000, guid: cd32987cb6dc5884a88a93ab586db344, type: 2}
-  - {fileID: 11400000, guid: aa64acf22fd587540a00d96265adba12, type: 2}
+  - {fileID: 11400000, guid: 15f0073e2c781034ba5e6f9f51f45c74, type: 2}

@@ -20,6 +20,7 @@ namespace Skul.Tools
                     if (resources)
                     {
                         _instance = Instantiate(resources);
+                        DontDestroyOnLoad(_instance);
                     }
                     else
                     {
