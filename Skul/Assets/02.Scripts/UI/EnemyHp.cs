@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Skul.Movement;
+using Unity.Mathematics;
 
 namespace Skul.UI
 {
@@ -11,7 +12,7 @@ namespace Skul.UI
     {
         [SerializeField]private Enemy target;
         [SerializeField]private Slider hpBar;
-       
+
         private void Start()
         {
             target = GetComponentInParent<Enemy>();
@@ -29,7 +30,7 @@ namespace Skul.UI
             Movement.Movement movement = target.GetComponent<Movement.Movement>();
             movement.onDirectionChanged += (value) =>
             {
-                transform.localEulerAngles = value > 0 ? Vector3.zero : new Vector3(0.0f, 180.0f, 0.0f);
+                GetComponent<RectTransform>().rotation = value > 0 ? new Quaternion(0, 0, 0, 0) : new Quaternion(0.0f, 180.0f, 0.0f,0);
             };
         }
         

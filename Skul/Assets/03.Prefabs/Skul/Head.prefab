@@ -82,7 +82,7 @@ GameObject:
   - component: {fileID: 7245711959511798155}
   m_Layer: 17
   m_Name: Head
-  m_TagString: Untagged
+  m_TagString: Head
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -232,4 +232,4 @@ MonoBehaviour:
   _owner: {fileID: 0}
   _isStop: 0
   _stopTime: 0
-  _stopMaxTime: 3
+  _stopMaxTime: 1

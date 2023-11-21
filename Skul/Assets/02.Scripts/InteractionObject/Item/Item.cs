@@ -16,7 +16,9 @@ namespace Skul.Item
     }
     public class Item : InteractionObject
     {
-        
+        [SerializeField] private float _maxTop;
+        [SerializeField] private bool _goUp;
+        [SerializeField] private float _maxBottom;
         [SerializeField]public ItemType type;
         [SerializeField]public ItemData data;
         private SpriteRenderer _renderer;
@@ -25,6 +27,17 @@ namespace Skul.Item
         [SerializeField] public int skillCount;
         [SerializeField] public List<int> skillIDs;
 
+        private void Update()
+        {
+            if (_renderer.gameObject.transform.position.y > transform.position.y + _maxTop)
+                _goUp = false;
+            if (_renderer.gameObject.transform.position.y < transform.position.y-_maxBottom)
+                _goUp = true;
+            if(_goUp==true)
+                _renderer.gameObject.transform.position += Vector3.up * Time.deltaTime*0.5f;
+            else
+                _renderer.gameObject.transform.position += Vector3.down * Time.deltaTime*0.5f;
+        }
         private void Awake()
         {
             _renderer = GetComponentInChildren<SpriteRenderer>();

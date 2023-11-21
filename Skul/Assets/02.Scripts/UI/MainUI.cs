@@ -17,11 +17,20 @@ namespace Skul.UI
         [SerializeField] private Image _mainFace;
         [SerializeField] private Image _subFace;
         [SerializeField] private Image _skill1;
+        [SerializeField] private Image _skill1Fill;
         [SerializeField] private Image _skill2;
+        [SerializeField] private Image _skill2Fill;
         [SerializeField] private Player _player;
 
         [SerializeField] private TMP_Text _curCoin;
         [SerializeField] private TMP_Text _curBone;
+
+        private void Update()
+        {
+            _skill1Fill.fillAmount = _player.skill1CoolTime/((ActiveSkillData)SkillManager.instance[_player.currentRen.hadSkillsID[0]]).CoolTime;
+            if(_player.currentRen.hadSkillsID.Count>1)
+                _skill2Fill.fillAmount = _player.skill2CoolTime/((ActiveSkillData)SkillManager.instance[_player.currentRen.hadSkillsID[1]]).CoolTime;
+        }
 
         private void Start()
         {
@@ -33,8 +42,8 @@ namespace Skul.UI
                 _subFace.color = Color.white;
                 _subFace.sprite = _player.inventory.SaveHeadData.skulData.SkulFace; 
             }
-            _skill1.sprite = SkillManager.instance[_player._currentRen.hadSkillsID[0]].Icon;
-            _skill2.sprite = SkillManager.instance[_player._currentRen.hadSkillsID[1]].Icon;
+            _skill1.sprite = SkillManager.instance[_player.currentRen.hadSkillsID[0]].Icon;
+            _skill2.sprite = SkillManager.instance[_player.currentRen.hadSkillsID[1]].Icon;
             _subFace=_subFace.GetComponent<Image>();
             _hpBar.minValue = 0.0f;
             _hpBar.maxValue = _player.hpMax;
@@ -70,18 +79,18 @@ namespace Skul.UI
             {
                 _subFace.sprite = _player.inventory.CurHeadData.skulData.SkulFace;
                 _mainFace.sprite = _player.inventory.SaveHeadData.skulData.SkulFace;
-                _skill1.sprite = SkillManager.instance[(_player._currentRen == _player._renderers[0] ? _player._renderers[1] : _player._renderers[0]).hadSkillsID[0]].Icon;
+                _skill1.sprite = SkillManager.instance[(_player.currentRen == _player._renderers[0] ? _player._renderers[1] : _player._renderers[0]).hadSkillsID[0]].Icon;
                 if (_player.inventory.CurHeadData.skillCount > 1)
-                    _skill2.sprite = SkillManager.instance[(_player._currentRen == _player._renderers[0] ? _player._renderers[1] : _player._renderers[0]).hadSkillsID[1]].Icon;
+                    _skill2.sprite = SkillManager.instance[(_player.currentRen == _player._renderers[0] ? _player._renderers[1] : _player._renderers[0]).hadSkillsID[1]].Icon;
             };
             _player.inventory.OnHeadAdd += (data) =>
             {
                 _subFace.color = Color.white;
                 _subFace.sprite = _player.inventory.SaveHeadData.skulData.SkulFace;
                 _mainFace.sprite = _player.inventory.CurHeadData.skulData.SkulFace;
-                _skill1.sprite = SkillManager.instance[_player._currentRen.hadSkillsID[0]].Icon;
+                _skill1.sprite = SkillManager.instance[_player.currentRen.hadSkillsID[0]].Icon;
                 if (_player.inventory.CurHeadData.skillCount > 1)
-                    _skill2.sprite = SkillManager.instance[_player._currentRen.hadSkillsID[1]].Icon;
+                    _skill2.sprite = SkillManager.instance[_player.currentRen.hadSkillsID[1]].Icon;
             };
         }
         //private void Update()

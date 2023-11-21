@@ -12,6 +12,7 @@ using UnityEngine.InputSystem.XR;
 using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using Skul.Data;
 using Skul.Item;
+using UnityEditor.ShaderGraph.Drawing;
 
 public enum StatusType
 {
@@ -35,13 +36,13 @@ namespace Skul.Character.PC
     {
         public PlayerInventory inventory;
 
-        [SerializeField] private float _switchMaxCooltime;
-        [SerializeField] private float _switchCoolTime;
-        [SerializeField] private float _skill1CoolTime;
-        [SerializeField] private float _skill2CoolTime;
-        [SerializeField] private bool _canUseSwitch;
-        [SerializeField] private bool _canUseSkill1;
-        [SerializeField] private bool _canUseSkill2;
+        [SerializeField] public float switchMaxCooltime;
+        [SerializeField] public float switchCoolTime;
+        [SerializeField] public float skill1CoolTime;
+        [SerializeField] public float skill2CoolTime;
+        [SerializeField] public bool canUseSwitch;
+        [SerializeField] public bool canUseSkill1;
+        [SerializeField] public bool canUseSkill2;
 
         [Header("UI")]
         [SerializeField] private InventoryUI _inventoryUI;
@@ -93,7 +94,7 @@ namespace Skul.Character.PC
 
         public bool canDownJump;
         private GroundDetecter _detecter;
-        [SerializeField] public PlayerAttacks _currentRen;
+        [SerializeField] public PlayerAttacks currentRen;
         [SerializeField] public List<PlayerAttacks> _renderers;
         [SerializeField] public bool canCharge;
         public Action OnSwitch;
@@ -296,10 +297,10 @@ namespace Skul.Character.PC
             });
             map.AddKeyDownAction(KeyCode.A, () =>
             {
-                if (_canUseSkill1)
+                if (canUseSkill1)
                 {
                     stateMachine.ChangeState(FSM.StateType.Skill_1); 
-                    _canUseSkill1= false;
+                    canUseSkill1= false;
                 }
                 else
                     return;
@@ -320,10 +321,10 @@ namespace Skul.Character.PC
             });
             map.AddKeyDownAction(KeyCode.S, () =>
             {
-                if (_canUseSkill2)
+                if (canUseSkill2)
                 { 
                     stateMachine.ChangeState(FSM.StateType.Skill_2);
-                    _canUseSkill2= false;
+                    canUseSkill2= false;
                 }
                 else
                     return;
@@ -345,10 +346,10 @@ namespace Skul.Character.PC
             map.AddKeyDownAction(KeyCode.Z, () => stateMachine.ChangeState(FSM.StateType.Dash));
             map.AddKeyDownAction(KeyCode.Space, ()=>
             {
-                if (_canUseSwitch)
+                if (canUseSwitch)
                 { 
                     Switch(); 
-                    _canUseSwitch = false;
+                    canUseSwitch = false;
                 }
             });
             map.AddKeyDownAction(KeyCode.D, () => 
@@ -419,58 +420,60 @@ namespace Skul.Character.PC
             if(_renderers.Count <2)
                 return;
             OnSwitch?.Invoke();
-            _currentRen.gameObject.SetActive(false);
-            _currentRen = (_currentRen == _renderers[0] ? _renderers[1] : _renderers[0]);
-            _currentRen.gameObject.SetActive(true);
+            currentRen.gameObject.SetActive(false);
+            currentRen = (currentRen == _renderers[0] ? _renderers[1] : _renderers[0]);
+            currentRen.gameObject.SetActive(true);
           
             inventory.SwitchHead();
 
-            AnimatorChange(_currentRen.GetComponent<Animator>());
+            AnimatorChange(currentRen.GetComponent<Animator>());
             stateMachine.ChangeState(StateType.Switch);
         }
 
         public void AnimatorChange(Animator ani)
         {
             Debug.Log("»£√‚");
-            stateMachine.OnAnimatorChanged?.Invoke(_currentRen.GetComponent<Animator>());
+            stateMachine.OnAnimatorChanged?.Invoke(currentRen.GetComponent<Animator>());
         }
 
         [SerializeField] private Animator ani;
 
         private void Update()
         {
+            
             _realAttackForce = AttackForce;
-            if (_canUseSkill1 == false)
-                _skill1CoolTime += Time.deltaTime * _skillCoolDown;
-            if (_skill1CoolTime > ((ActiveSkillData)SkillManager.instance[_currentRen.hadSkillsID[0]]).CoolTime)
+            if (canUseSkill1 == false)
+                skill1CoolTime += Time.deltaTime * _skillCoolDown;
+            if (skill1CoolTime > ((ActiveSkillData)SkillManager.instance[currentRen.hadSkillsID[0]]).CoolTime)
             {
-                _canUseSkill1 = true;
-                _skill1CoolTime = 0.0f;
+                canUseSkill1 = true;
+
+                skill1CoolTime = 0.0f;
             }
-            if (_currentRen.hadSkillsID.Count > 1)
+            if (currentRen.hadSkillsID.Count > 1)
             {
-                if (_canUseSkill2 == false)
-                    _skill2CoolTime += Time.deltaTime * _skillCoolDown;
-                if (_skill2CoolTime > ((ActiveSkillData)SkillManager.instance[_currentRen.hadSkillsID[1]]).CoolTime)
+                if (canUseSkill2 == false)
+                    skill2CoolTime += Time.deltaTime * _skillCoolDown;
+                if (skill2CoolTime > ((ActiveSkillData)SkillManager.instance[currentRen.hadSkillsID[1]]).CoolTime)
                 {
-                    _canUseSkill2 = true;
-                    _skill2CoolTime = 0.0f;
+                    canUseSkill2 = true;
+                    skill2CoolTime = 0.0f;
                 }
             }
             else
             {
-                _canUseSkill2 = false;
+                canUseSkill2 = false;
             }
             if (inventory.SaveHeadData == null)
-                _canUseSwitch = false;
+                canUseSwitch = false;
             else
             {
-                if (_canUseSwitch == false)
-                    _switchCoolTime += Time.deltaTime * _switchCoolDown;
-                if(_switchCoolTime>_switchMaxCooltime)
+                if (canUseSwitch == false)
+                    switchCoolTime += Time.deltaTime * _switchCoolDown;
+                if(switchCoolTime>switchMaxCooltime)
                 {
-                    _canUseSwitch = true;
-                    _switchCoolTime = 0.0f;
+                    canUseSwitch = true;
+                    switchCoolTime = 0.0f;
                 }
             }
 

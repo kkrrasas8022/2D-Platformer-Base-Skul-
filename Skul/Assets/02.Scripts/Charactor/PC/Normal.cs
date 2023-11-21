@@ -6,21 +6,35 @@ using UnityEngine;
 using Skul.Movement;
 using UnityEditor.Animations;
 using Skul.Data;
+using Skul.Character.Enemy;
 
 namespace Skul.Character.PC
 {
     public class Normal:PlayerAttacks
-    {
-        [SerializeField] Collider2D col;
+    { 
+        [SerializeField] private Collider2D _lastEnemy;
+        [SerializeField] private Collider2D[] _lastEnemies;
         [SerializeField] private Vector3 _hitSize;
         [SerializeField] private Vector3 _hitOffset;
         [SerializeField] private Vector3 _switchHitSize;
         [SerializeField] private Vector3 _switchHitOffset;
         [SerializeField] private List<AnimatorController> _saveAnimators;
         private Animator _animator;
-        [SerializeField]private NoramlHead _head;
+        [SerializeField] private NoramlHead _head;
         [SerializeField] private NoramlHead _currentHead;
-        [SerializeField]public Vector3 _headsPos;
+        [SerializeField] public Vector3 _headsPos;
+
+
+
+        private void Update()
+        {
+            if (_player.canUseSkill1&&_currentHead!=null)
+            {
+                _animator.runtimeAnimatorController = _saveAnimators[0];
+                Destroy(_currentHead.gameObject);
+                _currentHead = null;
+            }
+        }
 
         private void Awake()
         {
@@ -60,6 +74,8 @@ namespace Skul.Character.PC
         protected override void Skill_2()
         {
             base.Skill_2();
+            _player.canUseSkill1 = true;
+            _player.skill1CoolTime = 0.0f;
             _animator.runtimeAnimatorController = _saveAnimators[0];
             _player.transform.position = _headsPos;
             Destroy(_currentHead.gameObject);
@@ -69,20 +85,41 @@ namespace Skul.Character.PC
         protected override void Attack_Hit()
         {
             base.Attack_Hit();
-            col=
-            Physics2D.OverlapBox((Vector2)_player.transform.position + new Vector2(_hitOffset.x*_movement.direction,
-            
+            //_lastEnemy=
+            //Physics2D.OverlapBox((Vector2)_player.transform.position + new Vector2(_hitOffset.x*_movement.direction,
+            //
+            //                                                                _hitOffset.y),
+            //                     _hitSize,
+            //                     0.0f,
+            //                     _enemyMask);
+
+            _lastEnemies=
+                Physics2D.OverlapBoxAll((Vector2)_player.transform.position + new Vector2(_hitOffset.x * _movement.direction,
+
                                                                             _hitOffset.y),
                                  _hitSize,
                                  0.0f,
                                  _enemyMask);
 
-            if (col && col.TryGetComponent(out IHp ihp))
+            //if (_lastEnemy && _lastEnemy.TryGetComponent(out IHp ihp))
+            //{
+            //    ihp.Damage(_player.gameObject, _player.AttackForce);
+            //    //DamagePopUp.Create(_attackTargetMask, col.transform.position + Vector3.up * .2f, (int)player.attackForce);
+            //}
+            if (_lastEnemies.Length>0)
             {
-                ihp.Damage(_player.gameObject, _player.AttackForce);
-                //DamagePopUp.Create(_attackTargetMask, col.transform.position + Vector3.up * .2f, (int)player.attackForce);
+                for(int i=0;i<_lastEnemies.Length;i++)
+                {
+                    if (_lastEnemies[i].TryGetComponent(out IHp ihp))
+                    { 
+                        ihp.Damage(_player.gameObject, _player.AttackForce);
+                    }
+                }
             }
+
         }
+
+
 
         private void OnDrawGizmos()
         {

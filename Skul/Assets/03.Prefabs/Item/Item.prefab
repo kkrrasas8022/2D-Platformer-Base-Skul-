@@ -3077,6 +3077,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _notice: {fileID: 4067523508617909652}
   sortingObject: 5
+  _maxTop: 0.25
+  _goUp: 1
+  _maxBottom: 0.25
   type: 1
   data: {fileID: 0}
   rate: 0

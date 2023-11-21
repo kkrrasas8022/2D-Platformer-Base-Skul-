@@ -15,7 +15,7 @@ namespace Skul.Character.PC
         private float _damage;
         private LayerMask _targetMask;
         [SerializeField] private float _stopTime;
-        [SerializeField] private float _stopMaxTime=3.0f;
+        [SerializeField] private float _stopMaxTime=1.0f;
 
         private void Awake()
         {

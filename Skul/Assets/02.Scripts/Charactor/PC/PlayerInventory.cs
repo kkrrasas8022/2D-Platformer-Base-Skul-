@@ -36,7 +36,7 @@ namespace Skul.Character.PC
             Item.Item tem = Instantiate(_dropItem, new Vector3(transform.position.x,transform.position.y+0.5f), Quaternion.identity);
             tem.InitItem(data.rate, data.type, data);
             if (data.type == ItemType.Head)
-            { tem.skillIDs = _player._currentRen.hadSkillsID; }
+            { tem.skillIDs = _player.currentRen.hadSkillsID; }
         }
 
 
@@ -87,33 +87,33 @@ namespace Skul.Character.PC
                         if (_saveHeadData == null)
                         {
                             HeadItemData headdata = data as HeadItemData;
-                            _player._currentRen.gameObject.SetActive(false);
+                            _player.currentRen.gameObject.SetActive(false);
                             _saveHeadData = _curHeadData;
                             _curHeadData.DeleteAbility(_player);
                             _curHeadData=headdata;
                             _curHeadData.HadAbility(_player);
-                            _player._currentRen=Instantiate(_curHeadData.skulData.Renderer, transform);
-                            _player._currentRen.hadSkillsID = item.skillIDs;
-                            _player._renderers.Add(_player._currentRen);
-                            _player.AnimatorChange(_player._currentRen.GetComponent<Animator>());
+                            _player.currentRen=Instantiate(_curHeadData.skulData.Renderer, transform);
+                            _player.currentRen.hadSkillsID = item.skillIDs;
+                            _player._renderers.Add(_player.currentRen);
+                            _player.AnimatorChange(_player.currentRen.GetComponent<Animator>());
                             OnHeadAdd?.Invoke(headdata);
                         }
                         else
                         {
                             _curHeadData.DeleteAbility(_player);
                             DropItem(_curHeadData);
-                            Destroy(_player._currentRen.gameObject);
+                            Destroy(_player.currentRen.gameObject);
                             _player._renderers.Remove(_curHeadData.skulData.Renderer);
                             _curHeadData = data as HeadItemData;
                             _curHeadData.HadAbility(_player);
                             PlayerAttacks curren = Instantiate(_curHeadData.skulData.Renderer, transform);
                             curren.InitAttackRenderer();
                             curren.hadSkillsID = item.skillIDs;
-                            PlayerAttacks temp = (_player._currentRen==_player._renderers[0]?_player._renderers[1]:_player._renderers[0]);
+                            PlayerAttacks temp = (_player.currentRen==_player._renderers[0]?_player._renderers[1]:_player._renderers[0]);
                             _player._renderers.Clear();
                             _player._renderers.Add(curren);
                             _player._renderers.Add(temp);
-                            _player._currentRen = curren;
+                            _player.currentRen = curren;
                             _player.AnimatorChange(curren.GetComponent<Animator>());    
                         }
                         

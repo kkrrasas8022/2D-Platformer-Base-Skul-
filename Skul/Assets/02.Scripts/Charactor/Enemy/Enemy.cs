@@ -20,6 +20,7 @@ namespace Skul.Character.Enemy {
         {
             if(hp<hpMax)
                 _hpBar.gameObject.SetActive(true);
+            _hpBar.GetComponent<RectTransform>().eulerAngles = (movement.direction == -1 ? new Vector3(0, 180,0):Vector3.zero);
         }
     }
 }
