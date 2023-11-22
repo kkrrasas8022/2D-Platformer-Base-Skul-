@@ -44,6 +44,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9acdf7d4244b86041803fbebb2f94edd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _player: {fileID: 0}
+  startCoin: 0
+  _mainUI: {fileID: 0}
+  _inventoryUI: {fileID: 0}
+  _statusUI: {fileID: 0}
   weaponBox:
   - {fileID: 2329897028562823926, guid: d4442fc7ed21abf46aeb4289a816f768, type: 3}
   - {fileID: 8345740920842609231, guid: 33ac7d28776d9224581904f6a0d6bf6c, type: 3}
@@ -67,8 +72,9 @@ MonoBehaviour:
   Rarepercentage: 30
   Uniquepercentage: 50
   Legendpercentage: 90
+  isReward: 0
   mapReward: 0
   isClear: 0
   mapEnemyCount: 0
-  mapBoxPosition: {x: 19.5, y: 3.5}
+  mapBoxPosition: {x: 19.5, y: 3.5, z: 0}
   mapSize: {x: 0, y: 0}

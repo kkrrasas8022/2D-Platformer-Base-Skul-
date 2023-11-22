@@ -10,10 +10,11 @@ using Skul.Data;
 using System;
 using Skul.Item;
 using System.Diagnostics.Tracing;
+using Skul.Tools;
 
 namespace Skul.UI
 { 
-    public class InventoryUI : MonoBehaviour, IUI
+    public class InventoryUI : SingletonUIBase<InventoryUI>
     {
         [SerializeField] private Player _player;
         [SerializeField] private GameObject _Skills;
@@ -59,8 +60,10 @@ namespace Skul.UI
         [SerializeField] private GameObject _engraveParent;
 
 
-        private void Awake()
+        protected override void Awake()
         {
+            base.Awake();
+            _player = GameObject.FindWithTag("Player").GetComponent<Player>();
             weaponItemBoxes = new InventoryBox[9];
 
             _curHeadItemBox = Instantiate(_itemBoxPrefab, _inventory.transform);
@@ -131,11 +134,12 @@ namespace Skul.UI
             map.AddKeyPressAction(KeyCode.A, () =>
             {
                 Debug.Log("UI KeyDown A");
-                _playerStatus.SetActive(true);
+                PlayerStatus.instance.Show();
+//                _playerStatus.SetActive(true);
             });
             map.AddKeyUpAction(KeyCode.A, () =>
             {
-                _playerStatus.SetActive(false);
+                PlayerStatus.instance.Hide();
             });
             InputManager.instance.AddMap("InventoryUI", map);
 
@@ -299,16 +303,16 @@ namespace Skul.UI
 
 
 
-        public void Hide()
+        public override void Hide()
         {
-            gameObject.SetActive(false);
+            base.Hide();
             _curItemBox.image.color = Color.white;
         }
 
-        public void Show()
+        public override void Show()
         {
-            gameObject.SetActive(true);
-            //OnEnable();
+            base.Show();
+            
         }
     }
 }

@@ -32,6 +32,7 @@ namespace Skul.FSM.States
                         character.dashCount++;
                         movement.isMovable=false;
                         movement.isDirectionChangeable = false;
+                        collider.enabled=false;
                         animator.Play("Dash");
                         rigid.velocity = Vector2.zero;
                         rigid.gravityScale = 0;
@@ -64,6 +65,7 @@ namespace Skul.FSM.States
                     break;
                 case IStateEnumerator<StateType>.Step.WaitUntilActionFinished:
                     {
+                        collider.enabled = true;
                         rigid.velocity= Vector2.zero;
                         rigid.gravityScale = 1;
                         currentStep++;

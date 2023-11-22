@@ -44,9 +44,6 @@ namespace Skul.Character.PC
         [SerializeField] public bool canUseSkill1;
         [SerializeField] public bool canUseSkill2;
 
-        [Header("UI")]
-        [SerializeField] private InventoryUI _inventoryUI;
-
         [SerializeField] private float _realAttackForce;
 
         public float AttackForce
@@ -231,6 +228,7 @@ namespace Skul.Character.PC
         protected override void Awake()
         {
             base.Awake();
+            _curCoin = GameManager.GameManager.instance.startCoin;
             _realAttackForce = 0;
             inventory = GetComponent<PlayerInventory>();
             interactionObjectsList = new List<InteractionObject>();
@@ -376,7 +374,7 @@ namespace Skul.Character.PC
             });
             map.AddKeyDownAction(KeyCode.Tab, () => 
             {
-                _inventoryUI.Show();
+                InventoryUI.instance.Show();
             });
             map.AddKeyDownAction(KeyCode.Escape, () =>
             {

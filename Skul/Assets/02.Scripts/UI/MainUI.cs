@@ -9,7 +9,7 @@ using Skul.Data;
 
 namespace Skul.UI
 {
-    public class MainUI : MonoBehaviour
+    public class MainUI : UIMono
     {
         [SerializeField] private Slider _hpBar;
         [SerializeField] private TMP_Text _hpText;
@@ -24,6 +24,11 @@ namespace Skul.UI
 
         [SerializeField] private TMP_Text _curCoin;
         [SerializeField] private TMP_Text _curBone;
+
+        protected override void Awake()
+        {
+            base.Awake();
+        }
 
         private void Update()
         {

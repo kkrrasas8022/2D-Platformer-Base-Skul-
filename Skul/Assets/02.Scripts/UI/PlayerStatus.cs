@@ -3,10 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using Skul.Tools;
 
 namespace Skul.UI
 {
-    public class PlayerStatus : MonoBehaviour
+    public class PlayerStatus : SingletonUIBase<PlayerStatus>
     {
         [SerializeField] private Player _player;
 
@@ -28,7 +29,11 @@ namespace Skul.UI
         [SerializeField] private EngraveNotice _engraveNotice;
         [SerializeField] private GameObject _engraveParent;
 
-
+        protected override void Awake()
+        {
+            base.Awake();
+            _player = GameObject.FindWithTag("Player").GetComponent<Player>();
+        }
 
 
         private void OnEnable()

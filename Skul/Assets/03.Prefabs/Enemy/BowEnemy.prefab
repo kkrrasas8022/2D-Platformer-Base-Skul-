@@ -624,7 +624,7 @@ GameObject:
   - component: {fileID: 4551541252284811374}
   m_Layer: 14
   m_Name: BowEnemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -707,10 +707,10 @@ MonoBehaviour:
   maxJumpCount: 0
   dashCount: 0
   maxDashCount: 0
-  attackForce: 0
+  attackForce: 10
   movement: {fileID: 0}
   _hp: 0
-  _takenDamage: 0
+  _takenDamage: 1
   _hpMax: 100
   _mpMax: 0
   _hpBar: {fileID: 5500686405083282956}
