@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BowMan_ActiveSkill4
   m_EditorClassIdentifier: 
   id: 1007
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 33470548a8c102c45bec7658b3637d33, type: 3}
   Name: Speed Shot
   Description: 
   CoolTime: 0

@@ -221,6 +221,7 @@ GameObject:
   - component: {fileID: 3087978565161079775}
   - component: {fileID: 3533385603766550782}
   - component: {fileID: 1835467063853627338}
+  - component: {fileID: 5481308741606978972}
   m_Layer: 14
   m_Name: ShildGiantEnemy
   m_TagString: Untagged
@@ -301,6 +302,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isMovable: 1
   isDirectionChangeable: 1
+  _edgeDetecter: {fileID: 5481308741606978972}
   changedir: 0
   _direction: 1
   _horizontal: 0
@@ -317,8 +319,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c484d94ecdf5d1a48b6fca553fe12bb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  size: {x: 1, y: 0.1}
-  pos: {x: 0.28, y: 0.05}
+  size: {x: 2, y: 0.1}
+  pos: {x: 0.64, y: 0.05}
   _movement: {fileID: 6403303993982762225}
   _isDetected: 0
   _detected: {fileID: 0}
@@ -409,6 +411,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51e86e5892b11fe43b8898cfa65a39a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _edgeDetecter: {fileID: 5481308741606978972}
   isGiant: 1
   _step: 1
   _autoFollow: 1
@@ -470,6 +473,28 @@ MonoBehaviour:
   _chargeForce: 3
   isCharging: 0
   animator: {fileID: 0}
+--- !u!114 &5481308741606978972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810442301399094060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9be00d091fb4d0d43b088ec97813310c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _movement: {fileID: 6403303993982762225}
+  _offset: {x: 0.6, y: 0, z: 0}
+  _size: {x: 0.3, y: 0.2}
+  _col: {fileID: 0}
+  _edgeEnd: 0
+  _isDetected: 0
+  _detected: {fileID: 0}
+  groundDe:
+    serializedVersion: 2
+    m_Bits: 2048
 --- !u!1 &2811251684615517145
 GameObject:
   m_ObjectHideFlags: 0

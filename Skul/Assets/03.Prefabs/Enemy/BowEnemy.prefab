@@ -621,6 +621,7 @@ GameObject:
   - component: {fileID: 5612698951401550700}
   - component: {fileID: 8918635293516355207}
   - component: {fileID: 628734266902646868}
+  - component: {fileID: 4551541252284811374}
   m_Layer: 14
   m_Name: BowEnemy
   m_TagString: Untagged
@@ -681,8 +682,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17ad2619d5cfbe94c9e2c198d6168281, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  test: {fileID: 0}
   currentType: 0
   DicCount: 0
+  isDie: 0
   times: 0
   StopTime: 0
 --- !u!114 &7086088335757081127
@@ -700,21 +703,23 @@ MonoBehaviour:
   moveSpeed: 3
   dashForce: 3
   jumpForce: 3
-  JumpCount: 0
-  MaxJumpCount: 0
-  DashCount: 0
-  MaxDashCount: 0
+  jumpCount: 0
+  maxJumpCount: 0
+  dashCount: 0
+  maxDashCount: 0
+  attackForce: 0
+  movement: {fileID: 0}
   _hp: 0
+  _takenDamage: 0
   _hpMax: 100
   _mpMax: 0
   _hpBar: {fileID: 5500686405083282956}
-  _arrow: {fileID: 8755501711342492619, guid: 61206b811384f5c44a8308aa01ca553b, type: 3}
-  _arrowLine: {fileID: 4815478491605661181}
   _targetMask:
     serializedVersion: 2
     m_Bits: 4096
+  _arrow: {fileID: 8755501711342492619, guid: 61206b811384f5c44a8308aa01ca553b, type: 3}
+  _arrowLine: {fileID: 4815478491605661181}
   _arrowVelocity: 5
-  _attackForce: 10
 --- !u!114 &7752053683698534139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -729,6 +734,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isMovable: 1
   isDirectionChangeable: 1
+  _edgeDetecter: {fileID: 4551541252284811374}
   changedir: 0
   _direction: 1
   _horizontal: 0
@@ -837,6 +843,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51e86e5892b11fe43b8898cfa65a39a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _edgeDetecter: {fileID: 4551541252284811374}
+  isGiant: 0
   _step: 1
   _autoFollow: 1
   _detectMask:
@@ -861,6 +869,28 @@ MonoBehaviour:
   _hitCoolTimeMax: 2
   target: {fileID: 0}
   _movement: {fileID: 7752053683698534139}
+--- !u!114 &4551541252284811374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7463295373431493648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9be00d091fb4d0d43b088ec97813310c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _movement: {fileID: 7752053683698534139}
+  _offset: {x: 0.35, y: -0.02, z: 0}
+  _size: {x: 0.2, y: 0.15}
+  _col: {fileID: 0}
+  _edgeEnd: 0
+  _isDetected: 0
+  _detected: {fileID: 0}
+  groundDe:
+    serializedVersion: 2
+    m_Bits: 2048
 --- !u!1 &9016109793549753823
 GameObject:
   m_ObjectHideFlags: 0

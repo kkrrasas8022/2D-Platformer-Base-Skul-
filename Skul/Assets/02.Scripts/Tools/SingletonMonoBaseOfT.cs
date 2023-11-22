@@ -9,6 +9,10 @@ namespace Skul.Tools
     public class SingletonMonoBase<T> : MonoBehaviour
     where T : SingletonMonoBase<T>
     {
+        protected virtual void Awake()
+        {
+            DontDestroyOnLoad(this);
+        }
         public static T instance
         {
             get
@@ -25,6 +29,7 @@ namespace Skul.Tools
                     else
                     {
                         _instance = new GameObject(typeof(T).Name).AddComponent<T>();
+                        
                     }
                 }
                 return _instance;

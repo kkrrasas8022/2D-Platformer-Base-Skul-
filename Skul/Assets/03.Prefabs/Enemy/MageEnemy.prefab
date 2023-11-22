@@ -302,6 +302,7 @@ GameObject:
   - component: {fileID: 5373556671331302860}
   - component: {fileID: 5642722950720375597}
   - component: {fileID: 5496296098122801143}
+  - component: {fileID: 8239684015968346652}
   m_Layer: 14
   m_Name: MageEnemy
   m_TagString: Untagged
@@ -382,6 +383,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isMovable: 1
   isDirectionChangeable: 1
+  _edgeDetecter: {fileID: 8239684015968346652}
   changedir: 0
   _direction: 1
   _horizontal: 0
@@ -490,6 +492,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51e86e5892b11fe43b8898cfa65a39a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _edgeDetecter: {fileID: 8239684015968346652}
   isGiant: 0
   _step: 1
   _autoFollow: 1
@@ -546,8 +549,30 @@ MonoBehaviour:
     m_Bits: 4096
   _arrow: {fileID: 4257792939877943780, guid: 3780c38734ab92b43a0c4578485eb100, type: 3}
   _arrowVelocity: 0
-  _enemyAI: {fileID: 0}
+  _enemyAI: {fileID: 5642722950720375597}
   _nowArrow: {fileID: 0}
+--- !u!114 &8239684015968346652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3109780060571598185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9be00d091fb4d0d43b088ec97813310c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _movement: {fileID: 2202790562533578861}
+  _offset: {x: 0.34, y: -0.04, z: 0}
+  _size: {x: 0.2, y: 0.1}
+  _col: {fileID: 0}
+  _edgeEnd: 0
+  _isDetected: 0
+  _detected: {fileID: 0}
+  groundDe:
+    serializedVersion: 2
+    m_Bits: 2048
 --- !u!1 &5381008232089657084
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,3 +1,4 @@
+using Skul.Character;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -15,6 +16,7 @@ namespace Skul.Movement
         //방향을 전역변수로 설정
         public const int DIRECTION_RIGHT = 1;
         public const int DIRECTION_LEFT = -1;
+        [SerializeField] protected EdgeDetecter _edgeDetecter;
 
         public bool changedir;
         public int direction
@@ -29,11 +31,15 @@ namespace Skul.Movement
 
                 if (value < 0)
                 {
+                    if (_edgeDetecter&&_edgeDetecter._edgeEnd)
+                        transform.position -=new Vector3(0.6f,0);
                     transform.eulerAngles = new Vector3(0.0f, 180.0f, 0.0f);
                     _direction = DIRECTION_LEFT;
                 }
                 else
                 {
+                    if (_edgeDetecter&&_edgeDetecter._edgeEnd)
+                        transform.position += new Vector3(0.6f, 0);
                     transform.eulerAngles = Vector3.zero;
                     _direction = DIRECTION_RIGHT;
                 }

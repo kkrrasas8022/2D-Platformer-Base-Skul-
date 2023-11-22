@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7959610018182396155
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3085646035595754826}
+  - component: {fileID: 5860885771812374399}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3085646035595754826
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7959610018182396155}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -20.166422, y: 55.311005, z: -1.0028515}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5860885771812374399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7959610018182396155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9acdf7d4244b86041803fbebb2f94edd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponBox:
+  - {fileID: 2329897028562823926, guid: d4442fc7ed21abf46aeb4289a816f768, type: 3}
+  - {fileID: 8345740920842609231, guid: 33ac7d28776d9224581904f6a0d6bf6c, type: 3}
+  - {fileID: 5047165226035556919, guid: df6c62e94a42636408127333a9a49225, type: 3}
+  - {fileID: 1424007359706206526, guid: ad40751680fbb3a4dba6a881ac1e7f2f, type: 3}
+  graves:
+  - {fileID: 997006427897115043, guid: 82f2775229172794c83736e670e1d71a, type: 3}
+  - {fileID: 1372005871149631756, guid: c34aa4c23809a8644a22d5720e977edd, type: 3}
+  - {fileID: 3993874206442205493, guid: 229ebc9ea65be7b4cbc07ec19c53f9b8, type: 3}
+  - {fileID: 4274451124330524881, guid: ca97d9d2cbd90f8458659516e8cca043, type: 3}
+  potals:
+  - {fileID: 6652120801846966180, guid: 56f33348583bf9c48a25856f308bb1ca, type: 3}
+  - {fileID: 6838391123150109490, guid: 0b8a1d05addc21b429166a0b53afdd9a, type: 3}
+  - {fileID: 1909937034735155802, guid: a15e36abe97c9314abf94d9495d7f7e5, type: 3}
+  - {fileID: 2978245354834779027, guid: 9f3d5942b7a21e74cbaf406c6780b615, type: 3}
+  - {fileID: 1470421079044472844, guid: 3d7b9f5dd8794a8468d08a01ade5d158, type: 3}
+  - {fileID: 7375315780817620437, guid: 21463c65666f38e479311efcbafe1682, type: 3}
+  - {fileID: 8948329406425436659, guid: 02287417ce37d8546ae57461cdca48ac, type: 3}
+  itemRate: 0
+  percentageType: 0
+  Rarepercentage: 30
+  Uniquepercentage: 50
+  Legendpercentage: 90
+  mapReward: 0
+  isClear: 0
+  mapEnemyCount: 0
+  mapBoxPosition: {x: 19.5, y: 3.5}
+  mapSize: {x: 0, y: 0}
