@@ -233,7 +233,7 @@ namespace Skul.Character.PC
             _realAttackForce = 0;
             inventory = GetComponent<PlayerInventory>();
             interactionObjectsList = new List<InteractionObject>();
-            
+
 
             _curCoin = 0;
             _curBone = 0;
@@ -242,11 +242,11 @@ namespace Skul.Character.PC
             _detecter = GetComponent<GroundDetecter>();
             movement.onDirectionChanged += (value) =>
             {
-                if(value<0)
+                if (value < 0)
                 {
                     _detecter.pos.x = -0.15f;
                 }
-                if(value>0)
+                if (value > 0)
                 {
                     _detecter.pos.x = 0.15f;
                 }
@@ -261,10 +261,14 @@ namespace Skul.Character.PC
                     movement.direction = Movement.Movement.DIRECTION_LEFT;
             });
             //map.AddKeyDownAction(KeyCode.Space, () => stateMachine.ChangeState(stateMachine.currentType == FSM.StateType.Crouch ? FSM.StateType.DownJump : FSM.StateType.Jump));
-            map.AddKeyDownAction(KeyCode.C, () => stateMachine.ChangeState(canDownJump==true?FSM.StateType.DownJump:FSM.StateType.Jump));
+            map.AddKeyDownAction(KeyCode.C, () =>
+            {
+            stateMachine.ChangeState(canDownJump == true ? (_detecter.detected2? FSM.StateType.DownJump:stateMachine.currentType) : FSM.StateType.Jump);
+            });
             map.AddKeyPressAction(KeyCode.DownArrow, () => 
             {
-                canDownJump = true;
+               
+                    canDownJump = true;
                 if (canInteraction)
                 {
                     canInteractionObject.SeeDetails(this);
@@ -440,6 +444,8 @@ namespace Skul.Character.PC
         private void Update()
         {
             
+
+
             _realAttackForce = AttackForce;
             if (canUseSkill1 == false)
                 skill1CoolTime += Time.deltaTime * _skillCoolDown;
@@ -521,7 +527,7 @@ namespace Skul.Character.PC
                 }
             }
         }
-
+        
         
     }
 }

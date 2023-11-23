@@ -37,11 +37,11 @@ namespace Skul.GameManager
         public int Uniquepercentage;
         public int Legendpercentage;
 
-        public bool isReward;
+
 
         public MapReward mapReward;
 
-        public bool isClear;
+
 
         public Action StageClear;
         public Action EnemyDie;
@@ -49,8 +49,9 @@ namespace Skul.GameManager
         public int mapEnemyCount;
 
         public Vector3 mapBoxPosition;
-        public Vector2 mapSize;
-        public Vector2 mapCenter;
+        public Vector2 mapMinBoundary;
+        public Vector2 mapMaxBoundary;
+       
 
         public Action<SceneSet> OnChangeScene;
 
@@ -93,8 +94,7 @@ namespace Skul.GameManager
                         itemRate = ItemRate.Normal;
                         break;
                 }
-                if (isReward == false)
-                {
+                
                     switch (mapReward)
                     {
                         case MapReward.None:
@@ -110,15 +110,15 @@ namespace Skul.GameManager
                             Instantiate(graves[(int)itemRate], mapBoxPosition, Quaternion.identity);
                             break;
                     }
-                    isReward = true;
-                }
+
+                
             };
             OnChangeScene += (sceneSet) =>
             {
                 mapEnemyCount = GameObject.FindGameObjectsWithTag("Enemy").Length;
-                mapSize = sceneSet.mapSize;
-                isClear = false;
-                isReward = false;
+                mapMinBoundary = sceneSet.mapMinBoundary;
+                mapMaxBoundary = sceneSet.mapMaxBoundary;
+
                 percentageType = UnityEngine.Random.Range(0, 100);
 
                 int r=0;
@@ -142,7 +142,7 @@ namespace Skul.GameManager
 
                 _player.transform.position = sceneSet.startPos;
                 mapBoxPosition = sceneSet.rewardPos;
-                mapCenter = sceneSet.mapCenter;
+
               
             };
 
@@ -166,12 +166,10 @@ namespace Skul.GameManager
      
         public void Update()
         {
-            if (mapEnemyCount == 0)
-                isClear = true;
-            if(isClear)
-            {
-                
-            }
+            if (_player.transform.position.x > mapMaxBoundary.x)
+                _player.transform.position = new Vector3(mapMaxBoundary.x, _player.transform.position.y);
+            if (_player.transform.position.x < mapMinBoundary.x)
+                _player.transform.position = new Vector3(mapMinBoundary.x, _player.transform.position.y);
         }
     }
 }

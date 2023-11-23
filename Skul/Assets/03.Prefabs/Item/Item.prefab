@@ -3075,6 +3075,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70fe0d2c3a4624c4b9cc8f182566872e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canInteract: 1
   _notice: {fileID: 4067523508617909652}
   sortingObject: 5
   _maxTop: 0.25

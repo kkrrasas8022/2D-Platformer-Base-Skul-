@@ -282,6 +282,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17ad2619d5cfbe94c9e2c198d6168281, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ignortime: 0
+  ignorMaxTime: 180
   test: {fileID: 0}
   currentType: 0
   DicCount: 0
@@ -319,11 +321,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c484d94ecdf5d1a48b6fca553fe12bb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  size: {x: 2, y: 0.1}
+  _size: {x: 1.8, y: 0.1}
   pos: {x: 0.64, y: 0.05}
   _movement: {fileID: 6403303993982762225}
+  _downPos: {x: 0, y: 0}
+  _downSize: {x: 0, y: 0}
   _isDetected: 0
+  _isDetected2: 0
   _detected: {fileID: 0}
+  _detected2: {fileID: 0}
   groundDe:
     serializedVersion: 2
     m_Bits: 2048

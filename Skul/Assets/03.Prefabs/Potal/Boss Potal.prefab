@@ -123,6 +123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b72feb147af0f34f9382de028fe4759, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canInteract: 1
   _notice: {fileID: 8143681260535220168}
   sortingObject: 1
   type: 5
@@ -243,7 +244,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 4145614996422691048, guid: 85470783dfe21194994d9bef32d314bd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

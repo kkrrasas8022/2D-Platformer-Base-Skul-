@@ -5,18 +5,19 @@ using UnityEngine;
 
 public class InteractionObject : MonoBehaviour
 {
+    [SerializeField] protected bool canInteract;
     [SerializeField] private GameObject _notice;
     [SerializeField] public int sortingObject;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!collision.CompareTag("Player"))
+        if (!collision.CompareTag("Player")||!canInteract)
             return;
         _notice.SetActive(true);
 
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (!collision.CompareTag("Player"))
+        if (!collision.CompareTag("Player")||!canInteract)
             return;
         if (collision.GetComponent<Player>().canInteractionObject == this)
             _notice.SetActive(true);

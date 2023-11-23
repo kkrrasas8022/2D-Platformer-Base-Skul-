@@ -639,6 +639,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -764,6 +765,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9e416fcec493a84bbec98fd4513c0b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _player: {fileID: 0}
+  smoothing: 0.2
+  minCameraBoundary: {x: 0, y: 0}
+  maxCameraBoundary: {x: 0, y: 0}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1109,6 +1126,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 333340673214482146, guid: cd90f09ff97178d439ba56568a8cebb3, type: 3}
+      propertyPath: _size.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 333340673214482146, guid: cd90f09ff97178d439ba56568a8cebb3, type: 3}
+      propertyPath: _size.y
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 992068600069555256, guid: cd90f09ff97178d439ba56568a8cebb3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.24
@@ -12907,10 +12932,10 @@ EdgeCollider2D:
   - {x: 25.500006, y: 2.4999485}
   - {x: 25.499163, y: -7.636976}
   - {x: 25.612938, y: -7.704671}
-  - {x: 20.351892, y: -8.674522}
-  - {x: 17.054728, y: -8.768028}
-  - {x: 20.03859, y: -9.032114}
-  - {x: 22.523207, y: -8.95804}
+  - {x: 26.206778, y: -6.8629208}
+  - {x: 33.725994, y: -7.049341}
+  - {x: 28.091328, y: -8.7467}
+  - {x: 28.088772, y: -9.793894}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -13070,6 +13095,22 @@ PrefabInstance:
     - target: {fileID: 5055702075868602873, guid: cfb80f67749ea1d44ab131b8f54ad418, type: 3}
       propertyPath: rewardPos.y
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5055702075868602873, guid: cfb80f67749ea1d44ab131b8f54ad418, type: 3}
+      propertyPath: mapMaxBoundary.x
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5055702075868602873, guid: cfb80f67749ea1d44ab131b8f54ad418, type: 3}
+      propertyPath: mapMaxBoundary.y
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5055702075868602873, guid: cfb80f67749ea1d44ab131b8f54ad418, type: 3}
+      propertyPath: mapMinBoundary.x
+      value: -8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5055702075868602873, guid: cfb80f67749ea1d44ab131b8f54ad418, type: 3}
+      propertyPath: mapMinBoundary.y
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 5055702075868602873, guid: cfb80f67749ea1d44ab131b8f54ad418, type: 3}
       propertyPath: potalType.Array.data[1]

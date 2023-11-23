@@ -10,6 +10,11 @@ namespace Skul.FSM
     //객체에게 적용할 FSM
     public class StateMachine:MonoBehaviour
     {
+
+        [SerializeField]public int ignortime = 0;
+        [SerializeField]public int ignorMaxTime = 180;
+
+
         [SerializeField] private Animator test;
         public StateType currentType; // 현재 상태를 저장해두는 변수
         public IStateEnumerator<StateType> current; // 현재 상태의 현재 기능

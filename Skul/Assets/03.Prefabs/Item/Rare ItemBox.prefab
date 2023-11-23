@@ -488,6 +488,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 236fbfa4b716cfa44b7f2db6f1e6e91a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canInteract: 1
   _notice: {fileID: 3825267349805145579}
   sortingObject: 0
   _rate: 1

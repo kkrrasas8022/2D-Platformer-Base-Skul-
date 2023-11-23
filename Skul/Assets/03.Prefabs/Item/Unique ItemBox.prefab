@@ -386,6 +386,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 236fbfa4b716cfa44b7f2db6f1e6e91a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canInteract: 1
   _notice: {fileID: 5372485942718289060}
   sortingObject: 0
   _rate: 2

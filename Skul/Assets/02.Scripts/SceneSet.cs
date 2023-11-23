@@ -11,8 +11,8 @@ public class SceneSet : MonoBehaviour
 
     public Vector2 startPos;
 
-    public Vector2 mapSize;
-    public Vector2 mapCenter;
+    public Vector2 mapMinBoundary;
+    public Vector2 mapMaxBoundary;
 
     private void Awake()
     { 
@@ -22,6 +22,6 @@ public class SceneSet : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color= Color.red;
-        Gizmos.DrawWireCube(mapCenter, mapSize);
+        Gizmos.DrawLine(mapMinBoundary,mapMaxBoundary);
     }
 }

@@ -23,8 +23,7 @@ public class Potal : InteractionObject
     {
         if (type == PotalType.Broken)
             return;
-        if (GameManager.instance.isClear == false)
-            return;
+
         base.Interaction(player);
         GameManager.instance.GoNextMap();
         switch (type)
