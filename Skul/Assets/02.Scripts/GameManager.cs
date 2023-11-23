@@ -13,6 +13,7 @@ namespace Skul.GameManager
 {
     public enum MapReward
     {
+        None,
         Coin,
         Weapon,
         Bone
@@ -25,6 +26,9 @@ namespace Skul.GameManager
         public List<ItemBox> weaponBox;
         public List<ItemBox> graves;
         public List<Potal> potals;
+        private Dictionary<PotalType,Potal> potalsDic;
+
+        public Potal[] nowMapPotal=new Potal[2];
 
         public ItemRate itemRate;
         public int percentageType;
@@ -39,85 +43,47 @@ namespace Skul.GameManager
 
         public bool isClear;
 
+        public Action StageClear;
+        public Action EnemyDie;
+
         public int mapEnemyCount;
 
         public Vector3 mapBoxPosition;
         public Vector2 mapSize;
+        public Vector2 mapCenter;
+
+        public Action<SceneSet> OnChangeScene;
 
         protected override void Awake()
         {
             base.Awake();
+            potalsDic = new Dictionary<PotalType, Potal>();
+            foreach(Potal item in potals)
+            {
+                potalsDic.Add(item.type, item);
+            }
             _player=GameObject.FindWithTag("Player").GetComponent<Player>();
+            
+            MainUI.instance._player = this._player;
+            MainUI.instance.Show();
             //_inventoryUI = _player.inventoryUI;
             DontDestroyOnLoad(_player);
             //DontDestroyOnLoad(_inventoryUI);
-        }
-
-        public void GoNextMap()
-        {
-            mapEnemyCount = 0;
-            mapSize = Vector3.zero;
-            isClear = true;
-            isReward = false;
-            percentageType = UnityEngine.Random.Range(0, 100);
-
-            // 동기로드
-            // 1번씩, 2번씩
-            UnityEngine.SceneManagement.SceneManager.LoadScene("Level 1");
-        }
-      //     // 비동기 로드
-      //     // 1번씩, 2번씩, 로드씬
-      //
-      //
-      //     StartCoroutine(StartLoadNextScene());
-      // }
-      //
-      // // 로딩씬에 추가된 오브젝트에서 실행되어야 함.
-      // private IEnumerator StartLoadNextScene()
-      // {
-      //     AsyncOperation ao = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync("2번씬");
-      //
-      //     // 다음 씬 준비 시 바로 로드시키도록 허용하지 않음
-      //     ao.allowSceneActivation = false;
-      //
-      //
-      //     // allowSceneActivation 가 false 일 경우
-      //     // 0 ~ 0.9
-      //     // allowSceneActivation 가 true 일 경우
-      //     // 0 ~ 1.0
-      //     //ao.progress; // <- 로드 진행 상태
-      //
-      //     // 로드가 진행중이라면
-      //     while (ao.progress < 0.9f)
-      //     {
-      //         yield return null;
-      //
-      //
-      //         // 로드 진행중 해야 할 일
-      //         // ...
-      //     }
-      //
-      //
-      //     // 해야될 일 끝남 체크?
-      //
-      //
-      //     // 다음 씬 로드 허용
-      //     ao.allowSceneActivation = true;
-      // }
-      //
-        public void Update()
-        {
-            mapEnemyCount = GameObject.FindGameObjectsWithTag("Enemy").Length;
-            if (mapEnemyCount == 0)
-                isClear = true;
-            if(isClear)
+            Debug.Log("GameManager");
+            EnemyDie += () =>
+            {
+                mapEnemyCount--;
+                if (mapEnemyCount == 0)
+                    StageClear?.Invoke();
+            };
+            StageClear = () =>
             {
                 switch (percentageType)
                 {
                     case int i when i > Legendpercentage:
                         itemRate = ItemRate.Legend;
                         break;
-                    case int i when i >Uniquepercentage:
+                    case int i when i > Uniquepercentage:
                         itemRate = ItemRate.Unique;
                         break;
                     case int i when i > Rarepercentage:
@@ -127,23 +93,84 @@ namespace Skul.GameManager
                         itemRate = ItemRate.Normal;
                         break;
                 }
-                if(isReward==false)
+                if (isReward == false)
                 {
                     switch (mapReward)
                     {
+                        case MapReward.None:
+                            break;
                         case MapReward.Coin:
                             break;
                         case MapReward.Weapon:
                             {
-                                Instantiate(weaponBox[(int)itemRate],mapBoxPosition,Quaternion.identity);
+                                Instantiate(weaponBox[(int)itemRate], mapBoxPosition, Quaternion.identity);
                             }
                             break;
                         case MapReward.Bone:
                             Instantiate(graves[(int)itemRate], mapBoxPosition, Quaternion.identity);
                             break;
                     }
-                    isReward = true ;
+                    isReward = true;
                 }
+            };
+            OnChangeScene += (sceneSet) =>
+            {
+                mapEnemyCount = GameObject.FindGameObjectsWithTag("Enemy").Length;
+                mapSize = sceneSet.mapSize;
+                isClear = false;
+                isReward = false;
+                percentageType = UnityEngine.Random.Range(0, 100);
+
+                int r=0;
+                for(int i=0;i<nowMapPotal.Length;i++)
+                {
+                    int randomtype=UnityEngine.Random.Range(0,4);
+                    if (i > 0)
+                    {
+                        if(randomtype==r)
+                        {
+                            i--;
+                            continue;
+                        }
+                    }
+                    r = randomtype;
+                    nowMapPotal[i] = Instantiate(potalsDic[(PotalType)r], sceneSet.potalPos[i], Quaternion.identity).GetComponent<Potal>();
+                    
+                }
+               // nowMapPotal[0] = Instantiate(potalsDic[sceneSet.potalType[0]], sceneSet.potalPos[0], Quaternion.identity).GetComponent<Potal>();
+                //nowMapPotal[1] = Instantiate(potalsDic[sceneSet.potalType[1]], sceneSet.potalPos[1], Quaternion.identity).GetComponent<Potal>();
+
+                _player.transform.position = sceneSet.startPos;
+                mapBoxPosition = sceneSet.rewardPos;
+                mapCenter = sceneSet.mapCenter;
+              
+            };
+
+        }
+
+        public void GoNextMap()
+        {
+            StartCoroutine(StartLoadNextScene());
+        }
+     
+        // 로딩씬에 추가된 오브젝트에서 실행되어야 함.
+        private IEnumerator StartLoadNextScene()
+        {
+            AsyncOperation nextScene = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(1);
+     
+            while (!nextScene.isDone)
+            {
+                yield return null;
+            }
+        }
+     
+        public void Update()
+        {
+            if (mapEnemyCount == 0)
+                isClear = true;
+            if(isClear)
+            {
+                
             }
         }
     }

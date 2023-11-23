@@ -6,10 +6,11 @@ using TMPro;
 using Skul.Character.PC;
 using Skul.Character;
 using Skul.Data;
+using Skul.Tools;
 
 namespace Skul.UI
 {
-    public class MainUI : UIMono
+    public class MainUI : SingletonUIBase<MainUI>
     {
         [SerializeField] private Slider _hpBar;
         [SerializeField] private TMP_Text _hpText;
@@ -20,7 +21,7 @@ namespace Skul.UI
         [SerializeField] private Image _skill1Fill;
         [SerializeField] private Image _skill2;
         [SerializeField] private Image _skill2Fill;
-        [SerializeField] private Player _player;
+        [SerializeField] public Player _player;
 
         [SerializeField] private TMP_Text _curCoin;
         [SerializeField] private TMP_Text _curBone;

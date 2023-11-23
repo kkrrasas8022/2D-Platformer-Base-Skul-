@@ -8,17 +8,17 @@ using UnityEngine;
 
 public enum PotalType
 {
+    Broken,
     Money,
     Bone,
     Weapon,
     MiddleBoss,
     Boss,
     Shop,
-    Broken
 }
 public class Potal : InteractionObject
 {
-    [SerializeField] private PotalType type; 
+    [SerializeField] public PotalType type;
     public override void Interaction(Player player)
     {
         if (type == PotalType.Broken)
@@ -27,6 +27,27 @@ public class Potal : InteractionObject
             return;
         base.Interaction(player);
         GameManager.instance.GoNextMap();
+        switch (type)
+        {
+            case PotalType.Broken:
+                break;
+            case PotalType.Money:
+                GameManager.instance.mapReward = MapReward.Coin;
+                break;
+            case PotalType.Bone:
+                GameManager.instance.mapReward = MapReward.Bone;
+                break;
+            case PotalType.Weapon:
+                GameManager.instance.mapReward = MapReward.Weapon;
+                break;
+            case PotalType.MiddleBoss:
+                break;
+            case PotalType.Boss:
+                break;
+            case PotalType.Shop:
+                break;
+        }
+
         Debug.Log("Go Next Map");
     }
 

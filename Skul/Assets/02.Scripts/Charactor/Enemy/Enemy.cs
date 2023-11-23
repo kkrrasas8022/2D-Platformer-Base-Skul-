@@ -15,6 +15,7 @@ namespace Skul.Character.Enemy {
         {
             base.Awake();
             rigid = GetComponent<Rigidbody2D>();
+            onHpMin += () => GameManager.GameManager.instance.EnemyDie?.Invoke();
         }
         private void Update()
         {

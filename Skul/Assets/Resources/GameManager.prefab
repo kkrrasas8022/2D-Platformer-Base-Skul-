@@ -46,9 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _player: {fileID: 0}
   startCoin: 0
-  _mainUI: {fileID: 0}
-  _inventoryUI: {fileID: 0}
-  _statusUI: {fileID: 0}
+  sceneSet: {fileID: 0}
   weaponBox:
   - {fileID: 2329897028562823926, guid: d4442fc7ed21abf46aeb4289a816f768, type: 3}
   - {fileID: 8345740920842609231, guid: 33ac7d28776d9224581904f6a0d6bf6c, type: 3}
@@ -67,6 +65,9 @@ MonoBehaviour:
   - {fileID: 1470421079044472844, guid: 3d7b9f5dd8794a8468d08a01ade5d158, type: 3}
   - {fileID: 7375315780817620437, guid: 21463c65666f38e479311efcbafe1682, type: 3}
   - {fileID: 8948329406425436659, guid: 02287417ce37d8546ae57461cdca48ac, type: 3}
+  nowMapPotal:
+  - {fileID: 0}
+  - {fileID: 0}
   itemRate: 0
   percentageType: 0
   Rarepercentage: 30
