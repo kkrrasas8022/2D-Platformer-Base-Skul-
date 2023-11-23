@@ -547,7 +547,7 @@ Transform:
   m_GameObject: {fileID: 1334283137}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11, y: 5, z: -10}
+  m_LocalPosition: {x: 9.52, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2936,7 +2936,7 @@ MonoBehaviour:
   changedir: 0
   _direction: 1
   _horizontal: 0
-  _speed: 1
+  _speed: 3
 --- !u!4 &6256078814228637773
 Transform:
   m_ObjectHideFlags: 0
@@ -3065,7 +3065,11 @@ MonoBehaviour:
   _hpMax: 100
   _mpMax: 0
   inventory: {fileID: 0}
-  switchMaxCooltime: 0
+  nowComboCount: 0
+  _nowCombo: 0
+  _canComboTime: 0
+  _canComboMaxtime: 3
+  switchMaxCooltime: 7
   switchCoolTime: 0
   skill1CoolTime: 0
   skill2CoolTime: 0

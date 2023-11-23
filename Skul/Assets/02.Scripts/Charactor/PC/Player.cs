@@ -37,6 +37,11 @@ namespace Skul.Character.PC
     {
         public PlayerInventory inventory;
 
+        [SerializeField] public int nowComboCount;
+        [SerializeField] private bool _nowCombo;
+        [SerializeField] private float _canComboTime;
+        [SerializeField] private float _canComboMaxtime;
+
         [SerializeField] public float switchMaxCooltime;
         [SerializeField] public float switchCoolTime;
         [SerializeField] public float skill1CoolTime;
@@ -229,8 +234,10 @@ namespace Skul.Character.PC
         protected override void Awake()
         {
             base.Awake();
-            _curCoin = GameManager.GameManager.instance.startCoin;
+            _curCoin = GameElement.GameManager.instance.startCoin;
+
             _realAttackForce = 0;
+
             inventory = GetComponent<PlayerInventory>();
             interactionObjectsList = new List<InteractionObject>();
 
@@ -240,6 +247,7 @@ namespace Skul.Character.PC
 
             movement.direction = 1;
             _detecter = GetComponent<GroundDetecter>();
+
             movement.onDirectionChanged += (value) =>
             {
                 if (value < 0)
@@ -251,6 +259,7 @@ namespace Skul.Character.PC
                     _detecter.pos.x = 0.15f;
                 }
             };
+
             InputManager.Map map = new InputManager.Map();
             map.AddRawAxisAction("Horizontal", (value) =>
             {
@@ -282,8 +291,16 @@ namespace Skul.Character.PC
                     canInteractionObject.ColseDetails(this);
                 }
             });
-            map.AddKeyDownAction(KeyCode.X, () => stateMachine.ChangeState(
-                _detecter.isDetected==false?FSM.StateType.JumpAttack:FSM.StateType.Attack));
+            map.AddKeyDownAction(KeyCode.X, () =>
+            {
+                _nowCombo = true;
+                _canComboTime = 0;
+                nowComboCount++;
+                if (nowComboCount > inventory.CurHeadData.skulData.attackComboCount)
+                    nowComboCount = 1;
+                stateMachine.ChangeState(
+                _detecter.isDetected == false ? FSM.StateType.JumpAttack : FSM.StateType.Attack);
+            });
             map.AddKeyPressAction(KeyCode.X, () =>
             {
                 if (_detecter.isDetected == true&&canCharge)
@@ -387,6 +404,13 @@ namespace Skul.Character.PC
             });
             InputManager.instance.AddMap("PlayerAction", map);
 
+            OnAttackSpeedChanged += (value) =>
+            {
+                ani.SetFloat("AttackSpeed", value);
+            };
+
+            
+
             /*
             OnChangeItem += (value) =>
             {
@@ -437,13 +461,23 @@ namespace Skul.Character.PC
         {
             Debug.Log("»£√‚");
             stateMachine.OnAnimatorChanged?.Invoke(currentRen.GetComponent<Animator>());
+            this.ani = ani;
         }
 
         [SerializeField] private Animator ani;
 
         private void Update()
         {
-            
+            if(_nowCombo)
+            {
+                _canComboTime += Time.deltaTime;
+                if(_canComboTime>_canComboMaxtime)
+                {
+                    _nowCombo= false;
+                    nowComboCount = 0;
+                    
+                }
+            }
 
 
             _realAttackForce = AttackForce;

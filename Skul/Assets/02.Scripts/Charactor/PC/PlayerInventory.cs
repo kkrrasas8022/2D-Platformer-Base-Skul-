@@ -91,11 +91,12 @@ namespace Skul.Character.PC
                             _saveHeadData = _curHeadData;
                             _curHeadData.DeleteAbility(_player);
                             _curHeadData=headdata;
-                            _curHeadData.HadAbility(_player);
                             _player.currentRen=Instantiate(_curHeadData.skulData.Renderer, transform);
                             _player.currentRen.hadSkillsID = item.skillIDs;
                             _player._renderers.Add(_player.currentRen);
-                            _player.AnimatorChange(_player.currentRen.GetComponent<Animator>());
+                            Animator ani = _player.currentRen.GetComponent<Animator>();
+                            _player.AnimatorChange(ani);
+                            _curHeadData.HadAbility(_player);
                             OnHeadAdd?.Invoke(headdata);
                         }
                         else
@@ -105,7 +106,7 @@ namespace Skul.Character.PC
                             Destroy(_player.currentRen.gameObject);
                             _player._renderers.Remove(_curHeadData.skulData.Renderer);
                             _curHeadData = data as HeadItemData;
-                            _curHeadData.HadAbility(_player);
+
                             PlayerAttacks curren = Instantiate(_curHeadData.skulData.Renderer, transform);
                             curren.InitAttackRenderer();
                             curren.hadSkillsID = item.skillIDs;
@@ -114,7 +115,8 @@ namespace Skul.Character.PC
                             _player._renderers.Add(curren);
                             _player._renderers.Add(temp);
                             _player.currentRen = curren;
-                            _player.AnimatorChange(curren.GetComponent<Animator>());    
+                            _player.AnimatorChange(curren.GetComponent<Animator>());
+                            _curHeadData.HadAbility(_player);
                         }
                         
                     }

@@ -36,9 +36,15 @@ namespace Skul.Character.PC
             }
         }
 
-        private void Awake()
+        protected override void Awake()
         {
+            base.Awake();
             _animator = GetComponent<Animator>();
+        }
+
+        protected override void Start()
+        {
+            base.Start();
         }
         private void OnEnable()
         {

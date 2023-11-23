@@ -33,6 +33,15 @@ namespace Skul.UI
         {
             base.Awake();
             _player = GameObject.FindWithTag("Player").GetComponent<Player>();
+
+
+
+
+
+
+
+
+
         }
 
 
@@ -65,7 +74,6 @@ namespace Skul.UI
             _essenceCoolDownTex.text = (_player.EssenceCoolDown * 100).ToString() + " %";
             _CriticalPerTex.text = (_player.CriticalPersent * 100).ToString() + " %";
             _CriticalDamageTex.text= "X " + (_player.CriticalDamage).ToString("F2");
-
 
         }
     }

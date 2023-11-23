@@ -124,3 +124,5 @@ MonoBehaviour:
   _enemyMask:
     serializedVersion: 2
     m_Bits: 0
+  hadSkillsID: 
+  _data: {fileID: 11400000, guid: 4ca230d0f20887d4f97027613615fe80, type: 2}

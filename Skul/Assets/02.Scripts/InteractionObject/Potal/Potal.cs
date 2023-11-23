@@ -1,6 +1,6 @@
 using JetBrains.Annotations;
 using Skul.Character.PC;
-using Skul.GameManager;
+using Skul.GameElement;
 using System;
 using System.Collections;
 using System.Collections.Generic;

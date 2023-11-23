@@ -73,11 +73,16 @@ namespace Skul.Movement
         //이동방향을 나타냄
         private Vector2 _move;
         //이동속도
-        [SerializeField] private float _speed = 1.0f;
+        [SerializeField] private float _speed = 3.0f;
+        
 
         private void Awake()
         {
             _rigid=GetComponent<Rigidbody2D>();
+            GameElement.GameManager.instance.player.OnMoveSpeedChanged += (value) =>
+            {
+                _speed *= value;
+            };
         }
 
         protected void Update()

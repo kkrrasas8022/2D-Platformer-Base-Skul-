@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5c2ec6f16b372949ae8cea8bf676903, type: 3}
+  m_Name: Minotaurus
+  m_EditorClassIdentifier: 
+  id: 0
+  Name: Minotaurus
+  skulType: 1
+  Description: 
+  Renderer: {fileID: 0}
+  SkulFace: {fileID: 0}
+  activeSkills: []
+  switchSkill: {fileID: 0}
+  passiveSkill: {fileID: 0}
+  specialSkill: {fileID: 0}
+  attackType: 0
+  attackComboCount: 0
+  takenDamage: 0
+  physicPower: 0
+  magicPower: 0
+  attackSpeed: 0
+  moveSpeed: 0
+  consentSpeed: 0
+  skillCoolDown: 0
+  essenceCoolDown: 0
+  switchCoolDown: 0
+  critical: 0
+  critDmg: 0

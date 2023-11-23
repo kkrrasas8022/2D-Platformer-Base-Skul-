@@ -46,7 +46,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _headItemDatum:
   - {fileID: 11400000, guid: cd32987cb6dc5884a88a93ab586db344, type: 2}
-  - {fileID: 11400000, guid: aa64acf22fd587540a00d96265adba12, type: 2}
+  - {fileID: 11400000, guid: ff25798c6faca5f4a8e6639b045e8daf, type: 2}
+  - {fileID: 11400000, guid: a29746c8bc6f9d248bd607789eedf0f3, type: 2}
+  - {fileID: 11400000, guid: acc33403c1cb5134cb778b17715db87f, type: 2}
+  - {fileID: 11400000, guid: 2ab3e0fb9a0ede8408a8923b01c0fb48, type: 2}
   _essenceItemDatum:
   - {fileID: 11400000, guid: 15f0073e2c781034ba5e6f9f51f45c74, type: 2}
   _weaponItemDatum:

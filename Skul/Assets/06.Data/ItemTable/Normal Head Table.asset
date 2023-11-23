@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Normal Head Table
   m_EditorClassIdentifier: 
   type: 1
+  rate: 0
   itemDatas:
   - {fileID: 11400000, guid: cd32987cb6dc5884a88a93ab586db344, type: 2}
-  - {fileID: 11400000, guid: aa64acf22fd587540a00d96265adba12, type: 2}
+  - {fileID: 11400000, guid: 2ab3e0fb9a0ede8408a8923b01c0fb48, type: 2}

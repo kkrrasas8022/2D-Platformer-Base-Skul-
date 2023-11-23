@@ -26,6 +26,7 @@ namespace Skul.Data
         public PassiveSkillData passiveSkill;
         public SpecialSkillData specialSkill;
         public AttackType attackType;
+        public int attackComboCount;
 
         [Header("Status")]
         public float takenDamage;
@@ -35,5 +36,9 @@ namespace Skul.Data
         public float moveSpeed;
         public float consentSpeed;
         public float skillCoolDown;
+        public float essenceCoolDown;
+        public float switchCoolDown;
+        public float critical;
+        public float critDmg;
     }
 }

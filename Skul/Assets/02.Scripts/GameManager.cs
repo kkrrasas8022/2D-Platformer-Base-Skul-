@@ -9,7 +9,7 @@ using Skul.UI;
 using UnityEngine;
 
 
-namespace Skul.GameManager
+namespace Skul.GameElement
 {
     public enum MapReward
     {
@@ -20,15 +20,15 @@ namespace Skul.GameManager
     }
     public class GameManager : SingletonMonoBase<GameManager>
     {
-        [SerializeField] private Player _player;
+        [SerializeField] public Player player;
         [SerializeField] public int startCoin;
 
         public List<ItemBox> weaponBox;
         public List<ItemBox> graves;
         public List<Potal> potals;
-        private Dictionary<PotalType,Potal> potalsDic;
+        private Dictionary<PotalType, Potal> potalsDic;
 
-        public Potal[] nowMapPotal=new Potal[2];
+        public Potal[] nowMapPotal = new Potal[2];
 
         public ItemRate itemRate;
         public int percentageType;
@@ -51,7 +51,7 @@ namespace Skul.GameManager
         public Vector3 mapBoxPosition;
         public Vector2 mapMinBoundary;
         public Vector2 mapMaxBoundary;
-       
+
 
         public Action<SceneSet> OnChangeScene;
 
@@ -59,16 +59,16 @@ namespace Skul.GameManager
         {
             base.Awake();
             potalsDic = new Dictionary<PotalType, Potal>();
-            foreach(Potal item in potals)
+            foreach (Potal item in potals)
             {
                 potalsDic.Add(item.type, item);
             }
-            _player=GameObject.FindWithTag("Player").GetComponent<Player>();
+            player = GameObject.FindWithTag("Player").GetComponent<Player>();
+
             
-            MainUI.instance._player = this._player;
             MainUI.instance.Show();
             //_inventoryUI = _player.inventoryUI;
-            DontDestroyOnLoad(_player);
+            DontDestroyOnLoad(player);
             //DontDestroyOnLoad(_inventoryUI);
             Debug.Log("GameManager");
             EnemyDie += () =>
@@ -94,24 +94,24 @@ namespace Skul.GameManager
                         itemRate = ItemRate.Normal;
                         break;
                 }
-                
-                    switch (mapReward)
-                    {
-                        case MapReward.None:
-                            break;
-                        case MapReward.Coin:
-                            break;
-                        case MapReward.Weapon:
-                            {
-                                Instantiate(weaponBox[(int)itemRate], mapBoxPosition, Quaternion.identity);
-                            }
-                            break;
-                        case MapReward.Bone:
-                            Instantiate(graves[(int)itemRate], mapBoxPosition, Quaternion.identity);
-                            break;
-                    }
 
-                
+                switch (mapReward)
+                {
+                    case MapReward.None:
+                        break;
+                    case MapReward.Coin:
+                        break;
+                    case MapReward.Weapon:
+                        {
+                            Instantiate(weaponBox[(int)itemRate], mapBoxPosition, Quaternion.identity);
+                        }
+                        break;
+                    case MapReward.Bone:
+                        Instantiate(graves[(int)itemRate], mapBoxPosition, Quaternion.identity);
+                        break;
+                }
+
+
             };
             OnChangeScene += (sceneSet) =>
             {
@@ -121,13 +121,13 @@ namespace Skul.GameManager
 
                 percentageType = UnityEngine.Random.Range(0, 100);
 
-                int r=0;
-                for(int i=0;i<nowMapPotal.Length;i++)
+                int r = 0;
+                for (int i = 0; i < nowMapPotal.Length; i++)
                 {
-                    int randomtype=UnityEngine.Random.Range(0,4);
+                    int randomtype = UnityEngine.Random.Range(0, 4);
                     if (i > 0)
                     {
-                        if(randomtype==r)
+                        if (randomtype == r)
                         {
                             i--;
                             continue;
@@ -135,15 +135,15 @@ namespace Skul.GameManager
                     }
                     r = randomtype;
                     nowMapPotal[i] = Instantiate(potalsDic[(PotalType)r], sceneSet.potalPos[i], Quaternion.identity).GetComponent<Potal>();
-                    
+
                 }
-               // nowMapPotal[0] = Instantiate(potalsDic[sceneSet.potalType[0]], sceneSet.potalPos[0], Quaternion.identity).GetComponent<Potal>();
+                // nowMapPotal[0] = Instantiate(potalsDic[sceneSet.potalType[0]], sceneSet.potalPos[0], Quaternion.identity).GetComponent<Potal>();
                 //nowMapPotal[1] = Instantiate(potalsDic[sceneSet.potalType[1]], sceneSet.potalPos[1], Quaternion.identity).GetComponent<Potal>();
 
-                _player.transform.position = sceneSet.startPos;
+                player.transform.position = sceneSet.startPos;
                 mapBoxPosition = sceneSet.rewardPos;
 
-              
+
             };
 
         }
@@ -152,24 +152,24 @@ namespace Skul.GameManager
         {
             StartCoroutine(StartLoadNextScene());
         }
-     
+
         // 로딩씬에 추가된 오브젝트에서 실행되어야 함.
         private IEnumerator StartLoadNextScene()
         {
             AsyncOperation nextScene = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(1);
-     
+
             while (!nextScene.isDone)
             {
                 yield return null;
             }
         }
-     
+
         public void Update()
         {
-            if (_player.transform.position.x > mapMaxBoundary.x)
-                _player.transform.position = new Vector3(mapMaxBoundary.x, _player.transform.position.y);
-            if (_player.transform.position.x < mapMinBoundary.x)
-                _player.transform.position = new Vector3(mapMinBoundary.x, _player.transform.position.y);
+            if (player.transform.position.x > mapMaxBoundary.x)
+                player.transform.position = new Vector3(mapMaxBoundary.x, player.transform.position.y);
+            if (player.transform.position.x < mapMinBoundary.x)
+                player.transform.position = new Vector3(mapMinBoundary.x, player.transform.position.y);
         }
     }
 }

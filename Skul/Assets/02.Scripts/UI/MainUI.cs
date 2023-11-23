@@ -7,6 +7,7 @@ using Skul.Character.PC;
 using Skul.Character;
 using Skul.Data;
 using Skul.Tools;
+using Skul.GameElement;
 
 namespace Skul.UI
 {
@@ -17,11 +18,11 @@ namespace Skul.UI
         [SerializeField] private TMP_Text _hpMaxText;
         [SerializeField] private Image _mainFace;
         [SerializeField] private Image _subFace;
+        [SerializeField] private Image _switchFill;
         [SerializeField] private Image _skill1;
         [SerializeField] private Image _skill1Fill;
         [SerializeField] private Image _skill2;
         [SerializeField] private Image _skill2Fill;
-        [SerializeField] public Player _player;
 
         [SerializeField] private TMP_Text _curCoin;
         [SerializeField] private TMP_Text _curBone;
@@ -33,70 +34,72 @@ namespace Skul.UI
 
         private void Update()
         {
-            _skill1Fill.fillAmount = _player.skill1CoolTime/((ActiveSkillData)SkillManager.instance[_player.currentRen.hadSkillsID[0]]).CoolTime;
-            if(_player.currentRen.hadSkillsID.Count>1)
-                _skill2Fill.fillAmount = _player.skill2CoolTime/((ActiveSkillData)SkillManager.instance[_player.currentRen.hadSkillsID[1]]).CoolTime;
+            _skill1Fill.fillAmount = GameElement.GameManager.instance.player.skill1CoolTime/((ActiveSkillData)SkillManager.instance[GameElement.GameManager.instance.player.currentRen.hadSkillsID[0]]).CoolTime;
+            if(GameElement.GameManager.instance.player.currentRen.hadSkillsID.Count>1)
+                _skill2Fill.fillAmount = GameElement.GameManager.instance.player.skill2CoolTime/((ActiveSkillData)SkillManager.instance[GameElement.GameManager.instance.player.currentRen.hadSkillsID[1]]).CoolTime;
+            _switchFill.fillAmount = GameElement.GameManager.instance.player.switchCoolTime / GameElement.GameManager.instance.player.switchMaxCooltime;
+
         }
 
         private void Start()
         {
-            _mainFace.sprite = _player.inventory.CurHeadData.skulData.SkulFace;
-            if (_player.inventory.SaveHeadData == null)
+            _mainFace.sprite = GameElement.GameManager.instance.player.inventory.CurHeadData.skulData.SkulFace;
+            if (GameElement.GameManager.instance.player.inventory.SaveHeadData == null)
                 _subFace.color = Color.clear;
             else
             {
                 _subFace.color = Color.white;
-                _subFace.sprite = _player.inventory.SaveHeadData.skulData.SkulFace; 
+                _subFace.sprite = GameElement.GameManager.instance.player.inventory.SaveHeadData.skulData.SkulFace; 
             }
-            _skill1.sprite = SkillManager.instance[_player.currentRen.hadSkillsID[0]].Icon;
-            _skill2.sprite = SkillManager.instance[_player.currentRen.hadSkillsID[1]].Icon;
+            _skill1.sprite = SkillManager.instance[GameElement.GameManager.instance.player.currentRen.hadSkillsID[0]].Icon;
+            _skill2.sprite = SkillManager.instance[GameElement.GameManager.instance.player.currentRen.hadSkillsID[1]].Icon;
             _subFace=_subFace.GetComponent<Image>();
             _hpBar.minValue = 0.0f;
-            _hpBar.maxValue = _player.hpMax;
-            _hpBar.value = _player.hp;
-            _hpText.text = ((int)_player.hp).ToString();
-            _hpMaxText.text = ((int)_player.hpMax).ToString();
+            _hpBar.maxValue = GameElement.GameManager.instance.player.hpMax;
+            _hpBar.value = GameElement.GameManager.instance.player.hp;
+            _hpText.text = ((int)GameElement.GameManager.instance.player.hp).ToString();
+            _hpMaxText.text = ((int)GameElement.GameManager.instance.player.hpMax).ToString();
 
-            _curCoin.text=_player.curCoin.ToString();
-            _curBone.text=_player.curBone.ToString();
+            _curCoin.text = GameElement.GameManager.instance.player.curCoin.ToString();
+            _curBone.text = GameElement.GameManager.instance.player.curBone.ToString();
 
-            _player.OnCoinChanged += (value) =>
+            GameElement.GameManager.instance.player.OnCoinChanged += (value) =>
             {
                 _curCoin.text = value.ToString();
             };
-            _player.OnBoneChanged += (value) =>
+            GameElement.GameManager.instance.player.OnBoneChanged += (value) =>
             {
                 _curBone.text = value.ToString();
             };
 
-            _player.onHpChanged += (hp) =>
+            GameElement.GameManager.instance.player.onHpChanged += (hp) =>
             {
                 _hpBar.value = hp;
                 _hpText.text = ((int)hp).ToString();
             };
-            _player.onHpMaxChanged += (maxhp) =>
+            GameElement.GameManager.instance.player.onHpMaxChanged += (maxhp) =>
             {
-                
+
                 _hpBar.maxValue = maxhp;
-                _hpBar.value = _player.hp;
+                _hpBar.value = GameElement.GameManager.instance.player.hp;
                 _hpMaxText.text= maxhp.ToString();
             };
-            _player.OnSwitch += () =>
+            GameElement.GameManager.instance.player.OnSwitch += () =>
             {
-                _subFace.sprite = _player.inventory.CurHeadData.skulData.SkulFace;
-                _mainFace.sprite = _player.inventory.SaveHeadData.skulData.SkulFace;
-                _skill1.sprite = SkillManager.instance[(_player.currentRen == _player._renderers[0] ? _player._renderers[1] : _player._renderers[0]).hadSkillsID[0]].Icon;
-                if (_player.inventory.CurHeadData.skillCount > 1)
-                    _skill2.sprite = SkillManager.instance[(_player.currentRen == _player._renderers[0] ? _player._renderers[1] : _player._renderers[0]).hadSkillsID[1]].Icon;
+                _subFace.sprite = GameElement.GameManager.instance.player.inventory.CurHeadData.skulData.SkulFace;
+                _mainFace.sprite = GameElement.GameManager.instance.player.inventory.SaveHeadData.skulData.SkulFace;
+                _skill1.sprite = SkillManager.instance[(GameElement.GameManager.instance.player.currentRen == GameElement.GameManager.instance.player._renderers[0] ? GameElement.GameManager.instance.player._renderers[1] : GameElement.GameManager.instance.player._renderers[0]).hadSkillsID[0]].Icon;
+                if (GameElement.GameManager.instance.player.inventory.CurHeadData.skillCount > 1)
+                    _skill2.sprite = SkillManager.instance[(GameElement.GameManager.instance.player.currentRen == GameElement.GameManager.instance.player._renderers[0] ? GameElement.GameManager.instance.player._renderers[1] : GameElement.GameManager.instance.player._renderers[0]).hadSkillsID[1]].Icon;
             };
-            _player.inventory.OnHeadAdd += (data) =>
+            GameElement.GameManager.instance.player.inventory.OnHeadAdd += (data) =>
             {
                 _subFace.color = Color.white;
-                _subFace.sprite = _player.inventory.SaveHeadData.skulData.SkulFace;
-                _mainFace.sprite = _player.inventory.CurHeadData.skulData.SkulFace;
-                _skill1.sprite = SkillManager.instance[_player.currentRen.hadSkillsID[0]].Icon;
-                if (_player.inventory.CurHeadData.skillCount > 1)
-                    _skill2.sprite = SkillManager.instance[_player.currentRen.hadSkillsID[1]].Icon;
+                _subFace.sprite = GameElement.GameManager.instance.player.inventory.SaveHeadData.skulData.SkulFace;
+                _mainFace.sprite = GameElement.GameManager.instance.player.inventory.CurHeadData.skulData.SkulFace;
+                _skill1.sprite = SkillManager.instance[GameElement.GameManager.instance.player.currentRen.hadSkillsID[0]].Icon;
+                if (GameElement.GameManager.instance.player.inventory.CurHeadData.skillCount > 1)
+                    _skill2.sprite = SkillManager.instance[GameElement.GameManager.instance.player.currentRen.hadSkillsID[1]].Icon;
             };
         }
         //private void Update()

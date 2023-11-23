@@ -6,6 +6,8 @@ namespace Skul.FSM.States
 {
     public class StateAttack : State
     {
+        private float _comboTime;
+        private int _comboCount;
         public StateAttack(StateMachine machine) : base(machine)
         {
         }
@@ -18,7 +20,6 @@ namespace Skul.FSM.States
         //idle는 다른 상태로 이전되기 전까지 끝나지 않는 행동이기 때문에 WaitUntilActionFinished에서 지속되게 한다.
         public override StateType MoveNext()
         {
-            //Debug.Log("StateAttack");
             StateType next = StateType.Attack;
             switch (currentStep)
             {
@@ -26,7 +27,7 @@ namespace Skul.FSM.States
                     {
                         movement.isMovable=false;
                         movement.isDirectionChangeable = false;
-                        animator.Play("Attack1");
+                        animator.Play("Attack"+ GameElement.GameManager.instance.player.nowComboCount);
                         currentStep++;
                     }
                     break;

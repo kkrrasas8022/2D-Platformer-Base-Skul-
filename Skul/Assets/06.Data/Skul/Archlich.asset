@@ -10,22 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c6d47b8d70e14284aa6d2408b2845053, type: 3}
-  m_Name: Normal
+  m_Name: Archlich
   m_EditorClassIdentifier: 
   id: 0
-  Name: Little Bone
+  Name: Archlich
   skulType: 0
-  Description: Little skeleton
-  Renderer: {fileID: 3014257849449115093, guid: 7650aa4f51f5a664eb29139de02ad1cf, type: 3}
-  SkulFace: {fileID: 1442591991, guid: 97e1de8a9b8e8a04c865e5740c3122a9, type: 3}
-  activeSkills:
-  - {fileID: 11400000, guid: f6c78684406f92748b8b16903a4c75a1, type: 2}
-  - {fileID: 11400000, guid: 9863f59187391404587dd5d97409429c, type: 2}
-  switchSkill: {fileID: 11400000, guid: 1c4b3303ed29159488b77349c4262c2f, type: 2}
+  Description: 
+  Renderer: {fileID: 0}
+  SkulFace: {fileID: 0}
+  activeSkills: []
+  switchSkill: {fileID: 0}
   passiveSkill: {fileID: 0}
   specialSkill: {fileID: 0}
   attackType: 1
-  attackComboCount: 2
+  attackComboCount: 0
   takenDamage: 0
   physicPower: 0
   magicPower: 0

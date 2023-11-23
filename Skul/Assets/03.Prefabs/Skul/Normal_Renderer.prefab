@@ -124,7 +124,10 @@ MonoBehaviour:
   _enemyMask:
     serializedVersion: 2
     m_Bits: 16384
-  col: {fileID: 0}
+  hadSkillsID: 
+  _data: {fileID: 11400000, guid: d7cdf3395ed04db48a2155c4a84f7c40, type: 2}
+  _lastEnemy: {fileID: 0}
+  _lastEnemies: []
   _hitSize: {x: 1, y: 1.2, z: 0}
   _hitOffset: {x: 0.6, y: 0.6, z: 0}
   _switchHitSize: {x: 2.5, y: 1.5, z: 0}
