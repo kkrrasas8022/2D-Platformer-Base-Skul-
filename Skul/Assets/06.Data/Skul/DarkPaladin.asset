@@ -21,7 +21,7 @@ MonoBehaviour:
   activeSkills:
   - {fileID: 11400000, guid: b44b7986eaa383b4abbb4197f73957a9, type: 2}
   - {fileID: 11400000, guid: c9b593648c6beef43872987407ec0873, type: 2}
-  switchSkill: {fileID: 0}
+  switchSkill: {fileID: 11400000, guid: 62ab5ca12f78abc4d9a25c235badbe66, type: 2}
   passiveSkill: {fileID: 0}
   specialSkill: {fileID: 0}
   attackType: 1

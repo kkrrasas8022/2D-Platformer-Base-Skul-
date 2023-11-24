@@ -3322,7 +3322,8 @@ MonoBehaviour:
   canInteractionObject: {fileID: 0}
   canDownJump: 0
   currentRen: {fileID: 751323460}
-  _renderers:
+  subRen: {fileID: 0}
+  renderers:
   - {fileID: 751323460}
   canCharge: 0
   attackTypes: 1

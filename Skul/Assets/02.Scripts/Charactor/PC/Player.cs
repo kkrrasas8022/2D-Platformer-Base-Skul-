@@ -98,7 +98,8 @@ namespace Skul.Character.PC
         public bool canDownJump;
         private GroundDetecter _detecter;
         [SerializeField] public PlayerAttacks currentRen;
-        [SerializeField] public List<PlayerAttacks> _renderers;
+        [SerializeField] public PlayerAttacks subRen;
+        [SerializeField] public List<PlayerAttacks> renderers;
         [SerializeField] public bool canCharge;
         public Action OnSwitch;
         public Movement.Movement playerMovement { get=>movement; }
@@ -444,11 +445,12 @@ namespace Skul.Character.PC
         }
         public void Switch()
         {
-            if(_renderers.Count <2)
+            if(renderers.Count <2)
                 return;
             OnSwitch?.Invoke();
             currentRen.gameObject.SetActive(false);
-            currentRen = (currentRen == _renderers[0] ? _renderers[1] : _renderers[0]);
+            currentRen = (currentRen == renderers[0] ? renderers[1] : renderers[0]);
+            subRen= (currentRen == renderers[0] ? renderers[1] : renderers[0]);
             currentRen.gameObject.SetActive(true);
           
             inventory.SwitchHead();

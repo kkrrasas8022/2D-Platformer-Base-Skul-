@@ -84,17 +84,19 @@ namespace Skul.UI
                 _hpBar.value = GameElement.GameManager.instance.player.hp;
                 _hpMaxText.text= maxhp.ToString();
             };
+
             GameElement.GameManager.instance.player.OnSwitch += () =>
             {
                 _subFace.sprite = GameElement.GameManager.instance.player.inventory.CurHeadData.skulData.SkulFace;
                 _mainFace.sprite = GameElement.GameManager.instance.player.inventory.SaveHeadData.skulData.SkulFace;
                 _skill1.sprite = SkillManager.instance[(GameElement.GameManager.instance.player.currentRen 
-                    == GameElement.GameManager.instance.player._renderers[0] ? GameElement.GameManager.instance.player._renderers[1] : GameElement.GameManager.instance.player._renderers[0]).hadSkillsID[0]].Icon;
+                    == GameElement.GameManager.instance.player.renderers[0] ? GameElement.GameManager.instance.player.renderers[1] : GameElement.GameManager.instance.player.renderers[0]).hadSkillsID[0]].Icon;
 
-                if (GameElement.GameManager.instance.player.inventory.CurHeadData.skillCount > 1)
+                if (GameElement.GameManager.instance.player.inventory.SaveHeadData.skillCount > 1)
                 { 
                     _skill2.sprite = SkillManager.instance[(GameElement.GameManager.instance.player.currentRen
-                        == GameElement.GameManager.instance.player._renderers[0] ? GameElement.GameManager.instance.player._renderers[1] : GameElement.GameManager.instance.player._renderers[0]).hadSkillsID[1]].Icon; 
+                        == GameElement.GameManager.instance.player.renderers[0] ? GameElement.GameManager.instance.player.renderers[1] : GameElement.GameManager.instance.player.renderers[0]).hadSkillsID[1]].Icon;
+                    _skill2.color = Color.white;
                 }
                 else
                 {
@@ -102,6 +104,7 @@ namespace Skul.UI
                     _skill2.color = Color.clear;
                 }
             };
+
             GameElement.GameManager.instance.player.inventory.OnHeadAdd += (data) =>
             {
                 _subFace.color = Color.white;

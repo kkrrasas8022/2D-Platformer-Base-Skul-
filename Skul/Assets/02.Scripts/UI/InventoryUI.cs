@@ -11,6 +11,7 @@ using System;
 using Skul.Item;
 using System.Diagnostics.Tracing;
 using Skul.Tools;
+using Skul.Character;
 
 namespace Skul.UI
 { 
@@ -46,6 +47,8 @@ namespace Skul.UI
 
         [Header("Details")]
         [SerializeField] private GameObject _detailsObject;
+        [SerializeField] private GameObject _detailsSkill1Object;
+        [SerializeField] private GameObject _detailsSkill2Object;
         [SerializeField] private Image _detailSkill1Icon;
         [SerializeField] private Image _detailSkill2Icon;
         [SerializeField] private TMP_Text _detailSkill1Name;
@@ -197,15 +200,46 @@ namespace Skul.UI
                         break;
                     case ItemType.Head:
                         {
+                            PlayerAttacks nowRen;
+                            if (value == 0)
+                                nowRen = _player.currentRen;
+                            else
+                                nowRen = _player.subRen;
+
                             HeadItemData headData = data as HeadItemData;
                             _itemIcon.color = Color.white;
                             _Skills.SetActive(true);
                             _typeTex.text = headData.skulData.skulType.ToString();
                             _switchSkillTex.text = headData.skulData.switchSkill.Name;
-                            _skill1Name.text = headData.skulData.activeSkills[0].Name;
-                            _skill2Name.text = headData.skulData.activeSkills[1].Name;
-                            _skill1Icon.sprite = headData.skulData.activeSkills[0].Icon;
-                            _skill2Icon.sprite = headData.skulData.activeSkills[1].Icon;
+                            _skill1Name.text = SkillManager.instance[nowRen.hadSkillsID[0]].Name;
+                            _skill1Icon.sprite = SkillManager.instance[nowRen.hadSkillsID[0]].Icon;
+                            _detailSkill1Icon.sprite = SkillManager.instance[nowRen.hadSkillsID[0]].Icon;
+                            _detailSkill1Name.text = SkillManager.instance[nowRen.hadSkillsID[0]].Name;
+                            _detailSkill1CoolTime.text = ((ActiveSkillData)SkillManager.instance[nowRen.hadSkillsID[0]]).CoolTime.ToString() + "s";
+                            _detailSkill1Description.text = SkillManager.instance[nowRen.hadSkillsID[0]].Description;
+
+                            if (headData.skillCount == 1)
+                            {
+                                _skill2Icon.gameObject.SetActive(false);
+                                _skill1Icon.transform.localPosition = new Vector3(0, _skill1Icon.transform.localPosition.y, 0);
+                                _detailsSkill2Object.SetActive(false);
+                                _detailsSkill1Object.transform.localPosition=new Vector3(0, _detailsSkill1Object.transform.localPosition.y, 0);
+                            }
+                            else
+                            {
+                                _skill2Icon.gameObject.SetActive(true);
+                                _detailSkill2Icon.gameObject.SetActive(true);
+                                _skill2Name.text = SkillManager.instance[nowRen.hadSkillsID[1]].Name;
+                                _skill2Icon.sprite = SkillManager.instance[nowRen.hadSkillsID[1]].Icon;
+                                _skill1Icon.transform.localPosition = new Vector3(-188, _skill1Icon.transform.localPosition.y, 0);
+                                _detailsSkill1Object.transform.localPosition=new Vector3(-161, _detailsSkill1Object.transform.localPosition.y, 0);
+
+                                _detailSkill2Icon.sprite = SkillManager.instance[nowRen.hadSkillsID[1]].Icon;
+                                _detailSkill2Name.text = SkillManager.instance[nowRen.hadSkillsID[1]].Name;
+                                _detailSkill2CoolTime.text = ((ActiveSkillData)SkillManager.instance[nowRen.hadSkillsID[1]]).CoolTime.ToString() + "s";
+                                _detailSkill2Description.text = SkillManager.instance[nowRen.hadSkillsID[1]].Description;
+
+                            }
                         }
                         break;
                     case ItemType.Weapon:

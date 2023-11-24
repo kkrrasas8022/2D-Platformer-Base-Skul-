@@ -9,11 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1244fac1a35fda4daadbaa0eef4def6, type: 3}
-  m_Name: Mino_Skill2
+  m_Script: {fileID: 11500000, guid: ff9e0e83f8c5bbe47b73d1f6177eedcc, type: 3}
+  m_Name: Mino_Switch
   m_EditorClassIdentifier: 
-  id: 1008
+  id: 1009
   Icon: {fileID: 0}
-  Name: Power Attack
+  Name: 
   Description: 
-  CoolTime: 0

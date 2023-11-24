@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 1007
   Icon: {fileID: 0}
-  Name: 
+  Name: Power Charge
   Description: 
   CoolTime: 0
