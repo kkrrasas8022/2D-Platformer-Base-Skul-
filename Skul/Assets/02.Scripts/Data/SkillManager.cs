@@ -17,8 +17,9 @@ namespace Skul.Data
         [SerializeField] private List<SpecialSkillData> _specialSkillSkillDatum;
 
 
-        private void Awake()
+        protected override void Awake()
         {
+            base.Awake();
             skillDatum = new Dictionary<int, SkillData>();
 
             foreach (var item in _activeSkillDatum)

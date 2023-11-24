@@ -1,3 +1,4 @@
+using Skul.GameElement;
 using System;
 using Unity.PlasticSCM.Editor.WebApi;
 using UnityEngine;
@@ -26,7 +27,7 @@ namespace Skul.FSM.States
                     {
                         movement.isMovable=true;
                         movement.isDirectionChangeable = true;
-                        animator.Play("Skill2");
+                        animator.Play("Skill" + GameManager.instance.player.currentRen.hadSkillsID[1]);
                         currentStep++;
                     }
                     break;

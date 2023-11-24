@@ -15,8 +15,9 @@ namespace Skul.Data
         [SerializeField] private List<WeaponItemData> _weaponItemDatum;
         [SerializeField] private ItemData _nullData;
 
-        private void Awake()
+        protected override void Awake()
         {
+            base.Awake();
             itemDatum = new Dictionary<int, ItemData>();
 
             itemDatum.Add(_nullData.id, _nullData);

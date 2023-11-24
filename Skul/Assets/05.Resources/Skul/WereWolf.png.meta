@@ -110,15 +110,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: WereWolf_0
+      name: Idle_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 725
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 6
+        y: 734
+        width: 39
+        height: 41
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -131,15 +131,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_1
+      name: Idle_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 725
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 52
+        y: 733
+        width: 38
+        height: 42
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -152,15 +152,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_2
+      name: Idle_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 725
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 97
+        y: 733
+        width: 38
+        height: 42
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -173,15 +173,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_3
+      name: Idle_3
       rect:
         serializedVersion: 2
-        x: 192
-        y: 725
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 142
+        y: 733
+        width: 39
+        height: 42
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -194,15 +194,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_4
+      name: Idle_4
       rect:
         serializedVersion: 2
-        x: 256
-        y: 725
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 188
+        y: 733
+        width: 39
+        height: 42
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -215,15 +215,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_5
+      name: Idle_5
       rect:
         serializedVersion: 2
-        x: 320
-        y: 725
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 234
+        y: 734
+        width: 39
+        height: 41
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -244,7 +244,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -257,15 +257,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_7
+      name: Move_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 661
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 6
+        y: 685
+        width: 62
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -278,15 +278,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_8
+      name: Move_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 661
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 75
+        y: 682
+        width: 71
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -299,15 +299,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_9
+      name: Move_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 661
+        x: 153
+        y: 682
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -320,15 +320,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_10
+      name: Move_3
       rect:
         serializedVersion: 2
-        x: 192
-        y: 661
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 224
+        y: 688
+        width: 43
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -341,15 +341,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_11
+      name: Move_4
       rect:
         serializedVersion: 2
-        x: 256
-        y: 661
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 274
+        y: 689
+        width: 40
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -362,15 +362,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_12
+      name: Move_5
       rect:
         serializedVersion: 2
-        x: 320
-        y: 661
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 321
+        y: 688
+        width: 47
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -391,7 +391,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -404,15 +404,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_14
+      name: Dash_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 597
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 6
+        y: 631
+        width: 71
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -425,15 +425,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_15
+      name: Dash_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 597
+        x: 84
+        y: 631
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -446,15 +446,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_16
+      name: Dash_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 597
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 155
+        y: 636
+        width: 43
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -475,7 +475,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -496,7 +496,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -517,7 +517,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -538,7 +538,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -551,15 +551,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_21
+      name: Jump_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 533
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 6
+        y: 566
+        width: 43
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -572,15 +572,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_22
+      name: Jump_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 533
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 56
+        y: 566
+        width: 42
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -593,15 +593,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_23
+      name: Jump_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 533
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 106
+        y: 567
+        width: 43
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -622,7 +622,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -643,7 +643,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -664,7 +664,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -685,7 +685,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -698,15 +698,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_28
+      name: Fall_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 469
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 6
+        y: 435
+        width: 53
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -719,15 +719,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_29
+      name: Fall_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 469
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 66
+        y: 436
+        width: 53
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -740,15 +740,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_30
+      name: Fall_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 469
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 126
+        y: 436
+        width: 53
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -769,7 +769,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -790,7 +790,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -811,7 +811,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -832,7 +832,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -845,15 +845,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_35
+      name: Attack1_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 405
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 6
+        y: 373
+        width: 40
+        height: 47
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -866,15 +866,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_36
+      name: Attack1_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 405
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 53
+        y: 373
+        width: 39
+        height: 46
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -887,15 +887,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_37
+      name: Attack1_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 405
+        x: 99
+        y: 363
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 57
+      alignment: 9
+      pivot: {x: 0.3, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -908,15 +908,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_38
+      name: Attack1_3
       rect:
         serializedVersion: 2
-        x: 192
-        y: 405
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 170
+        y: 373
+        width: 66
+        height: 47
+      alignment: 9
+      pivot: {x: 0.3, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -932,12 +932,12 @@ TextureImporter:
       name: WereWolf_39
       rect:
         serializedVersion: 2
-        x: 256
-        y: 405
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 243
+        y: 386
+        width: 44
+        height: 34
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -958,7 +958,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -979,7 +979,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -992,15 +992,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_42
+      name: Attack2_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 341
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 6
+        y: 315
+        width: 45
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1013,15 +1013,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_43
+      name: Attack2_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 341
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 58
+        y: 309
+        width: 46
+        height: 39
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1034,15 +1034,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_44
+      name: Attack2_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 341
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 111
+        y: 291
+        width: 68
+        height: 57
+      alignment: 9
+      pivot: {x: 0.35, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1055,15 +1055,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_45
+      name: Attack2_3
       rect:
         serializedVersion: 2
-        x: 192
-        y: 341
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 186
+        y: 293
+        width: 67
+        height: 55
+      alignment: 9
+      pivot: {x: 0.3, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1076,15 +1076,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_46
+      name: Attack2_4
       rect:
         serializedVersion: 2
-        x: 256
-        y: 341
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 260
+        y: 300
+        width: 35
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1105,7 +1105,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1126,7 +1126,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1139,15 +1139,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_49
+      name: JumpAttack_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 277
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 6
+        y: 224
+        width: 49
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1160,15 +1160,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_50
+      name: JumpAttack_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 277
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 62
+        y: 222
+        width: 43
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1181,15 +1181,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_51
+      name: JumpAttack_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 277
+        x: 112
+        y: 219
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 57
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1202,15 +1202,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_52
+      name: JumpAttack_3
       rect:
         serializedVersion: 2
-        x: 192
-        y: 277
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 183
+        y: 224
+        width: 65
+        height: 52
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1223,15 +1223,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_53
+      name: JumpAttack_4
       rect:
         serializedVersion: 2
         x: 256
-        y: 277
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 228
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1244,162 +1244,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_54
+      name: JumpAttack_5
       rect:
         serializedVersion: 2
-        x: 320
-        y: 277
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a913c40465415b84caf64ac6dcb38930
-      internalID: -961474827
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WereWolf_55
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 277
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fd7b3f0a9352d1745859a71606a58dc9
-      internalID: 549045211
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WereWolf_56
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 213
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 07ef52c851f00ff41b6ce0ff5b47001b
-      internalID: -1692847707
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WereWolf_57
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 213
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7b2e8b47762317a40946acd9fe92cc55
-      internalID: 1229101267
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WereWolf_58
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 213
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 89e77a058771ed9448e5fb83ff13966f
-      internalID: -1738305653
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WereWolf_59
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 213
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a8f6f146488fda946aff927016020d9f
-      internalID: -525449175
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WereWolf_60
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 213
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c2fb423d4a86cbf41be4b93b15c03058
-      internalID: -662900316
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WereWolf_61
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 213
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 311
+        y: 228
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1412,15 +1265,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_62
+      name: JumpAttack_6
       rect:
         serializedVersion: 2
-        x: 384
-        y: 213
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 366
+        y: 228
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1433,15 +1286,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_63
+      name: Skill1_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 149
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 6
+        y: 159
+        width: 33
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1462,7 +1315,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1483,7 +1336,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1504,7 +1357,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1525,7 +1378,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1546,7 +1399,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1567,7 +1420,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1588,7 +1441,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1609,7 +1462,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1630,7 +1483,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1651,7 +1504,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1672,7 +1525,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1693,7 +1546,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1714,7 +1567,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1727,15 +1580,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_77
+      name: Switch_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 21
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 6
+        y: 0
+        width: 71
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1748,15 +1601,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_78
+      name: Switch_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 21
+        x: 84
+        y: 1
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1769,15 +1622,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_79
+      name: Switch_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 21
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 155
+        y: 7
+        width: 43
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1798,7 +1651,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1819,7 +1672,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1840,7 +1693,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1861,7 +1714,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1884,56 +1737,65 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      WereWolf_0: -1477280810
-      WereWolf_1: 163812379
-      WereWolf_10: -485341574
-      WereWolf_11: -536206891
-      WereWolf_12: -1797628463
+      Attack1_0: -2075223928
+      Attack1_1: 1607955608
+      Attack1_2: -1277340843
+      Attack1_3: 1637878713
+      Attack2_0: -1413739900
+      Attack2_1: 1386248988
+      Attack2_2: -1338952706
+      Attack2_3: -226186027
+      Attack2_4: -1790045038
+      Dash_0: -357270269
+      Dash_1: -1013833908
+      Dash_2: 763155429
+      Fall_0: 221499446
+      Fall_1: 1050749601
+      Fall_2: -769817993
+      Idle_0: -1477280810
+      Idle_1: 163812379
+      Idle_2: 1734384771
+      Idle_3: -517998885
+      Idle_4: 1188278472
+      Idle_5: 695020623
+      JumpAttack_0: -1316461411
+      JumpAttack_1: -1278068934
+      JumpAttack_2: -175914976
+      JumpAttack_3: 1108496295
+      JumpAttack_4: 488369373
+      JumpAttack_5: 1395091784
+      JumpAttack_6: 416097964
+      Jump_0: 1788633556
+      Jump_1: 919153889
+      Jump_2: 713116659
+      Move_0: -1568508232
+      Move_1: 551799525
+      Move_2: -1337159915
+      Move_3: -485341574
+      Move_4: -536206891
+      Move_5: -1797628463
+      Skill1_0: -488070033
+      Switch_0: -1984530720
+      Switch_1: 359471141
+      Switch_2: -2045253521
       WereWolf_13: -1195977202
-      WereWolf_14: -357270269
-      WereWolf_15: -1013833908
-      WereWolf_16: 763155429
       WereWolf_17: -668641229
       WereWolf_18: -1856890563
       WereWolf_19: 1140811837
-      WereWolf_2: 1734384771
       WereWolf_20: 21951570
-      WereWolf_21: 1788633556
-      WereWolf_22: 919153889
-      WereWolf_23: 713116659
       WereWolf_24: 354174005
       WereWolf_25: 1096448705
       WereWolf_26: 1992056974
       WereWolf_27: 249656753
-      WereWolf_28: 221499446
-      WereWolf_29: 1050749601
-      WereWolf_3: -517998885
-      WereWolf_30: -769817993
       WereWolf_31: -1241080482
       WereWolf_32: -337567629
       WereWolf_33: 1880641382
       WereWolf_34: 2143758500
-      WereWolf_35: -2075223928
-      WereWolf_36: 1607955608
-      WereWolf_37: -1277340843
-      WereWolf_38: 1637878713
       WereWolf_39: 1734882937
-      WereWolf_4: 1188278472
       WereWolf_40: -2111688758
       WereWolf_41: 2112445017
-      WereWolf_42: -1413739900
-      WereWolf_43: 1386248988
-      WereWolf_44: -1338952706
-      WereWolf_45: -226186027
-      WereWolf_46: -1790045038
       WereWolf_47: -1608103969
       WereWolf_48: -565735055
-      WereWolf_49: -1316461411
-      WereWolf_5: 695020623
-      WereWolf_50: -1278068934
-      WereWolf_51: -175914976
-      WereWolf_52: 1108496295
-      WereWolf_53: 488369373
       WereWolf_54: -961474827
       WereWolf_55: 549045211
       WereWolf_56: -1692847707
@@ -1942,16 +1804,12 @@ TextureImporter:
       WereWolf_59: -525449175
       WereWolf_6: 1225537758
       WereWolf_60: -662900316
-      WereWolf_61: 1395091784
-      WereWolf_62: 416097964
-      WereWolf_63: -488070033
       WereWolf_64: -2103852156
       WereWolf_65: 1235502576
       WereWolf_66: 1766581106
       WereWolf_67: -1503754219
       WereWolf_68: -313666799
       WereWolf_69: -686093568
-      WereWolf_7: -1568508232
       WereWolf_70: 460486737
       WereWolf_71: -1597519481
       WereWolf_72: -1327165514
@@ -1959,15 +1817,10 @@ TextureImporter:
       WereWolf_74: -1674395308
       WereWolf_75: 1445083450
       WereWolf_76: -356041625
-      WereWolf_77: -1984530720
-      WereWolf_78: 359471141
-      WereWolf_79: -2045253521
-      WereWolf_8: 551799525
       WereWolf_80: 1812984965
       WereWolf_81: 1004683288
       WereWolf_82: 1615181635
       WereWolf_83: 1177726934
-      WereWolf_9: -1337159915
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
