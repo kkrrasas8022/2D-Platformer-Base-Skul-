@@ -49,14 +49,11 @@ namespace Skul.Character
         {
             Debug.Log("JumpAttack");
         }
-        protected virtual void Skill_1()
-        {
-            Debug.Log("Skill_1");
-        }
 
-        protected virtual void Skill_2()
+
+        protected virtual void Skill(int skillID)
         {
-            Debug.Log("Skill_2");
+            Debug.Log("skill" + skillID);
         }
 
         protected virtual void Attack_Hit()

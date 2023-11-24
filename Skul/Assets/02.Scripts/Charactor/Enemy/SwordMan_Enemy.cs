@@ -47,7 +47,7 @@ namespace Skul.Character.Enemy
 
             if (col && col.TryGetComponent(out IHp ihp))
             {
-                ihp.Damage(gameObject, attackForce);
+                ihp.Damage(gameObject, attackForce, out float damage);
                 //DamagePopUp.Create(_attackTargetMask, col.transform.position + Vector3.up * .2f, (int)player.attackForce);
             }
         }

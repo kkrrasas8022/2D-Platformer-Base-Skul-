@@ -47,7 +47,16 @@ MonoBehaviour:
   _activeSkillDatum:
   - {fileID: 11400000, guid: f6c78684406f92748b8b16903a4c75a1, type: 2}
   - {fileID: 11400000, guid: 9863f59187391404587dd5d97409429c, type: 2}
+  - {fileID: 11400000, guid: 08b8296b0430a114bbd59e479b333b3c, type: 2}
+  - {fileID: 11400000, guid: f302385e540da28468c223cb6a9a0809, type: 2}
+  - {fileID: 11400000, guid: c3fa5c0821afada44aa4689e2ada400e, type: 2}
+  - {fileID: 11400000, guid: 7bdb77a403db19a46880897f8be9ba19, type: 2}
+  - {fileID: 11400000, guid: b44b7986eaa383b4abbb4197f73957a9, type: 2}
+  - {fileID: 11400000, guid: c9b593648c6beef43872987407ec0873, type: 2}
+  - {fileID: 11400000, guid: 76adcdc06917d404cbef33c1232daa64, type: 2}
+  - {fileID: 11400000, guid: 078cf460e1441e8418452ce9a5d9deb9, type: 2}
   _passiveSkillDatum: []
   _switchSkillDatum:
   - {fileID: 11400000, guid: 1c4b3303ed29159488b77349c4262c2f, type: 2}
+  - {fileID: 11400000, guid: bf7783070deefc542a4e9b357e28fea1, type: 2}
   _specialSkillSkillDatum: []

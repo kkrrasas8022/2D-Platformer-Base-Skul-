@@ -1,3 +1,4 @@
+using Skul.Character.PC;
 using System;
 using Unity.PlasticSCM.Editor.WebApi;
 using UnityEngine;
@@ -27,7 +28,10 @@ namespace Skul.FSM.States
                     {
                         movement.isMovable=false;
                         movement.isDirectionChangeable = false;
-                        animator.Play("Attack"+ GameElement.GameManager.instance.player.nowComboCount);
+                        if (machine.TryGetComponent<Player>(out Player player))
+                            animator.Play("Attack" + player.nowComboCount);
+                        else
+                            animator.Play("Attack1");
                         currentStep++;
                     }
                     break;

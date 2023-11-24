@@ -38,7 +38,7 @@ namespace Skul.Character.Enemy
             {
                 if (collision.TryGetComponent(out IHp ihp))
                 {
-                    ihp.Damage(_owner, _damage);
+                    ihp.Damage(_owner, _damage, out float damage);
                     Destroy(gameObject);
                 }
             }

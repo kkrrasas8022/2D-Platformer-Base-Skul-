@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 1004
   Name: Dark Paladin
-  Icon: {fileID: 0}
+  Icon: {fileID: 1719086874, guid: 976728e827d881442a860fd31a4eae1e, type: 3}
   type: 1
   rate: 2
   description: 
   abilityDescription: 
   power:
-    type: 0
+    type: 3
     power: 0
   skillCount: 2
   skulData: {fileID: 11400000, guid: 6d40a33dcb2a461439e12d3b8aafafb9, type: 2}

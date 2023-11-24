@@ -16,7 +16,7 @@ namespace Skul.Character
         event Action onHpMin;
         event Action onHpMax;
 
-        public void Damage(GameObject damager, float amount);
+        public void Damage(GameObject damager, float amount,out float realdamage);
         public void Heal(GameObject healer, float amount);
     }
 }

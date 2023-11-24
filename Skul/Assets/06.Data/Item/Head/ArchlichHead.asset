@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 1005
   Name: Archlich
-  Icon: {fileID: 0}
+  Icon: {fileID: -1993669660, guid: fa83ed153ef46304cb868567b58822ce, type: 3}
   type: 1
   rate: 3
   description: 

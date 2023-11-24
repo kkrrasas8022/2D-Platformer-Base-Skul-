@@ -316,7 +316,7 @@ MonoBehaviour:
   _rate: 1
   _type: 1
   _item: {fileID: 6437159621894238322, guid: 6e8fcb7231697df4ebb9075ac1a9fb7d, type: 3}
-  _table: {fileID: 11400000, guid: 844b002c9a30fae4e83ba9757172edf2, type: 2}
+  _table: {fileID: 11400000, guid: b793c197b6814ba469642c7cc0942050, type: 2}
 --- !u!1 &3446497848108723537
 GameObject:
   m_ObjectHideFlags: 0

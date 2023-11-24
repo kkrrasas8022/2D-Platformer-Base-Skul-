@@ -30,12 +30,18 @@ public class DropItemUI : MonoBehaviour
     [SerializeField] private Image _icon1; 
     [SerializeField] private Image _icon2; 
     [SerializeField] private Image _detailIcon1; 
-    [SerializeField] private Image _detailIcon2; 
+    [SerializeField] private Image _detailIcon2;
 
+    [SerializeField] private GameObject _detailSkill2Object;
+    [SerializeField] private GameObject _detailSkill1Object;
 
     private void Awake()
     {
-        _items= GetComponentInParent<Item>();
+        _items = GetComponentInParent<Item>();
+    }
+
+    private void Start()
+    {
         switch (_items.type)
         {
             case ItemType.None:
@@ -65,6 +71,13 @@ public class DropItemUI : MonoBehaviour
                         _detailSkill2CoolTime.text = ((ActiveSkillData)SkillManager.instance[_items.skillIDs[1]]).CoolTime.ToString();
                         _detailSkill2Des.text = SkillManager.instance[_items.skillIDs[1]].Description;
                         _detailSkill2Name.text = SkillManager.instance[_items.skillIDs[1]].Name;
+                    }
+                    else if(_items.skillCount==1)
+                    {
+                        _icon2.gameObject.SetActive(false);
+                        _icon1.gameObject.GetComponent<RectTransform>().localPosition = new Vector3(0, _icon1.gameObject.GetComponent<RectTransform>().localPosition.y);
+                        _detailSkill2Object.gameObject.SetActive(false);
+                        _detailSkill1Object.gameObject.transform.localPosition = new Vector3(0, _detailSkill1Object.transform.localPosition.y);
                     }
                     
                 }

@@ -139,9 +139,10 @@ namespace Skul.Character
         public event Action onMpMin;
         public event Action onMpMax;
 
-        public void Damage(GameObject damager, float amount)
+        public void Damage(GameObject damager, float amount,out float realDamage)
         {
-            hp -= amount*_takenDamage;
+            realDamage = amount * _takenDamage;
+            hp -= realDamage;
         }
 
         public void Heal(GameObject healer, float amount)

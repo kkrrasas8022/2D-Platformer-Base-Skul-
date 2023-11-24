@@ -61,31 +61,38 @@ namespace Skul.Character.PC
             base.JumpAttack();
 
         }
-        protected override void Skill_1()
-        {
-            base.Skill_1();
 
-            if (_animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1)
-            { 
-                _animator.runtimeAnimatorController = _saveAnimators[1];
-                return;
+        protected override void Skill(int skillID)
+        {
+            base.Skill(skillID);
+
+            switch(skillID)
+            {
+                case 1001:
+                    {
+                        if (_animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1)
+                        {
+                            _animator.runtimeAnimatorController = _saveAnimators[1];
+                            return;
+                        }
+                        _currentHead = Instantiate(_head,
+                                transform.position + new Vector3(_movement.direction * 0.1f, 0.5f, 0.0f),
+                                Quaternion.Euler(new Vector3(0, _movement.direction == 1 ? 180 : 0, 90)));
+                        _currentHead.SetUp(gameObject, new Vector2(_movement.direction * 2, 0), 10, _enemyMask);
+                    }
+                    break;
+                case 1002:
+                    {
+                        _player.canUseSkill1 = true;
+                        _player.skill1CoolTime = 0.0f;
+                        _animator.runtimeAnimatorController = _saveAnimators[0];
+                        _player.transform.position = _headsPos;
+                        Destroy(_currentHead.gameObject);
+                        _currentHead = null;
+                    }
+                    break;
             }
-            _currentHead=Instantiate(_head,
-                    transform.position + new Vector3(_movement.direction * 0.1f, 0.5f, 0.0f),
-                    Quaternion.Euler(new Vector3(0, _movement.direction == 1 ? 180 : 0, 90)));
-            _currentHead.SetUp(gameObject, new Vector2(_movement.direction*2,0), 10,_enemyMask);
 
-        }
-
-        protected override void Skill_2()
-        {
-            base.Skill_2();
-            _player.canUseSkill1 = true;
-            _player.skill1CoolTime = 0.0f;
-            _animator.runtimeAnimatorController = _saveAnimators[0];
-            _player.transform.position = _headsPos;
-            Destroy(_currentHead.gameObject);
-            _currentHead = null;
         }
 
         protected override void Attack_Hit()
@@ -118,7 +125,7 @@ namespace Skul.Character.PC
                 {
                     if (_lastEnemies[i].TryGetComponent(out IHp ihp))
                     { 
-                        ihp.Damage(_player.gameObject, _player.AttackForce);
+                        ihp.Damage(_player.gameObject, _player.AttackForce,out float damage);
                     }
                 }
             }

@@ -12,13 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6d47b8d70e14284aa6d2408b2845053, type: 3}
   m_Name: DarkPaladin
   m_EditorClassIdentifier: 
-  id: 0
+  id: 3
   Name: DarkPaladin
   skulType: 0
   Description: 
-  Renderer: {fileID: 0}
-  SkulFace: {fileID: 0}
-  activeSkills: []
+  Renderer: {fileID: 3774151561271777350, guid: 1c493fbe8fa9aab4eaa25eca90c4d83f, type: 3}
+  SkulFace: {fileID: 1719086874, guid: 976728e827d881442a860fd31a4eae1e, type: 3}
+  activeSkills:
+  - {fileID: 11400000, guid: b44b7986eaa383b4abbb4197f73957a9, type: 2}
+  - {fileID: 11400000, guid: c9b593648c6beef43872987407ec0873, type: 2}
   switchSkill: {fileID: 0}
   passiveSkill: {fileID: 0}
   specialSkill: {fileID: 0}

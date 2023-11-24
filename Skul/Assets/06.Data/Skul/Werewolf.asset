@@ -12,18 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 006ac841ba05ad34d8ba67142ed6a385, type: 3}
   m_Name: Werewolf
   m_EditorClassIdentifier: 
-  id: 0
+  id: 1
   Name: WereWolf
   skulType: 2
   Description: 
-  Renderer: {fileID: 0}
-  SkulFace: {fileID: 0}
-  activeSkills: []
-  switchSkill: {fileID: 0}
+  Renderer: {fileID: 6932162230628804999, guid: fbcb8f6a7ccad0d4996728ffc50016b2, type: 3}
+  SkulFace: {fileID: 551799525, guid: f96be00ee541b004484387f1b54a6b55, type: 3}
+  activeSkills:
+  - {fileID: 11400000, guid: 08b8296b0430a114bbd59e479b333b3c, type: 2}
+  - {fileID: 11400000, guid: f302385e540da28468c223cb6a9a0809, type: 2}
+  switchSkill: {fileID: 11400000, guid: bf7783070deefc542a4e9b357e28fea1, type: 2}
   passiveSkill: {fileID: 0}
   specialSkill: {fileID: 0}
   attackType: 0
-  attackComboCount: 0
+  attackComboCount: 2
   takenDamage: 0
   physicPower: 0
   magicPower: 0

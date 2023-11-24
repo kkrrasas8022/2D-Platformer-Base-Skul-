@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 1003
   Name: Minotaurus
-  Icon: {fileID: 0}
+  Icon: {fileID: -1828502623, guid: 783d334c448775d4189d2b7fe6a6ba2f, type: 3}
   type: 1
   rate: 1
   description: 

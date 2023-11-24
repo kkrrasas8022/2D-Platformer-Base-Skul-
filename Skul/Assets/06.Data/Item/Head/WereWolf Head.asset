@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 1002
   Name: WereWolf
-  Icon: {fileID: 0}
+  Icon: {fileID: 551799525, guid: f96be00ee541b004484387f1b54a6b55, type: 3}
   type: 1
   rate: 0
   description: 

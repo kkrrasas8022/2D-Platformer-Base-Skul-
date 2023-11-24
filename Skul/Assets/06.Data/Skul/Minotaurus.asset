@@ -12,13 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5c2ec6f16b372949ae8cea8bf676903, type: 3}
   m_Name: Minotaurus
   m_EditorClassIdentifier: 
-  id: 0
+  id: 2
   Name: Minotaurus
   skulType: 1
   Description: 
-  Renderer: {fileID: 0}
-  SkulFace: {fileID: 0}
-  activeSkills: []
+  Renderer: {fileID: 1834595897174541676, guid: 579e378a564f77f4c9a060c1f2495fc3, type: 3}
+  SkulFace: {fileID: -1828502623, guid: 783d334c448775d4189d2b7fe6a6ba2f, type: 3}
+  activeSkills:
+  - {fileID: 11400000, guid: c3fa5c0821afada44aa4689e2ada400e, type: 2}
+  - {fileID: 11400000, guid: 7bdb77a403db19a46880897f8be9ba19, type: 2}
   switchSkill: {fileID: 0}
   passiveSkill: {fileID: 0}
   specialSkill: {fileID: 0}

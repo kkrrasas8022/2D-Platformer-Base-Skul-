@@ -2,6 +2,7 @@ using Skul.Character.PC;
 using Skul.GameElement;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Rendering;
 using UnityEngine;
 
 public class MainCamera : MonoBehaviour
@@ -10,11 +11,15 @@ public class MainCamera : MonoBehaviour
     [SerializeField] private float smoothing = 0.2f;
     [SerializeField] private Vector2 minCameraBoundary;
     [SerializeField] private Vector2 maxCameraBoundary;
+    [SerializeField] private float _size_y;
+    [SerializeField] private float _size_x;
     private void Awake()
     {
         _player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-        minCameraBoundary = GameManager.instance.mapMinBoundary + new Vector2(9, 2); ;
-        maxCameraBoundary = GameManager.instance.mapMaxBoundary-new Vector2(9,2);
+        _size_y = GetComponent<Camera>().orthographicSize;
+        _size_x = GetComponent<Camera>().orthographicSize* Screen.width / Screen.height;
+        minCameraBoundary = GameManager.instance.mapMinBoundary + new Vector2(_size_x,_size_y); 
+        maxCameraBoundary = GameManager.instance.mapMaxBoundary - new Vector2(_size_x,_size_y);
     }
 
     private void FixedUpdate()

@@ -106,6 +106,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -231,27 +244,6 @@ TextureImporter:
       bones: []
       spriteID: 4aed2baab8f39004394863a8f036b983
       internalID: 695020623
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WereWolf_6
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 725
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e2dd63acd7fc9754eaea4ce43584d106
-      internalID: 1225537758
       vertices: []
       indices: 
       edges: []
@@ -383,27 +375,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_13
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 661
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 50d4b026cb373874aa02923595c85abd
-      internalID: -1195977202
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Dash_0
       rect:
         serializedVersion: 2
@@ -462,90 +433,6 @@ TextureImporter:
       bones: []
       spriteID: 3a3306056ff4162478eeb17a7d15bedf
       internalID: 763155429
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WereWolf_17
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 597
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c96fe9897f740e4478515f22b44061e8
-      internalID: -668641229
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WereWolf_18
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 597
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: db2e5ab6b1c59c046a2ce0a91b2bc11f
-      internalID: -1856890563
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WereWolf_19
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 597
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6072ad9afac19bb4a8a908a268dbb04d
-      internalID: 1140811837
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WereWolf_20
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 597
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bb1cc81ff56027247a061dc19058d773
-      internalID: 21951570
       vertices: []
       indices: 
       edges: []
@@ -614,90 +501,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_24
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 533
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 634a2f0edc547244199cf242b3011b33
-      internalID: 354174005
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WereWolf_25
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 533
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a0d2cbd5dc836ec489b2525be1c96c28
-      internalID: 1096448705
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WereWolf_26
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 533
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 942ed00d478d32e45bf64eee69ed683e
-      internalID: 1992056974
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WereWolf_27
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 533
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dae64b2728fe0d244baf5f40e06b1149
-      internalID: 249656753
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Fall_0
       rect:
         serializedVersion: 2
@@ -756,90 +559,6 @@ TextureImporter:
       bones: []
       spriteID: 45259424a7d56604ab4fa3e9b94c1a30
       internalID: -769817993
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WereWolf_31
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 469
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 73a0e6dbd9c0b3c48a0a0a0e0a5e32f3
-      internalID: -1241080482
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WereWolf_32
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 469
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c77973aa3351bf944b90def28651766a
-      internalID: -337567629
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WereWolf_33
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 469
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c9b3c5d338e8b8b419c92ee5c6585d9d
-      internalID: 1880641382
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WereWolf_34
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 469
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bae6b07e7b898b3439390da8b0b32b7a
-      internalID: 2143758500
       vertices: []
       indices: 
       edges: []
@@ -950,48 +669,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_40
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 405
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aeaef58899752d44597f0c798ec89551
-      internalID: -2111688758
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WereWolf_41
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 405
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 24c96473b0f3f1147a170a69bae32888
-      internalID: 2112445017
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Attack2_0
       rect:
         serializedVersion: 2
@@ -1092,48 +769,6 @@ TextureImporter:
       bones: []
       spriteID: 3dacc03637a27a64db9cab127284d44b
       internalID: -1790045038
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WereWolf_47
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 341
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 26dbe75cc1647d24ab601225bd4f657d
-      internalID: -1608103969
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WereWolf_48
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 341
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 174735e5a7b4cb54ab3c10a0cdb48b2c
-      internalID: -565735055
       vertices: []
       indices: 
       edges: []
@@ -1307,15 +942,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_64
+      name: Skill1_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 149
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 46
+        y: 154
+        width: 38
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1328,15 +963,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_65
+      name: Skill1_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 149
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 91
+        y: 153
+        width: 38
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1349,15 +984,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_66
+      name: Skill1_3
       rect:
         serializedVersion: 2
-        x: 192
-        y: 149
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 136
+        y: 138
+        width: 107
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1370,15 +1005,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_67
+      name: Skill1_4
       rect:
         serializedVersion: 2
-        x: 256
-        y: 149
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 250
+        y: 137
+        width: 99
+        height: 67
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1391,15 +1026,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_68
+      name: Skill1_5
       rect:
         serializedVersion: 2
-        x: 320
-        y: 149
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 356
+        y: 170
+        width: 53
+        height: 34
+      alignment: 9
+      pivot: {x: 0.35, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1412,15 +1047,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_69
+      name: Skill1_6
       rect:
         serializedVersion: 2
-        x: 384
-        y: 149
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 416
+        y: 171
+        width: 54
+        height: 33
+      alignment: 9
+      pivot: {x: 0.35, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1433,15 +1068,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_70
+      name: Skill2_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 85
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 6
+        y: 80
+        width: 40
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1454,15 +1089,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_71
+      name: Skill2_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 85
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 53
+        y: 76
+        width: 50
+        height: 46
+      alignment: 9
+      pivot: {x: 0.34, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1475,15 +1110,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_72
+      name: Skill2_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 85
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 110
+        y: 75
+        width: 40
+        height: 47
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1496,15 +1131,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_73
+      name: Skill2_3
       rect:
         serializedVersion: 2
-        x: 192
-        y: 85
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 157
+        y: 75
+        width: 39
+        height: 47
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1517,15 +1152,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_74
+      name: Skill2_4
       rect:
         serializedVersion: 2
-        x: 256
-        y: 85
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 203
+        y: 52
+        width: 75
+        height: 70
+      alignment: 9
+      pivot: {x: 0.35, y: 0.07}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1538,15 +1173,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_75
+      name: Skill2_5
       rect:
         serializedVersion: 2
-        x: 320
-        y: 85
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 285
+        y: 54
+        width: 75
+        height: 68
+      alignment: 9
+      pivot: {x: 0.35, y: 0.07}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1559,15 +1194,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WereWolf_76
+      name: Skill2_6
       rect:
         serializedVersion: 2
-        x: 384
-        y: 85
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 367
+        y: 88
+        width: 44
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1642,90 +1277,6 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: WereWolf_80
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 21
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e7254e26bd480be44b897220cc2fd05f
-      internalID: 1812984965
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WereWolf_81
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 21
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8e134d9c96688234c8ecce3253c0fc7e
-      internalID: 1004683288
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WereWolf_82
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 21
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 88af0c4d9e71def49af2b2da79511c7b
-      internalID: 1615181635
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WereWolf_83
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 21
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6fb0c47419e7c83448ec65fcda9a7bd0
-      internalID: 1177726934
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -1775,6 +1326,19 @@ TextureImporter:
       Move_4: -536206891
       Move_5: -1797628463
       Skill1_0: -488070033
+      Skill1_1: -2103852156
+      Skill1_2: 1235502576
+      Skill1_3: 1766581106
+      Skill1_4: -1503754219
+      Skill1_5: -313666799
+      Skill1_6: -686093568
+      Skill2_0: 460486737
+      Skill2_1: -1597519481
+      Skill2_2: -1327165514
+      Skill2_3: -686896570
+      Skill2_4: -1674395308
+      Skill2_5: 1445083450
+      Skill2_6: -356041625
       Switch_0: -1984530720
       Switch_1: 359471141
       Switch_2: -2045253521
@@ -1804,19 +1368,6 @@ TextureImporter:
       WereWolf_59: -525449175
       WereWolf_6: 1225537758
       WereWolf_60: -662900316
-      WereWolf_64: -2103852156
-      WereWolf_65: 1235502576
-      WereWolf_66: 1766581106
-      WereWolf_67: -1503754219
-      WereWolf_68: -313666799
-      WereWolf_69: -686093568
-      WereWolf_70: 460486737
-      WereWolf_71: -1597519481
-      WereWolf_72: -1327165514
-      WereWolf_73: -686896570
-      WereWolf_74: -1674395308
-      WereWolf_75: 1445083450
-      WereWolf_76: -356041625
       WereWolf_80: 1812984965
       WereWolf_81: 1004683288
       WereWolf_82: 1615181635
