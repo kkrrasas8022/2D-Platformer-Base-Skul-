@@ -249,174 +249,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_9
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 1054
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bd4111b763d50ed4595d317295d198d9
-      internalID: 1659626201
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_10
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 1054
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2f4de3221c3e13d499ee65fe04fd7caa
-      internalID: -1959620514
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_11
-      rect:
-        serializedVersion: 2
-        x: 704
-        y: 1054
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9748ef1ae146b314baa4c74d9963f2ee
-      internalID: -358317347
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_12
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 1054
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b5fe57a98e19e4a44bb714756923cd89
-      internalID: -1637342811
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_13
-      rect:
-        serializedVersion: 2
-        x: 832
-        y: 1054
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ab9389af10d263746a53afb10e310de0
-      internalID: 1285204829
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_14
-      rect:
-        serializedVersion: 2
-        x: 896
-        y: 1054
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d41cb1d002fa1d54e822395752da0150
-      internalID: 1163253466
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_15
-      rect:
-        serializedVersion: 2
-        x: 960
-        y: 1054
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4a5f486550f2f144a945956b9195cdae
-      internalID: -1137015102
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_16
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 1054
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 62e9c20854d85db418e481ba79911f5e
-      internalID: -1265139647
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Dark Paladin_Move_0
       rect:
         serializedVersion: 2
@@ -543,204 +375,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_25
+      name: Dark Paladin_Dash_0
       rect:
         serializedVersion: 2
-        x: 512
-        y: 990
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7583929d9445760438480996744d2436
-      internalID: -242968670
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_26
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 990
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a7f294704fd25d54b8ada889ba4de9a5
-      internalID: -619394838
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_27
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 990
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e9a21b8546b307c4180217c7dda6774a
-      internalID: -935264414
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_28
-      rect:
-        serializedVersion: 2
-        x: 704
-        y: 990
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bd44bc6684470cb4f9f1bc5e382469ea
-      internalID: -1021248537
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_29
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 990
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b34939d0ab3dc9641b11a2a84fc122fd
-      internalID: 1272474244
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_30
-      rect:
-        serializedVersion: 2
-        x: 832
-        y: 990
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ced377092d97c04448871095764e33ab
-      internalID: -372802611
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_31
-      rect:
-        serializedVersion: 2
-        x: 896
-        y: 990
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 16b70cacfca1ad048969b79b3e844002
-      internalID: 1592232921
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_32
-      rect:
-        serializedVersion: 2
-        x: 960
-        y: 990
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 85494b49e5d199740bec99f9da430e2a
-      internalID: -1651334549
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_33
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 990
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 29baeeef39d83a24bbbe8cbea13037ff
-      internalID: -938855140
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_34
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 926
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 7
+        y: 946
+        width: 70
+        height: 36
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -753,15 +396,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_35
+      name: Dark Paladin_Dash_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 926
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 84
+        y: 939
+        width: 52
+        height: 43
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -774,15 +417,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_36
+      name: Dark Paladin_Dash_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 926
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 143
+        y: 940
+        width: 62
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -795,15 +438,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_37
+      name: Dark Paladin_Dash_3
       rect:
         serializedVersion: 2
-        x: 192
-        y: 926
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 212
+        y: 940
+        width: 53
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -816,15 +459,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_38
+      name: Dark Paladin_Dash_4
       rect:
         serializedVersion: 2
-        x: 256
-        y: 926
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 272
+        y: 942
+        width: 45
+        height: 40
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -837,267 +480,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_39
+      name: Dark Paladin_Jump_0
       rect:
         serializedVersion: 2
-        x: 320
-        y: 926
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 38c0bffdcf9c59b40967e67920e746eb
-      internalID: 300094529
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_40
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 926
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9c1802a360129d04a9f1cac03bff0ec4
-      internalID: -2049714534
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_41
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 926
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 95437761cca980041a97b9d7007156c3
-      internalID: 2083180036
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_42
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 926
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f2223c6690b0ad74eb34846e853eb03c
-      internalID: 1349982708
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_43
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 926
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b0af59c5204044b4283a975a25b6f3d3
-      internalID: -2129408387
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_44
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 926
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 05c8328fd365fea469e12df7c172e23c
-      internalID: 1870549839
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_45
-      rect:
-        serializedVersion: 2
-        x: 704
-        y: 926
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 03d15e21fe9aac544a2fbb549152afeb
-      internalID: -345025966
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_46
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 926
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2f88b221b157f2c4092ca5f84f58b701
-      internalID: -1947154211
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_47
-      rect:
-        serializedVersion: 2
-        x: 832
-        y: 926
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 27d8e05a073c657489b84c7f8238b3e5
-      internalID: 2106100938
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_48
-      rect:
-        serializedVersion: 2
-        x: 896
-        y: 926
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f4fc1c66081f84449890d165f2d7a696
-      internalID: 1335599481
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_49
-      rect:
-        serializedVersion: 2
-        x: 960
-        y: 926
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 067ae90937c80de4da4b518b38faa2f4
-      internalID: -1176953327
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_50
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 926
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 256c00c3b8dc0314fa9d49d0bc615a9a
-      internalID: 1514894801
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_51
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 862
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 6
+        y: 871
+        width: 76
+        height: 53
+      alignment: 9
+      pivot: {x: 0.45, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1110,15 +501,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_52
+      name: Dark Paladin_Jump_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 862
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 89
+        y: 874
+        width: 79
+        height: 50
+      alignment: 9
+      pivot: {x: 0.45, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1131,36 +522,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_53
+      name: Dark Paladin_Jump_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 862
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 20cabd5c449774c45a7f8e2f7c5100eb
-      internalID: 1162802240
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_54
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 862
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 175
+        y: 874
+        width: 77
+        height: 50
+      alignment: 9
+      pivot: {x: 0.46, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1173,645 +543,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_55
+      name: Dark Paladin_Fall_0
       rect:
         serializedVersion: 2
-        x: 256
-        y: 862
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 91274c4abcf3d894d846c4785de05d36
-      internalID: -1505252950
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_56
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 862
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0218ca94ecde0c2418cd0eacf9487297
-      internalID: -94750668
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_57
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 862
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 429c73585361f544789a6201d65689b0
-      internalID: -1297876465
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_58
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 862
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 43b03a7d47eca6145807d6232bde00e3
-      internalID: 112832035
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_59
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 862
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2f145b31d7276ee429b2e939f268504d
-      internalID: 354332330
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_60
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 862
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 771c616d5ecec05419bd85d867380935
-      internalID: -670409299
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_61
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 862
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d2dd4ac02adf73e43941005119157bb4
-      internalID: 727214557
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_62
-      rect:
-        serializedVersion: 2
-        x: 704
-        y: 862
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 992dcdaae0d93fa41874206ead37b262
-      internalID: -172830804
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_63
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 862
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5265480b37a651642bb7ff2efc335ea5
-      internalID: -747374409
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_64
-      rect:
-        serializedVersion: 2
-        x: 832
-        y: 862
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3cbcd0d50d5a8744c8c4bae6560bca2a
-      internalID: 1485631870
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_65
-      rect:
-        serializedVersion: 2
-        x: 896
-        y: 862
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 28eb66dc582ce3945be8efad18739f36
-      internalID: -38257681
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_66
-      rect:
-        serializedVersion: 2
-        x: 960
-        y: 862
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 46dc76230686ef442a1d0aa153cf06be
-      internalID: 695742139
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_67
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 862
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4e1ad739b85751744b2a8c7dc1f7b112
-      internalID: -1899752217
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_68
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 798
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8c87d25d35aecea458e16b862f8b143e
-      internalID: 1871596800
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_69
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 798
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4ab4432b08b16c542a0a4c2f37364aea
-      internalID: 1931906909
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_70
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 798
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5fdb829fc43a4634bad6066e6c17f6df
-      internalID: -550929204
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_71
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 798
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e8a8d67d854a02b4e8a3675bfff8973b
-      internalID: 2089508039
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_72
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 798
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8015de943b7bad54a86374ae2018f823
-      internalID: 1297171091
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_73
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 798
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 52b9f01c783657d4499edf29f8265fb2
-      internalID: -700614275
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_74
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 798
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2a91881bad6959b4abcb7f56457714e3
-      internalID: 2974790
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_75
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 798
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c36dacb38ff3a0546a2175b71bfcbbbc
-      internalID: -1113884821
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_76
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 798
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 17893ee0e891cb34eb41de2d75104694
-      internalID: 1193960386
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_77
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 798
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4dcdaf143ab475746801f41030c5cdec
-      internalID: 734323866
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_78
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 798
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d91c1a2c6d30ed34f998f331e3fa6576
-      internalID: 1162139378
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_79
-      rect:
-        serializedVersion: 2
-        x: 704
-        y: 798
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 84bb249445e13f649a7e0d7a4a72c3eb
-      internalID: 1497538053
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_80
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 798
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5ad61b9ac9bfca64e8d188926d10601e
-      internalID: -1270299075
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_81
-      rect:
-        serializedVersion: 2
-        x: 832
-        y: 798
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0235178d239b4d54e9aebc3648026a8c
-      internalID: -1710838816
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_82
-      rect:
-        serializedVersion: 2
-        x: 896
-        y: 798
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 78ad543b37a97d7429abfd7fd940b1fe
-      internalID: -1604192433
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_83
-      rect:
-        serializedVersion: 2
-        x: 960
-        y: 798
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a748f2ad73eb7964f885ec0e4a699995
-      internalID: -690998190
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_84
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 798
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 247bdb5e725b60844a498d18648c0054
-      internalID: -1872140641
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_85
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 734
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 7
+        y: 743
+        width: 83
+        height: 52
+      alignment: 9
+      pivot: {x: 0.45, y: 0.14}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1824,15 +564,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_86
+      name: Dark Paladin_Fall_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 734
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 97
+        y: 739
+        width: 82
+        height: 56
+      alignment: 9
+      pivot: {x: 0.45, y: 0.11}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1845,36 +585,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_87
+      name: Dark Paladin_Fall_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 734
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 07936e4ef2fe3c94d9c49c154f710738
-      internalID: 1146661698
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_88
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 734
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 186
+        y: 741
+        width: 77
+        height: 54
+      alignment: 9
+      pivot: {x: 0.4, y: 0.11}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1887,288 +606,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_89
+      name: Dark Paladin_Attack1_0
       rect:
         serializedVersion: 2
-        x: 256
-        y: 734
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b91242e96c1d21e498e5a9c8740fd1d4
-      internalID: -1129834725
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_90
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 734
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6912ce6afa81e2041b08b62acef7293a
-      internalID: 1822795312
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_91
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 734
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 83d5439f82073af44bc0c8e7edb2879d
-      internalID: 1804865642
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_92
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 734
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a0e68790b73332f478b7c27537f7337c
-      internalID: -1593940663
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_93
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 734
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0e1626fd3a3ec3c41bd37ecaa0ed0d2e
-      internalID: -1264880172
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_94
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 734
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5546fb00eaa855a4b8f24917e734dbd4
-      internalID: -928618650
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_95
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 734
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8e87cdb01affa1a4ab8546960cc7f32d
-      internalID: 2047779555
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_96
-      rect:
-        serializedVersion: 2
-        x: 704
-        y: 734
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 25f16e05e8d711d4fa46531b5c90979c
-      internalID: 1315115002
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_97
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 734
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 52c2fdd2122cd884cab422257114aec1
-      internalID: 1141919723
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_98
-      rect:
-        serializedVersion: 2
-        x: 832
-        y: 734
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ad1a80dd91897934ea2f4031b50a9151
-      internalID: -1359167498
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_99
-      rect:
-        serializedVersion: 2
-        x: 896
-        y: 734
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 39ab9ed069c872d43833cf077172e00a
-      internalID: -534290943
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_100
-      rect:
-        serializedVersion: 2
-        x: 960
-        y: 734
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 56ba107702689b448bc0d133beb115d2
-      internalID: 2025630298
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_101
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 734
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 13370e47f47281342a55196c85c7e9ae
-      internalID: -1939900208
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_102
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 670
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 6
+        y: 675
+        width: 47
+        height: 49
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2181,15 +627,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_103
+      name: Dark Paladin_Attack1_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 670
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 60
+        y: 676
+        width: 47
+        height: 48
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2202,15 +648,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_104
+      name: Dark Paladin_Attack1_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 670
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 114
+        y: 669
+        width: 96
+        height: 55
+      alignment: 9
+      pivot: {x: 0.4, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2223,15 +669,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_105
+      name: Dark Paladin_Attack1_3
       rect:
         serializedVersion: 2
-        x: 192
-        y: 670
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 217
+        y: 679
+        width: 92
+        height: 45
+      alignment: 9
+      pivot: {x: 0.4, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2244,36 +690,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_106
+      name: Dark Paladin_Attack1_4
       rect:
         serializedVersion: 2
-        x: 256
-        y: 670
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2979d05ff1a77444080cf393beb68f2c
-      internalID: 934452822
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_107
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 670
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 316
+        y: 682
+        width: 57
+        height: 42
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2286,246 +711,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_108
+      name: Dark Paladin_Attack2_0
       rect:
         serializedVersion: 2
-        x: 384
-        y: 670
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3c486f53922ac2945bd71d8dd65c1f4b
-      internalID: 1422208394
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_109
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 670
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bfb885ea7fbb0184098d7efce751f0a9
-      internalID: -1218904282
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_110
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 670
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5b68e8d53b4574d48945ab27185089cd
-      internalID: -684602597
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_111
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 670
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 91ddf0b25ea68e441a82309c8e780c47
-      internalID: 2019017829
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_112
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 670
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 668c42e9cbe988649a28913cbd7eabb0
-      internalID: 486064572
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_113
-      rect:
-        serializedVersion: 2
-        x: 704
-        y: 670
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3574fa24487fd704a9728eaeeef1c0d8
-      internalID: 401721671
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_114
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 670
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 08b43783aa3a0a045a9455b8def4fb27
-      internalID: -385564490
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_115
-      rect:
-        serializedVersion: 2
-        x: 832
-        y: 670
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 49df1bc335088ed4988c514de8063178
-      internalID: 645381620
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_116
-      rect:
-        serializedVersion: 2
-        x: 896
-        y: 670
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ddb1d925c7fe863459a4b381f6e11b94
-      internalID: -1927083413
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_117
-      rect:
-        serializedVersion: 2
-        x: 960
-        y: 670
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 82f689d61966758458f1573af48f2d56
-      internalID: 854289551
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_118
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 670
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0d9f31a3776e56643bc0e6526c1b4a64
-      internalID: -1192528850
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_119
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 606
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 6
+        y: 613
+        width: 50
+        height: 41
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2538,15 +732,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_120
+      name: Dark Paladin_Attack2_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 606
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 63
+        y: 613
+        width: 51
+        height: 41
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2559,15 +753,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_121
+      name: Dark Paladin_Attack2_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 606
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 121
+        y: 576
+        width: 102
+        height: 78
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2580,15 +774,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_122
+      name: Dark Paladin_Attack2_3
       rect:
         serializedVersion: 2
-        x: 192
-        y: 606
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 230
+        y: 578
+        width: 79
+        height: 76
+      alignment: 9
+      pivot: {x: 0.6, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2601,36 +795,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_123
+      name: Dark Paladin_Attack2_4
       rect:
         serializedVersion: 2
-        x: 256
-        y: 606
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0bd7a1ddff07c864fa1abeffc3bd2aa8
-      internalID: 668802496
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_124
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 606
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 316
+        y: 602
+        width: 67
+        height: 52
+      alignment: 9
+      pivot: {x: 0.75, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2643,603 +816,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_125
+      name: Dark Paladin_Attack3_0
       rect:
         serializedVersion: 2
-        x: 384
-        y: 606
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1e10da58ab4fd1b4c8ee5a927abdffe7
-      internalID: -2067224804
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_126
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 606
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ea3cb3c4549a7904e91e2885cfa3de0a
-      internalID: 1426407721
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_127
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 606
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d4599e78489225147858f487be369cde
-      internalID: 972699997
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_128
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 606
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 958b8370903e1fb4d8bde489918dbc65
-      internalID: -2132584892
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_129
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 606
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9a611f5c9dc10dc438638d33c98d88e6
-      internalID: -1299264689
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_130
-      rect:
-        serializedVersion: 2
-        x: 704
-        y: 606
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6d0f6c67a8f36a14086ba3d686c65c87
-      internalID: -1252981860
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_131
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 606
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 566b30bffbf2f344cb69fe94646e321c
-      internalID: 1952327860
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_132
-      rect:
-        serializedVersion: 2
-        x: 832
-        y: 606
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a08cad053dda4fe41bcbfdb0c35f1543
-      internalID: -1717768704
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_133
-      rect:
-        serializedVersion: 2
-        x: 896
-        y: 606
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f34dc293864d044468b36d8d268d7a31
-      internalID: -2076242521
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_134
-      rect:
-        serializedVersion: 2
-        x: 960
-        y: 606
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 23364e5c77a50304bbff490e22364eeb
-      internalID: -735819688
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_135
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 606
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fb7d3db7adb3aa7449f703b2a7a18a8e
-      internalID: 1635613495
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_136
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 542
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7a1614df1cf28c94886c177b5c23e029
-      internalID: -903601417
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_137
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 542
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b060904d132dde94cac5e9f9da9d8a39
-      internalID: -498565457
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_138
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 542
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 72b08adc59bae0641a1da940d608fe84
-      internalID: -99247194
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_139
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 542
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5a44135fa9bf3ff4e889f67d6ee61a33
-      internalID: 563683099
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_140
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 542
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6e2d69b1e9fdbf84296e2cc3023e67c2
-      internalID: 675776602
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_141
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 542
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 45fb15b454d8e414090df8837b16dfdf
-      internalID: -1903345586
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_142
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 542
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 44ef8e6cd0e6e75428e7a4db06a63c65
-      internalID: -947212261
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_143
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 542
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e698a1ac775d8434f8d54beda17d807c
-      internalID: -1635046944
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_144
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 542
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: daf150d96db58324e8b50d2bd7d54497
-      internalID: 349992068
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_145
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 542
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1c3e614216e96bc4f8fa86b6ce0f362b
-      internalID: 66816123
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_146
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 542
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cd068fcdcfdf2ed4bbb1701078009aae
-      internalID: 949649192
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_147
-      rect:
-        serializedVersion: 2
-        x: 704
-        y: 542
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b2726cd68f5fea241960171304c2d618
-      internalID: 1539500402
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_148
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 542
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9fa76a8700b5e70488c91de95149e95f
-      internalID: 1716731200
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_149
-      rect:
-        serializedVersion: 2
-        x: 832
-        y: 542
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6abe500976cb1a743b08731871f327fb
-      internalID: -404488551
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_150
-      rect:
-        serializedVersion: 2
-        x: 896
-        y: 542
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 922fe898548d35e4f846b30d78b68112
-      internalID: -1553120108
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_151
-      rect:
-        serializedVersion: 2
-        x: 960
-        y: 542
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9f4209f4e23b22e4cb3c6527131796ea
-      internalID: 2063836070
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_152
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 542
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 36bc562ddb439fa469794dd3f67a1865
-      internalID: -583622021
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_153
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 478
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 6
+        y: 510
+        width: 50
+        height: 51
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3252,15 +837,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_154
+      name: Dark Paladin_Attack3_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 478
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 63
+        y: 520
+        width: 41
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3273,15 +858,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_155
+      name: Dark Paladin_Attack3_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 478
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 111
+        y: 521
+        width: 53
+        height: 40
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3294,15 +879,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_156
+      name: Dark Paladin_Attack3_3
       rect:
         serializedVersion: 2
-        x: 192
-        y: 478
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 171
+        y: 510
+        width: 101
+        height: 51
+      alignment: 9
+      pivot: {x: 0.3, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3315,15 +900,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_157
+      name: Dark Paladin_Attack3_4
       rect:
         serializedVersion: 2
-        x: 256
-        y: 478
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 280
+        y: 511
+        width: 103
+        height: 50
+      alignment: 9
+      pivot: {x: 0.3, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3336,15 +921,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_158
+      name: Dark Paladin_Attack3_5
       rect:
         serializedVersion: 2
-        x: 320
-        y: 478
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 390
+        y: 513
+        width: 80
+        height: 48
+      alignment: 9
+      pivot: {x: 0.35, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3357,246 +942,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_159
+      name: Dark Paladin_JumpAttack_0
       rect:
         serializedVersion: 2
-        x: 384
-        y: 478
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2cc568cfeb77b8749a648d2b50cbe258
-      internalID: -580796132
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_160
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 478
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aeb64c653c186dd4ea64a0e6e643f56c
-      internalID: 1475141705
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_161
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 478
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 14b40c1d8a5fec04bb0951a3389c3dca
-      internalID: 493966289
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_162
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 478
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2324a69fad4b5a2469ba738f3d7ddf52
-      internalID: -14970851
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_163
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 478
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5fe3ba8e52f77404db5bf18764fbc286
-      internalID: 1658291683
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_164
-      rect:
-        serializedVersion: 2
-        x: 704
-        y: 478
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 41e2251b700cc6d4184774cb2b4894bd
-      internalID: -356514980
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_165
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 478
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0da111e4193747643848a7109b6586a6
-      internalID: -818463985
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_166
-      rect:
-        serializedVersion: 2
-        x: 832
-        y: 478
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b62763d915969844d90554544c61a604
-      internalID: 888879547
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_167
-      rect:
-        serializedVersion: 2
-        x: 896
-        y: 478
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bbabec5ae16171b409bc76ddf3a2e5e3
-      internalID: -1664076314
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_168
-      rect:
-        serializedVersion: 2
-        x: 960
-        y: 478
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d7be0b53603b4c941a7ab47e0081c0a5
-      internalID: -322751542
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_169
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 478
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9ec1142d225f98042bfe32e57a908721
-      internalID: -1760482622
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_170
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 414
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 6
+        y: 447
+        width: 56
+        height: 48
+      alignment: 9
+      pivot: {x: 0.7, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3609,15 +963,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_171
+      name: Dark Paladin_JumpAttack_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 414
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 69
+        y: 447
+        width: 52
+        height: 48
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3630,15 +984,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_172
+      name: Dark Paladin_JumpAttack_2
       rect:
         serializedVersion: 2
         x: 128
-        y: 414
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 425
+        width: 93
+        height: 70
+      alignment: 9
+      pivot: {x: 0.45, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3651,15 +1005,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_173
+      name: Dark Paladin_JumpAttack_3
       rect:
         serializedVersion: 2
-        x: 192
-        y: 414
-        width: 64
+        x: 228
+        y: 431
+        width: 91
         height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3672,15 +1026,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_174
+      name: Dark Paladin_JumpAttack_5
       rect:
         serializedVersion: 2
-        x: 256
-        y: 414
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 326
+        y: 435
+        width: 49
+        height: 60
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3693,267 +1047,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_175
+      name: Dark Paladin_Skill1_0
       rect:
         serializedVersion: 2
-        x: 320
-        y: 414
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e55876ca52e3f424e8b73a9a89fadf23
-      internalID: -42016531
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_176
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 414
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 654644948526d8e40bad2b63eeebb664
-      internalID: 356994312
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_177
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 414
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 79e951fbcb530374e952741dd9135f32
-      internalID: 523255596
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_178
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 414
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 737f81963f286a64fb5844a2c1913f62
-      internalID: 541477159
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_179
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 414
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3d2e9accf17221748b6615559aa42ee0
-      internalID: 333207641
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_180
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 414
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2b959dab199048f45af05b0d469add5e
-      internalID: -1181274154
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_181
-      rect:
-        serializedVersion: 2
-        x: 704
-        y: 414
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bb84b0ea906a2144eb9661ba06c2ac85
-      internalID: -1064111456
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_182
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 414
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5240dfce21a8fa04e9ffeac0d81634fc
-      internalID: 951468088
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_183
-      rect:
-        serializedVersion: 2
-        x: 832
-        y: 414
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6868aea392cb94a43a55bde35defabda
-      internalID: 369166189
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_184
-      rect:
-        serializedVersion: 2
-        x: 896
-        y: 414
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 570c673c573ae6c43800bff6139f086f
-      internalID: 1939625722
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_185
-      rect:
-        serializedVersion: 2
-        x: 960
-        y: 414
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d139e68ed04f6ab43aaf5c69381ac3c3
-      internalID: -1135024616
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_186
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 414
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 47e99b781aa57814fb762ff2b61339a5
-      internalID: 58951373
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_187
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 350
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 7
+        y: 356
+        width: 96
+        height: 54
+      alignment: 9
+      pivot: {x: 0.4, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3966,15 +1068,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_188
+      name: Dark Paladin_Skill1_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 350
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 109
+        y: 365
+        width: 92
+        height: 45
+      alignment: 9
+      pivot: {x: 0.4, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3987,36 +1089,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_189
+      name: Dark Paladin_Skill1_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 350
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bd5231db97c72bc4b9f699be852691d6
-      internalID: -161334423
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_190
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 350
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 208
+        y: 360
+        width: 104
+        height: 50
+      alignment: 9
+      pivot: {x: 0.3, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4029,36 +1110,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_191
+      name: Dark Paladin_Skill1_3
       rect:
         serializedVersion: 2
-        x: 256
-        y: 350
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 49d757718a95a1a44ac903dfad1854d5
-      internalID: 2070573922
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_192
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 350
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 319
+        y: 362
+        width: 80
+        height: 48
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4071,15 +1131,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_193
+      name: Dark Paladin_Skill1_4
       rect:
         serializedVersion: 2
-        x: 384
-        y: 350
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 406
+        y: 368
+        width: 57
+        height: 42
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4092,15 +1152,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_194
+      name: Dark Paladin_Skill1_5
       rect:
         serializedVersion: 2
-        x: 448
-        y: 350
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 470
+        y: 332
+        width: 102
+        height: 78
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4113,36 +1173,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_195
+      name: Dark Paladin_Skill1_6
       rect:
         serializedVersion: 2
-        x: 512
-        y: 350
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ce781a3fd327fef439e40856ed1b1df9
-      internalID: 30686872
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_196
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 350
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 579
+        y: 334
+        width: 79
+        height: 76
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4155,36 +1194,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_197
+      name: Dark Paladin_Skill1_7
       rect:
         serializedVersion: 2
-        x: 640
-        y: 350
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8ca211c36a35fd84484d2f72be18cecf
-      internalID: -1077590303
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_198
-      rect:
-        serializedVersion: 2
-        x: 704
-        y: 350
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 665
+        y: 358
+        width: 67
+        height: 52
+      alignment: 9
+      pivot: {x: 0.7, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4197,15 +1215,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_199
+      name: Dark Paladin_Skill1_8
       rect:
         serializedVersion: 2
-        x: 768
-        y: 350
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 739
+        y: 355
+        width: 96
+        height: 55
+      alignment: 9
+      pivot: {x: 0.4, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4218,15 +1236,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_200
+      name: Dark Paladin_Skill1_9
       rect:
         serializedVersion: 2
-        x: 832
-        y: 350
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 842
+        y: 365
+        width: 92
+        height: 45
+      alignment: 9
+      pivot: {x: 0.4, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4239,36 +1257,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_201
+      name: Dark Paladin_Skill1_10
       rect:
         serializedVersion: 2
-        x: 896
-        y: 350
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8d070f3803f7f314b8dd27ce843b6b8c
-      internalID: -1621315185
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_202
-      rect:
-        serializedVersion: 2
-        x: 960
-        y: 350
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 941
+        y: 368
+        width: 57
+        height: 42
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4281,15 +1278,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_203
+      name: Dark Paladin_Skill1_11
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 350
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1005
+        y: 359
+        width: 101
+        height: 51
+      alignment: 9
+      pivot: {x: 0.3, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4302,372 +1299,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_204
+      name: Dark Paladin_Skill2_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 286
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: befb3b600d83e1b4786ba96c4692215c
-      internalID: 812253504
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_205
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 286
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4e7efe155882b744581bc0ed013a94db
-      internalID: 1629401832
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_206
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 286
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ea9c5a3681c9ec84d9cad842d75d6fd3
-      internalID: 1973965842
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_207
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 286
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 36884155e1a829b4b9f18b64df90b473
-      internalID: 1917343419
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_208
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 286
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1f03985bcf64ce34dafebcbba9791dff
-      internalID: -1079304326
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_209
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 286
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 75aec718fade52f47932d54e2fdcfc5c
-      internalID: 1689852149
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_210
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 286
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 19b66beed8ed9354f9020a274bb6011b
-      internalID: -708155017
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_211
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 286
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ab3cb6b6567714f45b94a5182fe5010e
-      internalID: 1269948020
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_212
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 286
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 297d19df9848f354a98cc389338057c8
-      internalID: 76653642
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_213
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 286
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 83f5280e409da15498cce503acf62846
-      internalID: -1022436565
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_214
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 286
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d1fd66a67c392744096a19e931fd92fc
-      internalID: -627403987
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_215
-      rect:
-        serializedVersion: 2
-        x: 704
-        y: 286
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ac95f79b8aa0b484c9cd09cd4ddab631
-      internalID: -36257614
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_216
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 286
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9e46525a09936294d9c3737e946b6553
-      internalID: 1749403173
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_217
-      rect:
-        serializedVersion: 2
-        x: 832
-        y: 286
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e9ef292507cb3a1478845bdfff7e0108
-      internalID: -428882086
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_218
-      rect:
-        serializedVersion: 2
-        x: 896
-        y: 286
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c33ba98eacf4b29479c79696afae797d
-      internalID: 855640511
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_219
-      rect:
-        serializedVersion: 2
-        x: 960
-        y: 286
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ed82f619041d70147b321f321228ffa9
-      internalID: -1885019900
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_220
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 286
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 12d07b5f952182047b8b18ce97b2d854
-      internalID: -1755908402
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_221
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 222
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 6
+        y: 215
+        width: 50
+        height: 51
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4680,15 +1320,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_222
+      name: Dark Paladin_Skill2_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 222
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 63
+        y: 225
+        width: 41
+        height: 41
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4701,15 +1341,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_223
+      name: Dark Paladin_Skill2_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 222
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 111
+        y: 225
+        width: 41
+        height: 41
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4722,15 +1362,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_224
+      name: Dark Paladin_Skill2_3
       rect:
         serializedVersion: 2
-        x: 192
-        y: 222
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 159
+        y: 226
+        width: 53
+        height: 40
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4743,15 +1383,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_225
+      name: Dark Paladin_Skill2_4
       rect:
         serializedVersion: 2
-        x: 256
-        y: 222
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 219
+        y: 226
+        width: 53
+        height: 40
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4764,267 +1404,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_226
+      name: Dark Paladin_Skill2_5
       rect:
         serializedVersion: 2
-        x: 320
-        y: 222
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c3046e387ae30ed408bfe9a011f1ea96
-      internalID: -2068209294
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_227
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 222
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 753ea67565f51c24291492f0cd48d35e
-      internalID: -1242789549
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_228
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 222
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8f78e21bcf1f85241bd8fd770885a3c8
-      internalID: -1231341727
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_229
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 222
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6d0d7ae23f1c7a3499da255170f3597d
-      internalID: -1969729257
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_230
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 222
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 92543a9249702584c833dbc2d28c3bd5
-      internalID: 1437346976
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_231
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 222
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c3170c499095afa4d901f8aab46f7350
-      internalID: -360447257
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_232
-      rect:
-        serializedVersion: 2
-        x: 704
-        y: 222
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f96900e4b427afc478bec68a70b1f1db
-      internalID: 1410036980
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_233
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 222
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9a3f479a5fc9ec04bb659f1e5cf2c00f
-      internalID: 705992282
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_234
-      rect:
-        serializedVersion: 2
-        x: 832
-        y: 222
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1678e663e794c984ca315e3450c5867d
-      internalID: -1729307238
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_235
-      rect:
-        serializedVersion: 2
-        x: 896
-        y: 222
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 574577a02b3e8a549b3d4f9546e87b86
-      internalID: 1440710946
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_236
-      rect:
-        serializedVersion: 2
-        x: 960
-        y: 222
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e393ba2ebad58e243bed23e0a68263c3
-      internalID: -13030344
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_237
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 222
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 104b9653af64b6e44b672348814c921b
-      internalID: 19223211
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_238
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 158
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 6
+        y: 149
+        width: 101
+        height: 51
+      alignment: 9
+      pivot: {x: 0.3, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5037,36 +1425,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_239
+      name: Dark Paladin_Skill2_6
       rect:
         serializedVersion: 2
-        x: 64
-        y: 158
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d68636388bd57674ebc9c64ed8ba7519
-      internalID: 917369834
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_240
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 158
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 115
+        y: 150
+        width: 103
+        height: 50
+      alignment: 9
+      pivot: {x: 0.3, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5079,15 +1446,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_241
+      name: Dark Paladin_Skill2_7
       rect:
         serializedVersion: 2
-        x: 192
-        y: 158
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 225
+        y: 152
+        width: 80
+        height: 48
+      alignment: 9
+      pivot: {x: 0.35, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5100,288 +1467,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_242
+      name: Dark Paladin_Skill2_8
       rect:
         serializedVersion: 2
-        x: 256
-        y: 158
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2e8c7327772bc2246b8f3ac74d502ca4
-      internalID: -127454393
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_243
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 158
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4b207f39a19182e4aa84ead2ff464839
-      internalID: 458825187
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_244
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 158
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8174c79539803dc46bcc2f6eba6b7a9d
-      internalID: -617975570
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_245
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 158
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b1575aa5e549aac44923d60cb4f7bf69
-      internalID: -1761430002
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_246
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 158
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 50112545d7d37664caada88b3ce3cb10
-      internalID: -1923922589
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_247
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 158
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 792e38830c7894f41829672a02ff516f
-      internalID: 1650303286
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_248
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 158
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2d45542d1aef206488ca4e1a0c5e9fbd
-      internalID: 1572643995
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_249
-      rect:
-        serializedVersion: 2
-        x: 704
-        y: 158
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0d7f72a6669721942ac78634c870d9ba
-      internalID: -569800288
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_250
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 158
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0b4cfe2bf65d2924db2281eb9f501c02
-      internalID: 1641693615
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_251
-      rect:
-        serializedVersion: 2
-        x: 832
-        y: 158
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 852cd9dabffd80e42945a879e1d95ea4
-      internalID: -1330997841
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_252
-      rect:
-        serializedVersion: 2
-        x: 896
-        y: 158
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fccb7278ea7ccbe4ca0dc8eb68c6520a
-      internalID: 1444365735
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_253
-      rect:
-        serializedVersion: 2
-        x: 960
-        y: 158
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3393aedafba80494caeb44303529bf43
-      internalID: -341104249
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_254
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 158
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0786e70ce4508114e985746eb26cd5ae
-      internalID: 1815961907
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_255
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 94
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 7
+        y: 56
+        width: 101
+        height: 78
+      alignment: 9
+      pivot: {x: 0.45, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5394,36 +1488,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_256
+      name: Dark Paladin_Skill2_9
       rect:
         serializedVersion: 2
-        x: 64
-        y: 94
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3e458dca63a089b4ebc2e607bc67458e
-      internalID: 864544300
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_257
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 94
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 115
+        y: 58
+        width: 79
+        height: 76
+      alignment: 9
+      pivot: {x: 0.6, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5436,15 +1509,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_258
+      name: Dark Paladin_Skill2_10
       rect:
         serializedVersion: 2
-        x: 192
-        y: 94
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 201
+        y: 82
+        width: 67
+        height: 52
+      alignment: 9
+      pivot: {x: 0.75, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5457,288 +1530,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Paladin_259
+      name: Dark Paladin_Switch
       rect:
         serializedVersion: 2
-        x: 256
-        y: 94
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 74a9da853f529484899d25ef7c60a72a
-      internalID: -1581015081
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_260
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 94
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4005605ac24e4ae409381e5fa9c17399
-      internalID: -111404014
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_261
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 94
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1eaf94aeccd0520449c1654d6655e8a4
-      internalID: -938509949
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_262
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 94
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 55bf20a22e6ed9f4e9a8acab9e0d80cf
-      internalID: 448149916
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_263
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 94
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1de9f5ffe3da0504aae47d7eb6bf90f6
-      internalID: -1272522270
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_264
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 94
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a1110628234edde49a514688579fbdb8
-      internalID: 1137085504
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_265
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 94
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6bd8cd1433c2eba49b9df62f3a4aea07
-      internalID: 1110299123
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_266
-      rect:
-        serializedVersion: 2
-        x: 704
-        y: 94
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 801dccdc9f3d7ee4eb7ab631b51b3984
-      internalID: -2044363812
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_267
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 94
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 82530c1da81be3847a4ac9b88fb5e5f3
-      internalID: -1969170847
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_268
-      rect:
-        serializedVersion: 2
-        x: 832
-        y: 94
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0bffd17e0eef8ed4281958b87a3dca1a
-      internalID: 1488227469
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_269
-      rect:
-        serializedVersion: 2
-        x: 896
-        y: 94
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 565da924a27430742998524b79d91109
-      internalID: -410271378
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_270
-      rect:
-        serializedVersion: 2
-        x: 960
-        y: 94
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 807dea31053b49040876f18bf9580a2b
-      internalID: 2038093031
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_271
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 94
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d4bb4f55b086ee346b8ae3dd3d3dfb08
-      internalID: 1475474703
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_272
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 30
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 7
+        y: 1
+        width: 44
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5746,342 +1546,6 @@ TextureImporter:
       bones: []
       spriteID: c5cb90121dea56148aa1a424a64d6b95
       internalID: 1620571735
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_273
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 30
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3aa690ae2bb06294c89096ecb3b370d6
-      internalID: 981692514
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_274
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 30
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8138295e2fe4016489a39ce502634694
-      internalID: -1123806926
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_275
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 30
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 58d2813a40667f449ac0fcf82d48e7ab
-      internalID: 1483889754
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_276
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 30
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4cefc6d1b98c792488da55118c848f00
-      internalID: 360282599
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_277
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 30
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6936f51e5866f1244a5a269c5dd3f0ca
-      internalID: -1088716694
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_278
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 30
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6a005a87c9b4b774f80eed11e2cf7410
-      internalID: -1672787281
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_279
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 30
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3f24eeb9f407bea4fb81e26952acee21
-      internalID: -227776002
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_280
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 30
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0093e4136c1403641a23e849fda831f0
-      internalID: 446941884
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_281
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 30
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b469277bcceb411479c19c3bcd755518
-      internalID: 379664428
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_282
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 30
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 17bf7dd94c9d8434db5d745ba78d0030
-      internalID: 2122054594
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_283
-      rect:
-        serializedVersion: 2
-        x: 704
-        y: 30
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2be08fe59082bfe4ba8854896efe23b5
-      internalID: 1307410298
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_284
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 30
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9981abf160b38c0418a65de236f92b09
-      internalID: 1458726477
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_285
-      rect:
-        serializedVersion: 2
-        x: 832
-        y: 30
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 23e8d635d02b28d429c701c66a1bfbbf
-      internalID: 511701011
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_286
-      rect:
-        serializedVersion: 2
-        x: 896
-        y: 30
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f8e565703c4addb4e8cce23fc0dc5a86
-      internalID: 198724154
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_287
-      rect:
-        serializedVersion: 2
-        x: 960
-        y: 30
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 466f460180d6cf14fa90b0adddec7582
-      internalID: 310424250
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Paladin_288
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 30
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 710544b758a4ad5478d3999ccdbb8260
-      internalID: -1752048959
       vertices: []
       indices: 
       edges: []
@@ -6097,15 +1561,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Dark Paladin_0: -1826135874
       Dark Paladin_10: -1959620514
       Dark Paladin_100: 2025630298
       Dark Paladin_101: -1939900208
-      Dark Paladin_102: 398236349
-      Dark Paladin_103: 1567171507
-      Dark Paladin_104: -4427459
-      Dark Paladin_105: 443021745
       Dark Paladin_106: 934452822
-      Dark Paladin_107: 950803870
       Dark Paladin_108: 1422208394
       Dark Paladin_109: -1218904282
       Dark Paladin_11: -358317347
@@ -6118,13 +1578,8 @@ TextureImporter:
       Dark Paladin_116: -1927083413
       Dark Paladin_117: 854289551
       Dark Paladin_118: -1192528850
-      Dark Paladin_119: 1758918231
       Dark Paladin_12: -1637342811
-      Dark Paladin_120: -474329826
-      Dark Paladin_121: -1643853976
-      Dark Paladin_122: -1702203928
       Dark Paladin_123: 668802496
-      Dark Paladin_124: 1461222014
       Dark Paladin_125: -2067224804
       Dark Paladin_126: 1426407721
       Dark Paladin_127: 972699997
@@ -6156,12 +1611,6 @@ TextureImporter:
       Dark Paladin_150: -1553120108
       Dark Paladin_151: 2063836070
       Dark Paladin_152: -583622021
-      Dark Paladin_153: -478475655
-      Dark Paladin_154: 895745233
-      Dark Paladin_155: 1897474112
-      Dark Paladin_156: -1579147000
-      Dark Paladin_157: 1757883605
-      Dark Paladin_158: -1219543593
       Dark Paladin_159: -580796132
       Dark Paladin_16: -1265139647
       Dark Paladin_160: 1475141705
@@ -6174,11 +1623,6 @@ TextureImporter:
       Dark Paladin_167: -1664076314
       Dark Paladin_168: -322751542
       Dark Paladin_169: -1760482622
-      Dark Paladin_170: -2035660701
-      Dark Paladin_171: 1950697368
-      Dark Paladin_172: -174245994
-      Dark Paladin_173: 1118051814
-      Dark Paladin_174: 99498301
       Dark Paladin_175: -42016531
       Dark Paladin_176: 356994312
       Dark Paladin_177: 523255596
@@ -6191,25 +1635,13 @@ TextureImporter:
       Dark Paladin_184: 1939625722
       Dark Paladin_185: -1135024616
       Dark Paladin_186: 58951373
-      Dark Paladin_187: -186552860
-      Dark Paladin_188: -682830834
       Dark Paladin_189: -161334423
-      Dark Paladin_190: 668115810
       Dark Paladin_191: 2070573922
-      Dark Paladin_192: -1259481745
-      Dark Paladin_193: -954576597
-      Dark Paladin_194: 391246042
       Dark Paladin_195: 30686872
-      Dark Paladin_196: -723357281
       Dark Paladin_197: -1077590303
-      Dark Paladin_198: -1985464716
-      Dark Paladin_199: -315651180
       Dark Paladin_2: 1823620454
       Dark Paladin_20: -1075694399
-      Dark Paladin_200: -1821016056
       Dark Paladin_201: -1621315185
-      Dark Paladin_202: -957633218
-      Dark Paladin_203: -608739036
       Dark Paladin_204: 812253504
       Dark Paladin_205: 1629401832
       Dark Paladin_206: 1973965842
@@ -6228,11 +1660,6 @@ TextureImporter:
       Dark Paladin_218: 855640511
       Dark Paladin_219: -1885019900
       Dark Paladin_220: -1755908402
-      Dark Paladin_221: 1903370983
-      Dark Paladin_222: 1230915869
-      Dark Paladin_223: 2022984401
-      Dark Paladin_224: 1446936149
-      Dark Paladin_225: 510710319
       Dark Paladin_226: -2068209294
       Dark Paladin_227: -1242789549
       Dark Paladin_228: -1231341727
@@ -6245,10 +1672,7 @@ TextureImporter:
       Dark Paladin_235: 1440710946
       Dark Paladin_236: -13030344
       Dark Paladin_237: 19223211
-      Dark Paladin_238: -29193514
       Dark Paladin_239: 917369834
-      Dark Paladin_240: -606807826
-      Dark Paladin_241: 486004578
       Dark Paladin_242: -127454393
       Dark Paladin_243: 458825187
       Dark Paladin_244: -617975570
@@ -6263,10 +1687,7 @@ TextureImporter:
       Dark Paladin_252: 1444365735
       Dark Paladin_253: -341104249
       Dark Paladin_254: 1815961907
-      Dark Paladin_255: 834224284
       Dark Paladin_256: 864544300
-      Dark Paladin_257: -224958214
-      Dark Paladin_258: 1046029341
       Dark Paladin_259: -1581015081
       Dark Paladin_26: -619394838
       Dark Paladin_260: -111404014
@@ -6282,7 +1703,6 @@ TextureImporter:
       Dark Paladin_27: -935264414
       Dark Paladin_270: 2038093031
       Dark Paladin_271: 1475474703
-      Dark Paladin_272: 1620571735
       Dark Paladin_273: 981692514
       Dark Paladin_274: -1123806926
       Dark Paladin_275: 1483889754
@@ -6305,11 +1725,6 @@ TextureImporter:
       Dark Paladin_31: 1592232921
       Dark Paladin_32: -1651334549
       Dark Paladin_33: -938855140
-      Dark Paladin_34: 1775330580
-      Dark Paladin_35: 1614357744
-      Dark Paladin_36: -1206368
-      Dark Paladin_37: -780444680
-      Dark Paladin_38: -13139372
       Dark Paladin_39: 300094529
       Dark Paladin_40: -2049714534
       Dark Paladin_41: 2083180036
@@ -6322,10 +1737,7 @@ TextureImporter:
       Dark Paladin_48: 1335599481
       Dark Paladin_49: -1176953327
       Dark Paladin_50: 1514894801
-      Dark Paladin_51: -1968723215
-      Dark Paladin_52: 1640292099
       Dark Paladin_53: 1162802240
-      Dark Paladin_54: -751268219
       Dark Paladin_55: -1505252950
       Dark Paladin_56: -94750668
       Dark Paladin_57: -1297876465
@@ -6358,10 +1770,7 @@ TextureImporter:
       Dark Paladin_82: -1604192433
       Dark Paladin_83: -690998190
       Dark Paladin_84: -1872140641
-      Dark Paladin_85: -217668548
-      Dark Paladin_86: -764890426
       Dark Paladin_87: 1146661698
-      Dark Paladin_88: 1936394849
       Dark Paladin_89: -1129834725
       Dark Paladin_9: 1659626201
       Dark Paladin_90: 1822795312
@@ -6374,18 +1783,74 @@ TextureImporter:
       Dark Paladin_97: 1141919723
       Dark Paladin_98: -1359167498
       Dark Paladin_99: -534290943
+      Dark Paladin_Attack1_0: 398236349
+      Dark Paladin_Attack1_1: 1567171507
+      Dark Paladin_Attack1_2: -4427459
+      Dark Paladin_Attack1_3: 443021745
+      Dark Paladin_Attack1_4: 950803870
+      Dark Paladin_Attack2_0: 1758918231
+      Dark Paladin_Attack2_1: -474329826
+      Dark Paladin_Attack2_2: -1643853976
+      Dark Paladin_Attack2_3: -1702203928
+      Dark Paladin_Attack2_4: 1461222014
+      Dark Paladin_Attack3_0: -478475655
+      Dark Paladin_Attack3_1: 895745233
+      Dark Paladin_Attack3_2: 1897474112
+      Dark Paladin_Attack3_3: -1579147000
+      Dark Paladin_Attack3_4: 1757883605
+      Dark Paladin_Attack3_5: -1219543593
+      Dark Paladin_Dash_0: 1775330580
+      Dark Paladin_Dash_1: 1614357744
+      Dark Paladin_Dash_2: -1206368
+      Dark Paladin_Dash_3: -780444680
+      Dark Paladin_Dash_4: -13139372
+      Dark Paladin_Fall_0: -217668548
+      Dark Paladin_Fall_1: -764890426
+      Dark Paladin_Fall_2: 1936394849
       Dark Paladin_Idle_0: -438654213
       Dark Paladin_Idle_1: 1272919611
       Dark Paladin_Idle_2: -921947642
       Dark Paladin_Idle_3: -473738634
       Dark Paladin_Idle_4: 777570563
       Dark Paladin_Idle_5: -1013752631
+      Dark Paladin_JumpAttack_0: -2035660701
+      Dark Paladin_JumpAttack_1: 1950697368
+      Dark Paladin_JumpAttack_2: -174245994
+      Dark Paladin_JumpAttack_3: 1118051814
+      Dark Paladin_JumpAttack_5: 99498301
+      Dark Paladin_Jump_0: -1968723215
+      Dark Paladin_Jump_1: 1640292099
+      Dark Paladin_Jump_2: -751268219
       Dark Paladin_Move_0: 260318452
       Dark Paladin_Move_1: 1848117239
       Dark Paladin_Move_2: 1480420182
       Dark Paladin_Move_3: 592283263
       Dark Paladin_Move_4: -2011409143
       Dark Paladin_Move_5: 488135304
+      Dark Paladin_Skill1_0: -186552860
+      Dark Paladin_Skill1_1: -682830834
+      Dark Paladin_Skill1_10: -957633218
+      Dark Paladin_Skill1_11: -608739036
+      Dark Paladin_Skill1_2: 668115810
+      Dark Paladin_Skill1_3: -1259481745
+      Dark Paladin_Skill1_4: -954576597
+      Dark Paladin_Skill1_5: 391246042
+      Dark Paladin_Skill1_6: -723357281
+      Dark Paladin_Skill1_7: -1985464716
+      Dark Paladin_Skill1_8: -315651180
+      Dark Paladin_Skill1_9: -1821016056
+      Dark Paladin_Skill2_0: 1903370983
+      Dark Paladin_Skill2_1: 1230915869
+      Dark Paladin_Skill2_10: 1046029341
+      Dark Paladin_Skill2_2: 2022984401
+      Dark Paladin_Skill2_3: 1446936149
+      Dark Paladin_Skill2_4: 510710319
+      Dark Paladin_Skill2_5: -29193514
+      Dark Paladin_Skill2_6: -606807826
+      Dark Paladin_Skill2_7: 486004578
+      Dark Paladin_Skill2_8: 834224284
+      Dark Paladin_Skill2_9: -224958214
+      Dark Paladin_Switch: 1620571735
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

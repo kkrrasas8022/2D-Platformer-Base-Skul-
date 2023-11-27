@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DarkPaladin_Skill1
   m_EditorClassIdentifier: 
   id: 1010
-  Icon: {fileID: 0}
-  Name: 
+  Icon: {fileID: 21300000, guid: 119553e379b55eb47aa9ceca2a67cc85, type: 3}
+  Name: DarkRush
   Description: 
-  CoolTime: 0
+  CoolTime: 6

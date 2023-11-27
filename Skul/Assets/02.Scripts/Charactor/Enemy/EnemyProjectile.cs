@@ -1,8 +1,9 @@
+using Skul.Movement;
 using UnityEngine;
 
 namespace Skul.Character.Enemy
 {
-    public class EnemyProjectile : MonoBehaviour
+    public class EnemyProjectile : MonoBehaviour,IPausable
     {
         protected GameObject _owner;
         protected Vector2 _velocity;
@@ -42,6 +43,12 @@ namespace Skul.Character.Enemy
                     Destroy(gameObject);
                 }
             }
+        }
+
+        public void Pause(bool pause)
+        {
+            bool enable = pause == false;
+            enabled = enable;
         }
     }
 }

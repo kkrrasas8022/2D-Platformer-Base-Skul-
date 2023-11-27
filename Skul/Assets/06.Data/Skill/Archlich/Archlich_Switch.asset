@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff9e0e83f8c5bbe47b73d1f6177eedcc, type: 3}
   m_Name: Archlich_Switch
   m_EditorClassIdentifier: 
-  id: 1015
+  id: 1017
   Icon: {fileID: 0}
-  Name: 
+  Name: Magic Up
   Description: 

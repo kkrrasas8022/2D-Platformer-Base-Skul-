@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 30
+  spritePixelsToUnits: 40
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -417,183 +417,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Minotaurus_19
+      name: Mino_Jump_0
       rect:
         serializedVersion: 2
-        x: 64
-        y: 797
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5886181633256d144bbda4091e724b42
-      internalID: -130477689
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_20
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 797
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 353cd12dbe8379a468348555c1238cec
-      internalID: 2144782654
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_21
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 797
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 081e0e2263d9f87479819412b11da7d8
-      internalID: 1299947278
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_22
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 797
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e7e4068ec3fd59543a578343f6623c9f
-      internalID: -1747615342
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_23
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 797
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7034717f3577b494a8267b510b1430c2
-      internalID: -836489142
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_24
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 797
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a36f70813bdb1944cae8bde2af89d046
-      internalID: -1945655657
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_25
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 797
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c01cab534b4bb5149b72fa6973254799
-      internalID: 2103199306
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_26
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 797
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b57b1bda50c44394c9777433cf2a589b
-      internalID: -1493894006
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_27
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 733
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 6
+        y: 715
+        width: 71
+        height: 57
+      alignment: 9
+      pivot: {x: 0.35, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -606,15 +438,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Minotaurus_28
+      name: Mino_Jump_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 733
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 84
+        y: 715
+        width: 71
+        height: 57
+      alignment: 9
+      pivot: {x: 0.35, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -627,540 +459,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Minotaurus_29
+      name: Mino_Fall_0
       rect:
         serializedVersion: 2
-        x: 128
-        y: 733
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 81eb3a51817ed8a4188cdbb6546c7735
-      internalID: 993186408
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_30
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 733
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 51ae44ec15249f8439d5b906e978a522
-      internalID: -581131479
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_31
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 733
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c40a96c1fe141d5478f3513ec9d041a5
-      internalID: 2071008972
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_32
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 733
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 98a1f6b2dc222e3448d87518cf6548bb
-      internalID: 1893521360
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_33
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 733
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 63cf8ffd52df00a4ea62b4fb50ef6a34
-      internalID: -730157128
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_34
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 733
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 14752ce7302649e4681bc802c7169eb7
-      internalID: -760399796
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_35
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 733
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5c4e82f05800eff40a35bb9af1c61de5
-      internalID: 439272859
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_36
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 669
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fe55006a661bb234c9a9be44857f02c4
-      internalID: -1591808351
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_37
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 669
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d14910fafa2136f4187efb0a6a314c74
-      internalID: -1744780683
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_38
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 669
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dbe7991cdfbbd98439362259949f08f2
-      internalID: -1440879214
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_39
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 669
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 62cb9af6db176a04699870ae4ce928ca
-      internalID: -401828887
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_40
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 669
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 598f67cf61f268c42bed5ce1e2e1d6d9
-      internalID: 1563003131
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_41
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 669
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d50204ff77c884e41a704b219b6c45fc
-      internalID: 1198254930
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_42
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 669
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fef30df2c5c56ca43b52956d6b653893
-      internalID: -613421962
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_43
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 669
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1677a89d7a3a77f4f875dfec9da1119d
-      internalID: -830608592
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_44
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 669
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 805ac01357bb33f448f5c91dc71e1b84
-      internalID: 530183077
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_45
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 605
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ca15e8901cc779c48979dbf281d966e5
-      internalID: -1861487915
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_46
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 605
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4d69ef7ed3c7e3f40bc966595bbb8261
-      internalID: -751913820
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_47
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 605
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: af8f7ced7c550ed4db903fe6d7000727
-      internalID: -782666207
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_48
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 605
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6f5d89592cd53e0489b4c422a997be86
-      internalID: -963000930
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_49
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 605
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6d3e5827bab195846be8354e2128e512
-      internalID: -805451127
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_50
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 605
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d6e861daa8ec6da4e97c4fead487b7b9
-      internalID: 1245821352
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_51
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 605
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aaa2b0195950ff842b3fef87b4f88509
-      internalID: 108393326
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_52
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 605
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 53881977217d3c3408732cd92c99d7e2
-      internalID: 947225945
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_53
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 605
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ef8fed3ad80be984ab899c0a78737a4b
-      internalID: -1493048746
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_54
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 541
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 6
+        y: 579
+        width: 75
+        height: 52
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1173,15 +480,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Minotaurus_55
+      name: Mino_Fall_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 541
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 88
+        y: 579
+        width: 73
+        height: 52
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1194,162 +501,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Minotaurus_56
+      name: Mino_Attack1_0
       rect:
         serializedVersion: 2
-        x: 128
-        y: 541
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3f314f771e14b2a41b2b431c532417e1
-      internalID: 1844065398
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_57
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 541
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 20d281433a81dfa4cafe0ba0f7b4914e
-      internalID: -1415524022
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_58
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 541
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a10488ac8a0a6f34bab3848f40953227
-      internalID: 3420097
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_59
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 541
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2a1a6fcb4a0ffee449fb76ebda341c77
-      internalID: -541274169
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_60
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 541
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: edcb54f43e6c38e48b091ede364bf40b
-      internalID: -36328602
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_61
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 541
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b888b75f519f0b641a9de6e70016da11
-      internalID: 1251537495
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_62
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 541
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bb1ac4ce6fd3aeb49a7353f7ab375ae2
-      internalID: -1318996458
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_63
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 477
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 6
+        y: 510
+        width: 55
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1362,15 +522,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Minotaurus_64
+      name: Mino_Attack1_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 477
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 68
+        y: 514
+        width: 58
+        height: 50
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1383,15 +543,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Minotaurus_65
+      name: Mino_Attack1_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 477
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 133
+        y: 515
+        width: 58
+        height: 49
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1404,15 +564,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Minotaurus_66
+      name: Mino_Attack1_3
       rect:
         serializedVersion: 2
-        x: 192
-        y: 477
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 198
+        y: 499
+        width: 72
+        height: 65
+      alignment: 9
+      pivot: {x: 0.4, y: 0.03}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1425,15 +585,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Minotaurus_67
+      name: Mino_Attack1_4
       rect:
         serializedVersion: 2
-        x: 256
-        y: 477
-        width: 64
+        x: 277
+        y: 500
+        width: 74
         height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1446,36 +606,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Minotaurus_68
+      name: Mino_Attack1_5
       rect:
         serializedVersion: 2
-        x: 320
-        y: 477
-        width: 64
+        x: 358
+        y: 500
+        width: 63
         height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d2d308cdba592d74792c8d2c20628d3d
-      internalID: 1471699723
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_69
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 477
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1488,57 +627,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Minotaurus_70
+      name: Mino_Attack2_0
       rect:
         serializedVersion: 2
-        x: 448
-        y: 477
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 93ca530e59563c841825fd760b335e2c
-      internalID: -2033702195
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_71
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 477
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6951f1a6df2f92b4998e027e2eee4efc
-      internalID: -2013134748
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_72
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 413
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 6
+        y: 422
+        width: 66
+        height: 62
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1551,15 +648,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Minotaurus_73
+      name: Mino_Attack2_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 413
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 80
+        y: 430
+        width: 79
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1572,15 +669,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Minotaurus_74
+      name: Mino_Attack2_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 413
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 166
+        y: 434
+        width: 79
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1593,15 +690,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Minotaurus_75
+      name: Mino_Attack2_3
       rect:
         serializedVersion: 2
-        x: 192
-        y: 413
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 252
+        y: 435
+        width: 72
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1614,15 +711,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Minotaurus_76
+      name: Mino_Attack2_4
       rect:
         serializedVersion: 2
-        x: 256
-        y: 413
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 331
+        y: 435
+        width: 50
+        height: 49
+      alignment: 9
+      pivot: {x: 0.7, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1635,99 +732,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Minotaurus_77
+      name: Mino_JumpAttack_0
       rect:
         serializedVersion: 2
-        x: 320
-        y: 413
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ae3de6edd0fbe0343a7ac8bd8deffc00
-      internalID: 2053483992
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_78
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 413
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c404f588638a69d40ac0ad045ab76a42
-      internalID: -1508445441
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_79
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 413
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e3f51dbdfb8446e4f93dd8dc8e075954
-      internalID: -1179470342
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_80
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 413
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 319cc52f761ac1e42bd435a8fbe1f408
-      internalID: -797159611
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_81
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 349
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 6
+        y: 354
+        width: 51
+        height: 53
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1740,15 +753,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Minotaurus_82
+      name: Mino_JumpAttack_1
       rect:
         serializedVersion: 2
         x: 64
-        y: 349
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 357
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1761,15 +774,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Minotaurus_83
+      name: Mino_JumpAttack_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 349
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 121
+        y: 360
+        width: 42
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1782,15 +795,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Minotaurus_84
+      name: Mino_Land_
       rect:
         serializedVersion: 2
-        x: 192
-        y: 349
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 7
+        y: 292
+        width: 82
+        height: 47
+      alignment: 9
+      pivot: {x: 0.35, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1803,309 +816,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Minotaurus_85
+      name: Mino_Skill1_0
       rect:
         serializedVersion: 2
-        x: 256
-        y: 349
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8486e528c2b22e4458436c1a4322c655
-      internalID: -274315831
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_86
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 349
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8634829d15725184aa635b974c886abb
-      internalID: 1649367015
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_87
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 349
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1239b17d2e5f0224a80b4b7365be66ed
-      internalID: 1438368547
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_88
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 349
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3297f2ac9bcc72341b23976a63561000
-      internalID: -1620987427
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_89
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 349
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 42bb6b5e46646bf4e94be7aa24fceef3
-      internalID: 1393574356
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_90
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 285
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f877901abd3c0894eb5d2c733f7785cc
-      internalID: 421112637
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_91
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 285
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 431a17cce5d5b3246939ba923a9699f9
-      internalID: 287755895
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_92
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 285
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9da3a4114acbccf499206cdc94b9a6c0
-      internalID: 738028909
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_93
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 285
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5e1a8ba40d682fc4db78e1f7f627fe26
-      internalID: -390728081
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_94
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 285
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1dc03fb83c99731498c0ca2c6f216511
-      internalID: -575804171
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_95
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 285
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4edd465bd9604314cbeac2d2356e60fa
-      internalID: 2065054310
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_96
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 285
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: caad8a10e24eac24b88762febc11f476
-      internalID: -1814862042
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_97
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 285
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4ec8d034aaeaf3a498d1d97c8d3e46d7
-      internalID: 573174459
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_98
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 285
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 32833463bde7ca847a6bfc6b5b9cfe3d
-      internalID: -2090805510
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_99
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 221
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 6
+        y: 215
+        width: 67
+        height: 62
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2118,15 +837,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Minotaurus_100
+      name: Mino_Skill1_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 221
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 80
+        y: 223
+        width: 79
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2139,162 +858,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Minotaurus_101
+      name: Mino_Skill1_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 221
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f5316971847b1e647823a26f92df5a34
-      internalID: -80231087
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_102
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 221
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 20d951a78523293489a42bf25ff97869
-      internalID: 1677972783
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_103
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 221
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 85bfbbcae04e8f44cba1cad799b42e25
-      internalID: 274655939
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_104
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 221
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f5bc1c39a3fdabc45a0766fa8bfe5198
-      internalID: -135949560
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_105
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 221
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e6c7ebc1ac65ee140943f4e782c2c66c
-      internalID: 1899889444
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_106
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 221
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7544eec94d891414db548f6164c4a15a
-      internalID: -609822736
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_107
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 221
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 04551ac327840634db85e9ace9f7fe53
-      internalID: -713171499
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_108
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 157
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 6
+        y: 150
+        width: 79
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2307,15 +879,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Minotaurus_109
+      name: Mino_Skill1_3
       rect:
         serializedVersion: 2
-        x: 64
-        y: 157
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 92
+        y: 151
+        width: 72
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2328,15 +900,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Minotaurus_110
+      name: Mino_Skill1_4
       rect:
         serializedVersion: 2
-        x: 128
-        y: 157
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 171
+        y: 151
+        width: 50
+        height: 49
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2349,141 +921,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Minotaurus_111
+      name: Mino_Skill2_0
       rect:
         serializedVersion: 2
-        x: 192
-        y: 157
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 798a8aef32c3f674bbf843ff675fc3c0
-      internalID: 1514800449
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_112
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 157
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e71d602106f74c94fbf04fbdeb58195f
-      internalID: -1735071485
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_113
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 157
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 909510cd1c0cff34db69100d3e49001a
-      internalID: -331139546
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_114
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 157
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2376795aeda6362489e3bc08beaf428a
-      internalID: -1225632313
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_115
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 157
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ae00c53777153c7498b49c7dc1c37eb9
-      internalID: -383612764
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_116
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 157
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f800bc4043d11364e83fa929a69a5861
-      internalID: 1934197547
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_117
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 93
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 6
+        y: 81
+        width: 55
+        height: 54
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2496,15 +942,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Minotaurus_118
+      name: Mino_Skill2_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 93
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 68
+        y: 85
+        width: 58
+        height: 50
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2517,15 +963,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Minotaurus_119
+      name: Mino_Skill2_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 93
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 133
+        y: 86
+        width: 58
+        height: 49
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2538,141 +984,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Minotaurus_120
+      name: Mino_Skill2_3
       rect:
         serializedVersion: 2
-        x: 192
-        y: 93
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ae79c6db13109b44d8fae351db332900
-      internalID: -552335409
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_121
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 93
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a89ebaad2e0f2d141a42e58c05020be4
-      internalID: -117288675
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_122
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 93
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 42fa7056d785dba42a28cd43aa669218
-      internalID: -878415007
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_123
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 93
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 15fd26eda5489f74aacf7ee291abec0b
-      internalID: -1799764508
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_124
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 93
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b796c3fb43f63af468a7fbb167f30602
-      internalID: -1621316221
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_125
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 93
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7787f81acb932e245bb6ea23b15553e4
-      internalID: -933002243
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_126
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 29
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 6
+        y: 1
+        width: 72
+        height: 65
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2685,15 +1005,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Minotaurus_127
+      name: Mino_Skill2_4
       rect:
         serializedVersion: 2
-        x: 64
-        y: 29
-        width: 64
+        x: 85
+        y: 2
+        width: 74
         height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2706,15 +1026,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Minotaurus_128
+      name: Mino_Skill2_5
       rect:
         serializedVersion: 2
-        x: 128
-        y: 29
-        width: 64
+        x: 166
+        y: 2
+        width: 63
         height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2722,132 +1042,6 @@ TextureImporter:
       bones: []
       spriteID: b50e695b8a0419d43af0877f135791b0
       internalID: -210311815
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_129
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 29
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a74d8fa6b245f7f4cb9cc7d6b6c76056
-      internalID: 2103778766
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_130
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 29
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8cfee2b3a1f7619439cd63211b946d04
-      internalID: -1177573260
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_131
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 29
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a442eb3f4a2b12f4c9f97a1087cce240
-      internalID: -1727577742
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_132
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 29
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7cc15db3cdbadbf43a780d0f99c36d47
-      internalID: -1429736511
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_133
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 29
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 84d91ef784ee70e44a143cc4d4679a3b
-      internalID: 1117749689
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minotaurus_134
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 29
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 10ec430b42021544299fc2867244133b
-      internalID: -1927840388
       vertices: []
       indices: 
       edges: []
@@ -2863,12 +1057,31 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Mino_Attack1_0: -281753075
+      Mino_Attack1_1: 340488499
+      Mino_Attack1_2: -1128599120
+      Mino_Attack1_3: -1839549060
+      Mino_Attack1_4: 1890926623
+      Mino_Attack1_5: 772074952
+      Mino_Attack2_0: 1602232908
+      Mino_Attack2_1: -222812082
+      Mino_Attack2_2: 2062704743
+      Mino_Attack2_3: 2080478302
+      Mino_Attack2_4: 13663617
       Mino_Dash_: 1536766310
+      Mino_Fall_0: -548251487
+      Mino_Fall_1: -27685418
       Mino_Idle_0: 1056116430
       Mino_Idle_1: -536137296
       Mino_Idle_2: 354623242
       Mino_Idle_3: 1795514671
       Mino_Idle_4: -1887813201
+      Mino_JumpAttack_0: -1159057151
+      Mino_JumpAttack_1: 14023855
+      Mino_JumpAttack_2: 1499061873
+      Mino_Jump_0: -173833851
+      Mino_Jump_1: -703660597
+      Mino_Land_: 775361011
       Mino_Move_0: 1728407084
       Mino_Move_1: -1451119443
       Mino_Move_2: -396048253
@@ -2877,7 +1090,18 @@ TextureImporter:
       Mino_Move_5: 1209735340
       Mino_Move_6: 768738506
       Mino_Move_7: 53988269
-      Minotaurus_100: -874948925
+      Mino_Skill1_0: 1104955323
+      Mino_Skill1_1: -874948925
+      Mino_Skill1_2: 1929562263
+      Mino_Skill1_3: 963634025
+      Mino_Skill1_4: -260908618
+      Mino_Skill2_0: -1019181428
+      Mino_Skill2_1: 1523818589
+      Mino_Skill2_2: -2118712068
+      Mino_Skill2_3: -1996715793
+      Mino_Skill2_4: 1559292728
+      Mino_Skill2_5: -210311815
+      Minotaurus_0: 886621902
       Minotaurus_101: -80231087
       Minotaurus_102: 1677972783
       Minotaurus_103: 274655939
@@ -2885,27 +1109,18 @@ TextureImporter:
       Minotaurus_105: 1899889444
       Minotaurus_106: -609822736
       Minotaurus_107: -713171499
-      Minotaurus_108: 1929562263
-      Minotaurus_109: 963634025
-      Minotaurus_110: -260908618
       Minotaurus_111: 1514800449
       Minotaurus_112: -1735071485
       Minotaurus_113: -331139546
       Minotaurus_114: -1225632313
       Minotaurus_115: -383612764
       Minotaurus_116: 1934197547
-      Minotaurus_117: -1019181428
-      Minotaurus_118: 1523818589
-      Minotaurus_119: -2118712068
       Minotaurus_120: -552335409
       Minotaurus_121: -117288675
       Minotaurus_122: -878415007
       Minotaurus_123: -1799764508
       Minotaurus_124: -1621316221
       Minotaurus_125: -933002243
-      Minotaurus_126: -1996715793
-      Minotaurus_127: 1559292728
-      Minotaurus_128: -210311815
       Minotaurus_129: 2103778766
       Minotaurus_130: -1177573260
       Minotaurus_131: -1727577742
@@ -2921,8 +1136,6 @@ TextureImporter:
       Minotaurus_24: -1945655657
       Minotaurus_25: 2103199306
       Minotaurus_26: -1493894006
-      Minotaurus_27: -173833851
-      Minotaurus_28: -703660597
       Minotaurus_29: 993186408
       Minotaurus_30: -581131479
       Minotaurus_31: 2071008972
@@ -2949,8 +1162,6 @@ TextureImporter:
       Minotaurus_51: 108393326
       Minotaurus_52: 947225945
       Minotaurus_53: -1493048746
-      Minotaurus_54: -548251487
-      Minotaurus_55: -27685418
       Minotaurus_56: 1844065398
       Minotaurus_57: -1415524022
       Minotaurus_58: 3420097
@@ -2959,30 +1170,15 @@ TextureImporter:
       Minotaurus_60: -36328602
       Minotaurus_61: 1251537495
       Minotaurus_62: -1318996458
-      Minotaurus_63: -281753075
-      Minotaurus_64: 340488499
-      Minotaurus_65: -1128599120
-      Minotaurus_66: -1839549060
-      Minotaurus_67: 1890926623
       Minotaurus_68: 1471699723
-      Minotaurus_69: 772074952
       Minotaurus_7: -792543779
       Minotaurus_70: -2033702195
       Minotaurus_71: -2013134748
-      Minotaurus_72: 1602232908
-      Minotaurus_73: -222812082
-      Minotaurus_74: 2062704743
-      Minotaurus_75: 2080478302
-      Minotaurus_76: 13663617
       Minotaurus_77: 2053483992
       Minotaurus_78: -1508445441
       Minotaurus_79: -1179470342
       Minotaurus_8: 1276428906
       Minotaurus_80: -797159611
-      Minotaurus_81: -1159057151
-      Minotaurus_82: 14023855
-      Minotaurus_83: 1499061873
-      Minotaurus_84: 775361011
       Minotaurus_85: -274315831
       Minotaurus_86: 1649367015
       Minotaurus_87: 1438368547
@@ -2997,7 +1193,6 @@ TextureImporter:
       Minotaurus_96: -1814862042
       Minotaurus_97: 573174459
       Minotaurus_98: -2090805510
-      Minotaurus_99: 1104955323
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

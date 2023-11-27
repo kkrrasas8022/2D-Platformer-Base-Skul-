@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 30
+  spritePixelsToUnits: 40
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -270,57 +270,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Archlich_7
+      name: Archlich_Move_0
       rect:
         serializedVersion: 2
-        x: 448
-        y: 795
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: be42160e01351324dbd22e20f3132d18
-      internalID: 612607945
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_8
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 795
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a2c52c591afc2ca47b19af4ab0d9c7ac
-      internalID: 43286107
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_9
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 731
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 6
+        y: 686
+        width: 62
+        height: 73
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -333,15 +291,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Archlich_10
+      name: Archlich_Move_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 731
+        x: 75
+        y: 686
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 73
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -354,15 +312,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Archlich_11
+      name: Archlich_Move_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 731
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 145
+        y: 686
+        width: 63
+        height: 73
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -375,15 +333,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Archlich_12
+      name: Archlich_Move_3
       rect:
         serializedVersion: 2
-        x: 192
-        y: 731
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 215
+        y: 686
+        width: 63
+        height: 73
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -396,15 +354,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Archlich_13
+      name: Archlich_Move_4
       rect:
         serializedVersion: 2
-        x: 256
-        y: 731
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 285
+        y: 686
+        width: 63
+        height: 73
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -417,15 +375,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Archlich_14
+      name: Archlich_Move_5
       rect:
         serializedVersion: 2
-        x: 320
-        y: 731
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 355
+        y: 686
+        width: 63
+        height: 73
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -438,267 +396,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Archlich_15
+      name: Archlich_Dash_0
       rect:
         serializedVersion: 2
-        x: 384
-        y: 731
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 260f2ea7fe998804bbc37a15a420ddef
-      internalID: -162049688
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_16
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 731
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a58630d0cbffafe4a98bb7802714a043
-      internalID: 713554478
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_17
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 731
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ffb7a9a3ff419d444bcb84c4e2514a46
-      internalID: -1343725914
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_18
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 667
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9d2532d001a38a64c97539d2865194d5
-      internalID: -1761894463
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_19
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 667
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a65b732f56d6b9342b82db4c229990d9
-      internalID: -1911259657
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_20
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 667
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: af2e1f359eb8b66409fd4433ef92247c
-      internalID: 1418922045
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_21
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 667
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 656b36bf667ea6a42930a728199afd73
-      internalID: -2050576813
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_22
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 667
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c513f22b2546a564995c74de92dfd214
-      internalID: -544611110
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_23
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 667
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b7e0e8c598b287249bc2e33220759dd8
-      internalID: 1930583001
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_24
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 667
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c436da9e714113e49b1e542ee66b64f9
-      internalID: -2033775728
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_25
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 667
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 291243b39e57ff248a611878669b0b34
-      internalID: -823986779
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_26
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 667
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1fa7607309329af42afac9849a1b2abe
-      internalID: 1965142598
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_27
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 603
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 6
+        y: 609
+        width: 63
+        height: 62
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -711,15 +417,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Archlich_28
+      name: Archlich_Dash_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 603
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 76
+        y: 608
+        width: 61
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -732,15 +438,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Archlich_29
+      name: Archlich_Dash_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 603
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 144
+        y: 608
+        width: 59
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -753,15 +459,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Archlich_30
+      name: Archlich_Dash_3
       rect:
         serializedVersion: 2
-        x: 192
-        y: 603
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 210
+        y: 608
+        width: 63
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -774,120 +480,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Archlich_31
+      name: Archlich_Jump_0
       rect:
         serializedVersion: 2
-        x: 256
-        y: 603
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 929d5b63375cb454fb9e584bf6ab174b
-      internalID: 58976306
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_32
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 603
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 951d68f5f9241b149857128d9589f3d9
-      internalID: -1241503930
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_33
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 603
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9bf957931ad6d7141a189f17cb8b0322
-      internalID: 671348461
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_34
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 603
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 679e801aa6cd1204d8dcbb21bc019197
-      internalID: 1658885694
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_35
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 603
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e1bdb6548eaa0224aa4bb208976493d2
-      internalID: -386384779
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_36
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 539
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 6
+        y: 523
+        width: 61
+        height: 70
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -900,15 +501,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Archlich_37
+      name: Archlich_Jump_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 539
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 75
+        y: 522
+        width: 62
+        height: 71
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -921,15 +522,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Archlich_38
+      name: Archlich_Jump_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 539
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 144
+        y: 521
+        width: 62
+        height: 72
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -942,519 +543,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Archlich_39
+      name: Archlich_Fall_0
       rect:
         serializedVersion: 2
-        x: 192
-        y: 539
+        x: 6
+        y: 346
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cd5465cd47634414f813c0185ae9f82d
-      internalID: 212409006
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_40
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 539
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: efd328a56b4069c4fb9f8ef3e8f34408
-      internalID: 494680557
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_41
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 539
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5ed4d8fafec30a64fb51ba8862af5cdc
-      internalID: -661220461
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_42
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 539
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 60e59c426bd7e9841b20a848287ceac9
-      internalID: -1904156649
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_43
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 539
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aad002dbdd1a6ef40895b35f28b0e63e
-      internalID: 707150293
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_44
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 539
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f23ee6e75a5bea840b4e2bc8e7c3bdec
-      internalID: 1520512600
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_45
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 475
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d678fd043c8b5ae49b70f2e055f8e292
-      internalID: -938225558
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_46
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 475
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 915c0fa43f411d346b2772b4cd24d4da
-      internalID: -471300428
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_47
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 475
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9d6cdeaacf105cb418a1443f01c75cb2
-      internalID: 1747077060
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_48
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 475
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1398a9d29625ba44f86b2e35d4cc8841
-      internalID: 1745943106
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_49
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 475
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 56212c0a291b29148a4f07cd873fbe2f
-      internalID: -1382331061
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_50
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 475
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b859c7112d2bffa4ba4c33a65df497ee
-      internalID: -646062145
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_51
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 475
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b41c29ec4d116364db9fa1df08bf3dbb
-      internalID: -1369507590
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_52
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 475
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e62c338e629f58a418f0dbc3874e3891
-      internalID: 1861007685
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_53
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 475
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 91f24de80cc26324f9e86066f416ea94
-      internalID: -609919351
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_54
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 411
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b82bad8a16a89b14eb0ad493e2128c2e
-      internalID: 192800166
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_55
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 411
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 13a58f95f00152740a6af6e8bd64e9bb
-      internalID: 1596997177
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_56
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 411
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fe900fddb969f4f4d90a1d1fe233575c
-      internalID: 1028927791
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_57
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 411
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a7f366ac847dc774d9032b27f62f365a
-      internalID: -228653812
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_58
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 411
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 454193310720f734fa4788215ff43a06
-      internalID: -574451974
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_59
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 411
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 22bd39d6222588b429f8c88121981273
-      internalID: 1362052400
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_60
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 411
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 276614ca509d97b4d8e0c3f7bcee5c92
-      internalID: 2056988925
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_61
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 411
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 97ab54719db0d584ab88f2c073200b55
-      internalID: 1350134089
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_62
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 411
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 66161644057a8334cb99af9a29ff5233
-      internalID: -523567232
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_63
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 347
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 72
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1467,15 +564,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Archlich_64
+      name: Archlich_Fall_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 347
+        x: 77
+        y: 346
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 72
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1488,15 +585,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Archlich_65
+      name: Archlich_Fall_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 148
         y: 347
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 71
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1509,141 +606,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Archlich_66
+      name: Archlich_Attack1_0
       rect:
         serializedVersion: 2
-        x: 192
-        y: 347
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b12a0b3180946664ebc53c44147f1491
-      internalID: 1528403472
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_67
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 347
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bd3f4feaad6b2d141ba030c7961becae
-      internalID: -2064320359
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_68
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 347
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e088cd43229a52549aca43b39192952e
-      internalID: 599109584
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_69
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 347
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1243dc422ae650145abcaabd4a3a497e
-      internalID: -644927350
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_70
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 347
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 08522626a06a6e9428160a1916bf435f
-      internalID: -549413919
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_71
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 347
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 42039bfadb4d6de449b27d0e2ade6cbb
-      internalID: -1669274769
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_72
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 283
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 6
+        y: 263
+        width: 55
+        height: 68
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1656,15 +627,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Archlich_73
+      name: Archlich_Attack1_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 283
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 68
+        y: 263
+        width: 55
+        height: 68
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1677,15 +648,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Archlich_74
+      name: Archlich_Attack1_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 283
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 130
+        y: 263
+        width: 55
+        height: 68
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1698,15 +669,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Archlich_75
+      name: Archlich_Attack1_3
       rect:
         serializedVersion: 2
         x: 192
-        y: 283
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 263
+        width: 55
+        height: 68
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1719,15 +690,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Archlich_76
+      name: Archlich_Attack1_4
       rect:
         serializedVersion: 2
-        x: 256
-        y: 283
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 254
+        y: 262
+        width: 73
+        height: 69
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1740,15 +711,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Archlich_77
+      name: Archlich_Attack1_5
       rect:
         serializedVersion: 2
-        x: 320
-        y: 283
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 334
+        y: 262
+        width: 73
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1761,15 +732,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Archlich_78
+      name: Archlich_Attack1_6
       rect:
         serializedVersion: 2
-        x: 384
-        y: 283
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 414
+        y: 262
+        width: 74
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1782,15 +753,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Archlich_79
+      name: Archlich_Attack1_7
       rect:
         serializedVersion: 2
-        x: 448
-        y: 283
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 495
+        y: 262
+        width: 72
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1803,225 +774,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Archlich_80
+      name: Archlich_Attack2_0
       rect:
         serializedVersion: 2
-        x: 512
-        y: 283
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 807e15ff558f0504f830fd4a10363c8c
-      internalID: 723644191
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_81
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 219
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2daaad41a57dc6343a44913a94411291
-      internalID: -1406658626
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_82
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 219
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4c1daeed3fd54e5499a61c7f0ab69466
-      internalID: -1088559878
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_83
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 219
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 292957b47304621438b6335841e326f4
-      internalID: 1374094694
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_84
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 219
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e4533fed3ea9b8b4ea67148632a2421b
-      internalID: 816383120
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_85
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 219
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6f4f3f53544e97f43a12573e88ada38d
-      internalID: -2046610268
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_86
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 219
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 88b07ef558221e84888937934e0388ba
-      internalID: 1131053289
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_87
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 219
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5b4c05ddd64ed6742b54efed42717417
-      internalID: 1223653922
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_88
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 219
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 847b3463d13d2cf47af8e28f9df5f874
-      internalID: 1294779335
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_89
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 219
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 49559f8c9ec53a1419f5b48ab605da03
-      internalID: 1562050515
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_90
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 155
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 6
+        y: 179
+        width: 72
+        height: 68
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2034,15 +795,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Archlich_91
+      name: Archlich_Attack2_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 155
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 85
+        y: 180
+        width: 72
+        height: 67
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2055,15 +816,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Archlich_92
+      name: Archlich_Attack2_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 155
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 164
+        y: 180
+        width: 71
+        height: 67
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2076,15 +837,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Archlich_93
+      name: Archlich_Attack2_3
       rect:
         serializedVersion: 2
-        x: 192
-        y: 155
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 243
+        y: 179
+        width: 69
+        height: 68
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2097,15 +858,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Archlich_94
+      name: Archlich_Attack2_4
       rect:
         serializedVersion: 2
-        x: 256
-        y: 155
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 319
+        y: 179
+        width: 70
+        height: 68
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2118,15 +879,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Archlich_95
+      name: Archlich_Attack2_5
       rect:
         serializedVersion: 2
-        x: 320
-        y: 155
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 396
+        y: 179
+        width: 69
+        height: 68
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2139,15 +900,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Archlich_96
+      name: Archlich_Attack2_6
       rect:
         serializedVersion: 2
-        x: 384
-        y: 155
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 472
+        y: 180
+        width: 68
+        height: 67
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2160,15 +921,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Archlich_97
+      name: Archlich_Skill_9
       rect:
         serializedVersion: 2
-        x: 448
-        y: 155
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 573
+        y: 2
+        width: 55
+        height: 71
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2181,15 +942,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Archlich_98
+      name: Archlich_Attack2_7
       rect:
         serializedVersion: 2
-        x: 512
-        y: 155
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 547
+        y: 180
+        width: 59
+        height: 67
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2202,15 +963,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Archlich_99
+      name: Archlich_JumpAttack_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 91
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 6
+        y: 93
+        width: 71
+        height: 71
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2223,15 +984,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Archlich_100
+      name: Archlich_JumpAttack_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 91
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 84
+        y: 90
+        width: 67
+        height: 74
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2244,15 +1005,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Archlich_101
+      name: Archlich_JumpAttack_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 91
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 158
+        y: 88
+        width: 62
+        height: 76
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2265,15 +1026,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Archlich_102
+      name: Archlich_JumpAttack_3
       rect:
         serializedVersion: 2
-        x: 192
-        y: 91
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 227
+        y: 90
+        width: 63
+        height: 74
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2286,36 +1047,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Archlich_103
+      name: Archlich_JumpAttack_4
       rect:
         serializedVersion: 2
-        x: 256
-        y: 91
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2d30879272719304cb90339ba7b17183
-      internalID: 469429227
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Archlich_104
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 91
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 296
+        y: 92
+        width: 77
+        height: 72
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2328,15 +1068,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Archlich_105
+      name: Archlich_JumpAttack_5
       rect:
         serializedVersion: 2
-        x: 384
-        y: 91
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 380
+        y: 92
+        width: 78
+        height: 72
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2349,15 +1089,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Archlich_106
+      name: Archlich_JumpAttack_6
       rect:
         serializedVersion: 2
-        x: 448
-        y: 91
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 465
+        y: 93
+        width: 78
+        height: 71
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2370,15 +1110,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Archlich_107
+      name: Archlich_JumpAttack_7
       rect:
         serializedVersion: 2
-        x: 512
-        y: 91
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 550
+        y: 93
+        width: 75
+        height: 71
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2391,15 +1131,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Archlich_108
+      name: Archlich_Skill_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 27
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 6
+        y: 4
+        width: 55
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2412,15 +1152,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Archlich_109
+      name: Archlich_Skill_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 27
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 68
+        y: 4
+        width: 55
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2433,15 +1173,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Archlich_110
+      name: Archlich_Skill_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 27
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 130
+        y: 6
+        width: 55
+        height: 67
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2454,15 +1194,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Archlich_111
+      name: Archlich_Skill_3
       rect:
         serializedVersion: 2
         x: 192
-        y: 27
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 6
+        width: 55
+        height: 67
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2475,15 +1215,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Archlich_112
+      name: Archlich_Skill_4
       rect:
         serializedVersion: 2
-        x: 256
-        y: 27
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 254
+        y: 4
+        width: 55
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2496,15 +1236,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Archlich_113
+      name: Archlich_Skill_5
       rect:
         serializedVersion: 2
-        x: 320
-        y: 27
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 316
+        y: 2
+        width: 56
+        height: 71
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2517,15 +1257,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Archlich_114
+      name: Archlich_Skill_6
       rect:
         serializedVersion: 2
-        x: 384
-        y: 27
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 379
+        y: 2
+        width: 59
+        height: 71
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2538,15 +1278,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Archlich_115
+      name: Archlich_Skill_7
       rect:
         serializedVersion: 2
-        x: 448
-        y: 27
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 445
+        y: 2
+        width: 59
+        height: 71
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2559,15 +1299,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Archlich_116
+      name: Archlich_Skill_8
       rect:
         serializedVersion: 2
-        x: 512
-        y: 27
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 511
+        y: 1
+        width: 55
+        height: 72
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2590,28 +1330,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Archlich_10: 1757470281
-      Archlich_100: -565455545
-      Archlich_101: 1757308806
-      Archlich_102: 37619991
+      Archlich_0: 783195611
       Archlich_103: 469429227
-      Archlich_104: 439827840
-      Archlich_105: 1711253216
-      Archlich_106: 721229735
-      Archlich_107: -808461865
-      Archlich_108: -511837930
-      Archlich_109: -1451702771
-      Archlich_11: -1166854202
-      Archlich_110: -991912249
-      Archlich_111: 123203308
-      Archlich_112: -371544372
-      Archlich_113: -1992380848
-      Archlich_114: -378608553
-      Archlich_115: 163157030
-      Archlich_116: 812474946
-      Archlich_12: -1488297879
-      Archlich_13: 2074507325
-      Archlich_14: -690381522
       Archlich_15: -162049688
       Archlich_16: 713554478
       Archlich_17: -1343725914
@@ -2624,18 +1344,11 @@ TextureImporter:
       Archlich_24: -2033775728
       Archlich_25: -823986779
       Archlich_26: 1965142598
-      Archlich_27: 465973028
-      Archlich_28: 1100891592
-      Archlich_29: -1322657310
-      Archlich_30: 979968479
       Archlich_31: 58976306
       Archlich_32: -1241503930
       Archlich_33: 671348461
       Archlich_34: 1658885694
       Archlich_35: -386384779
-      Archlich_36: -496617215
-      Archlich_37: 729808711
-      Archlich_38: 1486961177
       Archlich_39: 212409006
       Archlich_40: 494680557
       Archlich_41: -661220461
@@ -2660,9 +1373,6 @@ TextureImporter:
       Archlich_60: 2056988925
       Archlich_61: 1350134089
       Archlich_62: -523567232
-      Archlich_63: -1033952202
-      Archlich_64: -551743115
-      Archlich_65: 296007075
       Archlich_66: 1528403472
       Archlich_67: -2064320359
       Archlich_68: 599109584
@@ -2670,14 +1380,6 @@ TextureImporter:
       Archlich_7: 612607945
       Archlich_70: -549413919
       Archlich_71: -1669274769
-      Archlich_72: 1010041170
-      Archlich_73: -901551914
-      Archlich_74: -2094253512
-      Archlich_75: -78564531
-      Archlich_76: 1436013603
-      Archlich_77: -1001256751
-      Archlich_78: 1039864917
-      Archlich_79: -455301747
       Archlich_8: 43286107
       Archlich_80: 723644191
       Archlich_81: -1406658626
@@ -2689,17 +1391,29 @@ TextureImporter:
       Archlich_87: 1223653922
       Archlich_88: 1294779335
       Archlich_89: 1562050515
-      Archlich_9: -1020588036
-      Archlich_90: -1941763763
-      Archlich_91: -141124534
-      Archlich_92: 1641696071
-      Archlich_93: 174500541
-      Archlich_94: 1063032070
-      Archlich_95: -1711175879
-      Archlich_96: 1601437247
-      Archlich_97: 292746616
-      Archlich_98: 2117420236
-      Archlich_99: 1347194547
+      Archlich_Attack1_0: 1010041170
+      Archlich_Attack1_1: -901551914
+      Archlich_Attack1_2: -2094253512
+      Archlich_Attack1_3: -78564531
+      Archlich_Attack1_4: 1436013603
+      Archlich_Attack1_5: -1001256751
+      Archlich_Attack1_6: 1039864917
+      Archlich_Attack1_7: -455301747
+      Archlich_Attack2_0: -1941763763
+      Archlich_Attack2_1: -141124534
+      Archlich_Attack2_2: 1641696071
+      Archlich_Attack2_3: 174500541
+      Archlich_Attack2_4: 1063032070
+      Archlich_Attack2_5: -1711175879
+      Archlich_Attack2_6: 1601437247
+      Archlich_Attack2_7: 2117420236
+      Archlich_Dash_0: 465973028
+      Archlich_Dash_1: 1100891592
+      Archlich_Dash_2: -1322657310
+      Archlich_Dash_3: 979968479
+      Archlich_Fall_0: -1033952202
+      Archlich_Fall_1: -551743115
+      Archlich_Fall_2: 296007075
       Archlich_Idle_0: 2057499502
       Archlich_Idle_1: 258604916
       Archlich_Idle_2: 806199347
@@ -2707,6 +1421,33 @@ TextureImporter:
       Archlich_Idle_4: 708033041
       Archlich_Idle_5: 1098084545
       Archlich_Idle_6: 855154982
+      Archlich_JumpAttack_0: 1347194547
+      Archlich_JumpAttack_1: -565455545
+      Archlich_JumpAttack_2: 1757308806
+      Archlich_JumpAttack_3: 37619991
+      Archlich_JumpAttack_4: 439827840
+      Archlich_JumpAttack_5: 1711253216
+      Archlich_JumpAttack_6: 721229735
+      Archlich_JumpAttack_7: -808461865
+      Archlich_Jump_0: -496617215
+      Archlich_Jump_1: 729808711
+      Archlich_Jump_2: 1486961177
+      Archlich_Move_0: -1020588036
+      Archlich_Move_1: 1757470281
+      Archlich_Move_2: -1166854202
+      Archlich_Move_3: -1488297879
+      Archlich_Move_4: 2074507325
+      Archlich_Move_5: -690381522
+      Archlich_Skill_0: -511837930
+      Archlich_Skill_1: -1451702771
+      Archlich_Skill_2: -991912249
+      Archlich_Skill_3: 123203308
+      Archlich_Skill_4: -371544372
+      Archlich_Skill_5: -1992380848
+      Archlich_Skill_6: -378608553
+      Archlich_Skill_7: 163157030
+      Archlich_Skill_8: 812474946
+      Archlich_Skill_9: 292746616
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

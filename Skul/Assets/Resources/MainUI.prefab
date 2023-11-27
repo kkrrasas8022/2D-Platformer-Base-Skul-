@@ -281,6 +281,7 @@ MonoBehaviour:
   _skill2Fill: {fileID: 6918106753429397114}
   _curCoin: {fileID: 1771435663607346604}
   _curBone: {fileID: 1216132649175574814}
+  buffList: []
 --- !u!1 &547025156255074369
 GameObject:
   m_ObjectHideFlags: 0

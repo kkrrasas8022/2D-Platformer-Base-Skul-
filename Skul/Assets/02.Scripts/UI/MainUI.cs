@@ -8,6 +8,8 @@ using Skul.Character;
 using Skul.Data;
 using Skul.Tools;
 using Skul.GameElement;
+using System.Runtime.CompilerServices;
+using System;
 
 namespace Skul.UI
 {
@@ -27,9 +29,119 @@ namespace Skul.UI
         [SerializeField] private TMP_Text _curCoin;
         [SerializeField] private TMP_Text _curBone;
 
+        [SerializeField] private List<GameObject> buffList;
+
+        public Action<Buff> StartBuff;
+        public Action<Buff> EndBuff;
+
+
+
         protected override void Awake()
         {
             base.Awake();
+            buffList = new List<GameObject>();
+            StartBuff += (buff) =>
+            {
+                Power power = buff.data.power;
+                switch (power.type)
+                {
+                    case StatusType.MaxHp:
+                        GameManager.instance.player.hpMax += power.power;
+                        break;
+                    case StatusType.TakenDamage:
+                        GameManager.instance.player.TakenDamage -= power.power;
+                        break;
+                    case StatusType.Physical:
+                        GameManager.instance.player.PhysicPower += power.power;
+                        break;
+                    case StatusType.Magical:
+                        GameManager.instance.player.MagicPower += power.power;
+                        break;
+                    case StatusType.AttackSpeed:
+                        GameManager.instance.player.AttackSpeed += power.power;
+                        break;
+                    case StatusType.MoveSpeed:
+                        GameManager.instance.player.MoveSpeed += power.power;
+                        break;
+                    case StatusType.ConsentSpeed:
+                        GameManager.instance.player.ConsentSpeed += power.power;
+                        break;
+                    case StatusType.SkillCoolDown:
+                        GameManager.instance.player.SkillCoolDown += power.power;
+                        break;
+                    case StatusType.SwitchCoolDown:
+                        GameManager.instance.player.SwitchCoolDown += power.power;
+                        break;
+                    case StatusType.EssenceCoolDown:
+                        GameManager.instance.player.EssenceCoolDown += power.power;
+                        break;
+                    case StatusType.CriticalPersent:
+                        GameManager.instance.player.CriticalPersent += power.power;
+                        break;
+                    case StatusType.CriticalDamage:
+                        GameManager.instance.player.CriticalDamage += power.power;
+                        break;
+                }
+                buffList.Add(buff.gameObject);
+                int i = 0;
+                foreach(var item in buffList)
+                {
+                    item.transform.localPosition = new Vector3(-100.0f + 100 * i, -300, 0);
+                    i++;
+                }
+            };
+
+            EndBuff += (buff) =>
+            {
+                Power power = buff.data.power;
+                switch (power.type)
+                {
+                    case StatusType.MaxHp:
+                        GameManager.instance.player.hpMax -= power.power;
+                        break;
+                    case StatusType.TakenDamage:
+                        GameManager.instance.player.TakenDamage += power.power;
+                        break;
+                    case StatusType.Physical:
+                        GameManager.instance.player.PhysicPower -= power.power;
+                        break;
+                    case StatusType.Magical:
+                        GameManager.instance.player.MagicPower -= power.power;
+                        break;
+                    case StatusType.AttackSpeed:
+                        GameManager.instance.player.AttackSpeed -= power.power;
+                        break;
+                    case StatusType.MoveSpeed:
+                        GameManager.instance.player.MoveSpeed -= power.power;
+                        break;
+                    case StatusType.ConsentSpeed:
+                        GameManager.instance.player.ConsentSpeed -= power.power;
+                        break;
+                    case StatusType.SkillCoolDown:
+                        GameManager.instance.player.SkillCoolDown -= power.power;
+                        break;
+                    case StatusType.SwitchCoolDown:
+                        GameManager.instance.player.SwitchCoolDown -= power.power;
+                        break;
+                    case StatusType.EssenceCoolDown:
+                        GameManager.instance.player.EssenceCoolDown -= power.power;
+                        break;
+                    case StatusType.CriticalPersent:
+                            GameManager.instance.player.CriticalPersent -= power.power;
+                        break;
+                    case StatusType.CriticalDamage:
+                        GameManager.instance.player.CriticalDamage -= power.power;
+                        break;
+                }
+                buffList.Remove(buff.gameObject);
+                int i = 0;
+                foreach (var item in buffList)
+                {
+                    item.transform.localPosition = new Vector3(-100.0f + 100 * i, -300, 0);
+                    i++;
+                }
+            };
+
         }
 
         private void Update()

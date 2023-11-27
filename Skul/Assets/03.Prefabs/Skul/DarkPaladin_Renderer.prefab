@@ -123,12 +123,13 @@ MonoBehaviour:
   _movement: {fileID: 0}
   _enemyMask:
     serializedVersion: 2
-    m_Bits: 0
-  hadSkillsID: 
+    m_Bits: 16384
+  hadSkillsID: f2030000f4030000
   _data: {fileID: 11400000, guid: 6d40a33dcb2a461439e12d3b8aafafb9, type: 2}
   _lastEnemy: {fileID: 0}
   _lastEnemies: []
-  _hitSize: {x: 0, y: 0, z: 0}
-  _hitOffset: {x: 0, y: 0, z: 0}
-  _switchHitSize: {x: 0, y: 0, z: 0}
-  _switchHitOffset: {x: 0, y: 0, z: 0}
+  _hitSize: {x: 2.8, y: 1.5, z: 0}
+  _hitOffset: {x: 1, y: 0.7, z: 0}
+  _cross: {fileID: 3493025755093008617, guid: e06f4760183396e4baafc80daa74f78c, type: 3}
+  _wave: {fileID: 8332954134742263496, guid: ad8c36cbf38ed3445bb2aa3b0ba4c91f, type: 3}
+  _waveSpeed: 5

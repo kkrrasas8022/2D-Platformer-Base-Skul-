@@ -19,9 +19,13 @@ MonoBehaviour:
   rate: 0
   description: Common Sword
   abilityDescription: Physical increase 35%
+  power:
+    type: 2
+    power: 0.2
   engraves:
   - {fileID: 11400000, guid: 28fa88e485b234249a57942e936a9816, type: 2}
   - {fileID: 11400000, guid: 7cdf0d23fd2ac40439ef9d67cbe78d5e, type: 2}
-  power:
-    type: 2
-    power: 0.3
+  hitPer: 0
+  skillabilityPower: 0
+  skillPer: 0
+  hitabilityPower: 0

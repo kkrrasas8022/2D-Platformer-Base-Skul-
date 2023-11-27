@@ -14,7 +14,7 @@ public enum AttackType
 namespace Skul.Character
 {
     //유닛들의 베이스가 되는 character 클래스
-    public abstract class Character : MonoBehaviour,IHp,IMp
+    public abstract class Character : MonoBehaviour,IHp,IPausable
     {
         
         //유닛의 스탯들
@@ -97,12 +97,6 @@ namespace Skul.Character
 
         public float hpMin => _hpMin;
 
-        public float mp { get; set; }
-
-        public float mpMax => _mpMax;
-
-        public float mpMin => _mpMin;
-
         public float TakenDamage
         {
             get => _takenDamage;
@@ -130,14 +124,6 @@ namespace Skul.Character
 
         public event Action onHpMin;
         public event Action onHpMax;
-        public event Action<float> onMpChanged;
-
-        public event Action<float> onMpIncreased;
-        public event Action<float> onMpDecreased;
-        public event Action<float> onMpMaxIncreased;
-        public event Action<float> onMpMaxDecreased;
-        public event Action onMpMin;
-        public event Action onMpMax;
 
         public void Damage(GameObject damager, float amount,out float realDamage)
         {
@@ -148,16 +134,6 @@ namespace Skul.Character
         public void Heal(GameObject healer, float amount)
         {
             hp += amount;
-        }
-
-        public void useMp(float amount)
-        {
-           mp -= amount;
-        }
-
-        public void RestoreMp(float amount)
-        {
-            mp += amount;
         }
 
         protected virtual void Start()
@@ -177,6 +153,12 @@ namespace Skul.Character
             
         }
 
-      
+        public void Pause(bool pause)
+        {
+            bool enable = pause == false;
+            enabled = enable;
+            stateMachine.enabled = enable;
+            movement.enabled = enable;
+        }
     }
 }

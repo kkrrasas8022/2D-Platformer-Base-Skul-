@@ -230,6 +230,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _owner: {fileID: 0}
+  _tri: {fileID: 0}
+  _rigid: {fileID: 0}
+  _velocity: {x: 0, y: 0}
+  _damage: 0
+  _targetMask:
+    serializedVersion: 2
+    m_Bits: 0
+  _istected: 0
+  _destroyTime: 0
+  _destroyMaxTime: 10
   _isStop: 0
   _stopTime: 0
   _stopMaxTime: 1

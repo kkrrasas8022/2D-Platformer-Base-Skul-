@@ -576,7 +576,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3109780060571598185, guid: 68754706d09aee14484aaf6a8bc80c32, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3109780060571598185, guid: 68754706d09aee14484aaf6a8bc80c32, type: 3}
       propertyPath: m_TagString
@@ -781,6 +781,8 @@ MonoBehaviour:
   smoothing: 0.2
   minCameraBoundary: {x: 0, y: 0}
   maxCameraBoundary: {x: 0, y: 0}
+  _size_y: 0
+  _size_x: 0
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -12862,7 +12864,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5055575981619117712, guid: 9f11c756071d8c14a8123f66e8d97052, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5055575981619117712, guid: 9f11c756071d8c14a8123f66e8d97052, type: 3}
       propertyPath: m_TagString
@@ -12969,7 +12971,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1810442301399094060, guid: c36b7726e4f7ebb42b67aef0720f9472, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1810442301399094060, guid: c36b7726e4f7ebb42b67aef0720f9472, type: 3}
       propertyPath: m_TagString

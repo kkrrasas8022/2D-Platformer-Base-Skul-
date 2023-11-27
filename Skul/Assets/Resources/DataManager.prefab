@@ -53,5 +53,12 @@ MonoBehaviour:
   _essenceItemDatum:
   - {fileID: 11400000, guid: 15f0073e2c781034ba5e6f9f51f45c74, type: 2}
   _weaponItemDatum:
+  - {fileID: 11400000, guid: 80f5f5b1b3d0253468944708ac674c1f, type: 2}
+  - {fileID: 11400000, guid: d746c4b15f2dc7f46be57661b1c6f312, type: 2}
+  - {fileID: 11400000, guid: 7cbc9ed8a4dd14a439ed735b4a1cfa14, type: 2}
+  - {fileID: 11400000, guid: ecbb3268219de42478732f9ebc3b4d18, type: 2}
+  - {fileID: 11400000, guid: 73af2fb490e659949b638d826b7d19da, type: 2}
+  - {fileID: 11400000, guid: 98def44909749e14aa98fc85dd02f719, type: 2}
   - {fileID: 11400000, guid: cac8bf7b100b3b84ca6d4237b7883768, type: 2}
+  - {fileID: 11400000, guid: f327df2b0364b26409234af200a0781f, type: 2}
   _nullData: {fileID: 11400000, guid: 30b96a7f57cd3034283fb9dbef5a5534, type: 2}

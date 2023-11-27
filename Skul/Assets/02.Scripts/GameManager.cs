@@ -23,6 +23,9 @@ namespace Skul.GameElement
         [SerializeField] public Player player;
         [SerializeField] public int startCoin;
 
+        [SerializeField] public CoinMount coin;
+
+
         public List<ItemBox> weaponBox;
         public List<ItemBox> graves;
         public List<Potal> potals;
@@ -100,6 +103,9 @@ namespace Skul.GameElement
                     case MapReward.None:
                         break;
                     case MapReward.Coin:
+                        {
+                            Instantiate(coin, mapBoxPosition, Quaternion.identity);
+                        }
                         break;
                     case MapReward.Weapon:
                         {

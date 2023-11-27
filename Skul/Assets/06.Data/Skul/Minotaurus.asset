@@ -25,7 +25,7 @@ MonoBehaviour:
   passiveSkill: {fileID: 0}
   specialSkill: {fileID: 0}
   attackType: 0
-  attackComboCount: 0
+  attackComboCount: 2
   takenDamage: 0
   physicPower: 0
   magicPower: 0

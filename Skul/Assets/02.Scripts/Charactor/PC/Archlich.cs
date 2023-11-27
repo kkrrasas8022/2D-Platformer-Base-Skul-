@@ -7,17 +7,29 @@ using Skul.Movement;
 using UnityEditor.Animations;
 using Skul.Data;
 using Skul.Character.Enemy;
+using UnityEditor.PackageManager;
+using Skul.UI;
 
 namespace Skul.Character.PC
 {
     public class Archlich:PlayerAttacks
     { 
         [SerializeField] private Collider2D[] _lastEnemies;
-        [SerializeField] private Vector3 _hitSize;
-        [SerializeField] private Vector3 _hitOffset;
-        [SerializeField] private Vector3 _switchHitSize;
-        [SerializeField] private Vector3 _switchHitOffset;
 
+        [SerializeField] private Vector3 _hitPos;
+
+        [SerializeField] private Vector3 _jumpHitPos;
+
+        [SerializeField] private Cains _superCain;
+
+        [SerializeField] private PlayerProjectile _attackCain;
+        [SerializeField] private PlayerProjectile _nowAttackCain;
+
+        [SerializeField] private Vector3[] skill1Pos=new Vector3[3]; 
+        [SerializeField] private Vector3[] skill2Pos=new Vector3[5];
+
+        [SerializeField] private BuffData _buffData;
+        [SerializeField] private Buff _buff;
 
 
         private void Update()
@@ -43,18 +55,51 @@ namespace Skul.Character.PC
         protected override void SwitchAttack()
         {
             base.SwitchAttack();
-
+            Instantiate(_buff, MainUI.instance.transform).SetUp(_buffData);
         }
         protected override void JumpAttack()
         {
             base.JumpAttack();
+            Instantiate(_attackCain, _player.transform.position + _jumpHitPos, Quaternion.Euler(new Vector3(0,0,-25)))
+                .SetUp(gameObject, Vector2.zero, _player.AttackForce, _enemyMask);
 
         }
         protected override void Skill(int skillID)
         {
             base.Skill(skillID);
 
-           
+            switch(skillID)
+            {
+                case 1014:
+                    {
+                        for(int i=0;i<skill1Pos.Length;i++)
+                        {
+                            Instantiate(_attackCain, _player.transform.position + new Vector3(skill1Pos[i].x*_movement.direction, skill1Pos[i].y), 
+                                Quaternion.Euler(new Vector3(0,_movement.direction==1?0:180,-30+(30*i))))
+                                .SetUp(gameObject, Vector2.zero, _player.AttackForce, _enemyMask);
+                        }
+                    }
+                    break;
+                case 1015:
+                    {
+                        for (int i = 0; i < skill2Pos.Length; i++)
+                        {
+                            PlayerProjectile a = Instantiate(_attackCain, _player.transform.position + new Vector3(skill2Pos[i].x * _movement.direction, skill2Pos[i].y),
+                                Quaternion.Euler(new Vector3(0, 0, 90)));
+                            a.SetUp(gameObject, Vector2.zero, _player.AttackForce, _enemyMask);
+                            a.transform.localScale = new Vector2(0.5f, 0.5f);
+                        }
+                    }
+                    break;
+                case 1016:
+                    {
+                        Cains c = Instantiate(_superCain, _player.transform.position, Quaternion.identity);
+                        for(int i=0;i<_superCain.cains.Length;i++)
+                            c.cains[i].SetUp(gameObject,Vector2.zero, _player.AttackForce, _enemyMask);
+                    }
+                    break;
+
+            }
 
         }
 
@@ -63,49 +108,33 @@ namespace Skul.Character.PC
         protected override void Attack_Hit()
         {
             base.Attack_Hit();
-            //_lastEnemy=
-            //Physics2D.OverlapBox((Vector2)_player.transform.position + new Vector2(_hitOffset.x*_movement.direction,
-            //
-            //                                                                _hitOffset.y),
-            //                     _hitSize,
-            //                     0.0f,
-            //                     _enemyMask);
-
-            _lastEnemies=
-                Physics2D.OverlapBoxAll((Vector2)_player.transform.position + new Vector2(_hitOffset.x * _movement.direction,
-
-                                                                            _hitOffset.y),
-                                 _hitSize,
-                                 0.0f,
-                                 _enemyMask);
-
-            //if (_lastEnemy && _lastEnemy.TryGetComponent(out IHp ihp))
-            //{
-            //    ihp.Damage(_player.gameObject, _player.AttackForce);
-            //    //DamagePopUp.Create(_attackTargetMask, col.transform.position + Vector3.up * .2f, (int)player.attackForce);
-            //}
-            if (_lastEnemies.Length>0)
-            {
-                for(int i=0;i<_lastEnemies.Length;i++)
-                {
-                    if (_lastEnemies[i].TryGetComponent(out IHp ihp))
-                    {
-                        ihp.Damage(_player.gameObject, _player.AttackForce,out float damage);
-                    }
-                }
-            }
-
+            Instantiate(_attackCain, _player.transform.position+_hitPos, Quaternion.identity)
+                .SetUp(gameObject,Vector2.zero,_player.AttackForce,_enemyMask);
         }
 
 
 
         private void OnDrawGizmos()
         {
-            
             Gizmos.color = Color.yellow;
-            Gizmos.DrawWireCube(_player.transform.position+new Vector3(_hitOffset.x*_movement.direction,_hitOffset.y), _hitSize);
+            Gizmos.DrawLine(_player.transform.position, _player.transform.position+_hitPos);
+
+            Gizmos.color = Color.blue;
+            for(int i = 0; i < skill1Pos.Length;i++)
+            {
+                Gizmos.DrawLine(_player.transform.position, _player.transform.position+ new Vector3(skill1Pos[i].x * _movement.direction, skill1Pos[i].y));
+            }
+
             Gizmos.color = Color.red;
-            Gizmos.DrawWireCube(_player.transform.position + _switchHitOffset, _switchHitSize);
+            for (int i = 0; i < skill2Pos.Length; i++)
+            {
+                Gizmos.DrawLine(_player.transform.position+new Vector3(0,0.5f), _player.transform.position+ new Vector3(skill2Pos[i].x * _movement.direction, skill2Pos[i].y));
+            }
+
+            Gizmos.color = Color.magenta;
+            Gizmos.DrawLine(_player.transform.position + new Vector3(0, 0.5f), _player.transform.position + _jumpHitPos);
+
+
         }
     }
 }

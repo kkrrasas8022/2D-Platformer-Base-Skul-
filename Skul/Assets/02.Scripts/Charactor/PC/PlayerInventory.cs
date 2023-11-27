@@ -98,6 +98,7 @@ namespace Skul.Character.PC
                             Animator ani = _player.currentRen.GetComponent<Animator>();
                             _player.AnimatorChange(ani);
                             _curHeadData.HadAbility(_player);
+                            _player.canUseSwitch = true;
                             OnHeadAdd?.Invoke(headdata);
                         }
                         else
@@ -118,6 +119,7 @@ namespace Skul.Character.PC
                             _player.currentRen = curren;
                             _player.AnimatorChange(curren.GetComponent<Animator>());
                             _curHeadData.HadAbility(_player);
+                            _player.canUseSwitch = true;
                             OnHeadAdd?.Invoke(headdata);
                         }
                         

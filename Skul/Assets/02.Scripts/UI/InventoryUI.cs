@@ -341,6 +341,7 @@ namespace Skul.UI
         {
             base.Hide();
             _curItemBox.image.color = Color.white;
+            PauseController.instance.OnPause?.Invoke();
         }
 
         public override void Show()

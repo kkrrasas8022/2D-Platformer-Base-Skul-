@@ -124,12 +124,14 @@ MonoBehaviour:
   _enemyMask:
     serializedVersion: 2
     m_Bits: 16384
-  hadSkillsID: 
+  hadSkillsID: e9030000ea030000
   _data: {fileID: 11400000, guid: d7cdf3395ed04db48a2155c4a84f7c40, type: 2}
   _lastEnemy: {fileID: 0}
   _lastEnemies: []
   _hitSize: {x: 1, y: 1.2, z: 0}
   _hitOffset: {x: 0.6, y: 0.6, z: 0}
+  _jumpHitSize: {x: 1.7, y: 1.5, z: 0}
+  _jumpHitOffset: {x: 0.4, y: 0.25, z: 0}
   _switchHitSize: {x: 2.5, y: 1.5, z: 0}
   _switchHitOffset: {x: 0, y: 0.75, z: 0}
   _saveAnimators:

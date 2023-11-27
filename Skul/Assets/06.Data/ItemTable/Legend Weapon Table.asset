@@ -14,4 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 2
   rate: 3
-  itemDatas: []
+  itemDatas:
+  - {fileID: 11400000, guid: d746c4b15f2dc7f46be57661b1c6f312, type: 2}
+  - {fileID: 11400000, guid: ecbb3268219de42478732f9ebc3b4d18, type: 2}

@@ -25,7 +25,7 @@ namespace Skul.FSM.States
             {
                 case IStateEnumerator<StateType>.Step.None:
                     {
-                        movement.isMovable=true;
+                        movement.isMovable=false;
                         movement.isDirectionChangeable = true;
                         animator.Play("Skill" + GameManager.instance.player.currentRen.hadSkillsID[0]);
                         currentStep++;

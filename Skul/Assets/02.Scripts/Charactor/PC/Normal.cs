@@ -16,6 +16,8 @@ namespace Skul.Character.PC
         [SerializeField] private Collider2D[] _lastEnemies;
         [SerializeField] private Vector3 _hitSize;
         [SerializeField] private Vector3 _hitOffset;
+        [SerializeField] private Vector3 _jumpHitSize;
+        [SerializeField] private Vector3 _jumpHitOffset;
         [SerializeField] private Vector3 _switchHitSize;
         [SerializeField] private Vector3 _switchHitOffset;
         [SerializeField] private List<AnimatorController> _saveAnimators;
@@ -59,7 +61,25 @@ namespace Skul.Character.PC
         protected override void JumpAttack()
         {
             base.JumpAttack();
+            _lastEnemies =
+                Physics2D.OverlapBoxAll((Vector2)_player.transform.position + new Vector2(_jumpHitOffset.x * _movement.direction,
 
+                                                                            _jumpHitOffset.y),
+                                 _jumpHitSize,
+                                 0.0f,
+                                 _enemyMask);
+
+
+            if (_lastEnemies.Length > 0)
+            {
+                for (int i = 0; i < _lastEnemies.Length; i++)
+                {
+                    if (_lastEnemies[i].TryGetComponent(out IHp ihp))
+                    {
+                        ihp.Damage(_player.gameObject, _player.AttackForce, out float damage);
+                    }
+                }
+            }
         }
 
         protected override void Skill(int skillID)
@@ -98,14 +118,7 @@ namespace Skul.Character.PC
         protected override void Attack_Hit()
         {
             base.Attack_Hit();
-            //_lastEnemy=
-            //Physics2D.OverlapBox((Vector2)_player.transform.position + new Vector2(_hitOffset.x*_movement.direction,
-            //
-            //                                                                _hitOffset.y),
-            //                     _hitSize,
-            //                     0.0f,
-            //                     _enemyMask);
-
+            
             _lastEnemies=
                 Physics2D.OverlapBoxAll((Vector2)_player.transform.position + new Vector2(_hitOffset.x * _movement.direction,
 
@@ -114,11 +127,7 @@ namespace Skul.Character.PC
                                  0.0f,
                                  _enemyMask);
 
-            //if (_lastEnemy && _lastEnemy.TryGetComponent(out IHp ihp))
-            //{
-            //    ihp.Damage(_player.gameObject, _player.AttackForce);
-            //    //DamagePopUp.Create(_attackTargetMask, col.transform.position + Vector3.up * .2f, (int)player.attackForce);
-            //}
+           
             if (_lastEnemies.Length>0)
             {
                 for(int i=0;i<_lastEnemies.Length;i++)
@@ -139,6 +148,8 @@ namespace Skul.Character.PC
             
             Gizmos.color = Color.yellow;
             Gizmos.DrawWireCube(_player.transform.position+new Vector3(_hitOffset.x*_movement.direction,_hitOffset.y), _hitSize);
+            Gizmos.color = Color.magenta;
+            Gizmos.DrawWireCube(_player.transform.position + new Vector3(_jumpHitOffset.x * _movement.direction, _jumpHitOffset.y), _jumpHitSize);
             Gizmos.color = Color.red;
             Gizmos.DrawWireCube(_player.transform.position + _switchHitOffset, _switchHitSize);
         }

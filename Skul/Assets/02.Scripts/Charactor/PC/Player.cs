@@ -398,6 +398,7 @@ namespace Skul.Character.PC
             map.AddKeyDownAction(KeyCode.Tab, () => 
             {
                 InventoryUI.instance.Show();
+                PauseController.instance.OnPause?.Invoke();
             });
             map.AddKeyDownAction(KeyCode.Escape, () =>
             {

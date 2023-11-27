@@ -123,11 +123,24 @@ MonoBehaviour:
   _movement: {fileID: 0}
   _enemyMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 16384
   hadSkillsID: 
   _data: {fileID: 11400000, guid: 3a7048d9f3c94164093127fb1287b5e5, type: 2}
   _lastEnemies: []
-  _hitSize: {x: 0, y: 0, z: 0}
-  _hitOffset: {x: 0, y: 0, z: 0}
-  _switchHitSize: {x: 0, y: 0, z: 0}
-  _switchHitOffset: {x: 0, y: 0, z: 0}
+  _hitPos: {x: 0.5, y: 0.6, z: 0}
+  _jumpHitPos: {x: 0.5, y: 0.2, z: 0}
+  _superCain: {fileID: 3626046494309781501, guid: 3ae6b27a8c1dcea40ab4cbd8c9321c05, type: 3}
+  _attackCain: {fileID: 3466045475523542406, guid: 86a297c909a8442429e4d73dc6b543f9, type: 3}
+  _nowAttackCain: {fileID: 0}
+  skill1Pos:
+  - {x: 2, y: 1.5, z: 0}
+  - {x: 2, y: 0.8, z: 0}
+  - {x: 2, y: 0.1, z: 0}
+  skill2Pos:
+  - {x: 0.7, y: 0.8, z: 0}
+  - {x: 1.2, y: 0.8, z: 0}
+  - {x: 1.7, y: 0.8, z: 0}
+  - {x: 2.2, y: 0.8, z: 0}
+  - {x: 2.7, y: 0.8, z: 0}
+  _buffData: {fileID: 11400000, guid: 6ea36598c21724d4881c16b70f3c0fc8, type: 2}
+  _buff: {fileID: 6823751722833064947, guid: 815b1e5f4e352d44f8a3ad7b9d1b30c8, type: 3}
