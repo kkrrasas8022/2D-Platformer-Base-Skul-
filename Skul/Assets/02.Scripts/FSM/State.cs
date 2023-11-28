@@ -65,7 +65,6 @@ namespace Skul.FSM
             this.character = machine.GetComponent<Skul.Character.Character>();
             machine.OnAnimatorChanged += (value) =>
             {
-                Debug.Log("º¯°æ");
                 animator = value;
             };
             this.machine.GetComponent<Character.Character>().onHpMin += () => this.machine.isDie = true;

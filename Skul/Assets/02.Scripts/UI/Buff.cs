@@ -16,10 +16,9 @@ public class Buff : MonoBehaviour
     [SerializeField] public BuffData data;
     public void SetUp(BuffData data)
     {
-        Debug.Log("¹öÇÁ¼Â");
-        this.data = data;
-        _icon.sprite= data.icon;
-        _times = data.MaxTime;
+         this.data = data;
+         _icon.sprite= data.icon;
+         _times = data.MaxTime;
     }
 
     private void Start()

@@ -13,12 +13,10 @@ public enum AttackType
 
 namespace Skul.Character
 {
-    //유닛들의 베이스가 되는 character 클래스
     public abstract class Character : MonoBehaviour,IHp,IPausable
     {
-        
         //유닛의 스탯들
-        [Header("State")]
+        [Header("Status")]
         public float moveSpeed = 3.0f;
         public float dashForce = 3.0f;
         public float jumpForce = 3.0f;
@@ -27,11 +25,10 @@ namespace Skul.Character
         public int dashCount = 0;
         public int maxDashCount = 0;
 
-        [SerializeField]protected float attackForce;
 
         [SerializeField]protected Skul.Movement.Movement movement;
         protected Skul.FSM.StateMachine stateMachine;
-
+     
 
         public float hp
         {
@@ -125,6 +122,8 @@ namespace Skul.Character
         public event Action onHpMin;
         public event Action onHpMax;
 
+        [SerializeField] protected float attackForce;
+
         public void Damage(GameObject damager, float amount,out float realDamage)
         {
             realDamage = amount * _takenDamage;
@@ -152,7 +151,6 @@ namespace Skul.Character
             };
             
         }
-
         public void Pause(bool pause)
         {
             bool enable = pause == false;

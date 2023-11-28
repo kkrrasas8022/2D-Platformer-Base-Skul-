@@ -18,9 +18,7 @@ namespace Skul.Data
         public int id;
         public string Name;
         public SkulType skulType;
-        public string Description;
         public PlayerAttacks Renderer;
-        public Sprite SkulFace;
         public List<ActiveSkillData> activeSkills;
         public SwitchSkillData switchSkill;
         public PassiveSkillData passiveSkill;

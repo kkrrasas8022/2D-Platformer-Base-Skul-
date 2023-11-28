@@ -33,15 +33,6 @@ namespace Skul.UI
         {
             base.Awake();
             _player = GameObject.FindWithTag("Player").GetComponent<Player>();
-
-
-
-
-
-
-
-
-
         }
 
 

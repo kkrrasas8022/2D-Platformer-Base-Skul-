@@ -4022,7 +4022,7 @@ GameObject:
   - component: {fileID: 7619952582068715088}
   - component: {fileID: 5964667574305117366}
   m_Layer: 5
-  m_Name: PlayerStatus
+  m_Name: PlayerStatusUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

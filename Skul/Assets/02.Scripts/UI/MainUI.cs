@@ -155,13 +155,13 @@ namespace Skul.UI
 
         private void Start()
         {
-            _mainFace.sprite = GameElement.GameManager.instance.player.inventory.CurHeadData.skulData.SkulFace;
+            _mainFace.sprite = GameElement.GameManager.instance.player.inventory.CurHeadData.Icon;
             if (GameElement.GameManager.instance.player.inventory.SaveHeadData == null)
                 _subFace.color = Color.clear;
             else
             {
                 _subFace.color = Color.white;
-                _subFace.sprite = GameElement.GameManager.instance.player.inventory.SaveHeadData.skulData.SkulFace; 
+                _subFace.sprite = GameElement.GameManager.instance.player.inventory.SaveHeadData.Icon; 
             }
             _skill1.sprite = SkillManager.instance[GameElement.GameManager.instance.player.currentRen.hadSkillsID[0]].Icon;
             _skill2.sprite = SkillManager.instance[GameElement.GameManager.instance.player.currentRen.hadSkillsID[1]].Icon;
@@ -191,7 +191,6 @@ namespace Skul.UI
             };
             GameElement.GameManager.instance.player.onHpMaxChanged += (maxhp) =>
             {
-
                 _hpBar.maxValue = maxhp;
                 _hpBar.value = GameElement.GameManager.instance.player.hp;
                 _hpMaxText.text= maxhp.ToString();
@@ -199,8 +198,8 @@ namespace Skul.UI
 
             GameElement.GameManager.instance.player.OnSwitch += () =>
             {
-                _subFace.sprite = GameElement.GameManager.instance.player.inventory.CurHeadData.skulData.SkulFace;
-                _mainFace.sprite = GameElement.GameManager.instance.player.inventory.SaveHeadData.skulData.SkulFace;
+                _subFace.sprite = GameElement.GameManager.instance.player.inventory.CurHeadData.Icon;
+                _mainFace.sprite = GameElement.GameManager.instance.player.inventory.SaveHeadData.Icon;
                 _skill1.sprite = SkillManager.instance[(GameElement.GameManager.instance.player.currentRen 
                     == GameElement.GameManager.instance.player.renderers[0] ? GameElement.GameManager.instance.player.renderers[1] : GameElement.GameManager.instance.player.renderers[0]).hadSkillsID[0]].Icon;
 
@@ -220,8 +219,8 @@ namespace Skul.UI
             GameElement.GameManager.instance.player.inventory.OnHeadAdd += (data) =>
             {
                 _subFace.color = Color.white;
-                _subFace.sprite = GameElement.GameManager.instance.player.inventory.SaveHeadData.skulData.SkulFace;
-                _mainFace.sprite = GameElement.GameManager.instance.player.inventory.CurHeadData.skulData.SkulFace;
+                _subFace.sprite = GameElement.GameManager.instance.player.inventory.SaveHeadData.Icon;
+                _mainFace.sprite = GameElement.GameManager.instance.player.inventory.CurHeadData.Icon;
                 _skill1.sprite = SkillManager.instance[GameElement.GameManager.instance.player.currentRen.hadSkillsID[0]].Icon;
                 if (GameElement.GameManager.instance.player.inventory.CurHeadData.skillCount > 1)
                     _skill2.sprite = SkillManager.instance[GameElement.GameManager.instance.player.currentRen.hadSkillsID[1]].Icon;

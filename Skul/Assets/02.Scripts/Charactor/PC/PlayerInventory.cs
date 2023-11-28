@@ -17,12 +17,8 @@ namespace Skul.Character.PC
         public EssenceItemData EssenceData => _essenceData;
         public List<WeaponItemData> WeaponDatas => _weaponDatas;
 
-        //가지고 있는 각인의 이름을 Key 그 각인의 중첩수를 Value로 가지는 Dictionary 
         private Dictionary<Engrave, int> _haveEngrave;
         public Dictionary<Engrave, int> HaveEngrave=> _haveEngrave;
-        public int enghcount;
-        //각인에 변동이 생겼을 때 나타나는 효과
-        public event Action<Engrave, int> OnEngraveChange;
         public Action<int> OnChangeItem;
 
         [SerializeField]private HeadItemData _curHeadData;

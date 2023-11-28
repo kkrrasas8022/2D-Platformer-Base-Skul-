@@ -10,10 +10,8 @@ namespace Skul.Movement
     //객체의 이동을 담당하는 추상 클래스
     public abstract class Movement : MonoBehaviour
     {
-        //이동가능한 객체인지 확인해주는 변수
         public bool isMovable;
         public bool isDirectionChangeable;
-        //방향을 전역변수로 설정
         public const int DIRECTION_RIGHT = 1;
         public const int DIRECTION_LEFT = -1;
         [SerializeField] protected EdgeDetecter _edgeDetecter;
@@ -28,7 +26,6 @@ namespace Skul.Movement
                     return;
                 if (_direction == value) 
                     return;
-
                 if (value < 0)
                 {
                     if (_edgeDetecter&&_edgeDetecter._edgeEnd)
@@ -47,7 +44,6 @@ namespace Skul.Movement
             }
         }
         [SerializeField]private int _direction;
-        //방향이 바뀌었을 때 호출되는 이벤트 대리자
         public event Action<int> onDirectionChanged;
 
         public float horizontal
@@ -62,17 +58,11 @@ namespace Skul.Movement
                 onHorizontalChanged?.Invoke(value);
             }
         }
-        //좌우 이동값을 가지는 변수
         [SerializeField]private float _horizontal;
-        //이동값이 변했을때 호출되는 이벤트 대리자
         public event Action<float> onHorizontalChanged;
 
-        //----실질적인 이동을 하는 구간----
-        //이동을 구현하기 위해 rigidbody를 가져옴
         private Rigidbody2D _rigid;
-        //이동방향을 나타냄
         private Vector2 _move;
-        //이동속도
         [SerializeField] private float _speed = 3.0f;
         
 

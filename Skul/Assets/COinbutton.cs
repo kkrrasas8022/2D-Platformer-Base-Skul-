@@ -9,6 +9,7 @@ public class COinbutton : MonoBehaviour
     [SerializeField] private int count;
     public void OnButtonClick()
     {
+        Debug.Log("click");
         if (count==0)
         {
             _player.curCoin += 10;

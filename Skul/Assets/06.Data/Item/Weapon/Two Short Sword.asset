@@ -17,8 +17,8 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: 38eef48158e7a4a82a57ea9b7bf250ef, type: 3}
   type: 2
   rate: 1
-  description: 
-  abilityDescription: 
+  description: Two Short Sword that someone used
+  abilityDescription: Increase Physical Power 30%
   power:
     type: 2
     power: 0.3

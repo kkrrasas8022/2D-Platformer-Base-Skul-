@@ -33,11 +33,11 @@ namespace Skul.Character.Enemy
         [SerializeField] private Vector3 _detRangeOffset;
         [SerializeField] private Vector3 _attRangeOffset;
 
-        [Header("TESTSize")]
+        [Header("DetectedSize")]
         [SerializeField] private Vector2 _detectCube;
         [SerializeField] private Vector2 _attackCube;
 
-        [Header("TESTPos")]
+        [Header("TargetPos")]
         [SerializeField] private float posPran;
         [SerializeField] private float posDran;
         [SerializeField] private float taPposPran;
@@ -61,7 +61,6 @@ namespace Skul.Character.Enemy
         }
         private void Update()
         {
-            //Collider2D target = Physics2D.OverlapCircle(transform.position + new Vector3(_rangeOffset.x*_movement.direction,_rangeOffset.y), _detectRange, _detectMask);
             Collider2D target = Physics2D.OverlapBox(transform.position + new Vector3(_detRangeOffset.x * _movement.direction, _detRangeOffset.y), _detectCube, 0, _detectMask);
             this.target = target ? target.gameObject : null;
             if (this.target)
@@ -71,8 +70,6 @@ namespace Skul.Character.Enemy
 
             posPran = (transform.position.x + _attackRange);
             posDran = (transform.position.x - _attackRange);
-            //taPposPran = target.transform.position.x + (transform.position.x + _attackRange);
-            //taPposDran = target.transform.position.x + (transform.position.x - _attackRange);
 
             _hitCoolTime += Time.deltaTime;
             if (_hitCoolTime >= _hitCoolTimeMax)
@@ -88,8 +85,6 @@ namespace Skul.Character.Enemy
             if (_stateMachine.isDie == true)
                 _step = AIStep.Idle;
 
-
-
             switch (_step)
             {
                 case AIStep.Idle:
@@ -100,7 +95,6 @@ namespace Skul.Character.Enemy
                         _thinkTimer = Random.Range(_thinkTimeMin, _thinkTimeMax);
 
                         _stateMachine.ChangeState(_step == AIStep.TakeARest ? StateType.Idle : StateType.Move);
-
                     }
                     break;
                 case AIStep.TakeARest:
@@ -151,36 +145,26 @@ namespace Skul.Character.Enemy
                             _step = AIStep.Think;
                             return;
                         }
-                        //if (transform.position.x < target.transform.position.x - _collider.size.x))
-                        //if (transform.position.x+_attackRange < target.transform.position.x - (transform.position.x+_attackRange))
                         if (posPran < _targetPos.x)
                         {
-                            Debug.Log("오른쪽 사거리밖");
                             _movement.direction = Movement.Movement.DIRECTION_RIGHT;
                             _movement.horizontal = 1.0f;
                         }
                         else if (posDran > _targetPos.x)
                         {
-                            Debug.Log("왼쪽 사거리밖");
                             _movement.direction = Movement.Movement.DIRECTION_LEFT;
                             _movement.horizontal = -1.0f;
                         }
                         else if (_targetPos.x > posDran && _targetPos.x < transform.position.x)
                         {
-                            Debug.Log("왼쪽 사거리안");
                             _movement.direction = Movement.Movement.DIRECTION_LEFT;
                             _movement.horizontal = 0;
                         }
                         else if (_targetPos.x < posPran && _targetPos.x > transform.position.x)
                         {
-                            Debug.Log("오른쪽 사거리안");
                             _movement.direction = Movement.Movement.DIRECTION_RIGHT;
                             _movement.horizontal = 0;
                         }
-                        //else if (transform.position.x > target.transform.position.x + _collider.size.x)
-                        //else if (transform.position.x - _attackRange > target.transform.position.x + (transform.position.x - _attackRange))
-
-
                         if (_attackEnable &&
                             Vector2.Distance(transform.position, target.transform.position) < _attackRange &&
                             target.transform.position.y < transform.position.y + _attackCube.y &&
