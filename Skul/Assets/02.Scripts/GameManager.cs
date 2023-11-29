@@ -80,6 +80,7 @@ namespace Skul.GameElement
                 if (mapEnemyCount == 0)
                     StageClear?.Invoke();
             };
+
             StageClear = () =>
             {
                 switch (percentageType)
@@ -143,8 +144,7 @@ namespace Skul.GameElement
                     nowMapPotal[i] = Instantiate(potalsDic[(PotalType)r], sceneSet.potalPos[i], Quaternion.identity).GetComponent<Potal>();
 
                 }
-                // nowMapPotal[0] = Instantiate(potalsDic[sceneSet.potalType[0]], sceneSet.potalPos[0], Quaternion.identity).GetComponent<Potal>();
-                //nowMapPotal[1] = Instantiate(potalsDic[sceneSet.potalType[1]], sceneSet.potalPos[1], Quaternion.identity).GetComponent<Potal>();
+                
 
                 player.transform.position = sceneSet.startPos;
                 mapBoxPosition = sceneSet.rewardPos;

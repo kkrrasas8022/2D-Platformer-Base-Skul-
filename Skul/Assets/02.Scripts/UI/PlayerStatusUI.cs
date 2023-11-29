@@ -7,7 +7,7 @@ using Skul.Tools;
 
 namespace Skul.UI
 {
-    public class PlayerStatus : SingletonUIBase<PlayerStatus>
+    public class PlayerStatusUI : SingletonUIBase<PlayerStatusUI>
     {
         [SerializeField] private Player _player;
 

@@ -69,9 +69,6 @@ namespace Skul.FSM
             };
             this.machine.GetComponent<Character.Character>().onHpMin += () => this.machine.isDie = true;
         }
-
-        
-
         public abstract StateType MoveNext();
 
         public virtual void Reset()

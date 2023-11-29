@@ -34,8 +34,6 @@ namespace Skul.UI
         public Action<Buff> StartBuff;
         public Action<Buff> EndBuff;
 
-
-
         protected override void Awake()
         {
             base.Awake();
@@ -146,67 +144,67 @@ namespace Skul.UI
 
         private void Update()
         {
-            _skill1Fill.fillAmount = GameElement.GameManager.instance.player.skill1CoolTime/((ActiveSkillData)SkillManager.instance[GameElement.GameManager.instance.player.currentRen.hadSkillsID[0]]).CoolTime;
-            if(GameElement.GameManager.instance.player.currentRen.hadSkillsID.Count>1)
-                _skill2Fill.fillAmount = GameElement.GameManager.instance.player.skill2CoolTime/((ActiveSkillData)SkillManager.instance[GameElement.GameManager.instance.player.currentRen.hadSkillsID[1]]).CoolTime;
-            _switchFill.fillAmount = GameElement.GameManager.instance.player.switchCoolTime / GameElement.GameManager.instance.player.switchMaxCooltime;
+            _skill1Fill.fillAmount = GameManager.instance.player.skill1CoolTime/((ActiveSkillData)SkillManager.instance[GameManager.instance.player.currentRen.hadSkillsID[0]]).CoolTime;
+            if(GameManager.instance.player.currentRen.hadSkillsID.Count>1)
+                _skill2Fill.fillAmount = GameManager.instance.player.skill2CoolTime/((ActiveSkillData)SkillManager.instance[GameManager.instance.player.currentRen.hadSkillsID[1]]).CoolTime;
+            _switchFill.fillAmount = GameManager.instance.player.switchCoolTime / GameManager.instance.player.switchMaxCooltime;
 
         }
 
         private void Start()
         {
-            _mainFace.sprite = GameElement.GameManager.instance.player.inventory.CurHeadData.Icon;
-            if (GameElement.GameManager.instance.player.inventory.SaveHeadData == null)
+            _mainFace.sprite = GameManager.instance.player.inventory.CurHeadData.Icon;
+            if (GameManager.instance.player.inventory.SaveHeadData == null)
                 _subFace.color = Color.clear;
             else
             {
                 _subFace.color = Color.white;
-                _subFace.sprite = GameElement.GameManager.instance.player.inventory.SaveHeadData.Icon; 
+                _subFace.sprite = GameManager.instance.player.inventory.SaveHeadData.Icon; 
             }
-            _skill1.sprite = SkillManager.instance[GameElement.GameManager.instance.player.currentRen.hadSkillsID[0]].Icon;
-            _skill2.sprite = SkillManager.instance[GameElement.GameManager.instance.player.currentRen.hadSkillsID[1]].Icon;
+            _skill1.sprite = SkillManager.instance[GameManager.instance.player.currentRen.hadSkillsID[0]].Icon;
+            _skill2.sprite = SkillManager.instance[GameManager.instance.player.currentRen.hadSkillsID[1]].Icon;
             _subFace=_subFace.GetComponent<Image>();
             _hpBar.minValue = 0.0f;
-            _hpBar.maxValue = GameElement.GameManager.instance.player.hpMax;
-            _hpBar.value = GameElement.GameManager.instance.player.hp;
-            _hpText.text = ((int)GameElement.GameManager.instance.player.hp).ToString();
-            _hpMaxText.text = ((int)GameElement.GameManager.instance.player.hpMax).ToString();
+            _hpBar.maxValue = GameManager.instance.player.hpMax;
+            _hpBar.value = GameManager.instance.player.hp;
+            _hpText.text = ((int)GameManager.instance.player.hp).ToString();
+            _hpMaxText.text = ((int)GameManager.instance.player.hpMax).ToString();
 
-            _curCoin.text = GameElement.GameManager.instance.player.curCoin.ToString();
-            _curBone.text = GameElement.GameManager.instance.player.curBone.ToString();
+            _curCoin.text = GameManager.instance.player.curCoin.ToString();
+            _curBone.text = GameManager.instance.player.curBone.ToString();
 
-            GameElement.GameManager.instance.player.OnCoinChanged += (value) =>
+           GameManager.instance.player.OnCoinChanged += (value) =>
             {
                 _curCoin.text = value.ToString();
             };
-            GameElement.GameManager.instance.player.OnBoneChanged += (value) =>
+           GameManager.instance.player.OnBoneChanged += (value) =>
             {
                 _curBone.text = value.ToString();
             };
 
-            GameElement.GameManager.instance.player.onHpChanged += (hp) =>
+            GameManager.instance.player.onHpChanged += (hp) =>
             {
                 _hpBar.value = hp;
                 _hpText.text = ((int)hp).ToString();
             };
-            GameElement.GameManager.instance.player.onHpMaxChanged += (maxhp) =>
+           GameManager.instance.player.onHpMaxChanged += (maxhp) =>
             {
                 _hpBar.maxValue = maxhp;
                 _hpBar.value = GameElement.GameManager.instance.player.hp;
                 _hpMaxText.text= maxhp.ToString();
             };
 
-            GameElement.GameManager.instance.player.OnSwitch += () =>
+            GameManager.instance.player.OnSwitch += () =>
             {
-                _subFace.sprite = GameElement.GameManager.instance.player.inventory.CurHeadData.Icon;
-                _mainFace.sprite = GameElement.GameManager.instance.player.inventory.SaveHeadData.Icon;
-                _skill1.sprite = SkillManager.instance[(GameElement.GameManager.instance.player.currentRen 
-                    == GameElement.GameManager.instance.player.renderers[0] ? GameElement.GameManager.instance.player.renderers[1] : GameElement.GameManager.instance.player.renderers[0]).hadSkillsID[0]].Icon;
+                _subFace.sprite = GameManager.instance.player.inventory.CurHeadData.Icon;
+                _mainFace.sprite = GameManager.instance.player.inventory.SaveHeadData.Icon;
+                _skill1.sprite = SkillManager.instance[(GameManager.instance.player.currentRen 
+                    == GameManager.instance.player.renderers[0] ? GameManager.instance.player.renderers[1] : GameManager.instance.player.renderers[0]).hadSkillsID[0]].Icon;
 
-                if (GameElement.GameManager.instance.player.inventory.SaveHeadData.skillCount > 1)
+                if (GameManager.instance.player.inventory.SaveHeadData.skillCount > 1)
                 { 
-                    _skill2.sprite = SkillManager.instance[(GameElement.GameManager.instance.player.currentRen
-                        == GameElement.GameManager.instance.player.renderers[0] ? GameElement.GameManager.instance.player.renderers[1] : GameElement.GameManager.instance.player.renderers[0]).hadSkillsID[1]].Icon;
+                    _skill2.sprite = SkillManager.instance[(GameManager.instance.player.currentRen
+                        == GameManager.instance.player.renderers[0] ? GameManager.instance.player.renderers[1] : GameManager.instance.player.renderers[0]).hadSkillsID[1]].Icon;
                     _skill2.color = Color.white;
                 }
                 else
@@ -216,14 +214,14 @@ namespace Skul.UI
                 }
             };
 
-            GameElement.GameManager.instance.player.inventory.OnHeadAdd += (data) =>
+            GameManager.instance.player.inventory.OnHeadAdd += (data) =>
             {
                 _subFace.color = Color.white;
-                _subFace.sprite = GameElement.GameManager.instance.player.inventory.SaveHeadData.Icon;
-                _mainFace.sprite = GameElement.GameManager.instance.player.inventory.CurHeadData.Icon;
-                _skill1.sprite = SkillManager.instance[GameElement.GameManager.instance.player.currentRen.hadSkillsID[0]].Icon;
-                if (GameElement.GameManager.instance.player.inventory.CurHeadData.skillCount > 1)
-                    _skill2.sprite = SkillManager.instance[GameElement.GameManager.instance.player.currentRen.hadSkillsID[1]].Icon;
+                _subFace.sprite = GameManager.instance.player.inventory.SaveHeadData.Icon;
+                _mainFace.sprite = GameManager.instance.player.inventory.CurHeadData.Icon;
+                _skill1.sprite = SkillManager.instance[GameManager.instance.player.currentRen.hadSkillsID[0]].Icon;
+                if (GameManager.instance.player.inventory.CurHeadData.skillCount > 1)
+                    _skill2.sprite = SkillManager.instance[GameManager.instance.player.currentRen.hadSkillsID[1]].Icon;
                 else
                 {
                     _skill2.sprite = null;

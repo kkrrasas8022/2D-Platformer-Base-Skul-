@@ -20,10 +20,10 @@ namespace Skul.Character.PC
 
         [SerializeField] private Vector3 _jumpHitPos;
 
-        [SerializeField] private Cains _superCain;
+        [SerializeField] private Chains _chains;
 
-        [SerializeField] private PlayerProjectile _attackCain;
-        [SerializeField] private PlayerProjectile _nowAttackCain;
+        [SerializeField] private PlayerProjectile _attackChain;
+        [SerializeField] private PlayerProjectile _nowAttackChain;
 
         [SerializeField] private Vector3[] skill1Pos=new Vector3[3]; 
         [SerializeField] private Vector3[] skill2Pos=new Vector3[5];
@@ -60,7 +60,7 @@ namespace Skul.Character.PC
         protected override void JumpAttack()
         {
             base.JumpAttack();
-            Instantiate(_attackCain, _player.transform.position + _jumpHitPos, Quaternion.Euler(new Vector3(0,0,-25)))
+            Instantiate(_attackChain, _player.transform.position + _jumpHitPos, Quaternion.Euler(new Vector3(0,0,-25)))
                 .SetUp(gameObject, Vector2.zero, _player.AttackForce, _enemyMask);
 
         }
@@ -74,7 +74,7 @@ namespace Skul.Character.PC
                     {
                         for(int i=0;i<skill1Pos.Length;i++)
                         {
-                            Instantiate(_attackCain, _player.transform.position + new Vector3(skill1Pos[i].x*_movement.direction, skill1Pos[i].y), 
+                            Instantiate(_attackChain, _player.transform.position + new Vector3(skill1Pos[i].x*_movement.direction, skill1Pos[i].y), 
                                 Quaternion.Euler(new Vector3(0,_movement.direction==1?0:180,-30+(30*i))))
                                 .SetUp(gameObject, Vector2.zero, _player.AttackForce, _enemyMask);
                         }
@@ -84,7 +84,7 @@ namespace Skul.Character.PC
                     {
                         for (int i = 0; i < skill2Pos.Length; i++)
                         {
-                            PlayerProjectile a = Instantiate(_attackCain, _player.transform.position + new Vector3(skill2Pos[i].x * _movement.direction, skill2Pos[i].y),
+                            PlayerProjectile a = Instantiate(_attackChain, _player.transform.position + new Vector3(skill2Pos[i].x * _movement.direction, skill2Pos[i].y),
                                 Quaternion.Euler(new Vector3(0, 0, 90)));
                             a.SetUp(gameObject, Vector2.zero, _player.AttackForce, _enemyMask);
                             a.transform.localScale = new Vector2(0.5f, 0.5f);
@@ -93,8 +93,8 @@ namespace Skul.Character.PC
                     break;
                 case 1016:
                     {
-                        Cains c = Instantiate(_superCain, _player.transform.position, Quaternion.identity);
-                        for(int i=0;i<_superCain.cains.Length;i++)
+                        Chains c = Instantiate(_chains, _player.transform.position, Quaternion.identity);
+                        for(int i=0;i<_chains.cains.Length;i++)
                             c.cains[i].SetUp(gameObject,Vector2.zero, _player.AttackForce, _enemyMask);
                     }
                     break;
@@ -108,7 +108,7 @@ namespace Skul.Character.PC
         protected override void Attack_Hit()
         {
             base.Attack_Hit();
-            Instantiate(_attackCain, _player.transform.position+_hitPos, Quaternion.identity)
+            Instantiate(_attackChain, _player.transform.position+_hitPos, Quaternion.identity)
                 .SetUp(gameObject,Vector2.zero,_player.AttackForce,_enemyMask);
         }
 

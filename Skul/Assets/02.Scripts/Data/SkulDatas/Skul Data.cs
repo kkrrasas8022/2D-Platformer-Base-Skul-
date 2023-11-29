@@ -21,8 +21,6 @@ namespace Skul.Data
         public PlayerAttacks Renderer;
         public List<ActiveSkillData> activeSkills;
         public SwitchSkillData switchSkill;
-        public PassiveSkillData passiveSkill;
-        public SpecialSkillData specialSkill;
         public AttackType attackType;
         public int attackComboCount;
 

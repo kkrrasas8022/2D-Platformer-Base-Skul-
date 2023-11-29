@@ -192,7 +192,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: -5908743213997753785, guid: 4d701fb8bab94204e92af20e3e7b6a8a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -462,12 +462,12 @@ MonoBehaviour:
   maxJumpCount: 0
   dashCount: 0
   maxDashCount: 0
-  attackForce: 10
   movement: {fileID: 6403303993982762225}
   _hp: 0
   _takenDamage: 1
   _hpMax: 100
   _mpMax: 0
+  attackForce: 10
   _hpBar: {fileID: 1879994331662792594}
   _targetMask:
     serializedVersion: 2

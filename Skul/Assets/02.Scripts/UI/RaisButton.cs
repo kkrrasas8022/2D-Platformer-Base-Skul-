@@ -1,26 +1,24 @@
 using Skul.Character.PC;
+using Skul.GameElement;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class COinbutton : MonoBehaviour
+public class RaisButton : MonoBehaviour
 {
-    [SerializeField] private Player _player;
     [SerializeField] private int count;
+
+ 
     public void OnButtonClick()
     {
         Debug.Log("click");
         if (count==0)
         {
-            _player.curCoin += 10;
+            GameManager.instance.player.curCoin += 10;
         }
         else if(count == 1)
         {
-            _player.curBone += 10;
+            GameManager.instance.player.curBone += 10;
         }
-
-
-
-
     }
 }

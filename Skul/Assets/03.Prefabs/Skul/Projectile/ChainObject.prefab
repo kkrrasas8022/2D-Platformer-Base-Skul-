@@ -622,7 +622,7 @@ GameObject:
   - component: {fileID: 2770483592914664953}
   - component: {fileID: 3626046494309781501}
   m_Layer: 0
-  m_Name: CainObject
+  m_Name: ChainObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

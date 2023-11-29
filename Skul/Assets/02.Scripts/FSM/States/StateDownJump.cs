@@ -10,7 +10,7 @@ namespace Skul.FSM.States
         GroundDetecter groundDetecter;
         Collider2D save;
         int ignortime = 0;
-        int ignorMaxTime = 180;
+        int ignorMaxTime = 90;
         public StateDownJump(StateMachine machine) : base(machine)
         {
             groundDetecter=machine.GetComponent<GroundDetecter>();

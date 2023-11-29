@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Skul.Character.PC
 {
-    public class CainOB : PlayerProjectile
+    public class Chain : PlayerProjectile
     {
         protected override void Awake()
         {

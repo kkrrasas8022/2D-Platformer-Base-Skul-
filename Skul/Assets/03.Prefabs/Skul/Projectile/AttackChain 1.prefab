@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: -2578050786723365511}
   - component: {fileID: 3466045475523542406}
   m_Layer: 0
-  m_Name: AttackCain 1
+  m_Name: AttackChain 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

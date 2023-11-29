@@ -129,6 +129,10 @@ namespace Skul.UI
             {
                 Debug.Log("UI KeyDown D");
                 _detailsObject.SetActive(true);
+                if (_player.currentRen.hadSkillsID.Count> 1)
+                {
+                    _detailsSkill2Object.SetActive(true);
+                }
             });
             map.AddKeyUpAction(KeyCode.D, () =>
             {
@@ -137,12 +141,12 @@ namespace Skul.UI
             map.AddKeyPressAction(KeyCode.A, () =>
             {
                 Debug.Log("UI KeyDown A");
-                PlayerStatus.instance.Show();
+                PlayerStatusUI.instance.Show();
 //                _playerStatus.SetActive(true);
             });
             map.AddKeyUpAction(KeyCode.A, () =>
             {
-                PlayerStatus.instance.Hide();
+                PlayerStatusUI.instance.Hide();
             });
             InputManager.instance.AddMap("InventoryUI", map);
 
@@ -221,14 +225,18 @@ namespace Skul.UI
                             if (headData.skillCount == 1)
                             {
                                 _skill2Icon.gameObject.SetActive(false);
-                                _skill1Icon.transform.localPosition = new Vector3(0, _skill1Icon.transform.localPosition.y, 0);
+                                _detailsObject.SetActive(true);
                                 _detailsSkill2Object.SetActive(false);
+                                _detailsObject.SetActive(false);
+                                _skill1Icon.transform.localPosition = new Vector3(0, _skill1Icon.transform.localPosition.y, 0);
                                 _detailsSkill1Object.transform.localPosition=new Vector3(0, _detailsSkill1Object.transform.localPosition.y, 0);
                             }
                             else
                             {
                                 _skill2Icon.gameObject.SetActive(true);
-                                _detailSkill2Icon.gameObject.SetActive(true);
+                                _detailsObject.SetActive(true);
+                                _detailsSkill2Object.SetActive(true);
+                                _detailsObject.SetActive(false);
                                 _skill2Name.text = SkillManager.instance[nowRen.hadSkillsID[1]].Name;
                                 _skill2Icon.sprite = SkillManager.instance[nowRen.hadSkillsID[1]].Icon;
                                 _skill1Icon.transform.localPosition = new Vector3(-188, _skill1Icon.transform.localPosition.y, 0);
@@ -238,7 +246,6 @@ namespace Skul.UI
                                 _detailSkill2Name.text = SkillManager.instance[nowRen.hadSkillsID[1]].Name;
                                 _detailSkill2CoolTime.text = ((ActiveSkillData)SkillManager.instance[nowRen.hadSkillsID[1]]).CoolTime.ToString() + "s";
                                 _detailSkill2Description.text = SkillManager.instance[nowRen.hadSkillsID[1]].Description;
-
                             }
                         }
                         break;
@@ -253,6 +260,24 @@ namespace Skul.UI
                             _skill2Name.text = weaponData.engraves[1].Name;
                             _skill1Icon.sprite = weaponData.engraves[0].Icon;
                             _skill2Icon.sprite = weaponData.engraves[1].Icon;
+                            _detailSkill1Icon.sprite = weaponData.engraves[0].Icon;
+                            _detailSkill1Name.text = weaponData.engraves[0].Name;
+                            _detailSkill1CoolTime.text = "";
+                            _detailSkill1Description.text = weaponData.engraves[0].synergyAbility;
+                            _skill2Icon.gameObject.SetActive(true);
+                            _detailsObject.SetActive(true);
+                            _detailsSkill2Object.SetActive(true);
+                            _detailsObject.SetActive(false);
+                            _skill2Name.text = weaponData.engraves[1].Name;
+                            _skill2Icon.sprite = weaponData.engraves[1].Icon;
+                            _skill1Icon.transform.localPosition = new Vector3(-188, _skill1Icon.transform.localPosition.y, 0);
+                            _detailsSkill1Object.transform.localPosition = new Vector3(-161, _detailsSkill1Object.transform.localPosition.y, 0);
+
+                            _detailSkill2Icon.sprite = weaponData.engraves[1].Icon;
+                            _detailSkill2Name.text = weaponData.engraves[1].Name;
+                            _detailSkill2CoolTime.text = "";
+                            _detailSkill2Description.text = weaponData.engraves[1].synergyAbility;
+
                         }
                         break;
                     case ItemType.Essence:
@@ -307,7 +332,7 @@ namespace Skul.UI
             }
 
             _boxIndex = 0;
-            OnCurChanged(_boxIndex);
+            OnCurChanged?.Invoke(_boxIndex);
             _curItemBox.image.color = new Color(255, 172, 0);
 
             if(_player.inventory.HaveEngrave.Count>0)

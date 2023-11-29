@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0940423c02a84a4aa37c8cfb8c2ec0f, type: 3}
   m_Name: MinoSwitchBuff
   m_EditorClassIdentifier: 
-  icon: {fileID: 21300000, guid: f485560d82f6f004a871dd2809e75063, type: 3}
+  icon: {fileID: 21300000, guid: a2563f2b8dbc4044b9a50537d3a29962, type: 3}
   power:
     type: 2
     power: 0.5
-  MaxTime: 50
+  MaxTime: 5

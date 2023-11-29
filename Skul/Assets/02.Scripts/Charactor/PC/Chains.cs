@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Skul.Character.PC
 {
-    public class Cains : MonoBehaviour
+    public class Chains : MonoBehaviour
     {
         [SerializeField] public PlayerProjectile[] cains;
         private void Awake()
